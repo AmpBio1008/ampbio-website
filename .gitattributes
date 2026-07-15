@@ -1,0 +1,4 @@
+# Normalize line endings; treat assets as binary
+* text=auto
+*.png binary
+*.mp4 binary

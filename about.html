@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About Ampbio — Amplified Biopharma Solutions</title>
+<meta name="description" content="Ampbio — Amplified Biopharma Solutions — provides integrated scientific and biopharma support across specialised product sourcing, scientific consultation, research assistance, private training, R&D services and Proof of Concept development.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/d-din" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="amp-root" style="background:#0a1524;color:#fff;overflow-x:clip">
+
+  <!-- ================= HEADER ================= -->
+  <header style="position:fixed;top:0;left:0;right:0;z-index:50;background:#0a1524;">
+    <div style="max-width:1240px;margin:0 auto;padding:0 32px;height:76px;display:flex;align-items:center;justify-content:space-between">
+      <a href="index.html" style="display:flex;align-items:center"><img src="assets/ampbio-logo.png" alt="Ampbio" style="height:50px;width:auto;display:block"></a>
+
+      <nav class="amp-nav amp-nav-main" style="display:flex;align-items:center;gap:24px;flex-wrap:wrap">
+        <a data-navlink href="products.html" style="color:#c4cede;font-size:0.92rem">Products</a>
+        <a data-navlink href="scientific-platforms.html" style="color:#c4cede;font-size:0.92rem">Scientific Platforms</a>
+        <a data-navlink href="research-development.html" style="color:#c4cede;font-size:0.92rem">Research - Development</a>
+        <a data-navlink href="consultancy-research-training.html" style="color:#c4cede;font-size:0.92rem">Consultancy, Research &amp; Training</a>
+        <a href="about.html" style="color:#FD9D05;font-size:0.92rem;font-weight:600">About Ampbio</a>
+        <a data-connect href="connect.html" style="border:1.5px solid #FD9D05;color:#FD9D05;padding:9px 20px;border-radius:999px;font-weight:600;font-size:0.9rem;transition:background .2s">Connect</a>
+      </nav>
+
+      <button class="amp-burger" id="amp-burger" aria-label="Open menu" style="display:none;background:none;border:none;color:#fff;cursor:pointer;padding:6px">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </button>
+    </div>
+
+    <div class="amp-mobile-panel" id="amp-mobile-panel" style="border-top:1px solid rgba(255,255,255,0.07);background:#0a1524;padding:16px 32px 26px;flex-direction:column;gap:4px">
+      <a href="products.html" style="color:#eef2f8;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06)">Products</a>
+      <a href="scientific-platforms.html" style="color:#eef2f8;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06)">Scientific Platforms</a>
+      <a href="research-development.html" style="color:#eef2f8;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06)">Research - Development</a>
+      <a href="consultancy-research-training.html" style="color:#eef2f8;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06)">Consultancy, Research &amp; Training</a>
+      <a href="about.html" style="color:#FD9D05;font-weight:600;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06)">About Ampbio</a>
+      <a href="connect.html" style="margin-top:14px;text-align:center;border:1.5px solid #FD9D05;color:#FD9D05;padding:12px;border-radius:999px;font-weight:600">Connect</a>
+    </div>
+  </header>
+
+  <!-- ================= ABOUT HERO ================= -->
+  <section style="position:relative;background:#0a1524;overflow:hidden;padding-top:76px;min-height:600px;display:flex;align-items:center">
+    <img src="assets/about-hero.png" alt="Laboratory microscope" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block">
+    <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,21,36,0.96) 0%,rgba(10,21,36,0.82) 34%,rgba(10,21,36,0.35) 62%,rgba(10,21,36,0.05) 100%)"></div>
+    <div style="position:relative;z-index:2;width:100%;max-width:1240px;margin:0 auto;padding:80px 32px">
+      <div style="max-width:620px">
+        <div style="font-family:'IBM Plex Mono',monospace;letter-spacing:0.2em;text-transform:uppercase;color:#FD9D05;font-size:0.78rem;margin-bottom:22px">About Ampbio</div>
+        <h1 style="font-family:'D-DIN Condensed','D-DIN',sans-serif;font-weight:700;letter-spacing:-0.01em;font-size:clamp(2.2rem,4vw,3.4rem);line-height:1.05;text-transform:uppercase;color:#fff;margin:0 0 24px">Advancing scientific possibilities through <br><span style="color:#FD9D05">integrated support</span></h1>
+        <p style="color:#c4cede;font-size:1.05rem;line-height:1.65;margin:0;max-width:460px">Ampbio connects specialised products, scientific knowledge and research support to help advance complex requirements.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= WHO WE ARE ================= -->
+  <section class="amp-mission-grid" style="position:relative;background:#fdecdd;overflow:hidden;display:grid;grid-template-columns:1fr 1fr;align-items:stretch;min-height:520px">
+    <div style="position:relative;min-height:340px">
+      <img src="assets/who-petri.png" alt="Petri dish sample" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:30% center;display:block">
+      <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(253,236,221,0) 42%,rgba(253,236,221,0.35) 76%,#fdecdd 100%)"></div>
+    </div>
+    <div style="padding:72px 32px 72px 56px;display:flex;flex-direction:column;justify-content:center;max-width:620px;margin-right:auto">
+      <div style="font-family:'IBM Plex Mono',monospace;letter-spacing:0.2em;text-transform:uppercase;color:#FD9D05;font-size:0.75rem;margin-bottom:18px">Who We Are</div>
+      <h2 style="font-family:'D-DIN Condensed','D-DIN',sans-serif;font-weight:700;letter-spacing:-0.01em;font-size:clamp(1.9rem,3vw,2.6rem);line-height:1.1;color:#1a1c1e;margin:0 0 26px">Amplified Biopharma Solutions</h2>
+      <p style="color:#3a4048;font-size:1rem;line-height:1.7;margin:0 0 20px;max-width:460px">Amplified Biopharma Solutions—Ampbio—provides integrated scientific and biopharma support across specialised product sourcing, scientific consultation, research assistance, private training, R&amp;D services and Proof of Concept development.</p>
+      <p style="color:#3a4048;font-size:1rem;line-height:1.7;margin:0;max-width:460px">We support customers from the initial identification of a scientific requirement through material sourcing, technical assessment, research support, validation and next-stage recommendations.</p>
+    </div>
+  </section>
+
+  <!-- ================= MISSION & VISION ================= -->
+  <section style="background:#0a1524;padding:80px 0">
+    <div style="max-width:1240px;margin:0 auto;padding:0 32px">
+      <div class="amp-cards" style="display:grid;grid-template-columns:1fr 1fr;gap:24px">
+        <div style="position:relative;border-radius:15px;overflow:hidden;min-height:340px;background:#0b1a2c;border:1px solid rgba(255,255,255,0.08);display:flex">
+          <img src="assets/mission-bg.png" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.9">
+          <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,17,30,0.96) 30%,rgba(8,17,30,0.55) 70%,rgba(8,17,30,0.2) 100%)"></div>
+          <div style="position:relative;z-index:2;padding:40px 38px;max-width:440px;display:flex;flex-direction:column;justify-content:center">
+            <div style="font-family:'IBM Plex Mono',monospace;letter-spacing:0.2em;text-transform:uppercase;color:#FD9D05;font-size:0.72rem;margin-bottom:18px">Our Mission</div>
+            <p style="font-family:'D-DIN Condensed','D-DIN',sans-serif;font-weight:700;letter-spacing:-0.01em;font-size:clamp(1.3rem,2vw,1.72rem);line-height:1.28;color:#fff;margin:0">To make advanced biopharma research, therapeutic development and specialised scientific knowledge more accessible through reliable sourcing, expert consultation, confidential support and integrated R&amp;D services.</p>
+          </div>
+        </div>
+        <div style="position:relative;border-radius:15px;overflow:hidden;min-height:340px;background:#0b1a2c;border:1px solid rgba(255,255,255,0.08);display:flex">
+          <img src="assets/vision-bg.png" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.9">
+          <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,17,30,0.96) 30%,rgba(8,17,30,0.55) 70%,rgba(8,17,30,0.2) 100%)"></div>
+          <div style="position:relative;z-index:2;padding:40px 38px;max-width:440px;display:flex;flex-direction:column;justify-content:center">
+            <div style="font-family:'IBM Plex Mono',monospace;letter-spacing:0.2em;text-transform:uppercase;color:#FD9D05;font-size:0.72rem;margin-bottom:18px">Our Vision</div>
+            <p style="font-family:'D-DIN Condensed','D-DIN',sans-serif;font-weight:700;letter-spacing:-0.01em;font-size:clamp(1.3rem,2vw,1.72rem);line-height:1.28;color:#fff;margin:0">We aim to remove scientific, sourcing and knowledge barriers that may prevent researchers and therapeutic innovators from advancing important ideas.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= WHAT WE SUPPORT ================= -->
+  <section style="background:#fdecdd;padding:76px 0">
+    <div style="max-width:1240px;margin:0 auto;padding:0 32px">
+      <div style="font-family:'IBM Plex Mono',monospace;letter-spacing:0.2em;text-transform:uppercase;color:#FD9D05;font-size:0.75rem;margin-bottom:16px">What We Support</div>
+      <h2 style="font-family:'D-DIN Condensed','D-DIN',sans-serif;font-weight:700;letter-spacing:-0.01em;font-size:clamp(1.7rem,3vw,2.4rem);line-height:1.1;color:#1a1c1e;text-transform:uppercase;margin:0 0 44px">Our work may include:</h2>
+      <div class="amp-support" style="display:grid;grid-template-columns:1fr 1px 1fr 1px 1fr;gap:40px 44px;align-items:stretch">
+        <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:20px">
+          <li style="display:flex;gap:12px;align-items:flex-start;color:#3a4048;font-size:0.98rem;line-height:1.4"><span style="flex:0 0 6px;width:6px;height:6px;border-radius:50%;background:#FD9D05;margin-top:8px"></span>Specialised reagent and raw-material identification</li>
+          <li style="display:flex;gap:12px;align-items:flex-start;color:#3a4048;font-size:0.98rem;line-height:1.4"><span style="flex:0 0 6px;width:6px;height:6px;border-radius:50%;background:#FD9D05;margin-top:8px"></span>Product and supplier sourcing</li>
+          <li style="display:flex;gap:12px;align-items:flex-start;color:#3a4048;font-size:0.98rem;line-height:1.4"><span style="flex:0 0 6px;width:6px;height:6px;border-radius:50%;background:#FD9D05;margin-top:8px"></span>Scientific literature research</li>
+        </ul>
+        <div class="amp-support-div" style="width:1px;justify-self:center;background:linear-gradient(180deg,rgba(253,157,5,0) 0%,rgba(253,157,5,0.85) 50%,rgba(253,157,5,0) 100%);box-shadow:0 0 8px rgba(253,157,5,0.6)"></div>
+        <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:20px">
+          <li style="display:flex;gap:12px;align-items:flex-start;color:#3a4048;font-size:0.98rem;line-height:1.4"><span style="flex:0 0 6px;width:6px;height:6px;border-radius:50%;background:#FD9D05;margin-top:8px"></span>Technical-information support</li>
+          <li style="display:flex;gap:12px;align-items:flex-start;color:#3a4048;font-size:0.98rem;line-height:1.4"><span style="flex:0 0 6px;width:6px;height:6px;border-radius:50%;background:#FD9D05;margin-top:8px"></span>Confidential consultation</li>
+          <li style="display:flex;gap:12px;align-items:flex-start;color:#3a4048;font-size:0.98rem;line-height:1.4"><span style="flex:0 0 6px;width:6px;height:6px;border-radius:50%;background:#FD9D05;margin-top:8px"></span>Research and academic support</li>
+          <li style="display:flex;gap:12px;align-items:flex-start;color:#3a4048;font-size:0.98rem;line-height:1.4"><span style="flex:0 0 6px;width:6px;height:6px;border-radius:50%;background:#FD9D05;margin-top:8px"></span>Private scientific training</li>
+        </ul>
+        <div class="amp-support-div" style="width:1px;justify-self:center;background:linear-gradient(180deg,rgba(253,157,5,0) 0%,rgba(253,157,5,0.85) 50%,rgba(253,157,5,0) 100%);box-shadow:0 0 8px rgba(253,157,5,0.6)"></div>
+        <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:20px">
+          <li style="display:flex;gap:12px;align-items:flex-start;color:#3a4048;font-size:0.98rem;line-height:1.4"><span style="flex:0 0 6px;width:6px;height:6px;border-radius:50%;background:#FD9D05;margin-top:8px"></span>R&amp;D support</li>
+          <li style="display:flex;gap:12px;align-items:flex-start;color:#3a4048;font-size:0.98rem;line-height:1.4"><span style="flex:0 0 6px;width:6px;height:6px;border-radius:50%;background:#FD9D05;margin-top:8px"></span>Proof of Concept assistance</li>
+          <li style="display:flex;gap:12px;align-items:flex-start;color:#3a4048;font-size:0.98rem;line-height:1.4"><span style="flex:0 0 6px;width:6px;height:6px;border-radius:50%;background:#FD9D05;margin-top:8px"></span>Review and next-stage recommendations</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONFIDENTIALITY ================= -->
+  <section style="position:relative;background:#0a1524;overflow:hidden;border-top:1px solid rgba(255,255,255,0.06);display:flex;align-items:center;min-height:600px">
+    <img src="assets/confidentiality-bg.png" alt="Secure data padlock" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block">
+    <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,21,36,0.97) 0%,rgba(10,21,36,0.9) 34%,rgba(10,21,36,0.5) 60%,rgba(10,21,36,0.1) 100%)"></div>
+    <div style="position:relative;z-index:2;width:100%;max-width:1240px;margin:0 auto;padding:76px 32px">
+    <div style="max-width:560px">
+      <div style="font-family:'IBM Plex Mono',monospace;letter-spacing:0.2em;text-transform:uppercase;color:#FD9D05;font-size:0.75rem;margin-bottom:18px">Confidentiality and Trust</div>
+      <h2 style="font-family:'D-DIN Condensed','D-DIN',sans-serif;font-weight:700;letter-spacing:-0.01em;font-size:clamp(1.7rem,3vw,2.4rem);line-height:1.1;color:#fff;text-transform:uppercase;margin:0 0 22px">Confidentiality and trust</h2>
+      <p style="color:#c4cede;font-size:1rem;line-height:1.65;margin:0 0 24px;max-width:480px">We understand that scientific, therapeutic and product-development requirements may involve sensitive or non-public information.</p>
+      <div style="font-family:'D-DIN','IBM Plex Sans',sans-serif;font-weight:700;font-size:0.95rem;color:#FD9D05;margin-bottom:14px">Where appropriate, our support may include:</div>
+      <ul class="amp-conf-list" style="list-style:none;margin:0 0 24px;padding:0;display:flex;flex-direction:column;gap:11px">
+        <li style="display:flex;gap:11px;align-items:flex-start;color:#c4cede;font-size:0.95rem;line-height:1.4"><span style="flex:0 0 6px;width:6px;height:6px;border-radius:50%;background:#FD9D05;margin-top:7px"></span>Non-Disclosure Agreements</li>
+        <li style="display:flex;gap:11px;align-items:flex-start;color:#c4cede;font-size:0.95rem;line-height:1.4"><span style="flex:0 0 6px;width:6px;height:6px;border-radius:50%;background:#FD9D05;margin-top:7px"></span>Private consultations</li>
+        <li style="display:flex;gap:11px;align-items:flex-start;color:#c4cede;font-size:0.95rem;line-height:1.4"><span style="flex:0 0 6px;width:6px;height:6px;border-radius:50%;background:#FD9D05;margin-top:7px"></span>Restricted-access documentation</li>
+        <li style="display:flex;gap:11px;align-items:flex-start;color:#c4cede;font-size:0.95rem;line-height:1.4"><span style="flex:0 0 6px;width:6px;height:6px;border-radius:50%;background:#FD9D05;margin-top:7px"></span>Controlled sharing of technical information</li>
+        <li style="display:flex;gap:11px;align-items:flex-start;color:#c4cede;font-size:0.95rem;line-height:1.4"><span style="flex:0 0 6px;width:6px;height:6px;border-radius:50%;background:#FD9D05;margin-top:7px"></span>Confidential sourcing requests</li>
+        <li style="display:flex;gap:11px;align-items:flex-start;color:#c4cede;font-size:0.95rem;line-height:1.4"><span style="flex:0 0 6px;width:6px;height:6px;border-radius:50%;background:#FD9D05;margin-top:7px"></span>Private training sessions</li>
+        <li style="display:flex;gap:11px;align-items:flex-start;color:#c4cede;font-size:0.95rem;line-height:1.4"><span style="flex:0 0 6px;width:6px;height:6px;border-radius:50%;background:#FD9D05;margin-top:7px"></span>Non-public research and Proof of Concept projects</li>
+      </ul>
+      <p style="color:#8b98ab;font-size:0.9rem;line-height:1.6;margin:0;max-width:460px">All confidential engagements remain subject to applicable ethical, legal and regulatory requirements.</p>
+    </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer style="background:#0a1524;padding:0">
+    <div style="max-width:1240px;margin:0 auto;padding:0 32px">
+      <div style="height:1px;background:rgba(255,255,255,0.08)"></div>
+      <div class="amp-foot-grid" style="display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1.2fr) minmax(0,1fr);gap:56px;padding:58px 0 46px;align-items:start">
+        <div>
+          <a href="index.html" style="display:inline-flex;align-items:center;margin-bottom:22px"><img src="assets/ampbio-logo.png" alt="Ampbio" style="height:58px;width:auto;display:block"></a>
+          <p style="color:#8b98ab;font-size:0.95rem;line-height:1.7;margin:0;max-width:420px">Ampbio is focused on specialised products and services across the biopharma lifecycle, covering a broad portfolio of outsourcing, development, manufacturing and supply solutions.</p>
+        </div>
+        <div>
+          <div style="font-family:'D-DIN Condensed','D-DIN',sans-serif;font-weight:700;font-size:1.05rem;color:#FD9D05;letter-spacing:0.02em;margin:0 0 6px">Explore</div>
+          <a href="products.html" class="amp-foot-link" style="display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 0;border-bottom:1px solid rgba(255,255,255,0.08);color:#c4cede;font-size:0.98rem"><span>Products</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FD9D05" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"></polyline></svg></a>
+          <a href="scientific-platforms.html" class="amp-foot-link" style="display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 0;border-bottom:1px solid rgba(255,255,255,0.08);color:#c4cede;font-size:0.98rem"><span>Scientific Platforms</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FD9D05" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"></polyline></svg></a>
+          <a href="research-development.html" class="amp-foot-link" style="display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 0;border-bottom:1px solid rgba(255,255,255,0.08);color:#c4cede;font-size:0.98rem"><span>Research - Development</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FD9D05" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"></polyline></svg></a>
+          <a href="consultancy-research-training.html" class="amp-foot-link" style="display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 0;border-bottom:1px solid rgba(255,255,255,0.08);color:#c4cede;font-size:0.98rem"><span>Consultancy, Research &amp; Training</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FD9D05" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"></polyline></svg></a>
+          <a href="about.html" class="amp-foot-link" style="display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 0;border-bottom:1px solid rgba(255,255,255,0.08);color:#FD9D05;font-size:0.98rem;font-weight:600"><span>About Ampbio</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FD9D05" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"></polyline></svg></a>
+        </div>
+        <div>
+          <div style="font-family:'D-DIN Condensed','D-DIN',sans-serif;font-weight:700;font-size:1.05rem;color:#FD9D05;letter-spacing:0.02em;margin:0 0 20px">Get in touch</div>
+          <a class="amp-contact-link" href="mailto:bd@amps.bio" style="display:flex;align-items:center;gap:12px;padding:0 0 20px;border-bottom:1px solid rgba(255,255,255,0.08);color:#dbe4ef;font-size:0.98rem">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#FD9D05" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-10 6L2 7"></path></svg>
+            bd@amps.bio
+          </a>
+          <a class="amp-contact-link" href="tel:+919660645155" style="display:flex;align-items:center;gap:12px;padding:20px 0 26px;color:#dbe4ef;font-size:0.98rem">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#FD9D05" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            +91 96606 45155
+          </a>
+          <a class="amp-footer-connect" href="connect.html" style="display:inline-flex;align-items:center;border:1.5px solid #FD9D05;color:#FD9D05;padding:12px 40px;border-radius:999px;font-weight:600;font-size:0.98rem;transition:background .2s">Connect</a>
+        </div>
+      </div>
+      <div class="amp-foot-bottom" style="display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;padding:22px 0 30px;border-top:1px solid rgba(255,255,255,0.08)">
+        <div style="color:#5f6d7f;font-size:0.88rem">&copy; 2026 Ampbio. All rights reserved.</div>
+        <div style="display:flex;align-items:center;gap:26px;flex-wrap:wrap">
+          <a class="amp-legal" href="#" style="color:#8b98ab;font-size:0.88rem">Privacy Policy</a>
+          <a class="amp-legal" href="#" style="color:#8b98ab;font-size:0.88rem">Terms of Use</a>
+          <a class="amp-legal" href="#" style="color:#8b98ab;font-size:0.88rem">Disclaimer</a>
+          <a class="amp-legal" href="#" style="color:#8b98ab;font-size:0.88rem">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

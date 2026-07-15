@@ -1,0 +1,8 @@
+# OS / editor cruft
+Thumbs.db
+.DS_Store
+desktop.ini
+*.log
+
+# local dev
+.vscode/

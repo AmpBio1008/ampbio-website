@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Scientific Platforms — Ampbio</title>
+<meta name="description" content="Integrated support for next-generation scientific platforms — specialised materials, scientific knowledge and customised technical support across biopharma and therapeutic-development platforms.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/d-din" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  /* ============================================================
+     Scientific Platforms — page-specific rules
+     (hover states, unique classes & responsive breakpoints not
+      present in the shared styles.css)
+     ============================================================ */
+
+  /* ---- platform cards ---- */
+  .amp-plat-card { transition: transform 0.35s cubic-bezier(0.22,0.61,0.36,1); }
+  .amp-plat-card img { transition: transform 0.5s cubic-bezier(0.22,0.61,0.36,1); }
+  .amp-plat-card:hover { transform: translateY(-5px); }
+  .amp-plat-card:hover .amp-plat-card-img { box-shadow: 0 18px 40px rgba(0,0,0,0.4), 0 0 0 1px rgba(253,157,5,0.55); }
+  .amp-plat-card:hover img { transform: scale(1.06); }
+  .amp-plat-card:hover h3 { color: #FD9D05; }
+
+  @keyframes ampBulletIn { from { opacity: 0; transform: translateX(-8px); } to { opacity: 1; transform: translateX(0); } }
+  .amp-bullet { opacity: 0; }
+  .amp-in .amp-bullet { animation: ampBulletIn 0.6s cubic-bezier(0.22,0.61,0.36,1) both; }
+
+  @keyframes ampImgIn { from { opacity: 0; transform: scale(1.12); } to { opacity: 1; transform: scale(1); } }
+  .amp-plat-card-img img { opacity: 0; }
+  .amp-in .amp-plat-card-img img { animation: ampImgIn 1s cubic-bezier(0.22,0.61,0.36,1) both; }
+
+  /* ---- integrated support model ---- */
+  .amp-model-col { transition: transform 0.3s cubic-bezier(0.22,0.61,0.36,1), border-color 0.3s, background 0.3s, box-shadow 0.3s; }
+  .amp-model-col:hover { transform: translateY(-4px); border-color: #FD9D05 !important; background: rgba(253,157,5,0.06) !important; box-shadow: 0 0 22px rgba(253,157,5,0.25), inset 0 -3px 0 rgba(253,157,5,0.7) !important; }
+  .amp-model-col:hover span { color: #FD9D05; }
+
+  /* ---- platform journey ---- */
+  .amp-jstep:hover { transform: translateY(-4px); }
+  .amp-jstep:hover .amp-jdot { box-shadow: 0 0 0 7px rgba(253,157,5,0.22); transform: scale(1.15); }
+  .amp-jstep:hover div:last-child { color: #FD9D05; }
+  .amp-jdot { position: relative; }
+  @keyframes ampDotPulse { 0%,100% { box-shadow: 0 0 0 3px #0a1e33, 0 0 0 5px rgba(253,157,5,0.85), 0 0 6px rgba(253,157,5,0.35); transform: scale(1); } 12% { box-shadow: 0 0 0 3px #0a1e33, 0 0 0 6px rgba(253,157,5,1), 0 0 20px rgba(253,157,5,1); transform: scale(1.28); } 30% { box-shadow: 0 0 0 3px #0a1e33, 0 0 0 5px rgba(253,157,5,0.85), 0 0 6px rgba(253,157,5,0.35); transform: scale(1); } }
+  @keyframes ampPing { 0% { transform: translate(-50%,-50%) scale(0.6); opacity: 0.85; } 100% { transform: translate(-50%,-50%) scale(3); opacity: 0; } }
+  .amp-jdot::after { content: ''; position: absolute; top: 50%; left: 50%; width: 12px; height: 12px; border-radius: 50%; border: 2px solid #FD9D05; transform: translate(-50%,-50%) scale(0.6); opacity: 0; }
+  .amp-in .amp-jdot { animation: ampDotPulse 3s ease-in-out infinite; }
+  .amp-in .amp-jdot::after { animation: ampPing 3s ease-out infinite; }
+  .amp-in .amp-jstep:nth-child(1) .amp-jdot, .amp-in .amp-jstep:nth-child(1) .amp-jdot::after { animation-delay: 0s; }
+  .amp-in .amp-jstep:nth-child(3) .amp-jdot, .amp-in .amp-jstep:nth-child(3) .amp-jdot::after { animation-delay: 0.35s; }
+  .amp-in .amp-jstep:nth-child(5) .amp-jdot, .amp-in .amp-jstep:nth-child(5) .amp-jdot::after { animation-delay: 0.7s; }
+  .amp-in .amp-jstep:nth-child(7) .amp-jdot, .amp-in .amp-jstep:nth-child(7) .amp-jdot::after { animation-delay: 1.05s; }
+  .amp-in .amp-jstep:nth-child(9) .amp-jdot, .amp-in .amp-jstep:nth-child(9) .amp-jdot::after { animation-delay: 1.4s; }
+  .amp-in .amp-jstep:nth-child(11) .amp-jdot, .amp-in .amp-jstep:nth-child(11) .amp-jdot::after { animation-delay: 1.75s; }
+  @keyframes ampFlow { 0% { background-position: -80px 0; } 55%,100% { background-position: 120px 0; } }
+  .amp-in .amp-jconn { background: linear-gradient(90deg, rgba(253,157,5,0.3) 0%, rgba(253,157,5,0.3) 30%, #ffd980 50%, rgba(253,157,5,0.3) 70%, rgba(253,157,5,0.3) 100%) !important; background-size: 120px 100% !important; box-shadow: 0 0 8px rgba(253,157,5,0.5); animation: ampFlow 3s ease-in-out infinite; }
+  .amp-in .amp-journey6 > .amp-jconn:nth-child(2) { animation-delay: 0.17s; }
+  .amp-in .amp-journey6 > .amp-jconn:nth-child(4) { animation-delay: 0.52s; }
+  .amp-in .amp-journey6 > .amp-jconn:nth-child(6) { animation-delay: 0.87s; }
+  .amp-in .amp-journey6 > .amp-jconn:nth-child(8) { animation-delay: 1.22s; }
+  .amp-in .amp-journey6 > .amp-jconn:nth-child(10) { animation-delay: 1.57s; }
+
+  /* ---- responsive (page-specific layouts) ---- */
+  @media (max-width: 1024px) {
+    .amp-hero-grid { grid-template-columns: 1fr !important; }
+    .amp-plat-cards { grid-template-columns: 1fr !important; }
+    .amp-model { grid-template-columns: repeat(3,1fr) !important; row-gap: 14px !important; }
+    .amp-journey6 { flex-wrap: wrap !important; justify-content: center !important; gap: 14px 26px !important; }
+    .amp-journey6 .amp-jconn { display: none !important; }
+  }
+  @media (max-width: 620px) {
+    .amp-plat-card { grid-template-columns: 1fr !important; }
+    .amp-plat-card-img { height: 200px !important; }
+    .amp-model { grid-template-columns: repeat(2,1fr) !important; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .amp-in .amp-jdot, .amp-in .amp-jdot::after, .amp-in .amp-jconn,
+    .amp-plat-card-img img, .amp-bullet { animation: none !important; opacity: 1 !important; }
+  }
+</style>
+</head>
+<body>
+
+<div id="amp-root" style="background:#0a1524;color:#fff;overflow-x:clip">
+
+  <!-- ================= HEADER ================= -->
+  <header style="position:fixed;top:0;left:0;right:0;z-index:50;background:#0a1524;">
+    <div style="max-width:1240px;margin:0 auto;padding:0 32px;height:76px;display:flex;align-items:center;justify-content:space-between">
+      <a href="index.html" style="display:flex;align-items:center"><img src="assets/ampbio-logo.png" alt="Ampbio" style="height:50px;width:auto;display:block"></a>
+
+      <nav class="amp-nav amp-nav-main" style="display:flex;align-items:center;gap:24px;flex-wrap:wrap">
+        <a data-navlink href="products.html" style="color:#c4cede;font-size:0.92rem">Products</a>
+        <a href="scientific-platforms.html" style="color:#FD9D05;font-size:0.92rem;font-weight:600">Scientific Platforms</a>
+        <a data-navlink href="research-development.html" style="color:#c4cede;font-size:0.92rem">Research - Development</a>
+        <a data-navlink href="consultancy-research-training.html" style="color:#c4cede;font-size:0.92rem">Consultancy, Research &amp; Training</a>
+        <a data-navlink href="about.html" style="color:#c4cede;font-size:0.92rem">About Ampbio</a>
+        <a data-connect href="connect.html" style="border:1.5px solid #FD9D05;color:#FD9D05;padding:9px 20px;border-radius:999px;font-weight:600;font-size:0.9rem;transition:background .2s">Connect</a>
+      </nav>
+
+      <button class="amp-burger" id="amp-burger" aria-label="Open menu" style="display:none;background:none;border:none;color:#fff;cursor:pointer;padding:6px">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </button>
+    </div>
+
+    <div class="amp-mobile-panel" id="amp-mobile-panel" style="border-top:1px solid rgba(255,255,255,0.07);background:#0a1524;padding:16px 32px 26px;flex-direction:column;gap:4px">
+      <a href="products.html" style="color:#eef2f8;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06)">Products</a>
+      <a href="scientific-platforms.html" style="color:#FD9D05;font-weight:600;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06)">Scientific Platforms</a>
+      <a href="research-development.html" style="color:#eef2f8;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06)">Research - Development</a>
+      <a href="consultancy-research-training.html" style="color:#eef2f8;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06)">Consultancy, Research &amp; Training</a>
+      <a href="about.html" style="color:#eef2f8;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06)">About Ampbio</a>
+      <a href="connect.html" style="margin-top:14px;text-align:center;border:1.5px solid #FD9D05;color:#FD9D05;padding:12px;border-radius:999px;font-weight:600">Connect</a>
+    </div>
+  </header>
+
+  <!-- ================= HERO ================= -->
+  <section class="amp-hero" style="position:relative;overflow:hidden;min-height:640px;padding-top:76px;display:flex;align-items:center">
+    <div style="position:absolute;inset:0;z-index:0">
+      <img src="assets/sp-hero.png" alt="DNA double helix" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;display:block">
+    </div>
+    <div style="position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,#0a1524 0%,rgba(10,21,36,0.92) 26%,rgba(10,21,36,0.62) 48%,rgba(10,21,36,0.2) 72%,rgba(10,21,36,0.05) 100%)"></div>
+    <div style="position:absolute;inset:0;z-index:1;background:linear-gradient(0deg,rgba(10,21,36,0.55) 0%,rgba(10,21,36,0) 40%)"></div>
+
+    <div style="position:relative;z-index:2;width:100%;max-width:1240px;margin:0 auto;padding:88px 32px">
+      <div class="amp-hero-grid" style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr)">
+        <div style="max-width:560px">
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:0.78rem;letter-spacing:0.24em;color:#FD9D05;text-transform:uppercase;margin-bottom:22px">Scientific Platforms</div>
+          <h1 style="font-family:'D-DIN Condensed','D-DIN',sans-serif;font-weight:700;font-size:clamp(2.4rem,4.4vw,3.7rem);line-height:1.05;letter-spacing:-0.01em;margin:0 0 22px;color:#fff">Integrated Support for Next-Generation Scientific Platforms</h1>
+          <p style="color:#c4cede;font-size:1.05rem;line-height:1.65;margin:0 0 34px;max-width:460px">Specialised materials, scientific knowledge and customised technical support across important biopharma and therapeutic-development platforms.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PLATFORMS GRID ================= -->
+  <section id="platforms" style="background:#fdecdd">
+    <div style="max-width:1240px;margin:0 auto;padding:66px 32px 74px">
+      <h2 style="text-align:center;font-family:'D-DIN Condensed','D-DIN',sans-serif;font-weight:700;font-size:clamp(1.9rem,3.4vw,2.7rem);line-height:1.1;letter-spacing:-0.01em;color:#1a1c1e;margin:0 0 46px">Our Scientific Platforms</h2>
+      <div class="amp-plat-cards" style="display:grid;grid-template-columns:1fr 1fr;gap:34px 44px">
+
+        <!-- mRNA Technologies -->
+        <div class="amp-plat-card" style="display:grid;grid-template-columns:190px minmax(0,1fr);gap:24px;align-items:start">
+          <div class="amp-plat-card-img" style="position:relative;height:230px;border-radius:10px;overflow:hidden;background:#0a1524;transition:box-shadow 0.35s">
+            <img src="assets/plat-mrna.png" alt="mRNA Technologies" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block">
+          </div>
+          <div>
+            <h3 style="font-family:'D-DIN Condensed','D-DIN',sans-serif;font-weight:700;font-size:1.35rem;line-height:1.14;color:#1a1c1e;margin:0 0 10px;transition:color 0.3s">mRNA Technologies</h3>
+            <p style="color:#3a4048;font-size:0.95rem;line-height:1.55;margin:0 0 14px">Specialised reagents, raw materials and research support for mRNA-related applications.</p>
+            <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:7px">
+              <li class="amp-bullet" style="display:flex;gap:10px;align-items:flex-start;color:#3a4048;font-size:0.9rem;line-height:1.4"><span style="flex:0 0 5px;width:5px;height:5px;border-radius:50%;background:#FD9D05;margin-top:7px"></span>Reagent and material identification</li>
+              <li class="amp-bullet" style="display:flex;gap:10px;align-items:flex-start;color:#3a4048;font-size:0.9rem;line-height:1.4"><span style="flex:0 0 5px;width:5px;height:5px;border-radius:50%;background:#FD9D05;margin-top:7px"></span>Raw-material sourcing</li>
+              <li class="amp-bullet" style="display:flex;gap:10px;align-items:flex-start;color:#3a4048;font-size:0.9rem;line-height:1.4"><span style="flex:0 0 5px;width:5px;height:5px;border-radius:50%;background:#FD9D05;margin-top:7px"></span>Scientific literature support</li>
+              <li class="amp-bullet" style="display:flex;gap:10px;align-items:flex-start;color:#3a4048;font-size:0.9rem;line-height:1.4"><span style="flex:0 0 5px;width:5px;height:5px;border-radius:50%;background:#FD9D05;margin-top:7px"></span>Technical information compilation</li>
+              <li class="amp-bullet" style="display:flex;gap:10px;align-items:flex-start;color:#3a4048;font-size:0.9rem;line-height:1.4"><span style="flex:0 0 5px;width:5px;height:5px;border-radius:50%;background:#FD9D05;margin-top:7px"></span>Research-planning assistance</li>
+              <li class="amp-bullet" style="display:flex;gap:10px;align-items:flex-start;color:#3a4048;font-size:0.9rem;line-height:1.4"><span style="flex:0 0 5px;width:5px;height:5px;border-radius:50%;background:#FD9D05;margin-top:7px"></span>Early-stage development support</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Vaccine Development -->
+        <div class="amp-plat-card" style="display:grid;grid-template-columns:190px minmax(0,1fr);gap:24px;align-items:start">
+          <div class="amp-plat-card-img" style="position:relative;height:230px;border-radius:10px;overflow:hidden;background:#0a1524;transition:box-shadow 0.35s">
+            <img src="assets/plat-vaccine.png" alt="Vaccine Development" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block">
+          </div>
+          <div>
+            <h3 style="font-family:'D-DIN Condensed','D-DIN',sans-serif;font-weight:700;font-size:1.35rem;line-height:1.14;color:#1a1c1e;margin:0 0 10px;transition:color 0.3s">Vaccine Development</h3>
+            <p style="color:#3a4048;font-size:0.95rem;line-height:1.55;margin:0 0 14px">Reagents, materials and technical support for vaccine research and development.</p>
+            <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:7px">
+              <li class="amp-bullet" style="display:flex;gap:10px;align-items:flex-start;color:#3a4048;font-size:0.9rem;line-height:1.4"><span style="flex:0 0 5px;width:5px;height:5px;border-radius:50%;background:#FD9D05;margin-top:7px"></span>Specialised reagent sourcing</li>
+              <li class="amp-bullet" style="display:flex;gap:10px;align-items:flex-start;color:#3a4048;font-size:0.9rem;line-height:1.4"><span style="flex:0 0 5px;width:5px;height:5px;border-radius:50%;background:#FD9D05;margin-top:7px"></span>Raw-material identification</li>
+              <li class="amp-bullet" style="display:flex;gap:10px;align-items:flex-start;color:#3a4048;font-size:0.9rem;line-height:1.4"><span style="flex:0 0 5px;width:5px;height:5px;border-radius:50%;background:#FD9D05;margin-top:7px"></span>Technical-requirement assessment</li>
+              <li class="amp-bullet" style="display:flex;gap:10px;align-items:flex-start;color:#3a4048;font-size:0.9rem;line-height:1.4"><span style="flex:0 0 5px;width:5px;height:5px;border-radius:50%;background:#FD9D05;margin-top:7px"></span>Scientific literature research</li>
+              <li class="amp-bullet" style="display:flex;gap:10px;align-items:flex-start;color:#3a4048;font-size:0.9rem;line-height:1.4"><span style="flex:0 0 5px;width:5px;height:5px;border-radius:50%;background:#FD9D05;margin-top:7px"></span>Research-design support</li>
+              <li class="amp-bullet" style="display:flex;gap:10px;align-items:flex-start;color:#3a4048;font-size:0.9rem;line-height:1.4"><span style="flex:0 0 5px;width:5px;height:5px;border-radius:50%;background:#FD9D05;margin-top:7px"></span>Proof of Concept assistance</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- CAR-T and Cell Therapy -->
+        <div class="amp-plat-card" style="display:grid;grid-template-columns:190px minmax(0,1fr);gap:24px;align-items:start">
+          <div class="amp-plat-card-img" style="position:relative;height:230px;border-radius:10px;overflow:hidden;background:#0a1524;transition:box-shadow 0.35s">
+            <img src="assets/plat-cart.png" alt="CAR-T and Cell Therapy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block">
+          </div>
+          <div>
+            <h3 style="font-family:'D-DIN Condensed','D-DIN',sans-serif;font-weight:700;font-size:1.35rem;line-height:1.14;color:#1a1c1e;margin:0 0 10px;transition:color 0.3s">CAR-T and Cell Therapy</h3>
+            <p style="color:#3a4048;font-size:0.95rem;line-height:1.55;margin:0 0 14px">Specialised materials and scientific support for CAR-T and cell-therapy-related research.</p>
+            <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:7px">
+              <li class="amp-bullet" style="display:flex;gap:10px;align-items:flex-start;color:#3a4048;font-size:0.9rem;line-height:1.4"><span style="flex:0 0 5px;width:5px;height:5px;border-radius:50%;background:#FD9D05;margin-top:7px"></span>Material and reagent identification</li>
+              <li class="amp-bullet" style="display:flex;gap:10px;align-items:flex-start;color:#3a4048;font-size:0.9rem;line-height:1.4"><span style="flex:0 0 5px;width:5px;height:5px;border-radius:50%;background:#FD9D05;margin-top:7px"></span>Research and analytical cell-line sourcing</li>
+              <li class="amp-bullet" style="display:flex;gap:10px;align-items:flex-start;color:#3a4048;font-size:0.9rem;line-height:1.4"><span style="flex:0 0 5px;width:5px;height:5px;border-radius:50%;background:#FD9D05;margin-top:7px"></span>Technical-information support</li>
+              <li class="amp-bullet" style="display:flex;gap:10px;align-items:flex-start;color:#3a4048;font-size:0.9rem;line-height:1.4"><span style="flex:0 0 5px;width:5px;height:5px;border-radius:50%;background:#FD9D05;margin-top:7px"></span>Scientific consultation</li>
+              <li class="amp-bullet" style="display:flex;gap:10px;align-items:flex-start;color:#3a4048;font-size:0.9rem;line-height:1.4"><span style="flex:0 0 5px;width:5px;height:5px;border-radius:50%;background:#FD9D05;margin-top:7px"></span>Experimental-planning assistance</li>
+              <li class="amp-bullet" style="display:flex;gap:10px;align-items:flex-start;color:#3a4048;font-size:0.9rem;line-height:1.4"><span style="flex:0 0 5px;width:5px;height:5px;border-radius:50%;background:#FD9D05;margin-top:7px"></span>Early-stage research support</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Specialised Lipids -->
+        <div class="amp-plat-card" style="display:grid;grid-template-columns:190px minmax(0,1fr);gap:24px;align-items:start">
+          <div class="amp-plat-card-img" style="position:relative;height:230px;border-radius:10px;overflow:hidden;background:#0a1524;transition:box-shadow 0.35s">
+            <img src="assets/plat-lipids.png" alt="Specialised Lipids" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block">
+          </div>
+          <div>
+            <h3 style="font-family:'D-DIN Condensed','D-DIN',sans-serif;font-weight:700;font-size:1.35rem;line-height:1.14;color:#1a1c1e;margin:0 0 10px;transition:color 0.3s">Specialised Lipids</h3>
+            <p style="color:#3a4048;font-size:0.95rem;line-height:1.55;margin:0 0 14px">Specialised lipids and lipid-based delivery materials for therapeutic applications.</p>
+            <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:7px">
+              <li class="amp-bullet" style="display:flex;gap:10px;align-items:flex-start;color:#3a4048;font-size:0.9rem;line-height:1.4"><span style="flex:0 0 5px;width:5px;height:5px;border-radius:50%;background:#FD9D05;margin-top:7px"></span>Lipid identification</li>
+              <li class="amp-bullet" style="display:flex;gap:10px;align-items:flex-start;color:#3a4048;font-size:0.9rem;line-height:1.4"><span style="flex:0 0 5px;width:5px;height:5px;border-radius:50%;background:#FD9D05;margin-top:7px"></span>Material sourcing</li>
+              <li class="amp-bullet" style="display:flex;gap:10px;align-items:flex-start;color:#3a4048;font-size:0.9rem;line-height:1.4"><span style="flex:0 0 5px;width:5px;height:5px;border-radius:50%;background:#FD9D05;margin-top:7px"></span>Product-comparison support</li>
+              <li class="amp-bullet" style="display:flex;gap:10px;align-items:flex-start;color:#3a4048;font-size:0.9rem;line-height:1.4"><span style="flex:0 0 5px;width:5px;height:5px;border-radius:50%;background:#FD9D05;margin-top:7px"></span>Scientific literature review</li>
+              <li class="amp-bullet" style="display:flex;gap:10px;align-items:flex-start;color:#3a4048;font-size:0.9rem;line-height:1.4"><span style="flex:0 0 5px;width:5px;height:5px;border-radius:50%;background:#FD9D05;margin-top:7px"></span>Technical consultation</li>
+              <li class="amp-bullet" style="display:flex;gap:10px;align-items:flex-start;color:#3a4048;font-size:0.9rem;line-height:1.4"><span style="flex:0 0 5px;width:5px;height:5px;border-radius:50%;background:#FD9D05;margin-top:7px"></span>Research and Proof of Concept assistance</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Research and Laboratory Consumables -->
+        <div class="amp-plat-card" style="display:grid;grid-template-columns:190px minmax(0,1fr);gap:24px;align-items:start">
+          <div class="amp-plat-card-img" style="position:relative;height:230px;border-radius:10px;overflow:hidden;background:#0a1524;transition:box-shadow 0.35s">
+            <img src="assets/plat-consumables.png" alt="Research and Laboratory Consumables" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block">
+          </div>
+          <div>
+            <h3 style="font-family:'D-DIN Condensed','D-DIN',sans-serif;font-weight:700;font-size:1.35rem;line-height:1.14;color:#1a1c1e;margin:0 0 10px;transition:color 0.3s">Research and Laboratory Consumables</h3>
+            <p style="color:#3a4048;font-size:0.95rem;line-height:1.55;margin:0 0 14px">Research, laboratory and bioprocess consumables for scientific and development activities.</p>
+            <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:7px">
+              <li class="amp-bullet" style="display:flex;gap:10px;align-items:flex-start;color:#3a4048;font-size:0.9rem;line-height:1.4"><span style="flex:0 0 5px;width:5px;height:5px;border-radius:50%;background:#FD9D05;margin-top:7px"></span>Requirement assessment</li>
+              <li class="amp-bullet" style="display:flex;gap:10px;align-items:flex-start;color:#3a4048;font-size:0.9rem;line-height:1.4"><span style="flex:0 0 5px;width:5px;height:5px;border-radius:50%;background:#FD9D05;margin-top:7px"></span>Product identification</li>
+              <li class="amp-bullet" style="display:flex;gap:10px;align-items:flex-start;color:#3a4048;font-size:0.9rem;line-height:1.4"><span style="flex:0 0 5px;width:5px;height:5px;border-radius:50%;background:#FD9D05;margin-top:7px"></span>Technical specification review</li>
+              <li class="amp-bullet" style="display:flex;gap:10px;align-items:flex-start;color:#3a4048;font-size:0.9rem;line-height:1.4"><span style="flex:0 0 5px;width:5px;height:5px;border-radius:50%;background:#FD9D05;margin-top:7px"></span>Benchmark sourcing</li>
+              <li class="amp-bullet" style="display:flex;gap:10px;align-items:flex-start;color:#3a4048;font-size:0.9rem;line-height:1.4"><span style="flex:0 0 5px;width:5px;height:5px;border-radius:50%;background:#FD9D05;margin-top:7px"></span>Product-comparison assistance</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Specialty Chemicals -->
+        <div class="amp-plat-card" style="display:grid;grid-template-columns:190px minmax(0,1fr);gap:24px;align-items:start">
+          <div class="amp-plat-card-img" style="position:relative;height:230px;border-radius:10px;overflow:hidden;background:#0a1524;transition:box-shadow 0.35s">
+            <img src="assets/plat-chemicals.png" alt="Specialty Chemicals" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block">
+          </div>
+          <div>
+            <h3 style="font-family:'D-DIN Condensed','D-DIN',sans-serif;font-weight:700;font-size:1.35rem;line-height:1.14;color:#1a1c1e;margin:0 0 10px;transition:color 0.3s">Specialty Chemicals</h3>
+            <p style="color:#3a4048;font-size:0.95rem;line-height:1.55;margin:0 0 14px">High-value chemicals for therapeutic, research and development applications.</p>
+            <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:7px">
+              <li class="amp-bullet" style="display:flex;gap:10px;align-items:flex-start;color:#3a4048;font-size:0.9rem;line-height:1.4"><span style="flex:0 0 5px;width:5px;height:5px;border-radius:50%;background:#FD9D05;margin-top:7px"></span>Chemical identification</li>
+              <li class="amp-bullet" style="display:flex;gap:10px;align-items:flex-start;color:#3a4048;font-size:0.9rem;line-height:1.4"><span style="flex:0 0 5px;width:5px;height:5px;border-radius:50%;background:#FD9D05;margin-top:7px"></span>Specification review</li>
+              <li class="amp-bullet" style="display:flex;gap:10px;align-items:flex-start;color:#3a4048;font-size:0.9rem;line-height:1.4"><span style="flex:0 0 5px;width:5px;height:5px;border-radius:50%;background:#FD9D05;margin-top:7px"></span>Supplier and product sourcing</li>
+              <li class="amp-bullet" style="display:flex;gap:10px;align-items:flex-start;color:#3a4048;font-size:0.9rem;line-height:1.4"><span style="flex:0 0 5px;width:5px;height:5px;border-radius:50%;background:#FD9D05;margin-top:7px"></span>Technical-information support</li>
+              <li class="amp-bullet" style="display:flex;gap:10px;align-items:flex-start;color:#3a4048;font-size:0.9rem;line-height:1.4"><span style="flex:0 0 5px;width:5px;height:5px;border-radius:50%;background:#FD9D05;margin-top:7px"></span>Research and development assistance</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= INTEGRATED SUPPORT MODEL ================= -->
+  <section style="background:#0a1e33;padding:64px 0 20px">
+    <div style="max-width:1240px;margin:0 auto;padding:0 32px">
+      <div style="position:relative;padding:0">
+        <div style="text-align:center;margin-bottom:38px">
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:0.72rem;letter-spacing:0.22em;color:#FD9D05;text-transform:uppercase;margin-bottom:14px">How We Support</div>
+          <h2 style="font-family:'D-DIN Condensed','D-DIN',sans-serif;font-weight:700;font-size:clamp(1.6rem,2.8vw,2.2rem);line-height:1.12;color:#fff;margin:0 0 8px">Integrated Support Model</h2>
+          <p style="color:#9fabbd;font-size:0.98rem;margin:0">Each scientific platform combines:</p>
+        </div>
+        <div class="amp-model" style="display:grid;grid-template-columns:repeat(6,1fr);gap:14px;align-items:stretch">
+          <div class="amp-model-col" style="position:relative;text-align:center;padding:30px 18px 30px;border-radius:14px;background:rgba(255,255,255,0.025);border:1px solid rgba(255,255,255,0.08);display:flex;align-items:center;justify-content:center;min-height:96px">
+            <span style="display:block;color:#eaf1f8;font-size:0.98rem;line-height:1.4;font-weight:500;transition:color 0.3s">Access to specialised materials</span>
+          </div>
+          <div class="amp-model-col" style="position:relative;text-align:center;padding:30px 18px 30px;border-radius:14px;background:rgba(255,255,255,0.025);border:1px solid rgba(255,255,255,0.08);display:flex;align-items:center;justify-content:center;min-height:96px">
+            <span style="display:block;color:#eaf1f8;font-size:0.98rem;line-height:1.4;font-weight:500;transition:color 0.3s">Scientific and technical knowledge</span>
+          </div>
+          <div class="amp-model-col" style="position:relative;text-align:center;padding:30px 18px 30px;border-radius:14px;background:rgba(255,255,255,0.025);border:1px solid rgba(255,255,255,0.08);display:flex;align-items:center;justify-content:center;min-height:96px">
+            <span style="display:block;color:#eaf1f8;font-size:0.98rem;line-height:1.4;font-weight:500;transition:color 0.3s">Customised consultation</span>
+          </div>
+          <div class="amp-model-col" style="position:relative;text-align:center;padding:30px 18px 30px;border-radius:14px;background:rgba(255,255,255,0.025);border:1px solid rgba(255,255,255,0.08);display:flex;align-items:center;justify-content:center;min-height:96px">
+            <span style="display:block;color:#eaf1f8;font-size:0.98rem;line-height:1.4;font-weight:500;transition:color 0.3s">Research support</span>
+          </div>
+          <div class="amp-model-col" style="position:relative;text-align:center;padding:30px 18px 30px;border-radius:14px;background:rgba(255,255,255,0.025);border:1px solid rgba(255,255,255,0.08);display:flex;align-items:center;justify-content:center;min-height:96px">
+            <span style="display:block;color:#eaf1f8;font-size:0.98rem;line-height:1.4;font-weight:500;transition:color 0.3s">Confidential engagement</span>
+          </div>
+          <div class="amp-model-col" style="position:relative;text-align:center;padding:30px 18px 30px;border-radius:14px;background:rgba(255,255,255,0.025);border:1px solid rgba(255,255,255,0.08);display:flex;align-items:center;justify-content:center;min-height:96px">
+            <span style="display:block;color:#eaf1f8;font-size:0.98rem;line-height:1.4;font-weight:500;transition:color 0.3s">Proof of Concept assistance</span>
+          </div>
+        </div>
+      </div>
+      <div style="max-width:1240px;margin:44px auto 0;padding:0 32px">
+        <div style="height:2px;background:linear-gradient(90deg,rgba(253,157,5,0) 0%,rgba(253,157,5,0.9) 50%,rgba(253,157,5,0) 100%);box-shadow:0 0 14px rgba(253,157,5,0.55)"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PLATFORM JOURNEY ================= -->
+  <section style="background:#0a1e33;padding:0">
+    <div>
+      <div style="position:relative;overflow:hidden;background:#0a1e33;padding:64px 40px 56px">
+        <img src="assets/journey-bg.png" alt="Molecular structure" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;display:block;z-index:0;opacity:0.9;transform:scale(1.4);-webkit-mask-image:linear-gradient(180deg,transparent 0%,#000 16%,#000 84%,transparent 100%);mask-image:linear-gradient(180deg,transparent 0%,#000 16%,#000 84%,transparent 100%)">
+        <div style="position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,#0a1e33 0%,rgba(10,30,51,0.82) 45%,rgba(10,30,51,0.6) 72%,rgba(10,30,51,0.42) 100%)"></div>
+        <div style="position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,#0a1e33 0%,rgba(10,30,51,0) 26%,rgba(10,30,51,0) 74%,#0a1e33 100%)"></div>
+        <div style="position:relative;z-index:2;max-width:1080px;margin:0 auto">
+          <h2 style="text-align:center;font-family:'D-DIN Condensed','D-DIN',sans-serif;font-weight:700;font-size:clamp(1.5rem,2.8vw,2.1rem);line-height:1.15;color:#fff;margin:0 0 30px">From Platform Requirement to Development Support</h2>
+          <div class="amp-journey6" style="display:flex;align-items:flex-start;justify-content:space-between;margin:0 auto 26px;max-width:1000px">
+
+            <div class="amp-jstep" style="display:flex;flex-direction:column;align-items:center;gap:14px;transition:transform 0.3s cubic-bezier(0.22,0.61,0.36,1)">
+              <div class="amp-jdot" style="width:12px;height:12px;border-radius:50%;background:#FD9D05;box-shadow:0 0 0 3px #0a1e33,0 0 0 5px rgba(253,157,5,0.9),0 0 12px rgba(253,157,5,0.5);transition:box-shadow 0.3s,transform 0.3s"></div>
+              <div style="font-family:'D-DIN Condensed','D-DIN',sans-serif;font-weight:700;font-size:1.22rem;color:#fff;white-space:nowrap;transition:color 0.3s">Consult</div>
+            </div>
+
+            <div class="amp-jconn" style="flex:1;height:2px;background:#FD9D05;box-shadow:0 0 8px rgba(253,157,5,0.55);margin:11px -2px 0"></div>
+            <div class="amp-jstep" style="display:flex;flex-direction:column;align-items:center;gap:14px;transition:transform 0.3s cubic-bezier(0.22,0.61,0.36,1)">
+              <div class="amp-jdot" style="width:12px;height:12px;border-radius:50%;background:#FD9D05;box-shadow:0 0 0 3px #0a1e33,0 0 0 5px rgba(253,157,5,0.9),0 0 12px rgba(253,157,5,0.5);transition:box-shadow 0.3s,transform 0.3s"></div>
+              <div style="font-family:'D-DIN Condensed','D-DIN',sans-serif;font-weight:700;font-size:1.22rem;color:#fff;white-space:nowrap;transition:color 0.3s">Identify</div>
+            </div>
+
+            <div class="amp-jconn" style="flex:1;height:2px;background:#FD9D05;box-shadow:0 0 8px rgba(253,157,5,0.55);margin:11px -2px 0"></div>
+            <div class="amp-jstep" style="display:flex;flex-direction:column;align-items:center;gap:14px;transition:transform 0.3s cubic-bezier(0.22,0.61,0.36,1)">
+              <div class="amp-jdot" style="width:12px;height:12px;border-radius:50%;background:#FD9D05;box-shadow:0 0 0 3px #0a1e33,0 0 0 5px rgba(253,157,5,0.9),0 0 12px rgba(253,157,5,0.5);transition:box-shadow 0.3s,transform 0.3s"></div>
+              <div style="font-family:'D-DIN Condensed','D-DIN',sans-serif;font-weight:700;font-size:1.22rem;color:#fff;white-space:nowrap;transition:color 0.3s">Source</div>
+            </div>
+
+            <div class="amp-jconn" style="flex:1;height:2px;background:#FD9D05;box-shadow:0 0 8px rgba(253,157,5,0.55);margin:11px -2px 0"></div>
+            <div class="amp-jstep" style="display:flex;flex-direction:column;align-items:center;gap:14px;transition:transform 0.3s cubic-bezier(0.22,0.61,0.36,1)">
+              <div class="amp-jdot" style="width:12px;height:12px;border-radius:50%;background:#FD9D05;box-shadow:0 0 0 3px #0a1e33,0 0 0 5px rgba(253,157,5,0.9),0 0 12px rgba(253,157,5,0.5);transition:box-shadow 0.3s,transform 0.3s"></div>
+              <div style="font-family:'D-DIN Condensed','D-DIN',sans-serif;font-weight:700;font-size:1.22rem;color:#fff;white-space:nowrap;transition:color 0.3s">Support</div>
+            </div>
+
+            <div class="amp-jconn" style="flex:1;height:2px;background:#FD9D05;box-shadow:0 0 8px rgba(253,157,5,0.55);margin:11px -2px 0"></div>
+            <div class="amp-jstep" style="display:flex;flex-direction:column;align-items:center;gap:14px;transition:transform 0.3s cubic-bezier(0.22,0.61,0.36,1)">
+              <div class="amp-jdot" style="width:12px;height:12px;border-radius:50%;background:#FD9D05;box-shadow:0 0 0 3px #0a1e33,0 0 0 5px rgba(253,157,5,0.9),0 0 12px rgba(253,157,5,0.5);transition:box-shadow 0.3s,transform 0.3s"></div>
+              <div style="font-family:'D-DIN Condensed','D-DIN',sans-serif;font-weight:700;font-size:1.22rem;color:#fff;white-space:nowrap;transition:color 0.3s">Validate</div>
+            </div>
+
+            <div class="amp-jconn" style="flex:1;height:2px;background:#FD9D05;box-shadow:0 0 8px rgba(253,157,5,0.55);margin:11px -2px 0"></div>
+            <div class="amp-jstep" style="display:flex;flex-direction:column;align-items:center;gap:14px;transition:transform 0.3s cubic-bezier(0.22,0.61,0.36,1)">
+              <div class="amp-jdot" style="width:12px;height:12px;border-radius:50%;background:#FD9D05;box-shadow:0 0 0 3px #0a1e33,0 0 0 5px rgba(253,157,5,0.9),0 0 12px rgba(253,157,5,0.5);transition:box-shadow 0.3s,transform 0.3s"></div>
+              <div style="font-family:'D-DIN Condensed','D-DIN',sans-serif;font-weight:700;font-size:1.22rem;color:#fff;white-space:nowrap;transition:color 0.3s">Advance</div>
+            </div>
+
+          </div>
+          <p style="text-align:center;color:#c4cede;font-size:1rem;line-height:1.6;margin:0 auto;max-width:640px">The engagement may begin with a single product requirement or extend into broader scientific consultation, research planning and Proof of Concept support.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer style="background:#0a1524;padding:0">
+    <div style="max-width:1240px;margin:0 auto;padding:0 32px">
+      <div style="height:1px;background:rgba(255,255,255,0.08)"></div>
+      <div class="amp-foot-grid" style="display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1.2fr) minmax(0,1fr);gap:56px;padding:58px 0 46px;align-items:start">
+        <div>
+          <a href="index.html" style="display:inline-flex;align-items:center;margin-bottom:22px"><img src="assets/ampbio-logo.png" alt="Ampbio" style="height:58px;width:auto;display:block"></a>
+          <p style="color:#8b98ab;font-size:0.95rem;line-height:1.7;margin:0;max-width:420px">Ampbio is focused on specialised products and services across the biopharma lifecycle, covering a broad portfolio of outsourcing, development, manufacturing and supply solutions.</p>
+        </div>
+        <div>
+          <div style="font-family:'D-DIN Condensed','D-DIN',sans-serif;font-weight:700;font-size:1.05rem;color:#FD9D05;letter-spacing:0.02em;margin:0 0 6px">Explore</div>
+          <a href="products.html" class="amp-foot-link" style="display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 0;border-bottom:1px solid rgba(255,255,255,0.08);color:#c4cede;font-size:0.98rem"><span>Products</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FD9D05" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"></polyline></svg></a>
+          <a href="scientific-platforms.html" class="amp-foot-link" style="display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 0;border-bottom:1px solid rgba(255,255,255,0.08);color:#FD9D05;font-size:0.98rem;font-weight:600"><span>Scientific Platforms</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FD9D05" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"></polyline></svg></a>
+          <a href="research-development.html" class="amp-foot-link" style="display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 0;border-bottom:1px solid rgba(255,255,255,0.08);color:#c4cede;font-size:0.98rem"><span>Research - Development</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FD9D05" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"></polyline></svg></a>
+          <a href="consultancy-research-training.html" class="amp-foot-link" style="display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 0;border-bottom:1px solid rgba(255,255,255,0.08);color:#c4cede;font-size:0.98rem"><span>Consultancy, Research &amp; Training</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FD9D05" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"></polyline></svg></a>
+          <a href="about.html" class="amp-foot-link" style="display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 0;border-bottom:1px solid rgba(255,255,255,0.08);color:#c4cede;font-size:0.98rem"><span>About Ampbio</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FD9D05" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"></polyline></svg></a>
+        </div>
+        <div>
+          <div style="font-family:'D-DIN Condensed','D-DIN',sans-serif;font-weight:700;font-size:1.05rem;color:#FD9D05;letter-spacing:0.02em;margin:0 0 20px">Get in touch</div>
+          <a class="amp-contact-link" href="mailto:bd@amps.bio" style="display:flex;align-items:center;gap:12px;padding:0 0 20px;border-bottom:1px solid rgba(255,255,255,0.08);color:#dbe4ef;font-size:0.98rem">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#FD9D05" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-10 6L2 7"></path></svg>
+            bd@amps.bio
+          </a>
+          <a class="amp-contact-link" href="tel:+919660645155" style="display:flex;align-items:center;gap:12px;padding:20px 0 26px;color:#dbe4ef;font-size:0.98rem">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#FD9D05" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            +91 96606 45155
+          </a>
+          <a class="amp-footer-connect" href="connect.html" style="display:inline-flex;align-items:center;border:1.5px solid #FD9D05;color:#FD9D05;padding:12px 40px;border-radius:999px;font-weight:600;font-size:0.98rem;transition:background .2s">Connect</a>
+        </div>
+      </div>
+      <div class="amp-foot-bottom" style="display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;padding:22px 0 30px;border-top:1px solid rgba(255,255,255,0.08)">
+        <div style="color:#5f6d7f;font-size:0.88rem">&copy; 2026 Ampbio. All rights reserved.</div>
+        <div style="display:flex;align-items:center;gap:26px;flex-wrap:wrap">
+          <a class="amp-legal" href="#" style="color:#8b98ab;font-size:0.88rem">Privacy Policy</a>
+          <a class="amp-legal" href="#" style="color:#8b98ab;font-size:0.88rem">Terms of Use</a>
+          <a class="amp-legal" href="#" style="color:#8b98ab;font-size:0.88rem">Disclaimer</a>
+          <a class="amp-legal" href="#" style="color:#8b98ab;font-size:0.88rem">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
