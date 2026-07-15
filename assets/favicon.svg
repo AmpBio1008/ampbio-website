@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <style>
+    .a { fill: #111111; }
+    @media (prefers-color-scheme: dark) { .a { fill: #ffffff; } }
+  </style>
+  <!-- "A" letterform (filled, no crossbar) — matches the Ampbio logo mark -->
+  <path class="a" d="M25.2 10 h13.6 L57 54 H44.6 L32 22.5 L19.4 54 H7 Z"/>
+  <!-- amber swoosh -->
+  <path d="M16 50 Q32 38 48 49" fill="none" stroke="#FD9D05" stroke-width="6" stroke-linecap="round"/>
+</svg>
