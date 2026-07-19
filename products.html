@@ -39,13 +39,14 @@
   @keyframes ampNodePop { 0% { transform: scale(0); opacity: 0; } 55% { transform: scale(1.35); opacity: 1; } 78% { transform: scale(0.92); } 100% { transform: scale(1); opacity: 1; } }
   @keyframes ampNodeGlow { 0%, 100% { box-shadow: 0 0 0 0 rgba(253,157,5,0.55); } 50% { box-shadow: 0 0 0 14px rgba(253,157,5,0); } }
   @keyframes ampLineDraw { from { transform: scaleX(0); } to { transform: scaleX(1); } }
-  @keyframes ampTravel { 0% { left: 8%; opacity: 0; } 12% { opacity: 1; } 88% { opacity: 1; } 100% { left: 92%; opacity: 0; } }
-  .amp-proc-node { opacity: 0; }
-  .amp-in .amp-proc-node { animation: ampNodePop 0.7s cubic-bezier(0.34,1.7,0.5,1) both, ampNodeGlow 1.9s ease-out infinite; }
+  @keyframes ampTravel { 0% { left: 8%; opacity: 0; } 6% { opacity: 1; } 94% { opacity: 1; } 100% { left: 92%; opacity: 0; } }
+  @keyframes ampNodeHit { 0% { transform: scale(1); } 3% { transform: scale(1.5); } 11% { transform: scale(1.5); } 18% { transform: scale(1); } 100% { transform: scale(1); } }
+  .amp-proc-node { opacity: 0; transform-origin: center center; }
+  .amp-in .amp-proc-node { animation: ampNodePop 0.7s cubic-bezier(0.34,1.7,0.5,1) both, ampNodeGlow 1.9s ease-out infinite, ampNodeHit 8s linear var(--hd,0s) infinite; }
   .amp-process-line { transform: scaleX(0); transform-origin: left center; }
   .amp-in .amp-process-line { animation: ampLineDraw 1.3s cubic-bezier(0.65,0,0.35,1) 0.2s both; }
   .amp-travel-dot { opacity: 0; }
-  .amp-in .amp-travel-dot { animation: ampTravel 2.6s cubic-bezier(0.5,0,0.5,1) 1.3s infinite; }
+  .amp-in .amp-travel-dot { animation: ampTravel 8s linear 1.3s infinite; }
 
   /* ---- responsive (page-specific grids) ---- */
   @media (max-width: 1024px) {
@@ -253,31 +254,31 @@
         <div class="amp-travel-dot" style="position:absolute;top:20px;left:8%;width:13px;height:13px;border-radius:999px;background:#FD9D05;box-shadow:0 0 12px 3px rgba(253,157,5,0.8);z-index:2"></div>
 
         <div style="position:relative;z-index:1;text-align:center;display:flex;flex-direction:column;align-items:center">
-          <div class="amp-proc-node" style="width:52px;height:52px;border-radius:999px;background:#0a1524;border:2px solid #FD9D05;display:flex;align-items:center;justify-content:center;font-family:'D-DIN Condensed','D-DIN',sans-serif;font-weight:700;font-size:1.3rem;color:#FD9D05;margin-bottom:18px">1</div>
+          <div class="amp-proc-node" style="width:52px;height:52px;border-radius:999px;background:#0a1524;border:2px solid #FD9D05;display:flex;align-items:center;justify-content:center;font-family:'D-DIN Condensed','D-DIN',sans-serif;font-weight:700;font-size:1.3rem;color:#FD9D05;margin-bottom:18px;--hd:1s">1</div>
           <div style="font-family:'D-DIN Condensed','D-DIN',sans-serif;font-weight:700;font-size:1.1rem;color:#1a1c1e;text-transform:uppercase;margin-bottom:10px">Understand</div>
           <p style="color:#59636f;font-size:0.9rem;line-height:1.5;margin:0;max-width:200px">We review the scientific objective, application and technical requirement.</p>
         </div>
 
         <div style="position:relative;z-index:1;text-align:center;display:flex;flex-direction:column;align-items:center">
-          <div class="amp-proc-node" style="width:52px;height:52px;border-radius:999px;background:#0a1524;border:2px solid #FD9D05;display:flex;align-items:center;justify-content:center;font-family:'D-DIN Condensed','D-DIN',sans-serif;font-weight:700;font-size:1.3rem;color:#FD9D05;margin-bottom:18px">2</div>
+          <div class="amp-proc-node" style="width:52px;height:52px;border-radius:999px;background:#0a1524;border:2px solid #FD9D05;display:flex;align-items:center;justify-content:center;font-family:'D-DIN Condensed','D-DIN',sans-serif;font-weight:700;font-size:1.3rem;color:#FD9D05;margin-bottom:18px;--hd:2.9s">2</div>
           <div style="font-family:'D-DIN Condensed','D-DIN',sans-serif;font-weight:700;font-size:1.1rem;color:#1a1c1e;text-transform:uppercase;margin-bottom:10px">Identify</div>
           <p style="color:#59636f;font-size:0.9rem;line-height:1.5;margin:0;max-width:200px">We identify suitable materials, reagents, products or suppliers.</p>
         </div>
 
         <div style="position:relative;z-index:1;text-align:center;display:flex;flex-direction:column;align-items:center">
-          <div class="amp-proc-node" style="width:52px;height:52px;border-radius:999px;background:#0a1524;border:2px solid #FD9D05;display:flex;align-items:center;justify-content:center;font-family:'D-DIN Condensed','D-DIN',sans-serif;font-weight:700;font-size:1.3rem;color:#FD9D05;margin-bottom:18px">3</div>
+          <div class="amp-proc-node" style="width:52px;height:52px;border-radius:999px;background:#0a1524;border:2px solid #FD9D05;display:flex;align-items:center;justify-content:center;font-family:'D-DIN Condensed','D-DIN',sans-serif;font-weight:700;font-size:1.3rem;color:#FD9D05;margin-bottom:18px;--hd:4.8s">3</div>
           <div style="font-family:'D-DIN Condensed','D-DIN',sans-serif;font-weight:700;font-size:1.1rem;color:#1a1c1e;text-transform:uppercase;margin-bottom:10px">Evaluate</div>
           <p style="color:#59636f;font-size:0.9rem;line-height:1.5;margin:0;max-width:200px">Relevant specifications, technical information and available options are reviewed.</p>
         </div>
 
         <div style="position:relative;z-index:1;text-align:center;display:flex;flex-direction:column;align-items:center">
-          <div class="amp-proc-node" style="width:52px;height:52px;border-radius:999px;background:#0a1524;border:2px solid #FD9D05;display:flex;align-items:center;justify-content:center;font-family:'D-DIN Condensed','D-DIN',sans-serif;font-weight:700;font-size:1.3rem;color:#FD9D05;margin-bottom:18px">4</div>
+          <div class="amp-proc-node" style="width:52px;height:52px;border-radius:999px;background:#0a1524;border:2px solid #FD9D05;display:flex;align-items:center;justify-content:center;font-family:'D-DIN Condensed','D-DIN',sans-serif;font-weight:700;font-size:1.3rem;color:#FD9D05;margin-bottom:18px;--hd:6.7s">4</div>
           <div style="font-family:'D-DIN Condensed','D-DIN',sans-serif;font-weight:700;font-size:1.1rem;color:#1a1c1e;text-transform:uppercase;margin-bottom:10px">Source</div>
           <p style="color:#59636f;font-size:0.9rem;line-height:1.5;margin:0;max-width:200px">The selected product or material is sourced based on the required requirement.</p>
         </div>
 
         <div style="position:relative;z-index:1;text-align:center;display:flex;flex-direction:column;align-items:center">
-          <div class="amp-proc-node" style="width:52px;height:52px;border-radius:999px;background:#0a1524;border:2px solid #FD9D05;display:flex;align-items:center;justify-content:center;font-family:'D-DIN Condensed','D-DIN',sans-serif;font-weight:700;font-size:1.3rem;color:#FD9D05;margin-bottom:18px">5</div>
+          <div class="amp-proc-node" style="width:52px;height:52px;border-radius:999px;background:#0a1524;border:2px solid #FD9D05;display:flex;align-items:center;justify-content:center;font-family:'D-DIN Condensed','D-DIN',sans-serif;font-weight:700;font-size:1.3rem;color:#FD9D05;margin-bottom:18px;--hd:8.6s">5</div>
           <div style="font-family:'D-DIN Condensed','D-DIN',sans-serif;font-weight:700;font-size:1.1rem;color:#1a1c1e;text-transform:uppercase;margin-bottom:10px">Support</div>
           <p style="color:#59636f;font-size:0.9rem;line-height:1.5;margin:0;max-width:200px">Where required, we provide technical information and post-supply scientific support.</p>
         </div>
