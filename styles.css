@@ -24,7 +24,8 @@ a:hover { color: #ffb63e; }
 .amp-journey-step:first-child > div:first-child { display: none; }
 
 /* ---- element hover states (converted from style-hover attrs) ---- */
-.amp-nav a[data-navlink]:hover { color: #FD9D05; }
+.amp-nav a[data-navlink] { transition: color 0.2s; }
+.amp-nav a[data-navlink]:hover { color: #FD9D05 !important; }
 .amp-nav a[data-connect]:hover { background: rgba(253,157,5,0.14); }
 .amp-promo-cta:hover { background: #e08c00 !important; }
 .amp-cta-btn:hover { background: #e08c00; box-shadow: 0 10px 26px rgba(253,157,5,0.32); transform: translateY(-2px); }
