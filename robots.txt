@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://amps.bio/sitemap.xml
