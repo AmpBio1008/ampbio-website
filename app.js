@@ -17,10 +17,91 @@
     burger.addEventListener('click', function () {
       panel.classList.toggle('amp-open');
     });
-    panel.querySelectorAll('a').forEach(function (a) {
-      a.addEventListener('click', function () { panel.classList.remove('amp-open'); });
+    /* Delegated, so links injected later by the browse menu close the drawer
+       too. The Products row and the branch rows only expand a submenu, so
+       they must leave the drawer open. */
+    panel.addEventListener('click', function (e) {
+      var a = e.target.closest && e.target.closest('a');
+      if (!a || !panel.contains(a)) return;
+      if (a.classList.contains('amp-mm-m') || a.classList.contains('amp-mm-toggle')) return;
+      panel.classList.remove('amp-open');
     });
   }
+
+  /* ---- Virongy browse menu ------------------------------------------
+     The panel is ~41 KB of markup and is identical on every page, so it is
+     not inlined: it is fetched from menu.html the first time someone opens
+     the menu, and the browser caches it for the rest of the site. If the
+     fetch fails nothing breaks - "Products" is still an ordinary link. */
+  (function () {
+    var mount = root.querySelector('.amp-mm-mount');
+    var drawerLink = root.querySelector('.amp-mm-m');
+    if (!mount && !drawerLink) return;
+
+    var pending = null;
+
+    function load() {
+      if (pending) return pending;
+      pending = fetch('menu.html', { credentials: 'same-origin' })
+        .then(function (r) {
+          if (!r.ok) throw new Error(r.status);
+          return r.text();
+        })
+        .catch(function () { pending = null; return null; });
+      return pending;
+    }
+
+    /* desktop: mount on first hover or keyboard focus */
+    if (mount) {
+      var wrap = mount.parentNode;
+      var fill = function () {
+        load().then(function (html) {
+          if (!html || mount.firstChild) return;
+          mount.innerHTML = html;
+          mount.removeAttribute('hidden');
+          bindToggles(mount, false);
+        });
+      };
+      wrap.addEventListener('mouseenter', fill);
+      wrap.addEventListener('focusin', fill);
+    }
+
+    /* drawer: build an accordion under the Products row */
+    if (drawerLink) {
+      var box = document.createElement('div');
+      box.className = 'amp-mm-mobile';
+      drawerLink.parentNode.insertBefore(box, drawerLink.nextSibling);
+      var opened = false;
+      drawerLink.addEventListener('click', function (e) {
+        e.preventDefault();
+        e.stopPropagation();           // do not let the drawer close itself
+        if (!opened) {
+          opened = true;
+          load().then(function (html) {
+            if (!html) { window.location.href = 'products.html'; return; }
+            box.innerHTML = html;
+            bindToggles(box, true);
+          });
+        } else {
+          box.style.display = box.style.display === 'none' ? '' : 'none';
+        }
+      });
+    }
+
+    /* branch rows open their panel; on desktop CSS :hover already does it,
+       so there a click should simply not jump to "#". */
+    function bindToggles(scope, accordion) {
+      scope.querySelectorAll('.amp-mm-toggle').forEach(function (a) {
+        a.addEventListener('click', function (e) {
+          e.preventDefault();
+          if (!accordion) return;
+          var li = a.parentNode;
+          var open = li.classList.toggle('amp-open');
+          a.setAttribute('aria-expanded', open ? 'true' : 'false');
+        });
+      });
+    }
+  })();
 
   /* ---- scroll hint: smooth-scroll past the hero ---- */
   var hint = document.getElementById('amp-scroll-hint');
