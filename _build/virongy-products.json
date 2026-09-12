@@ -1,0 +1,2588 @@
+{
+  "generated": "2026-09-12",
+  "source": "virongy.com",
+  "categories": [
+    "Pseudoviruses & Single-Cycle Viruses",
+    "Neutralization Assay Kits",
+    "Viral Protein Expression Vectors",
+    "Kits & Reagents",
+    "Transduction & Transfection Reagents",
+    "Cell Lines, Antibodies & Controls",
+    "Custom Vector Design & Assembly"
+  ],
+  "featured": [
+    "cellment-cell-attachment-enhancer",
+    "infectin",
+    "exomaxed",
+    "ez-fectin-dna-transfection-kit",
+    "lentiplus-pseudovirus-assembly-and-infection-kit",
+    "vader-trap-plasmid-purification-kit",
+    "sars-cov-2-pseudoviral-neutralization-assay-kit",
+    "sars-cov-2-rapid-neutralizing-antibody-kit",
+    "vsv-g-pseudotyped-lentivirus",
+    "hiv-rev-dependent-reporter-cells",
+    "low-speed-viral-concentration-kit",
+    "viral-rna-and-dna-extraction-kits"
+  ],
+  "products": [
+    {
+      "slug": "pseudovirus-for-alphaviruses",
+      "source_slug": "pseudovirus-for-alphaviruses",
+      "name": "Alphaviral Pseudoviruses and Single-Cycle Viruses",
+      "category": "Pseudoviruses & Single-Cycle Viruses",
+      "summary": "Venezuelan Equine Encephalitis Virus (VEEV) – Capsid (C), Envelope proteins E1, E2, E3 and 6K proteins Eastern Equine Encephalitis Virus (EEV) – Capsid (C), Envelope proteins E1, E2, E3 and 6K proteins",
+      "applications": [
+        "CHIKV pseudovirus transduction of target cells for viral entry and functional studies",
+        "Rapid Anti-CHIKV drug screening",
+        "Rapid Anti-CHIKV neutralizing antibody screening"
+      ],
+      "contents": [],
+      "features": [],
+      "options": [
+        {
+          "label": "Virus",
+          "values": [
+            "VEEV",
+            "EEEV",
+            "CHIKV",
+            "SFV"
+          ]
+        },
+        {
+          "label": "Reporter Gene",
+          "values": [
+            "Firefly Luciferase",
+            "GFP",
+            "RFP"
+          ]
+        },
+        {
+          "label": "Size",
+          "values": [
+            "10 mL ~200 wells/96 well plate",
+            "10 x 200 µL ~40 wells/96 well plate",
+            "20 mL ~400 wells/96 well plate",
+            "5 mL ~100 wells/96 well plate",
+            "5 x 200 µL ~20 wells/96 well plate"
+          ]
+        }
+      ],
+      "image_source": "https://virongy.com/wp-content/uploads/2023/10/Single-Cycle-Alphaviruses-Image.png",
+      "image": "assets/virongy-single-cycle-alphaviruses-image.webp",
+      "docs": [
+        {
+          "label": "Alpha Pseudovirus – MSDS",
+          "source": "https://virongy.com/wp-content/uploads/2020/05/Pseudovirus-Lentivirus-MSDS.pdf",
+          "file": "Pseudovirus-Lentivirus-MSDS.pdf"
+        },
+        {
+          "label": "Alpha Pseudovirus – Handbook",
+          "source": "https://virongy.com/wp-content/uploads/2022/03/VBI-HBK-001-Virongy-HaCoV2-Handbook.pdf",
+          "file": "VBI-HBK-001-Virongy-HaCoV2-Handbook.pdf"
+        }
+      ],
+      "featured": false
+    },
+    {
+      "slug": "vsv-g-pseudotyped-lentivirus",
+      "source_slug": "vsv-g-pseudotyped-lentivirus",
+      "name": "Pre-Assembled VSV-G–Pseudotyped Lentiviral Vectors",
+      "category": "Pseudoviruses & Single-Cycle Viruses",
+      "summary": "Vesicular stomatitis virus (VSV) Glycoprotein pseudotyped lentiviruses. We have pre-assembled VSV-G pseudotyped particles that are available as controls and initial viral particle testing. These pseudoviruses are BSL-2 safe and ready to use for studying viral entry. Additionally, we help our customers to assemble custom VSV-G pseudotyped lentiviruses at any scale.",
+      "applications": [
+        "Broad spectrum cell tropism",
+        "Positive viral control for pseudovirus assays",
+        "Pseudovirus transduction of target cells for viral entry and functional studies",
+        "Anti-VSV drug screening",
+        "Anti-VSV neutralizing antibody screening"
+      ],
+      "contents": [],
+      "features": [],
+      "options": [
+        {
+          "label": "Gene of Interest",
+          "values": [
+            "Firefly Luciferase",
+            "TurboGFP",
+            "DSREDExpress2 RFP",
+            "Dual TurboGFP+Firefly Luciferase",
+            "SV40 Large T",
+            "hTERT",
+            "CRISPR CAS9 (No Guide RNA)",
+            "CRISPRi dCAS9-KRAB (No Guide RNA)",
+            "KRAS (G12D)",
+            "CB1",
+            "CB2",
+            "hACE2",
+            "TMPRSS2"
+          ]
+        },
+        {
+          "label": "Concentration",
+          "values": [
+            "Standard Titer >10^8 TU/mL",
+            "High Titer >10^9 TU/mL"
+          ]
+        },
+        {
+          "label": "Size",
+          "values": [
+            "10 x 200 µL ~40 wells/96 well plate",
+            "5 x 100 µL (Concentrated Only)",
+            "5 x 200 µL ~20 wells/96 well plate"
+          ]
+        }
+      ],
+      "image_source": "https://virongy.com/wp-content/uploads/2020/05/DALL%C2%B7E-2022-12-08-23.21.18-realistic-virus-being-assembled-by-cells-e1671046947766.png",
+      "image": "assets/virongy-dall-e-2022-12-08-23-21-18-realistic-virus-b.webp",
+      "docs": [],
+      "featured": true
+    },
+    {
+      "slug": "sars-cov-2-pseudoviruses",
+      "source_slug": "sars-cov-2-pseudoviruses",
+      "name": "Pseudotyped Lentivirus for Betacoronaviruses",
+      "category": "Pseudoviruses & Single-Cycle Viruses",
+      "summary": "We help our customers to assemble Betacoronavirus pseudotyped lentiviruses for SARS-CoV, MERS-CoV and SARS-CoV-2. These particles carry reporters that can be used for antiviral drug screening or the quantification of neutralizing antibodies.",
+      "applications": [
+        "SARS-CoV, MERS-CoV and SARS-CoV-2 pseudovirus transduction of target cells for viral entry and functional studies",
+        "Anti-SARS-CoV, MERS-CoV and SARS-CoV-2 drug screening",
+        "Anti-SARS-CoV, MERS-CoV and SARS-CoV-2 neutralizing antibody screening"
+      ],
+      "contents": [],
+      "features": [],
+      "options": [
+        {
+          "label": "Betacoronavirus Species",
+          "values": [
+            "SARS-CoV",
+            "SARS-CoV-2",
+            "MERS-CoV"
+          ]
+        },
+        {
+          "label": "Variant",
+          "values": [
+            "Alpha (B.1.1.7)",
+            "AY4/BA.1 \"Deltacron\"",
+            "B.1.1.207",
+            "B.1.1.298",
+            "B.1.2",
+            "B.1.258",
+            "B.1.494",
+            "BA.2",
+            "BA.2.12.1",
+            "BA.2.75",
+            "BA.4 and BA.5",
+            "BA.4.6",
+            "Beta (B.1.351)",
+            "BQ.1",
+            "BQ.1.1",
+            "D614G Single Mutation",
+            "Delta (B.1.617.2)",
+            "Delta Plus (AY.2)",
+            "Delta Plus (AY4.2)",
+            "Epsilon (B.1.427/429)",
+            "Epsilon (B.1.429)",
+            "Eta (B.1.525)",
+            "Gamma (P.1)",
+            "Kappa (B.1.617.1)",
+            "Lambda (C.37)",
+            "Mu (B.1.621)",
+            "Omicron (B.1.1.529)",
+            "Wild Type",
+            "XBB.1",
+            "XBB.1.16",
+            "XBB.1.5",
+            "XBB.1.9.1"
+          ]
+        },
+        {
+          "label": "Reporter Gene",
+          "values": [
+            "Dual (GFP+Luciferase)",
+            "Firefly Luciferase",
+            "GFP",
+            "RFP"
+          ]
+        },
+        {
+          "label": "Concentration",
+          "values": [
+            "High Titer (60X)",
+            "Standard (1X)"
+          ]
+        },
+        {
+          "label": "Size",
+          "values": [
+            "5 x 100 µL"
+          ]
+        }
+      ],
+      "image_source": "https://virongy.com/wp-content/uploads/2020/05/CoV-2-PIE.jpg",
+      "image": "assets/virongy-cov-2-pie.webp",
+      "docs": [
+        {
+          "label": "Pseudovirus Lentivirus – MSDS",
+          "source": "https://virongy.com/wp-content/uploads/2020/05/Pseudovirus-Lentivirus-MSDS.pdf",
+          "file": "Pseudovirus-Lentivirus-MSDS.pdf"
+        }
+      ],
+      "featured": false
+    },
+    {
+      "slug": "pseudoviruses-for-human-papillomaviridae",
+      "source_slug": "pseudoviruses-for-human-papillomaviridae",
+      "name": "Pseudoviruses for Human Papillomaviridae",
+      "category": "Pseudoviruses & Single-Cycle Viruses",
+      "summary": "A novel rapid pseudovirus for Human Papillomavirus and other Papillomaviridae viruses is now available at Virongy. These particles are pseudoviruses assembled from the structural proteins of the Human Papillomavirus: L1 and L2 proteins. These particles encapsulate a linear DNA viral vector for reporter gene expression.",
+      "applications": [
+        "HPV pseudovirus transduction of target cells for viral entry and functional studies",
+        "Rapid Anti-HPV drug screening",
+        "Rapid Anti-HPV neutralizing antibody screening"
+      ],
+      "contents": [],
+      "features": [],
+      "options": [
+        {
+          "label": "Serotype",
+          "values": [
+            "HPV-6",
+            "HPV-11",
+            "HPV-16",
+            "HPV-18",
+            "HPV-31",
+            "HPV-33",
+            "HPV-35",
+            "HPV-39",
+            "HPV-45",
+            "HPV-51",
+            "HPV-52",
+            "HPV-56",
+            "HPV-58",
+            "HPV-59",
+            "HPV-68a"
+          ]
+        },
+        {
+          "label": "Reporter Gene",
+          "values": [
+            "Firefly Luciferase",
+            "GFP",
+            "RFP"
+          ]
+        },
+        {
+          "label": "Size",
+          "values": [
+            "10 mL ~200 wells/96 well plate",
+            "10 x 200 µL ~40 wells/96 well plate",
+            "20 mL ~400 wells/96 well plate",
+            "5 mL ~100 wells/96 well plate",
+            "5 x 100 µL (Concentrated Only)",
+            "5 x 200 µL ~20 wells/96 well plate"
+          ]
+        }
+      ],
+      "image_source": "https://virongy.com/wp-content/uploads/2023/10/Human-Papilomavirus-Image-For-Website.png",
+      "image": "assets/virongy-human-papilomavirus-image-for-website.webp",
+      "docs": [
+        {
+          "label": "Human Papilloma Pseudovirus – MSDS",
+          "source": "https://virongy.com/wp-content/uploads/2023/10/Pseudovirus-Lentivirus-MSDS.pdf",
+          "file": "Pseudovirus-Lentivirus-MSDS.pdf"
+        },
+        {
+          "label": "HPV Pseudovirus – Handbook",
+          "source": "https://virongy.com/wp-content/uploads/2023/10/VBI-HBK-001-REV001-Rapid-Cell-Based-Neutralization-Assay-with-the-Human-Papillomavirus-Pseudovirus-HPV-PV.pdf",
+          "file": "VBI-HBK-001-REV001-Rapid-Cell-Based-Neutralization-Assay-with-the-Human-Papillomavirus-Pseudovirus-HPV-PV.pdf"
+        }
+      ],
+      "featured": false
+    },
+    {
+      "slug": "filoviruses-alpha-pseudovirus",
+      "source_slug": "filoviruses-alpha-pseudovirus",
+      "name": "Rapid Alpha-pseudovirus for Filoviruses",
+      "category": "Pseudoviruses & Single-Cycle Viruses",
+      "summary": "Filoviruses include Marburg and Ebolaviruses. Marburg virus hybrid alpha-pseudovirus is based on the MARV001 Isolate (Genebank: OL702894 .1). Ebolavirus hybrid alpha-pseudoviruses are based on either the Zaire ebolavirus (Genebank: KJ660346.2), Bundibugyo ebolavirus ( NC_014373) or the Sudan ebolavirus (Genebank: YP_138523.1) Gulu strain. Alpha-pseudoviruses for Filoviruses",
+      "applications": [
+        "Marburg and Ebola pseudovirus transduction of target cells for viral entry and functional studies",
+        "Rapid Anti-Marburg and Anti-Ebola drug screening",
+        "Rapid Anti-Marburg and Anti-Ebola neutralizing antibody screening"
+      ],
+      "contents": [],
+      "features": [],
+      "options": [
+        {
+          "label": "Strain",
+          "values": [
+            "Zaire ebolavirus (KJ660346.2)",
+            "Bundibugyo ebolavirus (NC_014373)",
+            "Sudan ebolavirus (MT583348.1)",
+            "Marburg virus MARV001 (OL702894.1)"
+          ]
+        },
+        {
+          "label": "Reporter Gene",
+          "values": [
+            "Firefly Luciferase"
+          ]
+        },
+        {
+          "label": "Size",
+          "values": [
+            "10 mL ~200 wells/96 well plate",
+            "10 x 200 µL ~40 wells/96 well plate",
+            "20 mL ~400 wells/96 well plate",
+            "5 mL ~100 wells/96 well plate",
+            "5 x 200 µL ~20 wells/96 well plate"
+          ]
+        }
+      ],
+      "image_source": "https://virongy.com/wp-content/uploads/2022/12/HA-Foliovirus-Particle-Image-pdf.jpg",
+      "image": "assets/virongy-ha-foliovirus-particle-image-pdf.webp",
+      "docs": [
+        {
+          "label": "Alpha Pseudovirus – MSDS",
+          "source": "https://virongy.com/wp-content/uploads/2020/05/Pseudovirus-Lentivirus-MSDS.pdf",
+          "file": "Pseudovirus-Lentivirus-MSDS.pdf"
+        }
+      ],
+      "featured": false
+    },
+    {
+      "slug": "lassa-alpha-pseudovirus",
+      "source_slug": "lassa-alpha-pseudovirus",
+      "name": "Rapid Alpha-Pseudoviruses for Arenaviruses",
+      "category": "Pseudoviruses & Single-Cycle Viruses",
+      "summary": "Lassa virus (LASV) Glycoprotein Complex (GPC) hybrid Alpha-pseudovirus, formulated using the NCBI reference sequence KU961971.1. A novel rapid hybrid alpha-pseudovirus for Lassa virus (HA-LASV) and other Bunyavirales viruses. HA-LASV particles are pseudoviruses assembled from the structural proteins of the Lassa virus, glycoprotein (GP), and the Zinc-binding protein (Z) and package an alphaviral vector for reporter gene expression.",
+      "applications": [
+        "LASV pseudovirus transduction of target cells for viral entry and functional studies",
+        "Rapid Anti-LASV drug screening",
+        "Anti-LASV neutralizing antibody screening"
+      ],
+      "contents": [],
+      "features": [],
+      "options": [
+        {
+          "label": "Reporter Gene",
+          "values": [
+            "Firefly Luciferase"
+          ]
+        },
+        {
+          "label": "Size",
+          "values": [
+            "10 mL ~200 wells/96 well plate",
+            "10 x 200 µL ~40 wells/96 well plate",
+            "20 mL ~400 wells/96 well plate",
+            "5 mL ~100 wells/96 well plate",
+            "5 x 100 µL (Concentrated Only)",
+            "5 x 200 µL ~20 wells/96 well plate"
+          ]
+        }
+      ],
+      "image_source": "https://virongy.com/wp-content/uploads/2022/12/HA-Arenaviruses-Particle-Image-pdf.jpg",
+      "image": "assets/virongy-ha-arenaviruses-particle-image-pdf.webp",
+      "docs": [
+        {
+          "label": "Alpha Pseudovirus – MSDS",
+          "source": "https://virongy.com/wp-content/uploads/2020/05/Pseudovirus-Lentivirus-MSDS.pdf",
+          "file": "Pseudovirus-Lentivirus-MSDS.pdf"
+        }
+      ],
+      "featured": false
+    },
+    {
+      "slug": "bunyaviridae-pseudoviruses",
+      "source_slug": "bunyaviridae-pseudoviruses",
+      "name": "Rapid Alpha-Pseudoviruses for Bunyaviruses",
+      "category": "Pseudoviruses & Single-Cycle Viruses",
+      "summary": "Bunyaviruses include Crimean-Congo Hemorrhagic Fever (CCHF) and Rift Valley Fever (RVF) viruses. Crimean-Congo Hemorrhagic Fever virus (CCHF) Glycoprotein pseudotyped lentiviruses based on NCBI reference sequence NC_005300.2 . Rift Valley Fever virus (RFV) Glycoprotein pseudotyped lentiviruses based on NCBI reference sequence KX632067.1.",
+      "applications": [
+        "CCHF and RVF pseudovirus transduction of target cells for viral entry and functional studies",
+        "Anti-CCHF and Anti-RVF drug screening",
+        "Anti-CCHF and Anti-RVF neutralizing antibody screening"
+      ],
+      "contents": [],
+      "features": [],
+      "options": [
+        {
+          "label": "Viral Species",
+          "values": [
+            "Rift Valley Forest Virus (ABD38813.1)",
+            "Andes Virus (NP_604472.1)"
+          ]
+        },
+        {
+          "label": "Reporter Gene",
+          "values": [
+            "Firefly Luciferase",
+            "GFP",
+            "RFP"
+          ]
+        },
+        {
+          "label": "Size",
+          "values": [
+            "10 mL ~200 wells/96 well plate",
+            "10 x 200 µL ~40 wells/96 well plate",
+            "20 mL ~400 wells/96 well plate",
+            "5 mL ~100 wells/96 well plate",
+            "5 x 200 µL ~20 wells/96 well plate"
+          ]
+        }
+      ],
+      "image_source": "https://virongy.com/wp-content/uploads/2023/01/HA-Bunyaviruses-Particle-Image-pdf.jpg",
+      "image": "assets/virongy-ha-bunyaviruses-particle-image-pdf.webp",
+      "docs": [
+        {
+          "label": "Alpha-pseudovirus MSDS",
+          "source": "https://virongy.com/wp-content/uploads/2023/10/Pseudovirus-Lentivirus-MSDS.pdf",
+          "file": "Pseudovirus-Lentivirus-MSDS.pdf"
+        }
+      ],
+      "featured": false
+    },
+    {
+      "slug": "coronavirus-alpha-pseudovirus",
+      "source_slug": "coronavirus-alpha-pseudovirus",
+      "name": "Rapid Alpha-Pseudoviruses for Coronavirus Research",
+      "category": "Pseudoviruses & Single-Cycle Viruses",
+      "summary": "The hybrid alpha-pseudovirus for SARS-CoV-2 (Ha-CoV-2) is a newly developed SARS-CoV-2 virus-like particle (VLP) that encapsulates an alphavirus-derived RNA genome for rapid report expression (luciferase or GFP) in target cells ( Hetrick et al., 2022 ).",
+      "applications": [
+        "Screening and quantification of anti-SARS-CoV-2 neutralizing antibodies",
+        "Anti-SARS-CoV-2 drug screening",
+        "Quantification of SARS-CoV-2 viral mutants",
+        "Identification of host co-factors and restriction factors of SARS-CoV-2"
+      ],
+      "contents": [],
+      "features": [],
+      "options": [
+        {
+          "label": "Betacoronavirus Species",
+          "values": [
+            "SARS-CoV-2",
+            "SARS-CoV",
+            "MERS-CoV"
+          ]
+        },
+        {
+          "label": "Variant",
+          "values": [
+            "Alpha (B.1.1.7)",
+            "AY4/BA.1 \"Deltacron\"",
+            "B.1.1.207",
+            "B.1.1.298",
+            "B.1.2",
+            "B.1.258",
+            "B.1.494",
+            "BA.2",
+            "BA.2.12.1",
+            "BA.2.75",
+            "BA.4 and BA.5",
+            "BA.4.6",
+            "Beta (B.1.351)",
+            "BQ.1",
+            "BQ.1.1",
+            "CH.1.1",
+            "D614G Single Mutation",
+            "Delta (B.1.617.2)",
+            "Delta Plus (AY.2)",
+            "Delta Plus (AY4.2)",
+            "DV.7.1.2",
+            "EG.10.1",
+            "Epsilon (B.1.427/429)",
+            "Epsilon (B.1.429)",
+            "Eta (B.1.525)",
+            "FL.1.5.1",
+            "FL.10.1",
+            "Gamma (P.1)",
+            "GK.1.1",
+            "GW.5.1.1",
+            "HF.1",
+            "HK.3",
+            "HV.1",
+            "HW.1.1",
+            "JB.2.1",
+            "JD.1.1",
+            "JF.1",
+            "JH.2",
+            "JN.1",
+            "JP.1",
+            "Kappa (B.1.617.1)",
+            "Lambda (C.37)",
+            "Mu (B.1.621)",
+            "Omicron (B.1.1.529)",
+            "Wild Type",
+            "XBB.1",
+            "XBB.1.16",
+            "XBB.1.16.11",
+            "XBB.1.41.1",
+            "XBB.1.5",
+            "XBB.1.9.1",
+            "XBB.2.3"
+          ]
+        },
+        {
+          "label": "Reporter Gene",
+          "values": [
+            "Firefly Luciferase",
+            "GFP",
+            "RFP"
+          ]
+        },
+        {
+          "label": "Concentration",
+          "values": [
+            "10x",
+            "1x Not Concentrated",
+            "60x"
+          ]
+        },
+        {
+          "label": "Size",
+          "values": [
+            "10 mL ~200 wells/96 well plate",
+            "10 x 200 µL ~40 wells/96 well plate",
+            "20 mL ~400 wells/96 well plate",
+            "5 mL ~100 wells/96 well plate",
+            "5 x 100 µL (Concentrated Only)",
+            "5 x 200 µL ~20 wells/96 well plate"
+          ]
+        }
+      ],
+      "image_source": "https://virongy.com/wp-content/uploads/2022/03/HA-Coronavirus-Particle-Image-pdf.jpg",
+      "image": "assets/virongy-ha-coronavirus-particle-image-pdf.webp",
+      "docs": [
+        {
+          "label": "Alpha Pseudovirus – MSDS",
+          "source": "https://virongy.com/wp-content/uploads/2020/05/Pseudovirus-Lentivirus-MSDS.pdf",
+          "file": "Pseudovirus-Lentivirus-MSDS.pdf"
+        },
+        {
+          "label": "Alpha Pseudovirus – Handbook",
+          "source": "https://virongy.com/wp-content/uploads/2022/03/VBI-HBK-001-Virongy-HaCoV2-Handbook.pdf",
+          "file": "VBI-HBK-001-Virongy-HaCoV2-Handbook.pdf"
+        }
+      ],
+      "featured": false
+    },
+    {
+      "slug": "nipah-pseudovirus",
+      "source_slug": "nipah-pseudovirus",
+      "name": "Rapid Alpha-Pseudoviruses for Henipavirus",
+      "category": "Pseudoviruses & Single-Cycle Viruses",
+      "summary": "Nipah virus (NiV) proteins in the alpha-pseudovirus are based on NCBI Accession# NC_002728.1 A novel rapid hybrid alpha-pseudovirus for Nipah virus (HA-NiV) and other Henipaviruses. HA-NiV pseudoviruses assembled from the structural proteins of the Nipah virus, Fusion (F), Glycoprotein (G), Matrix (M), and Nucleocapsid (N) proteins and package an alphaviral vector for reporter gene expression.",
+      "applications": [
+        "Rapid NiV pseudovirus transduction of target cells for viral entry and functional studies",
+        "Anti-NiV drug screening",
+        "Anti-NiV neutralizing antibody screening"
+      ],
+      "contents": [],
+      "features": [],
+      "options": [
+        {
+          "label": "Henipavirus Species",
+          "values": [
+            "Nipah Virus"
+          ]
+        },
+        {
+          "label": "Reporter Gene",
+          "values": [
+            "Firefly Luciferase"
+          ]
+        },
+        {
+          "label": "Size",
+          "values": [
+            "10 mL ~200 wells/96 well plate",
+            "10 x 200 µL ~40 wells/96 well plate",
+            "20 mL ~400 wells/96 well plate",
+            "5 mL ~100 wells/96 well plate",
+            "5 x 200 µL ~20 wells/96 well plate"
+          ]
+        }
+      ],
+      "image_source": "https://virongy.com/wp-content/uploads/2022/12/HA-Henipavirus-Particle-Image-pdf.jpg",
+      "image": "assets/virongy-ha-henipavirus-particle-image-pdf.webp",
+      "docs": [
+        {
+          "label": "Alpha Pseudovirus – MSDS",
+          "source": "https://virongy.com/wp-content/uploads/2020/05/Pseudovirus-Lentivirus-MSDS.pdf",
+          "file": "Pseudovirus-Lentivirus-MSDS.pdf"
+        },
+        {
+          "label": "Alpha Pseudovirus – Handbook",
+          "source": "https://virongy.com/wp-content/uploads/2022/12/VBI-HBK-012-Virongys-Ha-NiV-Handbook.pdf",
+          "file": "VBI-HBK-012-Virongys-Ha-NiV-Handbook.pdf"
+        }
+      ],
+      "featured": false
+    },
+    {
+      "slug": "influenza-a-alpha-pseudoviruses",
+      "source_slug": "influenza-a-alpha-pseudoviruses",
+      "name": "Rapid Alpha-Pseudoviruses for Influenza Virus",
+      "category": "Pseudoviruses & Single-Cycle Viruses",
+      "summary": "Influenza A alpha-pseudoviruses (IAV) include the Nucleoprotein (N), Phosphoprotein (P), Matrix protein (M), Glycoprotein (G), and Polymerase (L). A novel rapid hybrid alpha-pseudovirus for Influenza virus (Ha-INFV) and other Rhabdoviridae viruses are now available at Virongy.",
+      "applications": [
+        "INFV pseudovirus transduction of target cells for viral entry and functional studies",
+        "Rapid Anti-INFV drug screening",
+        "Rapid Anti-INFV neutralizing antibody screening"
+      ],
+      "contents": [],
+      "features": [],
+      "options": [
+        {
+          "label": "Strain",
+          "values": [
+            "A/Brevig-Mission/1/1918(H1N1)",
+            "A/Victoria/4897/2022(H1N1)",
+            "A/California/04/2009(H1N1)",
+            "A/PR/8/1934(H1N1)",
+            "A/Wisconsin/67/2022(H1N1)",
+            "A/Croatia/10136RV/2023(H3N2)",
+            "A/Darwin/9/2021(H3N2)",
+            "A/District of Columbia/27/2023(H3N2)",
+            "A/California/LACPHL‑INF02051/2025(H3N2) Subclade K",
+            "A/Texas/37/2024(H5N1) Clade 2.3.4.4b",
+            "A/Nevada/10/2025 (H5N1) Clade 2.3.4.4b",
+            "A/Thailand/NBL1/2006(H5N1)",
+            "A/Jiangsu/1/2013(H7N9)",
+            "B/Austria/1359417/2021",
+            "B/Phuket/3073/2013"
+          ]
+        },
+        {
+          "label": "Reporter Gene",
+          "values": [
+            "Firefly Luciferase",
+            "GFP"
+          ]
+        },
+        {
+          "label": "Size",
+          "values": [
+            "10 x 200 µL ~40 wells/96 well plate",
+            "5 x 1mL ~100 wells/96 well plate",
+            "5 x 200 µL ~20 wells/96 well plate"
+          ]
+        }
+      ],
+      "image_source": "https://virongy.com/wp-content/uploads/2023/08/Influenza-Pseudovirus-091423.png",
+      "image": "assets/virongy-influenza-pseudovirus-091423.webp",
+      "docs": [
+        {
+          "label": "Alpha Pseudovirus – MSDS",
+          "source": "https://virongy.com/wp-content/uploads/2020/05/Pseudovirus-Lentivirus-MSDS.pdf",
+          "file": "Pseudovirus-Lentivirus-MSDS.pdf"
+        }
+      ],
+      "featured": false
+    },
+    {
+      "slug": "rapid-alpha-pseudoviruses-for-orthohantavirus",
+      "source_slug": "rapid-alpha-pseudoviruses-for-orthohantavirus",
+      "name": "Rapid Alpha-Pseudoviruses for Orthohantavirus",
+      "category": "Pseudoviruses & Single-Cycle Viruses",
+      "summary": "Bunyaviruses include Crimean-Congo Hemorrhagic Fever (CCHF) and Rift Valley Fever (RVF) viruses. Crimean-Congo Hemorrhagic Fever virus (CCHF) Glycoprotein pseudotyped lentiviruses based on NCBI reference sequence NC_005300.2 . Rift Valley Fever virus (RFV) Glycoprotein pseudotyped lentiviruses based on NCBI reference sequence KX632067.1.",
+      "applications": [
+        "CCHF and RVF pseudovirus transduction of target cells for viral entry and functional studies",
+        "Anti-CCHF and Anti-RVF drug screening",
+        "Anti-CCHF and Anti-RVF neutralizing antibody screening"
+      ],
+      "contents": [],
+      "features": [],
+      "options": [
+        {
+          "label": "Viral Species",
+          "values": [
+            "Andes Virus CHI-9717869 strain (NP_604472.1)"
+          ]
+        },
+        {
+          "label": "Reporter Gene",
+          "values": [
+            "Firefly Luciferase",
+            "GFP",
+            "RFP"
+          ]
+        },
+        {
+          "label": "Size",
+          "values": [
+            "10 mL ~200 wells/96 well plate",
+            "10 x 200 µL ~40 wells/96 well plate",
+            "20 mL ~400 wells/96 well plate",
+            "5 mL ~100 wells/96 well plate",
+            "5 x 200 µL ~20 wells/96 well plate"
+          ]
+        }
+      ],
+      "image_source": "https://virongy.com/wp-content/uploads/2026/05/Hantavirus-structure-for-website-1.png",
+      "image": "assets/virongy-hantavirus-structure-for-website-1.webp",
+      "docs": [
+        {
+          "label": "Alpha-pseudovirus MSDS",
+          "source": "https://virongy.com/wp-content/uploads/2023/10/Pseudovirus-Lentivirus-MSDS.pdf",
+          "file": "Pseudovirus-Lentivirus-MSDS.pdf"
+        }
+      ],
+      "featured": false
+    },
+    {
+      "slug": "rapid-alpha-pseudoviruses-for-rabies",
+      "source_slug": "rapid-alpha-pseudoviruses-for-rabies",
+      "name": "Rapid Alpha-Pseudoviruses for Rabies Virus",
+      "category": "Pseudoviruses & Single-Cycle Viruses",
+      "summary": "Rabies virus (RABV) Nucleoprotein (N), Phosphoprotein (P), Matrix protein (M), Glycoprotein (G), and Polymerase (L) hybrid Alpha-pseudovirus based on NCBI reference sequence: GQ918139.1 A novel rapid hybrid alpha-pseudovirus for Rabies virus (Ha-RABV) and other Rhabdoviridae viruses are now available at Virongy.",
+      "applications": [
+        "RABV pseudovirus transduction of target cells for viral entry and functional studies",
+        "Rapid Anti-RABV drug screening",
+        "Rapid Anti-RABV neutralizing antibody screening"
+      ],
+      "contents": [],
+      "features": [],
+      "options": [
+        {
+          "label": "Reporter Gene",
+          "values": [
+            "Firefly Luciferase"
+          ]
+        },
+        {
+          "label": "Size",
+          "values": [
+            "5 x 200 μL ~20 wells/96 well plate",
+            "10 x 200 μL ~40 wells/96 well plate",
+            "5 x 1mL ~100 wells/96 well plate"
+          ]
+        }
+      ],
+      "image_source": "https://virongy.com/wp-content/uploads/2023/08/Ha-Rabies-Particle-Image-.png",
+      "image": "assets/virongy-ha-rabies-particle-image.webp",
+      "docs": [
+        {
+          "label": "Alpha Pseudovirus – MSDS",
+          "source": "https://virongy.com/wp-content/uploads/2020/05/Pseudovirus-Lentivirus-MSDS.pdf",
+          "file": "Pseudovirus-Lentivirus-MSDS.pdf"
+        }
+      ],
+      "featured": false
+    },
+    {
+      "slug": "ebola-pseudoviral-neutralization-assay-kit",
+      "source_slug": "ebola-pseudoviral-neutralization-assay-kit",
+      "name": "Ebolavirus Pseudoviral Neutralization Assay Kit",
+      "category": "Neutralization Assay Kits",
+      "summary": "A ready-to-use 96-well neutralization assay kit built on Virongy's hybrid alpha-pseudovirus technology. Supplied with pre-counted, ready-to-use target cells, so no cell culture or CO2 incubator is required - thaw and go. Used to quantify neutralizing antibodies and screen entry-inhibiting compounds at BSL-2.",
+      "applications": [],
+      "contents": [
+        "5 mL of Pseudovirus Particles",
+        "1 Tube of Ready-To-Use Target Cells (5 Million Cells/Tube)",
+        "15 mL of VBI Infection Medium",
+        "2 mL of Lysis Buffer",
+        "3.5 mL of Firefly Luciferase Assay Buffer"
+      ],
+      "features": [],
+      "options": [
+        {
+          "label": "Variant",
+          "values": [
+            "Zaire",
+            "Sudan",
+            "Bundibugyo (NC_014373)"
+          ]
+        }
+      ],
+      "image_source": "https://virongy.com/wp-content/uploads/2023/08/HA-Foliovirus-Particle-Image-pdf.jpg",
+      "image": "assets/virongy-ha-foliovirus-particle-image-pdf.webp",
+      "docs": [
+        {
+          "label": "VBI HBK 001 REV005 Rapid Cell Based Neutralization Assay with the Hybrid Alpha Pseudovirus Ha PV",
+          "source": "https://virongy.com/wp-content/uploads/2023/07/VBI-HBK-001-REV005-Rapid-Cell-Based-Neutralization-Assay-with-the-Hybrid-Alpha-Pseudovirus-Ha-PV.pdf",
+          "file": "VBI-HBK-001-REV005-Rapid-Cell-Based-Neutralization-Assay-with-the-Hybrid-Alpha-Pseudovirus-Ha-PV.pdf"
+        },
+        {
+          "label": "Ready To Use Target Cells – MSDS",
+          "source": "https://virongy.com/wp-content/uploads/2021/12/Ready-To-Use-Target-Cells-MSDS.pdf",
+          "file": "Ready-To-Use-Target-Cells-MSDS.pdf"
+        }
+      ],
+      "featured": false
+    },
+    {
+      "slug": "hantavirus-pseudoviral-neutralization-assay-kit",
+      "source_slug": "hantavirus-pseudoviral-neutralization-assay-kit",
+      "name": "Hantavirus Pseudoviral Neutralization Assay Kit",
+      "category": "Neutralization Assay Kits",
+      "summary": "A ready-to-use 96-well neutralization assay kit built on Virongy's hybrid alpha-pseudovirus technology. Supplied with pre-counted, ready-to-use target cells, so no cell culture or CO2 incubator is required - thaw and go. Used to quantify neutralizing antibodies and screen entry-inhibiting compounds at BSL-2.",
+      "applications": [],
+      "contents": [
+        "5 mL of Pseudovirus Particles",
+        "1 Tube of Ready-To-Use Target Cells (5 Million Cells/Tube)",
+        "15 mL of VBI Infection Medium",
+        "2 mL of Lysis Buffer",
+        "3.5 mL of Firefly Luciferase Assay Buffer"
+      ],
+      "features": [],
+      "options": [
+        {
+          "label": "Variant",
+          "values": [
+            "Andes Virus CHI-9717869 strain(NP_604472.1)"
+          ]
+        }
+      ],
+      "image_source": "https://virongy.com/wp-content/uploads/2026/05/Hantavirus-structure-for-website.png",
+      "image": "assets/virongy-hantavirus-structure-for-website.webp",
+      "docs": [
+        {
+          "label": "VBI HBK 001 REV005 Rapid Cell Based Neutralization Assay with the Hybrid Alpha Pseudovirus Ha PV",
+          "source": "https://virongy.com/wp-content/uploads/2023/07/VBI-HBK-001-REV005-Rapid-Cell-Based-Neutralization-Assay-with-the-Hybrid-Alpha-Pseudovirus-Ha-PV.pdf",
+          "file": "VBI-HBK-001-REV005-Rapid-Cell-Based-Neutralization-Assay-with-the-Hybrid-Alpha-Pseudovirus-Ha-PV.pdf"
+        },
+        {
+          "label": "Ready To Use Target Cells – MSDS",
+          "source": "https://virongy.com/wp-content/uploads/2021/12/Ready-To-Use-Target-Cells-MSDS.pdf",
+          "file": "Ready-To-Use-Target-Cells-MSDS.pdf"
+        }
+      ],
+      "featured": false
+    },
+    {
+      "slug": "hiv-neutralization-assay-kit",
+      "source_slug": "hiv-pseudoviral-neutralization-assay-kit-copy",
+      "name": "HIV Pseudoviral Neutralization Assay Kit",
+      "category": "Neutralization Assay Kits",
+      "summary": "A ready-to-use 96-well neutralization assay kit built on Virongy's hybrid alpha-pseudovirus technology. Supplied with pre-counted, ready-to-use target cells, so no cell culture or CO2 incubator is required - thaw and go. Used to quantify neutralizing antibodies and screen entry-inhibiting compounds at BSL-2.",
+      "applications": [],
+      "contents": [
+        "5 mL of Pseudovirus Particles",
+        "1 Tube of Ready-To-Use Target Cells (5 Million Cells/Tube)",
+        "15 mL of VBI Infection Medium",
+        "2 mL of Lysis Buffer",
+        "3.5 mL of Firefly Luciferase Assay Buffer"
+      ],
+      "features": [],
+      "options": [
+        {
+          "label": "Viral Strain",
+          "values": [
+            "HIV-1 AD8 (CCR5 Tropic)",
+            "HIV-1 NL4-3 (CXCR4 Tropic)"
+          ]
+        }
+      ],
+      "image_source": "https://virongy.com/wp-content/uploads/2023/08/Alpha-Pseudovirus-for-Retroviruses.png",
+      "image": "assets/virongy-alpha-pseudovirus-for-retroviruses.webp",
+      "docs": [],
+      "featured": false
+    },
+    {
+      "slug": "influenza-a-pseudoviral-neutralization-assay-kit",
+      "source_slug": "influenza-a-pseudoviral-neutralization-assay-kit",
+      "name": "Influenza Pseudoviral Neutralization Assay Kit",
+      "category": "Neutralization Assay Kits",
+      "summary": "Now with ready-to-use cells! No need to culture cells or CO2 incubators. Cells come pre-counted so just thaw and go. Virongy’s Pseudoviral Neutralization Assay Kit is superior due to the implementation of our newly developed alpha pseudovirus.",
+      "applications": [],
+      "contents": [
+        "5 mL of Pseudovirus Particles",
+        "1 Tube of Ready-To-Use Target Cells (5 Million Cells/Tube)",
+        "15 mL of VBI Infection Medium",
+        "2 mL of Lysis Buffer",
+        "3.5 mL of Firefly Luciferase Assay Buffer"
+      ],
+      "features": [],
+      "options": [
+        {
+          "label": "Strain",
+          "values": [
+            "A/Brevig-Mission/1/1918(H1N1)",
+            "A/Victoria/4897/2022(H1N1)",
+            "A/California/04/2009(H1N1)",
+            "A/PR/8/1934(H1N1)",
+            "A/Wisconsin/67/2022(H1N1)",
+            "A/Croatia/10136RV/2023(H3N2)",
+            "A/Darwin/9/2021(H3N2)",
+            "A/District of Columbia/27/2023(H3N2)",
+            "A/California/LACPHL‑INF02051/2025(H3N2) Subclade K",
+            "A/Texas/37/2024(H5N1) Clade 2.3.4.4b",
+            "A/Nevada/10/2025 (H5N1) Clade 2.3.4.4b",
+            "A/Thailand/NBL1/2006(H5N1)",
+            "A/Jiangsu/1/2013(H7N9)",
+            "B/Austria/1359417/2021",
+            "B/Phuket/3073/2013"
+          ]
+        }
+      ],
+      "image_source": "https://virongy.com/wp-content/uploads/2023/08/Virongys-alphapsueoviruses-dodecagon-SCALED.png",
+      "image": "assets/virongy-virongys-alphapsueoviruses-dodecagon-scaled.webp",
+      "docs": [
+        {
+          "label": "VBI HBK 001 REV005 Rapid Cell Based Neutralization Assay with the Hybrid Alpha Pseudovirus Ha PV",
+          "source": "https://virongy.com/wp-content/uploads/2023/07/VBI-HBK-001-REV005-Rapid-Cell-Based-Neutralization-Assay-with-the-Hybrid-Alpha-Pseudovirus-Ha-PV.pdf",
+          "file": "VBI-HBK-001-REV005-Rapid-Cell-Based-Neutralization-Assay-with-the-Hybrid-Alpha-Pseudovirus-Ha-PV.pdf"
+        },
+        {
+          "label": "Ready To Use Target Cells – MSDS",
+          "source": "https://virongy.com/wp-content/uploads/2021/12/Ready-To-Use-Target-Cells-MSDS.pdf",
+          "file": "Ready-To-Use-Target-Cells-MSDS.pdf"
+        }
+      ],
+      "featured": false
+    },
+    {
+      "slug": "lassa-pseudoviral-neutralization-assay-kit",
+      "source_slug": "lassa-pseudoviral-neutralization-assay-kit",
+      "name": "Lassa Pseudoviral Neutralization Assay Kit",
+      "category": "Neutralization Assay Kits",
+      "summary": "A ready-to-use 96-well neutralization assay kit built on Virongy's hybrid alpha-pseudovirus technology. Supplied with pre-counted, ready-to-use target cells, so no cell culture or CO2 incubator is required - thaw and go. Used to quantify neutralizing antibodies and screen entry-inhibiting compounds at BSL-2.",
+      "applications": [],
+      "contents": [
+        "5 mL of Pseudovirus Particles",
+        "1 Tube of Ready-To-Use Target Cells (5 Million Cells/Tube)",
+        "15 mL of VBI Infection Medium",
+        "2 mL of Lysis Buffer",
+        "3.5 mL of Firefly Luciferase Assay Buffer"
+      ],
+      "features": [],
+      "options": [
+        {
+          "label": "Variant",
+          "values": [
+            "WT Josiah Strain"
+          ]
+        }
+      ],
+      "image_source": "https://virongy.com/wp-content/uploads/2023/08/HA-Arenaviruses-Particle-Image-pdf.jpg",
+      "image": "assets/virongy-ha-arenaviruses-particle-image-pdf.webp",
+      "docs": [
+        {
+          "label": "VBI HBK 001 REV005 Rapid Cell Based Neutralization Assay with the Hybrid Alpha Pseudovirus Ha PV",
+          "source": "https://virongy.com/wp-content/uploads/2023/07/VBI-HBK-001-REV005-Rapid-Cell-Based-Neutralization-Assay-with-the-Hybrid-Alpha-Pseudovirus-Ha-PV.pdf",
+          "file": "VBI-HBK-001-REV005-Rapid-Cell-Based-Neutralization-Assay-with-the-Hybrid-Alpha-Pseudovirus-Ha-PV.pdf"
+        },
+        {
+          "label": "Ready To Use Target Cells – MSDS",
+          "source": "https://virongy.com/wp-content/uploads/2021/12/Ready-To-Use-Target-Cells-MSDS.pdf",
+          "file": "Ready-To-Use-Target-Cells-MSDS.pdf"
+        }
+      ],
+      "featured": false
+    },
+    {
+      "slug": "marburg-pseudoviral-neutralization-assay-kit",
+      "source_slug": "marburg-pseudoviral-neutralization-assay-kit",
+      "name": "Marburg Pseudoviral Neutralization Assay Kit",
+      "category": "Neutralization Assay Kits",
+      "summary": "A ready-to-use 96-well neutralization assay kit built on Virongy's hybrid alpha-pseudovirus technology. Supplied with pre-counted, ready-to-use target cells, so no cell culture or CO2 incubator is required - thaw and go. Used to quantify neutralizing antibodies and screen entry-inhibiting compounds at BSL-2.",
+      "applications": [],
+      "contents": [
+        "5 mL of Pseudovirus Particles",
+        "1 Tube of Ready-To-Use Target Cells (5 Million Cells/Tube)",
+        "15 mL of VBI Infection Medium",
+        "2 mL of Lysis Buffer",
+        "3.5 mL of Firefly Luciferase Assay Buffer"
+      ],
+      "features": [],
+      "options": [
+        {
+          "label": "Variant",
+          "values": [
+            "MARV001"
+          ]
+        }
+      ],
+      "image_source": "https://virongy.com/wp-content/uploads/2023/08/HA-Foliovirus-Particle-Image-pdf-2.jpg",
+      "image": "assets/virongy-ha-foliovirus-particle-image-pdf-2.webp",
+      "docs": [
+        {
+          "label": "VBI HBK 001 REV005 Rapid Cell Based Neutralization Assay with the Hybrid Alpha Pseudovirus Ha PV",
+          "source": "https://virongy.com/wp-content/uploads/2023/07/VBI-HBK-001-REV005-Rapid-Cell-Based-Neutralization-Assay-with-the-Hybrid-Alpha-Pseudovirus-Ha-PV.pdf",
+          "file": "VBI-HBK-001-REV005-Rapid-Cell-Based-Neutralization-Assay-with-the-Hybrid-Alpha-Pseudovirus-Ha-PV.pdf"
+        },
+        {
+          "label": "Ready To Use Target Cells – MSDS",
+          "source": "https://virongy.com/wp-content/uploads/2021/12/Ready-To-Use-Target-Cells-MSDS.pdf",
+          "file": "Ready-To-Use-Target-Cells-MSDS.pdf"
+        }
+      ],
+      "featured": false
+    },
+    {
+      "slug": "mers-cov-pseudoviral-neutralization-assay-kit",
+      "source_slug": "mers-cov-pseudoviral-neutralization-assay-kit",
+      "name": "MERS-CoV Pseudoviral Neutralization Assay Kit",
+      "category": "Neutralization Assay Kits",
+      "summary": "Now with ready-to-use cells! No need to culture cells or CO2 incubators. Cells come pre-counted so just thaw and go. Virongy’s SARS-CoV Neutralization Assay Kit is superior due to the implementation of our newly developed alpha pseudovirus.",
+      "applications": [],
+      "contents": [
+        "5 mL of Pseudovirus Particles",
+        "1 Tube of Ready-To-Use Target Cells (5 Million Cells/Tube)",
+        "15 mL of VBI Infection Medium",
+        "2 mL of Lysis Buffer",
+        "3.5 mL of Firefly Luciferase Assay Buffer"
+      ],
+      "features": [],
+      "options": [
+        {
+          "label": "Variant",
+          "values": [
+            "WT"
+          ]
+        }
+      ],
+      "image_source": "https://virongy.com/wp-content/uploads/2023/08/HA-Coronavirus-Particle-Image-pdf.jpg",
+      "image": "assets/virongy-ha-coronavirus-particle-image-pdf.webp",
+      "docs": [
+        {
+          "label": "VBI HBK 001 REV005 Rapid Cell Based Neutralization Assay with the Hybrid Alpha Pseudovirus Ha PV",
+          "source": "https://virongy.com/wp-content/uploads/2023/07/VBI-HBK-001-REV005-Rapid-Cell-Based-Neutralization-Assay-with-the-Hybrid-Alpha-Pseudovirus-Ha-PV.pdf",
+          "file": "VBI-HBK-001-REV005-Rapid-Cell-Based-Neutralization-Assay-with-the-Hybrid-Alpha-Pseudovirus-Ha-PV.pdf"
+        },
+        {
+          "label": "Ready To Use Target Cells – MSDS",
+          "source": "https://virongy.com/wp-content/uploads/2021/12/Ready-To-Use-Target-Cells-MSDS.pdf",
+          "file": "Ready-To-Use-Target-Cells-MSDS.pdf"
+        }
+      ],
+      "featured": false
+    },
+    {
+      "slug": "nipah-pseudoviral-neutralization-assay-kit",
+      "source_slug": "nipah-pseudoviral-neutralization-assay-kit",
+      "name": "Nipah Pseudoviral Neutralization Assay Kit",
+      "category": "Neutralization Assay Kits",
+      "summary": "Now with ready-to-use cells! No need to culture cells or CO2 incubators. Cells come pre-counted so just thaw and go. Virongy’s Nipah Neutralization Assay Kit is superior due to the implementation of the newly developed alpha pseudovirus.",
+      "applications": [],
+      "contents": [
+        "5 mL of Pseudovirus Particles",
+        "1 Tube of Ready-To-Use Target Cells (5 Million Cells/Tube)",
+        "15 mL of VBI Infection Medium",
+        "2 mL of Lysis Buffer",
+        "3.5 mL of Firefly Luciferase Assay Buffer"
+      ],
+      "features": [],
+      "options": [
+        {
+          "label": "Variant",
+          "values": [
+            "WT"
+          ]
+        }
+      ],
+      "image_source": "https://virongy.com/wp-content/uploads/2023/08/HA-Henipavirus-Particle-Image-pdf.jpg",
+      "image": "assets/virongy-ha-henipavirus-particle-image-pdf.webp",
+      "docs": [
+        {
+          "label": "VBI HBK 001 REV005 Rapid Cell Based Neutralization Assay with the Hybrid Alpha Pseudovirus Ha PV",
+          "source": "https://virongy.com/wp-content/uploads/2023/07/VBI-HBK-001-REV005-Rapid-Cell-Based-Neutralization-Assay-with-the-Hybrid-Alpha-Pseudovirus-Ha-PV.pdf",
+          "file": "VBI-HBK-001-REV005-Rapid-Cell-Based-Neutralization-Assay-with-the-Hybrid-Alpha-Pseudovirus-Ha-PV.pdf"
+        },
+        {
+          "label": "Ready To Use Target Cells – MSDS",
+          "source": "https://virongy.com/wp-content/uploads/2021/12/Ready-To-Use-Target-Cells-MSDS.pdf",
+          "file": "Ready-To-Use-Target-Cells-MSDS.pdf"
+        }
+      ],
+      "featured": false
+    },
+    {
+      "slug": "rabies-neutralization-assay-kit",
+      "source_slug": "rabies-pseudoviral-neutralization-assay-kit-copy",
+      "name": "Rabies Pseudoviral Neutralization Assay Kit",
+      "category": "Neutralization Assay Kits",
+      "summary": "A ready-to-use 96-well neutralization assay kit built on Virongy's hybrid alpha-pseudovirus technology. Supplied with pre-counted, ready-to-use target cells, so no cell culture or CO2 incubator is required - thaw and go. Used to quantify neutralizing antibodies and screen entry-inhibiting compounds at BSL-2.",
+      "applications": [],
+      "contents": [
+        "5 mL of Pseudovirus Particles",
+        "1 Tube of Ready-To-Use Target Cells (5 Million Cells/Tube)",
+        "15 mL of VBI Infection Medium",
+        "2 mL of Lysis Buffer",
+        "3.5 mL of Firefly Luciferase Assay Buffer"
+      ],
+      "features": [],
+      "options": [
+        {
+          "label": "Variant",
+          "values": [
+            "CVS-11 (WT)"
+          ]
+        }
+      ],
+      "image_source": "https://virongy.com/wp-content/uploads/2023/08/Ha-Rabies-Particle-Image-.png",
+      "image": "assets/virongy-ha-rabies-particle-image.webp",
+      "docs": [
+        {
+          "label": "VBI HBK 001 REV005 Rapid Cell Based Neutralization Assay with the Hybrid Alpha Pseudovirus Ha PV",
+          "source": "https://virongy.com/wp-content/uploads/2023/07/VBI-HBK-001-REV005-Rapid-Cell-Based-Neutralization-Assay-with-the-Hybrid-Alpha-Pseudovirus-Ha-PV.pdf",
+          "file": "VBI-HBK-001-REV005-Rapid-Cell-Based-Neutralization-Assay-with-the-Hybrid-Alpha-Pseudovirus-Ha-PV.pdf"
+        },
+        {
+          "label": "Ready To Use Target Cells – MSDS",
+          "source": "https://virongy.com/wp-content/uploads/2021/12/Ready-To-Use-Target-Cells-MSDS.pdf",
+          "file": "Ready-To-Use-Target-Cells-MSDS.pdf"
+        }
+      ],
+      "featured": false
+    },
+    {
+      "slug": "sars-cov-2-rapid-neutralizing-antibody-kit",
+      "source_slug": "sars-cov-2-nuetralizing-kit",
+      "name": "Rapid Cell-Based SARS-CoV-2 Neutralizing Antibody Assay Kit",
+      "category": "Neutralization Assay Kits",
+      "summary": "The entry of SARS-CoV-2 into host cells is mediated by the trimeric transmembrane spike (S) glycoprotein. The S glycoprotein is surface-exposed and mediates entry into the host cells by binding to the human angiotensin-converting enzyme 2 receptor which makes the S glycoprotein a major target of neutralizing antibodies. Neutralizing antibodies blocking the S protein and receptor binding could prevent the virus from infecting host cells.",
+      "applications": [],
+      "contents": [],
+      "features": [],
+      "options": [
+        {
+          "label": "Variant",
+          "values": [
+            "Alpha (B.1.1.7)",
+            "AY4/BA.1 \"Deltacron\"",
+            "B.1.1.207",
+            "B.1.1.298",
+            "B.1.2",
+            "B.1.258",
+            "B.1.494",
+            "BA.2",
+            "BA.2.12.1",
+            "BA.2.75",
+            "BA.4 and BA.5",
+            "BA.4.6",
+            "Beta (B.1.351)",
+            "BQ.1",
+            "BQ.1.1",
+            "CH.1.1",
+            "D614G Single Mutation",
+            "Delta (B.1.617.2)",
+            "Delta Plus (AY.2)",
+            "Delta Plus (AY4.2)",
+            "DV.7.1.2",
+            "EG.10.1",
+            "Epsilon (B.1.427/429)",
+            "Epsilon (B.1.429)",
+            "Eta (B.1.525)",
+            "FL.1.5.1",
+            "FL.10.1",
+            "Gamma (P.1)",
+            "GK.1.1",
+            "GW.5.1.1",
+            "HF.1",
+            "HK.3",
+            "HV.1",
+            "HW.1.1",
+            "JB.2.1",
+            "JD.1.1",
+            "JF.1",
+            "JH.2",
+            "JN.1",
+            "JP.1",
+            "Kappa (B.1.617.1)",
+            "Lambda (C.37)",
+            "Mu (B.1.621)",
+            "Omicron (B.1.1.529)",
+            "Wild Type",
+            "XBB.1",
+            "XBB.1.16",
+            "XBB.1.16.11",
+            "XBB.1.41.1",
+            "XBB.1.5",
+            "XBB.1.9.1",
+            "XBB.2.3"
+          ]
+        },
+        {
+          "label": "Product Type",
+          "values": [
+            "96-well Rapid Neutralization Assay Kit - w/ Ready-To-Use Cells"
+          ]
+        }
+      ],
+      "image_source": "https://virongy.com/wp-content/uploads/2021/12/HA-Coronavirus-Particle-Image-pdf.jpg",
+      "image": "assets/virongy-ha-coronavirus-particle-image-pdf.webp",
+      "docs": [
+        {
+          "label": "SARS-CoV-2 Neutralizing Antibody Assay Kit – Handbook",
+          "source": "https://virongy.com/wp-content/uploads/2023/07/VBI-HBK-001-REV005-Rapid-Cell-Based-Neutralization-Assay-with-the-Hybrid-Alpha-Pseudovirus-Ha-PV.pdf",
+          "file": "VBI-HBK-001-REV005-Rapid-Cell-Based-Neutralization-Assay-with-the-Hybrid-Alpha-Pseudovirus-Ha-PV.pdf"
+        },
+        {
+          "label": "SARS-CoV-2 Neutralizing Antibody Assay Kit Reagents – MSDS",
+          "source": "https://virongy.com/wp-content/uploads/2021/12/Neutralizing-Antibody-Kit-MSDS.pdf",
+          "file": "Neutralizing-Antibody-Kit-MSDS.pdf"
+        },
+        {
+          "label": "SARS-CoV-2 Neutralizing Antibody – MSDS",
+          "source": "https://virongy.com/wp-content/uploads/2022/02/SARS-CoV-2-Neutralizing-Antibody-MSDS.pdf",
+          "file": "SARS-CoV-2-Neutralizing-Antibody-MSDS.pdf"
+        },
+        {
+          "label": "Ready To Use Target Cells – MSDS",
+          "source": "https://virongy.com/wp-content/uploads/2021/12/Ready-To-Use-Target-Cells-MSDS.pdf",
+          "file": "Ready-To-Use-Target-Cells-MSDS.pdf"
+        }
+      ],
+      "featured": true
+    },
+    {
+      "slug": "sars-cov-neutralization-assay-kit",
+      "source_slug": "sars-cov-pseudoviral-neutralization-assay-kit-2",
+      "name": "SARS-CoV Pseudoviral Neutralization Assay Kit",
+      "category": "Neutralization Assay Kits",
+      "summary": "Now with ready-to-use cells! No need to culture cells or CO2 incubators. Cells come pre-counted so just thaw and go. Virongy’s SARS-CoV Neutralization Assay Kit is superior due to the implementation of our newly developed alpha pseudovirus.",
+      "applications": [],
+      "contents": [
+        "5 mL of Pseudovirus Particles",
+        "1 Tube of Ready-To-Use Target Cells (5 Million Cells/Tube)",
+        "15 mL of VBI Infection Medium",
+        "2 mL of Lysis Buffer",
+        "3.5 mL of Firefly Luciferase Assay Buffer"
+      ],
+      "features": [],
+      "options": [
+        {
+          "label": "Variant",
+          "values": [
+            "WT"
+          ]
+        }
+      ],
+      "image_source": "https://virongy.com/wp-content/uploads/2023/08/HA-Coronavirus-Particle-Image-pdf.jpg",
+      "image": "assets/virongy-ha-coronavirus-particle-image-pdf.webp",
+      "docs": [
+        {
+          "label": "VBI HBK 001 REV005 Rapid Cell Based Neutralization Assay with the Hybrid Alpha Pseudovirus Ha PV",
+          "source": "https://virongy.com/wp-content/uploads/2023/07/VBI-HBK-001-REV005-Rapid-Cell-Based-Neutralization-Assay-with-the-Hybrid-Alpha-Pseudovirus-Ha-PV.pdf",
+          "file": "VBI-HBK-001-REV005-Rapid-Cell-Based-Neutralization-Assay-with-the-Hybrid-Alpha-Pseudovirus-Ha-PV.pdf"
+        },
+        {
+          "label": "Ready To Use Target Cells – MSDS",
+          "source": "https://virongy.com/wp-content/uploads/2021/12/Ready-To-Use-Target-Cells-MSDS.pdf",
+          "file": "Ready-To-Use-Target-Cells-MSDS.pdf"
+        }
+      ],
+      "featured": false
+    },
+    {
+      "slug": "sars-cov-2-pseudoviral-neutralization-assay-kit",
+      "source_slug": "sars-cov-2-pseudoviral-neutralization-assay-kit",
+      "name": "SARS-CoV-2 Pseudoviral Neutralization Assay Kit",
+      "category": "Neutralization Assay Kits",
+      "summary": "A ready-to-use 96-well neutralization assay kit built on Virongy's hybrid alpha-pseudovirus technology. Supplied with pre-counted, ready-to-use target cells, so no cell culture or CO2 incubator is required - thaw and go. Used to quantify neutralizing antibodies and screen entry-inhibiting compounds at BSL-2.",
+      "applications": [],
+      "contents": [
+        "5 mL of Pseudovirus Particles",
+        "1 Tube of Ready-To-Use Target Cells (5 Million Cells/Tube)",
+        "15 mL of VBI Infection Medium",
+        "2 mL of Lysis Buffer",
+        "3.5 mL of Firefly Luciferase Assay Buffer"
+      ],
+      "features": [],
+      "options": [
+        {
+          "label": "Variant",
+          "values": [
+            "Alpha (B.1.1.7)",
+            "AY4/BA.1 \"Deltacron\"",
+            "B.1.1.207",
+            "B.1.1.298",
+            "B.1.2",
+            "B.1.258",
+            "B.1.494",
+            "BA.2",
+            "BA.2.12.1",
+            "BA.2.75",
+            "BA.4 and BA.5",
+            "BA.4.6",
+            "Beta (B.1.351)",
+            "BQ.1",
+            "BQ.1.1",
+            "CH.1.1",
+            "D614G Single Mutation",
+            "Delta (B.1.617.2)",
+            "Delta Plus (AY.2)",
+            "Delta Plus (AY4.2)",
+            "DV.7.1.2",
+            "EG.10.1",
+            "Epsilon (B.1.427/429)",
+            "Epsilon (B.1.429)",
+            "Eta (B.1.525)",
+            "FL.1.5.1",
+            "FL.10.1",
+            "Gamma (P.1)",
+            "GK.1.1",
+            "GW.5.1.1",
+            "HF.1",
+            "HK.3",
+            "HV.1",
+            "HW.1.1",
+            "JB.2.1",
+            "JD.1.1",
+            "JF.1",
+            "JH.2",
+            "JN.1",
+            "JP.1",
+            "Kappa (B.1.617.1)",
+            "Lambda (C.37)",
+            "Mu (B.1.621)",
+            "Omicron (B.1.1.529)",
+            "Wild Type",
+            "XBB.1",
+            "XBB.1.16",
+            "XBB.1.16.11",
+            "XBB.1.41.1",
+            "XBB.1.5",
+            "XBB.1.9.1",
+            "XBB.2.3"
+          ]
+        }
+      ],
+      "image_source": "https://virongy.com/wp-content/uploads/2023/08/HA-Coronavirus-Particle-Image-pdf.jpg",
+      "image": "assets/virongy-ha-coronavirus-particle-image-pdf.webp",
+      "docs": [
+        {
+          "label": "VBI HBK 001 REV005 Rapid Cell Based Neutralization Assay with the Hybrid Alpha Pseudovirus Ha PV",
+          "source": "https://virongy.com/wp-content/uploads/2023/07/VBI-HBK-001-REV005-Rapid-Cell-Based-Neutralization-Assay-with-the-Hybrid-Alpha-Pseudovirus-Ha-PV.pdf",
+          "file": "VBI-HBK-001-REV005-Rapid-Cell-Based-Neutralization-Assay-with-the-Hybrid-Alpha-Pseudovirus-Ha-PV.pdf"
+        },
+        {
+          "label": "Ready To Use Target Cells – MSDS",
+          "source": "https://virongy.com/wp-content/uploads/2021/12/Ready-To-Use-Target-Cells-MSDS.pdf",
+          "file": "Ready-To-Use-Target-Cells-MSDS.pdf"
+        }
+      ],
+      "featured": true
+    },
+    {
+      "slug": "pseudoviral-neutralization-assay-kits-for-togaviridae",
+      "source_slug": "pseudoviral-neutralization-assay-kits-for-togaviridae",
+      "name": "Togavirus Pseudoviral Neutralization Assay Kit",
+      "category": "Neutralization Assay Kits",
+      "summary": "Now with ready-to-use cells! No need to culture cells or CO2 incubators. Cells come pre-counted so just thaw and go. Virongy’s Togaviridae Neutralization Assay Kit is superior due to the implementation of the newly developed alpha pseudovirus.",
+      "applications": [],
+      "contents": [
+        "5 mL of Pseudovirus Particles",
+        "1 Tube of Ready-To-Use Target Cells (5 Million Cells/Tube)",
+        "15 mL of VBI Infection Medium",
+        "2 mL of Lysis Buffer",
+        "3.5 mL of Firefly Luciferase Assay Buffer"
+      ],
+      "features": [],
+      "options": [
+        {
+          "label": "Viral Strain",
+          "values": [
+            "Venezuelan Equine Encephalitis Virus (VEEV)",
+            "Eastern Equine Encephalitis Virus (EEEV)",
+            "Chikungunya Virus (CHIKV)",
+            "Semliki Forest Virus (SFV)"
+          ]
+        }
+      ],
+      "image_source": "https://virongy.com/wp-content/uploads/2024/11/Alpha-Pseudovirus-for-Togaviruses.png",
+      "image": "assets/virongy-alpha-pseudovirus-for-togaviruses.webp",
+      "docs": [
+        {
+          "label": "VBI HBK 001 REV005 Rapid Cell Based Neutralization Assay with the Hybrid Alpha Pseudovirus Ha PV",
+          "source": "https://virongy.com/wp-content/uploads/2023/07/VBI-HBK-001-REV005-Rapid-Cell-Based-Neutralization-Assay-with-the-Hybrid-Alpha-Pseudovirus-Ha-PV.pdf",
+          "file": "VBI-HBK-001-REV005-Rapid-Cell-Based-Neutralization-Assay-with-the-Hybrid-Alpha-Pseudovirus-Ha-PV.pdf"
+        },
+        {
+          "label": "Ready To Use Target Cells – MSDS",
+          "source": "https://virongy.com/wp-content/uploads/2021/12/Ready-To-Use-Target-Cells-MSDS.pdf",
+          "file": "Ready-To-Use-Target-Cells-MSDS.pdf"
+        }
+      ],
+      "featured": false
+    },
+    {
+      "slug": "arenaviral-protein-expression-vectors",
+      "source_slug": "arenaviral-protein-expression-vectors",
+      "name": "Arenaviral Protein Expression Vectors",
+      "category": "Viral Protein Expression Vectors",
+      "summary": "Arenavirus includes Lassa virus. Lassa viral protein expression vectors are based on the Togo/2016/7082 Isolate with the following reference sequences KU961971.1 (GPC & NP) and KU961972.1 (L & Z proteins). All of the expression vectors are codon optimized for mammalian cell expression. Choose to add a GFP or his tag to the C terminal end of any protein.",
+      "applications": [],
+      "contents": [],
+      "features": [],
+      "options": [
+        {
+          "label": "Protein",
+          "values": [
+            "Nucleoprotein (N)",
+            "GP Complex",
+            "L Protein (RNA polymerase)",
+            "Zinc-binding (Z) Protein"
+          ]
+        },
+        {
+          "label": "Tag",
+          "values": [
+            "None",
+            "His Tag",
+            "GFP Tag"
+          ]
+        }
+      ],
+      "image_source": "https://virongy.com/wp-content/uploads/2021/12/DNA-Expression-Vector-1-1-e1675966135547.png",
+      "image": "assets/virongy-dna-expression-vector-1-1.webp",
+      "docs": [
+        {
+          "label": "Protein Expression Vectors – MSDS",
+          "source": "https://virongy.com/wp-content/uploads/2021/12/Virongy-Protein-Expression-Vectors-MSDS.pdf",
+          "file": "Virongy-Protein-Expression-Vectors-MSDS.pdf"
+        },
+        {
+          "label": "pLASV Expression Vector",
+          "source": "https://virongy.com/wp-content/uploads/2022/12/pLASV.pdf",
+          "file": "pLASV.pdf"
+        }
+      ],
+      "featured": false
+    },
+    {
+      "slug": "bunyavirus-protein-expression-vectors",
+      "source_slug": "bunyavirus-protein-expression-vectors",
+      "name": "Bunyavirus Protein Expression Vectors",
+      "category": "Viral Protein Expression Vectors",
+      "summary": "Bunyaviruses include Crimean-Congo hemorrhagic fever (CCHF) and Rift Valley Fever (RVF) viruses. The C rimean-Congo hemorrhagic fever viral protein expression vectors are derived from NCBI reference sequence s NC_005303.1 (S genome ), NC_005300.2 (M genome ) , and NC_005301.3 (L genome ) .",
+      "applications": [],
+      "contents": [],
+      "features": [],
+      "options": [
+        {
+          "label": "Species/Strain",
+          "values": [
+            "Crimean-Congo Hemorrhagic Fever Virus (NC_005300.2)",
+            "Rift Valley Fever Virus (KX632067.1)"
+          ]
+        },
+        {
+          "label": "Protein",
+          "values": [
+            "Nucleocapsid (N) Protein",
+            "Glycoproteins (Gc, Gn, NSm)",
+            "Polymerase (RdRp) Protein",
+            "Nonstructural Protein"
+          ]
+        },
+        {
+          "label": "Tag",
+          "values": [
+            "None",
+            "His tag",
+            "GFP tag"
+          ]
+        }
+      ],
+      "image_source": "https://virongy.com/wp-content/uploads/2021/12/DNA-Expression-Vector-1-1-e1675966135547.png",
+      "image": "assets/virongy-dna-expression-vector-1-1.webp",
+      "docs": [
+        {
+          "label": "Protein Expression Vectors – MSDS",
+          "source": "https://virongy.com/wp-content/uploads/2021/12/Virongy-Protein-Expression-Vectors-MSDS.pdf",
+          "file": "Virongy-Protein-Expression-Vectors-MSDS.pdf"
+        },
+        {
+          "label": "pRFV Expression Vector",
+          "source": "https://virongy.com/wp-content/uploads/2022/12/pRFV.pdf",
+          "file": "pRFV.pdf"
+        }
+      ],
+      "featured": false
+    },
+    {
+      "slug": "filoviral-protein-expression-vectors",
+      "source_slug": "filoviral-protein-expression-vectors",
+      "name": "Filoviral Protein Expression Vectors",
+      "category": "Viral Protein Expression Vectors",
+      "summary": "Filoviruses include Marburg and Ebolaviruses. Marburg viral protein expression vectors are based on the MARV001 Isolate (Genebank: OL702894 .1). Ebola viral protein expression vectors are based on either the Zaire ebolavirus (Genebank: KJ660346.2) or the Sudan ebolavirus (Genebank: MT583348.1) strain. All of the expression vectors are codon optimized for mammalian cell expression. Choose to add a GFP or his tag to the C terminal end of any protein.",
+      "applications": [],
+      "contents": [],
+      "features": [],
+      "options": [
+        {
+          "label": "Species/Strain",
+          "values": [
+            "Sudan Ebolavirus (MT583348.1)",
+            "Zaire Ebolavirus (KJ660346.2)",
+            "Bundibugyo (NC_014373)",
+            "Marburg Virus (OL702894.1)"
+          ]
+        },
+        {
+          "label": "Protein",
+          "values": [
+            "Nucleoprotein (N)",
+            "VP35 Protein",
+            "VP40",
+            "GP",
+            "VP30 Protein",
+            "VP24 Protein",
+            "L protein (RDRP)"
+          ]
+        },
+        {
+          "label": "Tag",
+          "values": [
+            "None",
+            "His Tag",
+            "GFP Tag"
+          ]
+        }
+      ],
+      "image_source": "https://virongy.com/wp-content/uploads/2021/12/DNA-Expression-Vector-1-1-e1675966135547.png",
+      "image": "assets/virongy-dna-expression-vector-1-1.webp",
+      "docs": [
+        {
+          "label": "Protein Expression Vectors – MSDS",
+          "source": "https://virongy.com/wp-content/uploads/2021/12/Virongy-Protein-Expression-Vectors-MSDS.pdf",
+          "file": "Virongy-Protein-Expression-Vectors-MSDS.pdf"
+        }
+      ],
+      "featured": false
+    },
+    {
+      "slug": "flavivirus-protein-expression-vectors",
+      "source_slug": "flavivirus-protein-expression-vectors",
+      "name": "Flavivirus Protein Expression Vectors",
+      "category": "Viral Protein Expression Vectors",
+      "summary": "Flaviviruses include Dengue and Zika viruses. The expression vectors are derived from NCBI reference sequences for Dengue type 1 (NC_001477), Dengue type 2 (M29095), Dengue type 3 (NC_001475), Dengue type 4 (NC_002640). Zika viral protein expression vectors are based on the Zika virus strain MR 766 (KY989511 .1). All of the expression vectors are codon optimized for mammalian cell expression.",
+      "applications": [],
+      "contents": [],
+      "features": [],
+      "options": [
+        {
+          "label": "Species/Strain",
+          "values": [
+            "Dengue Virus (EU848545.1)",
+            "Zika Virus (KY989511.1)"
+          ]
+        },
+        {
+          "label": "Protein",
+          "values": [
+            "Capsid",
+            "Precursor Membrane and Envelope Proteins (prME)",
+            "NS1",
+            "NS2A",
+            "NS2B",
+            "NS3",
+            "NS4A",
+            "NS4B",
+            "NS5"
+          ]
+        },
+        {
+          "label": "Tag",
+          "values": [
+            "None",
+            "His Tag",
+            "GFP Tag"
+          ]
+        }
+      ],
+      "image_source": "https://virongy.com/wp-content/uploads/2021/12/DNA-Expression-Vector-1-1-e1675966135547.png",
+      "image": "assets/virongy-dna-expression-vector-1-1.webp",
+      "docs": [
+        {
+          "label": "Protein Expression Vectors – MSDS",
+          "source": "https://virongy.com/wp-content/uploads/2021/12/Virongy-Protein-Expression-Vectors-MSDS.pdf",
+          "file": "Virongy-Protein-Expression-Vectors-MSDS.pdf"
+        },
+        {
+          "label": "pZIKV Expression Vector",
+          "source": "https://virongy.com/wp-content/uploads/2022/12/pZIKV.pdf",
+          "file": "pZIKV.pdf"
+        }
+      ],
+      "featured": false
+    },
+    {
+      "slug": "hepadnavirus-protein-expression-vectors",
+      "source_slug": "hepadnavirus-protein-expression-vectors",
+      "name": "Hepadnavirus Protein Expression Vectors",
+      "category": "Viral Protein Expression Vectors",
+      "summary": "Hepadnavirus includes Hepatitis B virus. Hepatitis B viral protein expression vectors are derived from NCBI reference sequence NC_003977.2 . All of the expression vectors are codon optimized for mammalian cell expression. Choose to add a GFP or his tag to the C terminal end of any protein. A CMV promoter is used for mammalian cell expression and the backbone contains a selection marker for Geneticin (G418).",
+      "applications": [],
+      "contents": [],
+      "features": [],
+      "options": [
+        {
+          "label": "Protein",
+          "values": [
+            "Small (S) envelope",
+            "Middle (M) envelope",
+            "Large (L) envelope",
+            "Polymerase (P) Protein",
+            "Capsid Protein",
+            "Pre-capsid Protein",
+            "X Protein"
+          ]
+        },
+        {
+          "label": "Tag",
+          "values": [
+            "None",
+            "His Tag",
+            "GFP Tag"
+          ]
+        }
+      ],
+      "image_source": "https://virongy.com/wp-content/uploads/2021/12/DNA-Expression-Vector-1-1-e1675966135547.png",
+      "image": "assets/virongy-dna-expression-vector-1-1.webp",
+      "docs": [
+        {
+          "label": "Protein Expression Vectors – MSDS",
+          "source": "https://virongy.com/wp-content/uploads/2021/12/Virongy-Protein-Expression-Vectors-MSDS.pdf",
+          "file": "Virongy-Protein-Expression-Vectors-MSDS.pdf"
+        },
+        {
+          "label": "pHBV Expression Vector",
+          "source": "https://virongy.com/wp-content/uploads/2022/12/pHBV.pdf",
+          "file": "pHBV.pdf"
+        }
+      ],
+      "featured": false
+    },
+    {
+      "slug": "orthomyxovirus-protein-expression-vectors",
+      "source_slug": "orthomyxovirus-protein-expression-vectors",
+      "name": "Influenza Virus Protein Expression Vectors",
+      "category": "Viral Protein Expression Vectors",
+      "summary": "Orthomyxovirus includes Influenza A (IAV) virus. The Influenza A viral protein expression vectors are derived from the following NCBI reference sequences MW220810.1 (PB2) , MW220811.1 (PB1) , MW220812.1 (PA) , MW22081 3 .1 (NS1 & NEP) , MW22081 4 .1 (NP) , MW220815.1 (NA) , MW220816.1 (M1 & M2) , and MW220817.1 (HA) . All of the expression vectors are codon optimized for mammalian cell expression.",
+      "applications": [],
+      "contents": [],
+      "features": [],
+      "options": [
+        {
+          "label": "Strain",
+          "values": [
+            "A/Brevig-Mission/1/1918(H1N1)",
+            "A/Victoria/4897/2022(H1N1)",
+            "A/California/04/2009(H1N1)",
+            "A/PR/8/1934(H1N1)",
+            "A/Wisconsin/67/2022(H1N1)",
+            "A/Croatia/10136RV/2023(H3N2)",
+            "A/Darwin/9/2021(H3N2)",
+            "A/District of Columbia/27/2023(H3N2)",
+            "A/California/LACPHL‑INF02051/2025(H3N2) Subclade K",
+            "A/Texas/37/2024(H5N1) Clade 2.3.4.4b",
+            "A/Nevada/10/2025 (H5N1) Clade 2.3.4.4b",
+            "A/Thailand/NBL1/2006(H5N1)",
+            "A/Jiangsu/1/2013(H7N9)",
+            "B/Austria/1359417/2021",
+            "B/Phuket/3073/2013"
+          ]
+        },
+        {
+          "label": "Protein",
+          "values": [
+            "Hemagglutinin (HA)",
+            "Neuraminidase (NA)",
+            "M1",
+            "M2",
+            "Nucleoprotein (N)",
+            "PB1",
+            "PB2",
+            "PB1-F2",
+            "PA",
+            "PA-X",
+            "NEP",
+            "NS1"
+          ]
+        },
+        {
+          "label": "Tag",
+          "values": [
+            "None",
+            "His Tag",
+            "GFP Tag"
+          ]
+        }
+      ],
+      "image_source": "https://virongy.com/wp-content/uploads/2021/12/DNA-Expression-Vector-1-1-e1675966135547.png",
+      "image": "assets/virongy-dna-expression-vector-1-1.webp",
+      "docs": [
+        {
+          "label": "Protein Expression Vectors – MSDS",
+          "source": "https://virongy.com/wp-content/uploads/2021/12/Virongy-Protein-Expression-Vectors-MSDS.pdf",
+          "file": "Virongy-Protein-Expression-Vectors-MSDS.pdf"
+        },
+        {
+          "label": "pIAV Expression Vector",
+          "source": "https://virongy.com/wp-content/uploads/2022/12/pIAV.pdf",
+          "file": "pIAV.pdf"
+        }
+      ],
+      "featured": false
+    },
+    {
+      "slug": "nipah-protein-expression-vectors",
+      "source_slug": "nipah-protein-expression-vectors",
+      "name": "Nipah Virus Protein Expression Vectors",
+      "category": "Viral Protein Expression Vectors",
+      "summary": "Nipah viral protein expression vectors are based on the NCBI Reference Sequence: (NC_002728.1) All of the expression vectors are codon optimized for mammalian cell expression. Choose to add a GFP or his tag to the C terminal end of any protein. A CMV promoter is used for mammalian cell expression and the backbone contains a selection marker for Geneticin (G418).",
+      "applications": [],
+      "contents": [],
+      "features": [],
+      "options": [
+        {
+          "label": "Protein",
+          "values": [
+            "Nucleoprotein (N)",
+            "P Protein",
+            "V Protein",
+            "W Protein",
+            "C Protein",
+            "Matrix (M) Protein",
+            "Fusion (F) Protein",
+            "Attachment Glycoprotein (G)",
+            "RDRP (L) Protein"
+          ]
+        },
+        {
+          "label": "Tag",
+          "values": [
+            "None",
+            "His Tag",
+            "GFP Tag"
+          ]
+        }
+      ],
+      "image_source": "https://virongy.com/wp-content/uploads/2021/12/DNA-Expression-Vector-1-1-e1675966135547.png",
+      "image": "assets/virongy-dna-expression-vector-1-1.webp",
+      "docs": [
+        {
+          "label": "Protein Expression Vectors – MSDS",
+          "source": "https://virongy.com/wp-content/uploads/2021/12/Virongy-Protein-Expression-Vectors-MSDS.pdf",
+          "file": "Virongy-Protein-Expression-Vectors-MSDS.pdf"
+        }
+      ],
+      "featured": false
+    },
+    {
+      "slug": "pneumoviral-protein-expression-vectors",
+      "source_slug": "pneumoviral-protein-expression-vectors",
+      "name": "Pneumoviral Protein Expression Vectors",
+      "category": "Viral Protein Expression Vectors",
+      "summary": "Pneumovirus includes Respiratory Syncytial Virus. The respiratory syncytial viral protein expression vectors are derived from NCBI reference sequence NC_001803.1 . All of the expression vectors are codon optimized for mammalian cell expression. Choose to add a GFP or his tag to the C terminal end of any protein. A CMV promoter is used for mammalian cell expression and the backbone contains a selection marker for Geneticin (G418).",
+      "applications": [],
+      "contents": [],
+      "features": [],
+      "options": [
+        {
+          "label": "Protein",
+          "values": [
+            "Nucleoprotein (N)",
+            "Phosphoprotein (P)",
+            "Polymerase (L)",
+            "G glycoprotein",
+            "Fusion (F) glycoprotein",
+            "SH glycoprotein",
+            "NS1",
+            "NS2",
+            "Matrix (M)"
+          ]
+        },
+        {
+          "label": "Tag",
+          "values": [
+            "None",
+            "His Tag",
+            "GFP Tag"
+          ]
+        }
+      ],
+      "image_source": "https://virongy.com/wp-content/uploads/2021/12/DNA-Expression-Vector-1-1-e1675966135547.png",
+      "image": "assets/virongy-dna-expression-vector-1-1.webp",
+      "docs": [
+        {
+          "label": "Protein Expression Vectors – MSDS",
+          "source": "https://virongy.com/wp-content/uploads/2021/12/Virongy-Protein-Expression-Vectors-MSDS.pdf",
+          "file": "Virongy-Protein-Expression-Vectors-MSDS.pdf"
+        },
+        {
+          "label": "pRSV Expression Vector",
+          "source": "https://virongy.com/wp-content/uploads/2022/12/pRSV.pdf",
+          "file": "pRSV.pdf"
+        }
+      ],
+      "featured": false
+    },
+    {
+      "slug": "sars-cov-2-protein-expression-vectors",
+      "source_slug": "sars-cov-2-protein-expression-vectors",
+      "name": "SARS-CoV-2 Protein Expression Vectors",
+      "category": "Viral Protein Expression Vectors",
+      "summary": "The SARS-CoV-2 protein expression vectors are full-length, and codon optimized for mammalian cell expression. Choose to add a GFP or his tag to the C terminal end of any protein. A CMV promoter is used for mammalian cell expression and the backbone contains a selection marker for Geneticin (G418). The amino acid changes to the spike variants are found below.",
+      "applications": [],
+      "contents": [],
+      "features": [],
+      "options": [
+        {
+          "label": "Protein",
+          "values": [
+            "Envelope",
+            "Membrane",
+            "Nucleocapsid",
+            "ORF7",
+            "ORF8",
+            "RNA-Dependent RNA Polymerase (RDRP)",
+            "Spike"
+          ]
+        },
+        {
+          "label": "Variant",
+          "values": [
+            "Alpha (B.1.1.7)",
+            "AY4/BA.1 \"Deltacron\"",
+            "B.1.1.207",
+            "B.1.1.298",
+            "B.1.2",
+            "B.1.258",
+            "B.1.494",
+            "BA.2",
+            "BA.2.12.1",
+            "BA.2.75",
+            "BA.4 and BA.5",
+            "BA.4.6",
+            "Beta (B.1.351)",
+            "BQ.1",
+            "BQ.1.1",
+            "D614G Single Mutation",
+            "Delta (B.1.617.2)",
+            "Delta Plus (AY.2)",
+            "Delta Plus (AY4.2)",
+            "Epsilon (B.1.427/429)",
+            "Epsilon (B.1.429)",
+            "Eta (B.1.525)",
+            "Gamma (P.1)",
+            "Kappa (B.1.617.1)",
+            "Lambda (C.37)",
+            "Mu (B.1.621)",
+            "Omicron (B.1.1.529)",
+            "Wild Type",
+            "XBB.1",
+            "XBB.1.16",
+            "XBB.1.5",
+            "XBB.1.9.1"
+          ]
+        },
+        {
+          "label": "Tag",
+          "values": [
+            "None",
+            "His Tag",
+            "GFP Tag"
+          ]
+        }
+      ],
+      "image_source": "https://virongy.com/wp-content/uploads/2021/12/DNA-Expression-Vector-1-1-e1675966135547.png",
+      "image": "assets/virongy-dna-expression-vector-1-1.webp",
+      "docs": [
+        {
+          "label": "Protein Expression Vectors – MSDS",
+          "source": "https://virongy.com/wp-content/uploads/2021/12/Virongy-Protein-Expression-Vectors-MSDS.pdf",
+          "file": "Virongy-Protein-Expression-Vectors-MSDS.pdf"
+        }
+      ],
+      "featured": false
+    },
+    {
+      "slug": "togavirus-protein-expression-vectors",
+      "source_slug": "togavirus-protein-expression-vectors",
+      "name": "Togavirus Protein Expression Vectors",
+      "category": "Viral Protein Expression Vectors",
+      "summary": "Togaviruses include Chikungunya (CHIKV) and Semliki Forest (SFV) viruses. The Chikungunya viral protein expression vectors are based on the Chikungunya virus strain 119067 ( Genebank : KY057363.1 ) . Semliki Forest viral protein expression vectors are based on the Semliki virus strain NIV8913590 ( Genebank : MH426977 .1) . All of the expression vectors are codon optimized for mammalian cell expression.",
+      "applications": [],
+      "contents": [],
+      "features": [],
+      "options": [
+        {
+          "label": "Species/Strain",
+          "values": [
+            "Semliki Forest Virus (MH426977.1)",
+            "Chikungunya Virus (KY057363.1)"
+          ]
+        },
+        {
+          "label": "Protein",
+          "values": [
+            "NS1",
+            "NS2",
+            "NS3",
+            "NS4",
+            "Capsid",
+            "E1",
+            "E2",
+            "E3",
+            "6K"
+          ]
+        },
+        {
+          "label": "Tag",
+          "values": [
+            "None",
+            "His Tag",
+            "GFP Tag"
+          ]
+        }
+      ],
+      "image_source": "https://virongy.com/wp-content/uploads/2021/12/DNA-Expression-Vector-1-1-e1675966135547.png",
+      "image": "assets/virongy-dna-expression-vector-1-1.webp",
+      "docs": [
+        {
+          "label": "Protein Expression Vectors – MSDS",
+          "source": "https://virongy.com/wp-content/uploads/2021/12/Virongy-Protein-Expression-Vectors-MSDS.pdf",
+          "file": "Virongy-Protein-Expression-Vectors-MSDS.pdf"
+        },
+        {
+          "label": "pSFV Expression Vector",
+          "source": "https://virongy.com/wp-content/uploads/2022/12/pSFV.pdf",
+          "file": "pSFV.pdf"
+        }
+      ],
+      "featured": false
+    },
+    {
+      "slug": "aav-extraction-and-maturation-kit",
+      "source_slug": "aav-extraction-and-maturation-kit",
+      "name": "AAV Extraction and Maturation Kit",
+      "category": "Kits & Reagents",
+      "summary": "A kit for extracting and maturing AAV particles from transfected producer cells. Each base kit includes reagents for 10 preparations, where one preparation is a single transfected well of a 6-well plate. Supplied as a Mini (10 preparations) or Midi (50 preparations) format, optionally bundled with the Low-Speed Viral Concentration Kit or an AAV SEC Purification Kit.",
+      "applications": [],
+      "contents": [],
+      "features": [],
+      "options": [
+        {
+          "label": "Kit size",
+          "values": [
+            "AAV Extraction and Maturation Mini Kit 10 Preparations",
+            "AAV Extraction and Maturation Mini Kit 10 Preparations + Low-Speed Viral Concentration Kit 100mL",
+            "AAV Extraction and Maturation Mini Kit 10 Preparations + AAV SEC Purification Kit with 10 Columns",
+            "AAV Extraction and Maturation Midi Kit 50 Preparations",
+            "AAV Extraction and Maturation Midi Kit 50 Preparations + Low-Speed Viral Concentration Kit 250mL",
+            "AAV Extraction and Maturation Midi Kit 50 Preparations+AAV SEC Purification Kit with 50 Columns"
+          ]
+        }
+      ],
+      "image_source": "https://virongy.com/wp-content/uploads/2025/04/IMG_8829-scaled.jpg",
+      "image": "assets/virongy-img-8829-scaled.webp",
+      "docs": [
+        {
+          "label": "AAV Extraction and Maturation Kit MSDS",
+          "source": "https://virongy.com/wp-content/uploads/2025/04/AAV-Extraction-and-Maturation-Kit_MSDS.pdf",
+          "file": "AAV-Extraction-and-Maturation-Kit_MSDS.pdf"
+        },
+        {
+          "label": "AAV Extraction and Maturation Kit Handbook",
+          "source": "https://virongy.com/wp-content/uploads/2025/04/VBI-HBK-020-REV001-AAV-Extraction-and-Maturation-Kit.pdf",
+          "file": "VBI-HBK-020-REV001-AAV-Extraction-and-Maturation-Kit.pdf"
+        },
+        {
+          "label": "VBI HBK 022 REV002 AAV SEC Purifcation Kit",
+          "source": "https://virongy.com/wp-content/uploads/2026/04/VBI-HBK-022-REV002-AAV-SEC-Purifcation-Kit-.pdf",
+          "file": "VBI-HBK-022-REV002-AAV-SEC-Purifcation-Kit-.pdf"
+        },
+        {
+          "label": "VBI HBK 006 REV004 Low Speed Viral Concentration Kit Handbook",
+          "source": "https://virongy.com/wp-content/uploads/2026/05/VBI-HBK-006-REV004-Low-Speed-Viral-Concentration-Kit-Handbook.pdf",
+          "file": "VBI-HBK-006-REV004-Low-Speed-Viral-Concentration-Kit-Handbook.pdf"
+        }
+      ],
+      "featured": false
+    },
+    {
+      "slug": "intracellular-protein-staining-kit",
+      "source_slug": "intracellular-protein-staining-kit",
+      "name": "Intracellular Protein Staining Kit",
+      "category": "Kits & Reagents",
+      "summary": "Virongy’s Intracellular Protein Staining Kit provides a flexible and reliable tool for immunofluorescent staining of intracellular host and viral proteins, such as host phospho-proteins and viral capsid proteins. Cells are chemically fixed with a Fixation Buffer to stop proteolytic enzymes, prevent microbial contamination, and preserve cell morphology.",
+      "applications": [],
+      "contents": [
+        "Fixation Buffer (250 ml)",
+        "Permeabilization Buffer (250 ml)",
+        "Staining/Washing Buffer (250 ml)"
+      ],
+      "features": [
+        "Compatible with a variety of cell types. Single cells can be analyzed quantitatively for multiple parameters at the same time."
+      ],
+      "options": [],
+      "image_source": "https://virongy.com/wp-content/uploads/2022/08/Screen-Shot-2022-08-16-at-7.28.19-PM.png",
+      "image": "assets/virongy-screen-shot-2022-08-16-at-7-28-19-pm.webp",
+      "docs": [
+        {
+          "label": "Intracellular Protein Staining Kit – Handbook",
+          "source": "https://virongy.com/wp-content/uploads/2018/08/VBI-HBK-007-p-24-Intracellular-Staining-Kit.pdf",
+          "file": "VBI-HBK-007-p-24-Intracellular-Staining-Kit.pdf"
+        }
+      ],
+      "featured": false
+    },
+    {
+      "slug": "lentiplus-pseudovirus-assembly-and-infection-kit",
+      "source_slug": "lentiplus-pseudovirus-assembly-and-infection-kit",
+      "name": "LentiPlus Pseudovirus Assembly and Infection Kit",
+      "category": "Kits & Reagents",
+      "summary": "The LentiPlus Pseudovirus Assembly and Infection Kit provide a convenient and efficient tool for producing lentiviral particles to deliver and express your gene of interest in dividing, non-dividing, or primary cells. The multi-vector pre-mixed Packaging Mix is easy to use and designed to express viral structural proteins and an envelope protein of your choice at ratios optimal for lentiviral assembly and production.",
+      "applications": [],
+      "contents": [],
+      "features": [
+        "Pre-opitimized vector mix, ready to use, and easy steps",
+        "Higher yield",
+        "Infectin TM technology that enhances transduction efficiency up to 30 fold",
+        "No need for viral particle concentration",
+        "High transduction efficiency for both cell lines and primary cells."
+      ],
+      "options": [
+        {
+          "label": "Envelope",
+          "values": [
+            "VSV-G (Broad Cell Tropism)",
+            "Rabies virus(RABV)",
+            "Measles virus F+H (MV)",
+            "Ebolavirus(EBOV)",
+            "Marburg virus(MARV)",
+            "Nipah virus F+G (NiV)",
+            "SARS-CoV-2",
+            "Human Immunodeficiency Virus (HIV)",
+            "Baboon endogenous retrovirus (BaEV)",
+            "Feline endogenous retrovirus (RD114)",
+            "Cocal virus (COCV)",
+            "Mokola virus (MOKV)",
+            "Ross River Virus (RRV)",
+            "Baculovirus gp64-DAF",
+            "Lymphocytic Choriomeningitis Virus (LCMV)"
+          ]
+        },
+        {
+          "label": "Kit size",
+          "values": [
+            "3 Pseudovirus Assemblies",
+            "5 Pseudovirus Assemblies",
+            "10 Pseudovirus Assemblies",
+            "50 Pseudovirus Assemblies"
+          ]
+        }
+      ],
+      "image_source": "https://virongy.com/wp-content/uploads/2018/08/DALL%C2%B7E-2022-12-08-23.19.18-realistic-virus-with-DNA-inside--e1671040722780.png",
+      "image": "assets/virongy-dall-e-2022-12-08-23-19-18-realistic-virus-w.webp",
+      "docs": [],
+      "featured": true
+    },
+    {
+      "slug": "low-speed-viral-concentration-kit",
+      "source_slug": "low-speed-viral-concentration-kit",
+      "name": "Low-Speed Viral Concentration Kit",
+      "category": "Kits & Reagents",
+      "summary": "Virongy’s Low-Speed Viral Concentration Kit is designed to enhance virus titer, maximize transduction efficiency and increase particle purity. Our propriety Viral Concentration and Resuspension Buffers come sterile and ready-to-use for concentrating viruses, pseudoviruses, nanoparticles (50-200nm) and extracellular vesicles. The Viral Resuspension Buffer is cell culture and animal safe, for research purposes only.",
+      "applications": [
+        "Enhances viral titer",
+        "Improves gene transduction efficiency",
+        "Clears away debris for higher-quality particle EM imaging"
+      ],
+      "contents": [],
+      "features": [],
+      "options": [
+        {
+          "label": "Kit size",
+          "values": [
+            "1000mL",
+            "100mL",
+            "250mL",
+            "500mL"
+          ]
+        }
+      ],
+      "image_source": "https://virongy.com/wp-content/uploads/2022/08/DALL%C2%B7E-2022-12-08-14.34.56-realistic-Viral-particle-concentration--e1672868283448.png",
+      "image": "assets/virongy-dall-e-2022-12-08-14-34-56-realistic-viral-p.webp",
+      "docs": [
+        {
+          "label": "Low-Speed Viral Concentration Kit – MSDS",
+          "source": "https://virongy.com/wp-content/uploads/2022/08/Virongys-Viral-Concentration-Buffer-MSDS.pdf",
+          "file": "Virongys-Viral-Concentration-Buffer-MSDS.pdf"
+        },
+        {
+          "label": "VBI HBK 006 REV004 Low Speed Viral Concentration Kit Handbook",
+          "source": "https://virongy.com/wp-content/uploads/2026/05/VBI-HBK-006-REV004-Low-Speed-Viral-Concentration-Kit-Handbook.pdf",
+          "file": "VBI-HBK-006-REV004-Low-Speed-Viral-Concentration-Kit-Handbook.pdf"
+        }
+      ],
+      "featured": true
+    },
+    {
+      "slug": "vader-trap-plasmid-purification-kit",
+      "source_slug": "vader-%c2%adtrap-high-%c2%adpurity-plasmid-dna-purification-ki",
+      "name": "Vader-Trap High-Purity Plasmid DNA Purification Kit",
+      "category": "Kits & Reagents",
+      "summary": "Virongy’s Vader-Trap High-Purity MiniSpin Plasmid Purification Kit is built upon our proprietary technology. Our Vader-Trap plasmid purification technology significantly improves the traditional alkaline lysis procedure for plasmid purification.",
+      "applications": [],
+      "contents": [],
+      "features": [
+        "Higher purity",
+        "Higher yield",
+        "Longer DNA sequencing read"
+      ],
+      "options": [
+        {
+          "label": "Type",
+          "values": [
+            "MiniSpin",
+            "MidiPrep",
+            "MaxiPrep"
+          ]
+        },
+        {
+          "label": "Size",
+          "values": [
+            "60 Columns",
+            "120 Columns",
+            "20 Columns",
+            "100 Columns",
+            "10 Columns",
+            "50 Columns"
+          ]
+        }
+      ],
+      "image_source": "https://virongy.com/wp-content/uploads/2022/08/Screen-Shot-2022-08-16-at-7.28.19-PM.png",
+      "image": "assets/virongy-screen-shot-2022-08-16-at-7-28-19-pm.webp",
+      "docs": [
+        {
+          "label": "Vader-Trap Purification Kit – MSDS",
+          "source": "https://virongy.com/wp-content/uploads/2018/08/Vader-Trap-Purification-Kit-MSDS.pdf",
+          "file": "Vader-Trap-Purification-Kit-MSDS.pdf"
+        },
+        {
+          "label": "Vader-Trap Purification Kit – Handbook",
+          "source": "https://virongy.com/wp-content/uploads/2018/08/VBI-HBK-009-Vader-Trap-DNA-Purification-Kit-Handbook.pdf",
+          "file": "VBI-HBK-009-Vader-Trap-DNA-Purification-Kit-Handbook.pdf"
+        }
+      ],
+      "featured": true
+    },
+    {
+      "slug": "viral-rna-and-dna-extraction-kits",
+      "source_slug": "viral-rna-and-dna-extraction-kits",
+      "name": "Viral RNA and DNA Extraction Kits",
+      "category": "Kits & Reagents",
+      "summary": "Virongy’s rapid viral RNA/DNA extraction kits allow for quick and convenient viral genomic isolation for a variety of downstream applications. These kits provide column-based rapid isolation of high-quality DNA / RNA from fresh or frozen viral preps and viral culture supernatants with a binding capacity of 20ug per column. The kit uses well-established technology for DNA samples from volumes and sizes 20ul – 200ul of the virus.",
+      "applications": [],
+      "contents": [],
+      "features": [
+        "Spin column-based purification",
+        "Rapid and reliable isolation",
+        "The binding capacity of 20ug viral DNA / RNA per column",
+        "Simple, user-friendly protocol",
+        "High-purity DNA / RNA for qPCR, sequencing, digestion, cloning, and other applications"
+      ],
+      "options": [
+        {
+          "label": "Type",
+          "values": [
+            "Viral RNA Extraction Kit",
+            "Viral DNA Extraction Kit"
+          ]
+        },
+        {
+          "label": "Size",
+          "values": [
+            "10 Columns",
+            "25 Columns",
+            "50 Columns",
+            "100 Columns"
+          ]
+        }
+      ],
+      "image_source": "https://virongy.com/wp-content/uploads/2022/12/Website-pic-for-DNA--e1670447249331.png",
+      "image": "assets/virongy-website-pic-for-dna.webp",
+      "docs": [
+        {
+          "label": "VBI HBK 003 VBI Viral DNA extraction kit handbook 1",
+          "source": "https://virongy.com/wp-content/uploads/2023/02/VBI-HBK-003-VBI-Viral-DNA-extraction-kit-handbook-1.pdf",
+          "file": "VBI-HBK-003-VBI-Viral-DNA-extraction-kit-handbook-1.pdf"
+        },
+        {
+          "label": "Viral RNA Extraction Kit Handbook",
+          "source": "https://virongy.com/wp-content/uploads/2023/02/VBI-HBK-004-VBI-Viral-RNA-extraction-kit-handbook.pdf",
+          "file": "VBI-HBK-004-VBI-Viral-RNA-extraction-kit-handbook.pdf"
+        },
+        {
+          "label": "DNA RNA Extraction Kit MSDS",
+          "source": "https://virongy.com/wp-content/uploads/2022/12/DNA_RNA_Extraction_Kit-MSDS.pdf",
+          "file": "DNA_RNA_Extraction_Kit-MSDS.pdf"
+        }
+      ],
+      "featured": true
+    },
+    {
+      "slug": "cellment-cell-attachment-enhancer",
+      "source_slug": "cellment-cell-attachment-enhancer",
+      "name": "Cellment Cell Attachment Enhancer",
+      "category": "Transduction & Transfection Reagents",
+      "summary": "A proprietary peptide-based media supplement that acts as a cell attachment enhancer. Cellment strengthens cell adherence to tissue-culture surfaces during transfection workflows, reducing cell loss at media changes and handling steps. It is derived from Virongy's Actinator peptide platform, engineered from human beta-actin sequences.",
+      "applications": [
+        "Lentiviral vector production",
+        "AAV production",
+        "Pseudovirus production",
+        "Recombinant protein expression",
+        "CRISPR workflows"
+      ],
+      "contents": [],
+      "features": [],
+      "options": [
+        {
+          "label": "Size",
+          "values": [
+            "0.5 mg",
+            "1 mg",
+            "5 mg",
+            "10 mg"
+          ]
+        }
+      ],
+      "image_source": "https://virongy.com/wp-content/uploads/2026/06/Cellment-Image-for-Product-Page-Updated.png",
+      "image": "assets/virongy-cellment-image-for-product-page-updated.webp",
+      "docs": [],
+      "featured": true
+    },
+    {
+      "slug": "ez-fectin-dna-transfection-kit",
+      "source_slug": "transfectin",
+      "name": "EZ-Fectin DNA Transfection Kit",
+      "category": "Transduction & Transfection Reagents",
+      "summary": "Virongy Transfectin utilizes a cationic polymer-mediated transfection process, in which DNA is condensed into positively charged particles to be delivered into cells.Transfectin can effectively deliver DNA into a variety of cells. Transfectin has low cytotoxicity than most of liposome-based transfection reagents. It is ideal for routine DNA transfection applications and for viral particle assembly.",
+      "applications": [],
+      "contents": [],
+      "features": [
+        "High efficiency (over 90% in HEK293T) and low toxicity",
+        "An affordable solution for DNA transfection, and large-scale lenti-and AAV viral vector assembly",
+        "Less amounts of DNA needed"
+      ],
+      "options": [
+        {
+          "label": "Kit size",
+          "values": [
+            "Transfectin™ 0.1 mL",
+            "Transfectin™ 0.5 mL",
+            "Transfectin™ 1.5 mL",
+            "Transfectin™ 5 mL",
+            "Transfectin™ 20 mL",
+            "Transfectin™ 100 mL"
+          ]
+        }
+      ],
+      "image_source": "https://virongy.com/wp-content/uploads/2018/08/DALL%C2%B7E-2022-12-07-13.56.48-transfection-of-DNA-into-a-human-cell-e1670442703840.png",
+      "image": "assets/virongy-dall-e-2022-12-07-13-56-48-transfection-of-d.webp",
+      "docs": [
+        {
+          "label": "EZ-Fectin – MSDS",
+          "source": "https://virongy.com/wp-content/uploads/2018/08/Infectin-MSDS.pdf",
+          "file": "Infectin-MSDS.pdf"
+        },
+        {
+          "label": "EZ-Fectin – Handbook",
+          "source": "https://virongy.com/wp-content/uploads/2018/08/VBI-HBK-010-DNATransfectin-Kit-Handbook.pdf",
+          "file": "VBI-HBK-010-DNATransfectin-Kit-Handbook.pdf"
+        }
+      ],
+      "featured": true
+    },
+    {
+      "slug": "infectin",
+      "source_slug": "infectin",
+      "name": "Infectin Transduction Enhancer",
+      "category": "Transduction & Transfection Reagents",
+      "summary": "Infectin is a viral infection enhancer designed to facilitate viral penetration of the cortical actin barrier, thereby greatly enhancing productive viral infection. Infectin can be used to facilitate the infection of a variety of host cells by different viruses and viral vectors. Infectin can enhance viral infection rates by 5 to 20 fold.",
+      "applications": [
+        "Enhancing lenti- or retroviral transduction of target cells",
+        "Enhancing infection rates of other enveloped viruses",
+        "Facilitating recovery of infectious viruses from cell or tissue cultures",
+        "Facilitating anti-viral drug screening efficiency"
+      ],
+      "contents": [],
+      "features": [],
+      "options": [
+        {
+          "label": "Type",
+          "values": [
+            "Infectin",
+            "Turbo-Infectin"
+          ]
+        },
+        {
+          "label": "Size",
+          "values": [
+            "200 µL",
+            "700 µL",
+            "1.4 mL",
+            "5 x 700 µL"
+          ]
+        }
+      ],
+      "image_source": "https://virongy.com/wp-content/uploads/2026/07/Infectin-Image-For-website-070226.png",
+      "image": "assets/virongy-infectin-image-for-website-070226.webp",
+      "docs": [
+        {
+          "label": "Infectin – MSDS",
+          "source": "https://virongy.com/wp-content/uploads/2018/08/Infectin-MSDS.pdf",
+          "file": "Infectin-MSDS.pdf"
+        },
+        {
+          "label": "Infectin – Protocol",
+          "source": "https://virongy.com/wp-content/uploads/2018/08/VBI-HBK-014-REV002_Infectin-Sample-Protocol.pdf",
+          "file": "VBI-HBK-014-REV002_Infectin-Sample-Protocol.pdf"
+        }
+      ],
+      "featured": true
+    },
+    {
+      "slug": "exomaxed",
+      "source_slug": "exomaxed",
+      "name": "ExoMaxed™",
+      "category": "Cell Lines, Antibodies & Controls",
+      "summary": "Exo-HEK293T enhances the production of exosomes and microvesicles, providing customers with consistent production of quality EVs that can be customized to meet individual research needs. Combine with our high-efficiency transfection reagent, Transfectin, for simple and rapid production of exosomes and EVs. Cells secrete small vesicles from their surface (microvesicles) or intraluminal endosome-derived membranes (exosomes).",
+      "applications": [],
+      "contents": [],
+      "features": [
+        "High exosome and microvesicle production rate",
+        "Customizable to fit your research needs",
+        "Consistent production for long-term use"
+      ],
+      "options": [
+        {
+          "label": "Cell Line",
+          "values": [
+            "Exo-HEK293T Cells"
+          ]
+        }
+      ],
+      "image_source": "https://virongy.com/wp-content/uploads/2022/12/Exosome-budding-image4.png",
+      "image": "assets/virongy-exosome-budding-image4.webp",
+      "docs": [
+        {
+          "label": "Download the PDF version here",
+          "source": "https://virongy.com/wp-content/uploads/2024/04/MTA-Agreement-Virongy.pdf",
+          "file": "MTA-Agreement-Virongy.pdf"
+        },
+        {
+          "label": "Exosome Production Cell Line – MSDS",
+          "source": "https://virongy.com/wp-content/uploads/2024/04/Virongy-Cell-Lines-MSDS.pdf",
+          "file": "Virongy-Cell-Lines-MSDS.pdf"
+        }
+      ],
+      "featured": true
+    },
+    {
+      "slug": "hiv-rev-dependent-reporter-cells",
+      "source_slug": "hiv-rev-dependent-reporter-cells-copy",
+      "name": "HIV Rev-dependent Reporter Cells",
+      "category": "Cell Lines, Antibodies & Controls",
+      "summary": "The HIV Rev-dependent reporter cells represent a major advancement in the development of HIV indicator cells ( Wu et al., 2007 ). This new reporter system differs dramatically from the common LTR-based reporter cells, which rely solely on the HIV promoter, the long terminal repeat (LTR), to drive reporter expression.",
+      "applications": [
+        "TCID50 assays: Routine HIV infectivity & quantification",
+        "Anti-HIV drug screenings via one-step infection",
+        "Routine EC50/LD50 quantifications of anti-HIV compounds",
+        "Screenings for broadly neutralizing antibodies (bnAB) (from laboratory and clinical research samples)",
+        "Neutralizing antibody quantifications",
+        "HIV cell-cell transmission and HIV drug-resistance studies"
+      ],
+      "contents": [],
+      "features": [
+        "Unparalleled sensitivity & specificity: Rev-regulated reporter expression",
+        "Versatile: GFP & Luciferase dual reporter system",
+        "Natural HIV target: Derived from human CD4 T cells",
+        "Physiologically relevant: Natural levels of HIV receptors/co-receptors",
+        "Broad susceptibility: Susceptible to X4, R5, primary HIV isolates, some SIV"
+      ],
+      "options": [
+        {
+          "label": "Cell Type and Reporter",
+          "values": [
+            "Rev-A3-GFP/Luc",
+            "Rev-A3R5-GFP",
+            "Rev-A3R5-GFP/Luc",
+            "Rev-CEM-GFP",
+            "Rev-CEM-GFP/Luc",
+            "Rev-CEM-Luc"
+          ]
+        }
+      ],
+      "image_source": "https://virongy.com/wp-content/uploads/2018/08/HIV-Rev-%C2%ADdependent-Reporter-Cells.jpg",
+      "image": "assets/virongy-hiv-rev-dependent-reporter-cells.webp",
+      "docs": [
+        {
+          "label": "Download the PDF version here",
+          "source": "https://virongy.com/wp-content/uploads/2024/04/MTA-Agreement-Virongy.pdf",
+          "file": "MTA-Agreement-Virongy.pdf"
+        },
+        {
+          "label": "HIV Rev-Dependent Reporter Cell Line – MSDS",
+          "source": "https://virongy.com/wp-content/uploads/2018/08/Virongy-Cell-Lines-MSDS-1.pdf",
+          "file": "Virongy-Cell-Lines-MSDS-1.pdf"
+        },
+        {
+          "label": "HIV Rev-Dependent Reporter Cell Line – Handbook",
+          "source": "https://virongy.com/wp-content/uploads/2018/08/4.Virongy-HIV-Rev-dependent-cell-1.pdf",
+          "file": "4.Virongy-HIV-Rev-dependent-cell-1.pdf"
+        }
+      ],
+      "featured": true
+    },
+    {
+      "slug": "r8-71-hiv-rcl-positive-control-virus",
+      "source_slug": "r8-71-hiv-rcl-positive-control-virus",
+      "name": "R8.71 HIV-1 RCL Positive Control Virus",
+      "category": "Cell Lines, Antibodies & Controls",
+      "summary": "HIV-1 R8.71 replication-competent lentivirus (RCL) positive control virus, supplied at a titre greater than 5 x 10⁵ fg p24, for use as the reference control in RCL testing of lentiviral vector material.",
+      "applications": [],
+      "contents": [],
+      "features": [],
+      "options": [
+        {
+          "label": "Size",
+          "values": [
+            "10 x 200 μL",
+            "25 x 200μL"
+          ]
+        }
+      ],
+      "image_source": "https://virongy.com/wp-content/uploads/2020/05/DALL%C2%B7E-2022-12-08-23.21.18-realistic-virus-being-assembled-by-cells-e1671046947766.png",
+      "image": "assets/virongy-dall-e-2022-12-08-23-21-18-realistic-virus-b.webp",
+      "docs": [
+        {
+          "label": "R871 MSDS",
+          "source": "https://virongy.com/wp-content/uploads/2026/05/R871_MSDS.pdf",
+          "file": "R871_MSDS.pdf"
+        }
+      ],
+      "featured": false
+    },
+    {
+      "slug": "sars-cov-2-neutralizing-antibody",
+      "source_slug": "sars-cov-2-neutralizing-antibody",
+      "name": "SARS-CoV-2 Neutralizing Antibody",
+      "category": "Cell Lines, Antibodies & Controls",
+      "summary": "This rabbit monoclonal antibody was raised against the RBD domain of the SARS-CoV-2 S1 protein (Arg319 to Phe541, sequence below). The antibody was validated through binding assays (ELISA) and neutralization assays for its ability to neutralize SARS-CoV-2 pseudoviruses such as Ha-CoV-2 and Ha-CoV-2 variants ( e.g. delta and omicron). The antibody was expressed in mammalian cells and purified as a recombinant protein.",
+      "applications": [],
+      "contents": [],
+      "features": [],
+      "options": [
+        {
+          "label": "Size",
+          "values": [
+            "20μg SARS-CoV-2 Neutralizing mAB",
+            "110μg SARS-CoV-2 Neutralizing mAB",
+            "515μg SARS-CoV-2 Neutralizing mAB",
+            "1010μg SARS-CoV-2 Neutralizing mAB"
+          ]
+        }
+      ],
+      "image_source": "https://virongy.com/wp-content/uploads/2022/02/Screen-Shot-2022-02-27-at-2.12.05-PM.png",
+      "image": "assets/virongy-screen-shot-2022-02-27-at-2-12-05-pm.webp",
+      "docs": [
+        {
+          "label": "SARS-CoV-2 Neutralizing Antibody – MSDS",
+          "source": "https://virongy.com/wp-content/uploads/2022/02/SARS-CoV-2-Neutralizing-Antibody-MSDS.pdf",
+          "file": "SARS-CoV-2-Neutralizing-Antibody-MSDS.pdf"
+        }
+      ],
+      "featured": false
+    },
+    {
+      "slug": "aav-vector-customization-tool",
+      "source_slug": "aav-vector-customization-tool",
+      "name": "AAV Vector Customization Tool",
+      "category": "Custom Vector Design & Assembly",
+      "summary": "Design your own AAV vector. Choose up to four open reading frames and select each component - promoter, linkers, markers and tissue tropism - or supply your own sequence. Virongy then assembles and supplies the finished vector.",
+      "applications": [],
+      "contents": [],
+      "features": [],
+      "options": [
+        {
+          "label": "Virus Type",
+          "values": [
+            "Lentivirus"
+          ]
+        }
+      ],
+      "image_source": "https://virongy.com/wp-content/uploads/2021/12/DNA-Expression-Vector-1-1-e1675966135547.png",
+      "image": "assets/virongy-dna-expression-vector-1-1.webp",
+      "docs": [],
+      "featured": false
+    },
+    {
+      "slug": "custom-aav-assembly-purification",
+      "source_slug": "custom-aav-assembly-purification",
+      "name": "Custom AAV Assembly & Purification",
+      "category": "Custom Vector Design & Assembly",
+      "summary": "A made-to-order AAV assembly and purification service. Virongy packages your construct into AAV particles, purifies the prep and supplies the finished material. Available in 5 x 200 uL and 10 x 1 mL volumes.",
+      "applications": [],
+      "contents": [],
+      "features": [],
+      "options": [
+        {
+          "label": "Volume",
+          "values": [
+            "5 x 200 μL",
+            "10 x 1 mL"
+          ]
+        }
+      ],
+      "image_source": "https://virongy.com/wp-content/uploads/2026/08/AAV-Assembly-Image.png",
+      "image": "assets/virongy-aav-assembly-image.webp",
+      "docs": [],
+      "featured": false
+    },
+    {
+      "slug": "lentiviral-vector-customization-tool",
+      "source_slug": "lentiviral-vector-customization-tool",
+      "name": "Lentiviral Vector Customization Tool",
+      "category": "Custom Vector Design & Assembly",
+      "summary": "Design your own lentiviral vector. Choose up to four open reading frames and select each component - promoter, linkers and markers - or supply your own sequence. Virongy then assembles and supplies the finished vector.",
+      "applications": [],
+      "contents": [],
+      "features": [],
+      "options": [
+        {
+          "label": "Virus Type",
+          "values": [
+            "Lentivirus"
+          ]
+        }
+      ],
+      "image_source": "https://virongy.com/wp-content/uploads/2021/12/DNA-Expression-Vector-1-1-e1675966135547.png",
+      "image": "assets/virongy-dna-expression-vector-1-1.webp",
+      "docs": [],
+      "featured": false
+    },
+    {
+      "slug": "retroviral-vector-customization-tool",
+      "source_slug": "retroviral-vector-customization-tool",
+      "name": "Retroviral Vector Customization Tool",
+      "category": "Custom Vector Design & Assembly",
+      "summary": "Design your own MMLV retroviral vector. Choose up to four open reading frames and select each component - promoter, linkers and markers - or supply your own sequence. Virongy then assembles and supplies the finished vector.",
+      "applications": [],
+      "contents": [],
+      "features": [],
+      "options": [
+        {
+          "label": "Virus Type",
+          "values": [
+            "Lentivirus"
+          ]
+        }
+      ],
+      "image_source": "https://virongy.com/wp-content/uploads/2021/12/DNA-Expression-Vector-1-1-e1675966135547.png",
+      "image": "assets/virongy-dna-expression-vector-1-1.webp",
+      "docs": [],
+      "featured": false
+    }
+  ]
+}

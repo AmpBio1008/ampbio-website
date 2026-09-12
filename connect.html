@@ -105,6 +105,11 @@
           <input type="hidden" name="from_name" value="Ampbio Website — Connect Form">
           <!-- Honeypot spam trap: real users never fill this (hidden). -->
           <input type="checkbox" name="botcheck" class="amp-hp" tabindex="-1" autocomplete="off" style="display:none !important">
+          <!-- Shown only when the page is opened as connect.html?product=... from a product card. -->
+          <div id="amp-product-note" style="display:none;align-items:center;gap:10px;background:rgba(253,157,5,0.1);border:1px solid rgba(253,157,5,0.35);border-radius:6px;padding:12px 15px;color:#1a1c1e;font-size:0.92rem;line-height:1.45">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:0.68rem;letter-spacing:0.14em;color:#b06c00;text-transform:uppercase;white-space:nowrap">Enquiry for</span>
+            <strong id="amp-product-name" style="font-weight:700"></strong>
+          </div>
           <div class="amp-form-row" style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
           <input type="text" name="fullName" placeholder="Full Name" class="amp-input" style="width:100%;background:#fff;border:1px solid rgba(10,20,40,0.14);border-radius:6px;padding:14px 15px;font-family:'D-DIN','IBM Plex Sans',sans-serif;font-size:0.95rem;color:#1a1c1e;outline:none">
           <input type="text" name="organisation" placeholder="Organisation" class="amp-input" style="width:100%;background:#fff;border:1px solid rgba(10,20,40,0.14);border-radius:6px;padding:14px 15px;font-family:'D-DIN','IBM Plex Sans',sans-serif;font-size:0.95rem;color:#1a1c1e;outline:none">
@@ -211,6 +216,30 @@
     var btn = form.querySelector('.amp-send');
     var success = document.getElementById('amp-form-success');
     var errorBox = document.getElementById('amp-form-error');
+
+    /* connect.html?product=<name> - arriving from a product card on virongy.html.
+       Shows which product the enquiry is about and pre-fills the subject line.
+       Rendered as text only, never as markup. */
+    (function () {
+      var m = /[?&]product=([^&]*)/.exec(window.location.search);
+      if (!m) return;
+      var name = '';
+      try { name = decodeURIComponent(m[1].replace(/\+/g, ' ')); } catch (err) { return; }
+      name = name.replace(/\s+/g, ' ').trim().slice(0, 120);
+      if (!name) return;
+
+      var note = document.getElementById('amp-product-note');
+      var label = document.getElementById('amp-product-name');
+      if (note && label) { label.textContent = name; note.style.display = 'flex'; }
+
+      var subject = form.querySelector('[name="subject"]');
+      if (subject && !subject.value) subject.value = 'Enquiry: ' + name;
+      var message = form.querySelector('[name="message"]');
+      if (message && !message.value) {
+        message.value = 'I would like a quotation for ' + name +
+          '.\n\nVariant / pack size required:\nQuantity:\n';
+      }
+    })();
 
     form.addEventListener('submit', function (e) {
       e.preventDefault();

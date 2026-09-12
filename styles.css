@@ -19,6 +19,29 @@ a:hover { color: #ffb63e; }
 .amp-spin { animation: ampSpin 90s linear infinite; }
 @media (prefers-reduced-motion: reduce) { .amp-spin { animation: none; } }
 
+/* ---- Virongy featured-products marquee (homepage) ----
+   The tile list is rendered twice, so translating the track by exactly -50%
+   lands on an identical frame and the loop has no visible seam. */
+@keyframes ampMarquee { from { transform: translate3d(0,0,0); } to { transform: translate3d(-50%, 0, 0); } }
+.amp-marquee { -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 52px, #000 calc(100% - 52px), transparent 100%);
+               mask-image: linear-gradient(90deg, transparent 0, #000 52px, #000 calc(100% - 52px), transparent 100%); }
+.amp-marquee-track { animation: ampMarquee 72s linear infinite; }
+.amp-marquee:hover .amp-marquee-track { animation-play-state: paused; }
+.amp-mq-tile > div:first-child { transition: box-shadow 0.35s; }
+.amp-mq-tile img { transition: transform 0.5s cubic-bezier(0.22,0.61,0.36,1); }
+.amp-mq-tile > div:last-child { transition: color 0.3s; }
+.amp-mq-tile:hover > div:first-child { box-shadow: 0 16px 40px rgba(0,0,0,0.45), 0 0 0 1px rgba(253,157,5,0.55); }
+.amp-mq-tile:hover img { transform: scale(1.06); }
+.amp-mq-tile:hover > div:last-child { color: #FD9D05; }
+@media (prefers-reduced-motion: reduce) {
+  .amp-marquee { overflow-x: auto !important; }
+  .amp-marquee-track { animation: none; }
+}
+/* distributor banner on the Products page */
+@media (max-width: 1024px) {
+  .amp-vdist > div:last-child { width: 100% !important; min-width: 0 !important; padding: 28px 24px !important; }
+}
+
 .amp-nav-main { margin-left: 32px; }
 .amp-offer:nth-child(3n+1) .amp-offer-div { display: none; }
 .amp-journey-step:first-child > div:first-child { display: none; }
