@@ -11,18 +11,17 @@
     "Custom Vector Design & Assembly"
   ],
   "featured": [
-    "cellment-cell-attachment-enhancer",
-    "infectin",
-    "exomaxed",
+    "aav-vector-customization-tool",
+    "custom-aav-assembly-purification",
     "ez-fectin-dna-transfection-kit",
     "lentiplus-pseudovirus-assembly-and-infection-kit",
-    "vader-trap-plasmid-purification-kit",
-    "sars-cov-2-pseudoviral-neutralization-assay-kit",
-    "sars-cov-2-rapid-neutralizing-antibody-kit",
-    "vsv-g-pseudotyped-lentivirus",
-    "hiv-rev-dependent-reporter-cells",
-    "low-speed-viral-concentration-kit",
-    "viral-rna-and-dna-extraction-kits"
+    "nipah-protein-expression-vectors",
+    "influenza-a-alpha-pseudoviruses",
+    "rapid-alpha-pseudoviruses-for-rabies",
+    "ebola-pseudoviral-neutralization-assay-kit",
+    "hiv-neutralization-assay-kit",
+    "nipah-pseudoviral-neutralization-assay-kit",
+    "rabies-neutralization-assay-kit"
   ],
   "products": [
     {
@@ -136,7 +135,7 @@
       "image_source": "https://virongy.com/wp-content/uploads/2020/05/DALL%C2%B7E-2022-12-08-23.21.18-realistic-virus-being-assembled-by-cells-e1671046947766.png",
       "image": "assets/virongy-dall-e-2022-12-08-23-21-18-realistic-virus-b.webp",
       "docs": [],
-      "featured": true
+      "featured": false
     },
     {
       "slug": "sars-cov-2-pseudoviruses",
@@ -682,7 +681,7 @@
           "file": "Pseudovirus-Lentivirus-MSDS.pdf"
         }
       ],
-      "featured": false
+      "featured": true
     },
     {
       "slug": "rapid-alpha-pseudoviruses-for-orthohantavirus",
@@ -772,7 +771,7 @@
           "file": "Pseudovirus-Lentivirus-MSDS.pdf"
         }
       ],
-      "featured": false
+      "featured": true
     },
     {
       "slug": "ebola-pseudoviral-neutralization-assay-kit",
@@ -813,7 +812,7 @@
           "file": "Ready-To-Use-Target-Cells-MSDS.pdf"
         }
       ],
-      "featured": false
+      "featured": true
     },
     {
       "slug": "hantavirus-pseudoviral-neutralization-assay-kit",
@@ -881,7 +880,7 @@
       "image_source": "https://virongy.com/wp-content/uploads/2023/08/Alpha-Pseudovirus-for-Retroviruses.png",
       "image": "assets/virongy-alpha-pseudovirus-for-retroviruses.webp",
       "docs": [],
-      "featured": false
+      "featured": true
     },
     {
       "slug": "influenza-a-pseudoviral-neutralization-assay-kit",
@@ -1090,7 +1089,7 @@
           "file": "Ready-To-Use-Target-Cells-MSDS.pdf"
         }
       ],
-      "featured": false
+      "featured": true
     },
     {
       "slug": "rabies-neutralization-assay-kit",
@@ -1129,7 +1128,7 @@
           "file": "Ready-To-Use-Target-Cells-MSDS.pdf"
         }
       ],
-      "featured": false
+      "featured": true
     },
     {
       "slug": "sars-cov-2-rapid-neutralizing-antibody-kit",
@@ -1229,7 +1228,7 @@
           "file": "Ready-To-Use-Target-Cells-MSDS.pdf"
         }
       ],
-      "featured": true
+      "featured": false
     },
     {
       "slug": "sars-cov-neutralization-assay-kit",
@@ -1358,7 +1357,7 @@
           "file": "Ready-To-Use-Target-Cells-MSDS.pdf"
         }
       ],
-      "featured": true
+      "featured": false
     },
     {
       "slug": "pseudoviral-neutralization-assay-kits-for-togaviridae",
@@ -1765,7 +1764,7 @@
           "file": "Virongy-Protein-Expression-Vectors-MSDS.pdf"
         }
       ],
-      "featured": false
+      "featured": true
     },
     {
       "slug": "pneumoviral-protein-expression-vectors",
@@ -2115,7 +2114,7 @@
           "file": "VBI-HBK-006-REV004-Low-Speed-Viral-Concentration-Kit-Handbook.pdf"
         }
       ],
-      "featured": true
+      "featured": false
     },
     {
       "slug": "vader-trap-plasmid-purification-kit",
@@ -2165,7 +2164,7 @@
           "file": "VBI-HBK-009-Vader-Trap-DNA-Purification-Kit-Handbook.pdf"
         }
       ],
-      "featured": true
+      "featured": false
     },
     {
       "slug": "viral-rna-and-dna-extraction-kits",
@@ -2219,7 +2218,7 @@
           "file": "DNA_RNA_Extraction_Kit-MSDS.pdf"
         }
       ],
-      "featured": true
+      "featured": false
     },
     {
       "slug": "cellment-cell-attachment-enhancer",
@@ -2250,7 +2249,7 @@
       "image_source": "https://virongy.com/wp-content/uploads/2026/06/Cellment-Image-for-Product-Page-Updated.png",
       "image": "assets/virongy-cellment-image-for-product-page-updated.webp",
       "docs": [],
-      "featured": true
+      "featured": false
     },
     {
       "slug": "ez-fectin-dna-transfection-kit",
@@ -2340,7 +2339,7 @@
           "file": "VBI-HBK-014-REV002_Infectin-Sample-Protocol.pdf"
         }
       ],
-      "featured": true
+      "featured": false
     },
     {
       "slug": "exomaxed",
@@ -2377,7 +2376,7 @@
           "file": "Virongy-Cell-Lines-MSDS.pdf"
         }
       ],
-      "featured": true
+      "featured": false
     },
     {
       "slug": "hiv-rev-dependent-reporter-cells",
@@ -2433,7 +2432,7 @@
           "file": "4.Virongy-HIV-Rev-dependent-cell-1.pdf"
         }
       ],
-      "featured": true
+      "featured": false
     },
     {
       "slug": "r8-71-hiv-rcl-positive-control-virus",
@@ -2515,7 +2514,7 @@
       "image_source": "https://virongy.com/wp-content/uploads/2021/12/DNA-Expression-Vector-1-1-e1675966135547.png",
       "image": "assets/virongy-dna-expression-vector-1-1.webp",
       "docs": [],
-      "featured": false
+      "featured": true
     },
     {
       "slug": "custom-aav-assembly-purification",
@@ -2538,7 +2537,7 @@
       "image_source": "https://virongy.com/wp-content/uploads/2026/08/AAV-Assembly-Image.png",
       "image": "assets/virongy-aav-assembly-image.webp",
       "docs": [],
-      "featured": false
+      "featured": true
     },
     {
       "slug": "lentiviral-vector-customization-tool",

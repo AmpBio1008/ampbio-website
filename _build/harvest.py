@@ -97,13 +97,20 @@ IMAGE_FALLBACK = {
 }
 
 # Homepage marquee selection, in display order.
+# Chosen by the customer from "Virongy Products List.pdf"; the comment on each
+# line is that document's serial number.
 FEATURED = [
-    "cellment-cell-attachment-enhancer", "infectin", "exomaxed", "transfectin",
-    "lentiplus-pseudovirus-assembly-and-infection-kit",
-    "vader-%c2%adtrap-high-%c2%adpurity-plasmid-dna-purification-ki",
-    "sars-cov-2-pseudoviral-neutralization-assay-kit", "sars-cov-2-nuetralizing-kit",
-    "vsv-g-pseudotyped-lentivirus", "hiv-rev-dependent-reporter-cells-copy",
-    "low-speed-viral-concentration-kit", "viral-rna-and-dna-extraction-kits",
+    "aav-vector-customization-tool",                        # 1
+    "custom-aav-assembly-purification",                     # 6
+    "transfectin",                                          # 8  EZ-Fectin
+    "lentiplus-pseudovirus-assembly-and-infection-kit",     # 16
+    "nipah-protein-expression-vectors",                     # 19
+    "influenza-a-alpha-pseudoviruses",                      # 31
+    "rapid-alpha-pseudoviruses-for-rabies",                 # 33
+    "ebola-pseudoviral-neutralization-assay-kit",           # 42
+    "hiv-pseudoviral-neutralization-assay-kit-copy",        # 44
+    "nipah-pseudoviral-neutralization-assay-kit",           # 49
+    "rabies-pseudoviral-neutralization-assay-kit-copy",     # 50
 ]
 
 # Attribute labels that carry a price hint in Virongy's own naming.

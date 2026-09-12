@@ -349,22 +349,18 @@ def build_marquee(data):
     track = "".join(tiles)
 
     return (
-        '\n  <section style="background:%(navy)s;padding:62px 0 70px;overflow:hidden">\n'
-        '    <div style="max-width:1240px;margin:0 auto;padding:0 32px 30px">\n'
-        '      <div style="font-family:%(fm)s;font-size:0.78rem;letter-spacing:0.2em;'
-        'color:%(amber)s;text-transform:uppercase;margin-bottom:18px">%(dline)s</div>\n'
-        '      <div style="display:flex;align-items:flex-end;justify-content:space-between;'
-        'gap:28px;flex-wrap:wrap">\n'
-        '        <div>\n'
-        '          %(logo)s\n'
-        '          <h2 style="font-family:%(fh)s;font-weight:700;font-size:clamp(1.6rem,2.8vw,2.4rem);'
-        'line-height:1.08;letter-spacing:-0.01em;text-transform:uppercase;color:#fff;margin:0">'
+        '\n  <section style="background:%(navy)s;padding:74px 0 78px;overflow:hidden">\n'
+        '    <div style="max-width:1240px;margin:0 auto;padding:0 32px 58px;text-align:center">\n'
+        '      <div class="amp-vlead" style="font-family:%(fm)s;font-size:1.05rem;'
+        'letter-spacing:0.22em;color:%(amber)s;text-transform:uppercase;margin-bottom:26px">'
+        '%(dline)s</div>\n'
+        '      %(logo)s\n'
+        '      <h2 style="font-family:%(fh)s;font-weight:700;font-size:clamp(1.6rem,2.8vw,2.4rem);'
+        'line-height:1.08;letter-spacing:-0.01em;text-transform:uppercase;color:#fff;margin:0 0 26px">'
         'Featured Products</h2>\n'
-        '        </div>\n'
-        '        <a class="amp-promo-cta" href="virongy.html" style="background:%(amber)s;'
-        'color:%(navy)s;font-family:%(fb)s;font-weight:700;font-size:0.92rem;padding:12px 24px;'
-        'border-radius:6px;transition:background .2s">View the Virongy range</a>\n'
-        '      </div>\n'
+        '      <a class="amp-promo-cta" href="virongy.html" style="display:inline-block;'
+        'background:%(amber)s;color:%(navy)s;font-family:%(fb)s;font-weight:700;font-size:0.92rem;'
+        'padding:12px 24px;border-radius:6px;transition:background .2s">View the Virongy range</a>\n'
         '    </div>\n'
         '    <div class="amp-marquee" style="position:relative;overflow:hidden">\n'
         '      <div class="amp-marquee-track" style="display:flex;gap:20px;width:max-content;'
@@ -373,7 +369,7 @@ def build_marquee(data):
         '    </div>\n'
         '  </section>\n' % {
             "navy": NAVY, "fm": F_MONO, "fh": F_HEAD, "fb": F_BODY, "amber": AMBER,
-            "dline": DISTRIBUTOR_LINE, "track": track, "logo": logo(64, "0 0 20px")})
+            "dline": DISTRIBUTOR_LINE, "track": track, "logo": logo(64, "0 0 24px")})
 
 
 def build_banner(data):

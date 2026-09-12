@@ -45,6 +45,7 @@ a:hover { color: #ffb63e; }
 @media (max-width: 620px) {
   .amp-vlogo { padding: 16px 22px !important; border-radius: 13px !important; }
   .amp-vlogo img { height: 46px !important; }
+  .amp-vlead { font-size: 0.86rem !important; letter-spacing: 0.18em !important; }
 }
 
 .amp-nav-main { margin-left: 32px; }
