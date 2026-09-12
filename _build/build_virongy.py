@@ -43,12 +43,11 @@ def logo(height, margin):
     amber ring and lift make it read as a deliberate badge, not a pasted image.
     Padding scales with the logo so the proportions hold at every size; the
     .amp-vlogo hook shrinks it on phones (styles.css)."""
-    pv, ph = int(round(height * 0.40)), int(round(height * 0.62))
+    pv, ph = int(round(height * 0.38)), int(round(height * 0.58))
     return ('<span class="amp-vlogo" style="display:inline-block;'
-            'background:linear-gradient(158deg,#ffffff 0%%,#eaf0f7 100%%);'
-            'border-radius:16px;padding:%dpx %dpx;margin:%s;'
-            'box-shadow:0 0 0 1px rgba(253,157,5,0.5),0 18px 44px rgba(0,0,0,0.5),'
-            '0 0 34px rgba(253,157,5,0.16)">'
+            'background:linear-gradient(158deg,#f7fafd 0%%,#dfe7f1 100%%);'
+            'border-radius:14px;padding:%dpx %dpx;margin:%s;'
+            'box-shadow:0 0 0 1px rgba(253,157,5,0.42),0 16px 40px rgba(0,0,0,0.45)">'
             '<img src="assets/virongy-logo.webp" alt="Virongy Biosciences" '
             'style="height:%dpx;width:auto;display:block"></span>'
             % (pv, ph, margin, height))
@@ -349,21 +348,30 @@ def build_marquee(data):
     track = "".join(tiles)
 
     return (
-        '\n  <section style="background:%(navy)s;padding:74px 0 78px;overflow:hidden">\n'
-        '    <div style="max-width:1240px;margin:0 auto;padding:0 32px 58px">\n'
-        '      <div style="text-align:center">\n'
-        '        <div class="amp-vlead" style="font-family:%(fm)s;font-size:1.05rem;'
-        'letter-spacing:0.22em;color:%(amber)s;text-transform:uppercase;margin-bottom:26px">'
+        # Same composition as the PLATFORMS section on this page: copy block on
+        # the left, visual on the right, then the full-bleed row underneath.
+        '\n  <section style="background:%(navy)s;padding:80px 0 76px;overflow:hidden">\n'
+        '    <div style="max-width:1240px;margin:0 auto;padding:0 32px 54px">\n'
+        '      <div class="amp-vhead" style="display:grid;'
+        'grid-template-columns:minmax(0,1.2fr) minmax(0,0.8fr);gap:54px;align-items:center">\n'
+        '        <div>\n'
+        '          <div class="amp-vlead" style="font-family:%(fm)s;font-size:0.95rem;'
+        'letter-spacing:0.2em;color:%(amber)s;text-transform:uppercase;margin-bottom:20px">'
         '%(dline)s</div>\n'
-        '        %(logo)s\n'
-        '      </div>\n'
-        '      <div style="margin-top:74px">\n'
-        '        <h2 style="font-family:%(fh)s;font-weight:700;font-size:clamp(1.6rem,2.8vw,2.4rem);'
-        'line-height:1.08;letter-spacing:-0.01em;text-transform:uppercase;color:#fff;margin:0 0 22px">'
-        'Featured Products</h2>\n'
-        '        <a class="amp-promo-cta" href="virongy.html" style="display:inline-block;'
-        'background:%(amber)s;color:%(navy)s;font-family:%(fb)s;font-weight:700;font-size:0.92rem;'
-        'padding:12px 24px;border-radius:6px;transition:background .2s">View the Virongy range</a>\n'
+        '          <h2 style="font-family:%(fh)s;font-weight:700;font-size:clamp(1.8rem,3vw,2.6rem);'
+        'line-height:1.08;letter-spacing:-0.01em;text-transform:uppercase;color:#fff;margin:0 0 20px">'
+        'Featured Products from <span style="color:%(amber)s">Virongy Biosciences</span></h2>\n'
+        '          <p style="color:#9fabbd;font-size:1rem;line-height:1.65;margin:0 0 28px;'
+        'max-width:460px">Ampbio is the exclusive distributor in India for Virongy Biosciences, '
+        'USA &mdash; %(n)d products spanning pseudoviruses, neutralization assay kits, viral protein '
+        'expression vectors, transduction reagents and reporter cell lines.</p>\n'
+        '          <a class="amp-cta-btn" href="virongy.html" style="display:inline-flex;'
+        'align-items:center;gap:10px;background:%(amber)s;color:%(navy)s;font-family:%(fb)s;'
+        'font-weight:700;font-size:0.95rem;padding:13px 28px;border-radius:7px;'
+        'transition:background .25s,box-shadow .3s,transform .3s cubic-bezier(0.22,0.61,0.36,1)">'
+        'View the Virongy range <span class="amp-arrow">&rarr;</span></a>\n'
+        '        </div>\n'
+        '        <div class="amp-vhead-mark" style="justify-self:end">%(logo)s</div>\n'
         '      </div>\n'
         '    </div>\n'
         '    <div class="amp-marquee" style="position:relative;overflow:hidden">\n'
@@ -373,7 +381,8 @@ def build_marquee(data):
         '    </div>\n'
         '  </section>\n' % {
             "navy": NAVY, "fm": F_MONO, "fh": F_HEAD, "fb": F_BODY, "amber": AMBER,
-            "dline": DISTRIBUTOR_LINE, "track": track, "logo": logo(64, "0")})
+            "dline": DISTRIBUTOR_LINE, "track": track, "logo": logo(62, "0"),
+            "n": len(data["products"])})
 
 
 def build_banner(data):
