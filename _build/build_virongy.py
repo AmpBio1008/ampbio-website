@@ -9,7 +9,7 @@ Writes:
   virongy.html                              - full catalogue page
   index.html      between VIRONGY-MARQUEE markers   - homepage scrolling strip
   products.html   between VIRONGY-BANNER markers    - distributor feature banner
-  _build/pdf-manifest.txt                   - the document files still to collect
+  assets/docs/MANIFEST.txt is written by _build/fetch_docs.py
 
 The header and footer are lifted verbatim out of products.html so the new page
 can never drift from the rest of the site. Document download buttons are only
@@ -22,6 +22,9 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 SITE = os.path.dirname(HERE)
 CATALOGUE = os.path.join(HERE, "virongy-products.json")
 DOCS_DIR = os.path.join(SITE, "assets", "docs")
+DOC_MAP_PATH = os.path.join(HERE, "doc-map.json")
+DOC_MAP = (json.load(io.open(DOC_MAP_PATH, encoding="utf-8"))
+           if os.path.exists(DOC_MAP_PATH) else {})
 
 DISTRIBUTOR_LINE = "Exclusive Distributor in India"
 PARTNER = "Virongy Biosciences"
@@ -115,13 +118,15 @@ def option_pills(values):
 
 
 def doc_buttons(docs):
+    """`docs` comes from _build/doc-map.json, written by fetch_docs.py, so the
+    page and the files on disk can never disagree about names."""
     out = []
     for d in docs:
-        local = os.path.join(DOCS_DIR, d["file"])
+        local = os.path.join(SITE, d["path"].replace("/", os.sep))
         if not os.path.exists(local):
             continue
         out.append(
-            '<a class="amp-doc" href="assets/docs/%s" download style="display:inline-flex;'
+            '<a class="amp-doc" href="%s" download style="display:inline-flex;'
             'align-items:center;gap:8px;border:1px solid rgba(253,157,5,0.45);color:%s;'
             'font-size:0.82rem;font-weight:600;padding:8px 14px;border-radius:6px;'
             'transition:background .2s">'
@@ -130,7 +135,7 @@ def doc_buttons(docs):
             '<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>'
             '<polyline points="7 10 12 15 17 10"></polyline>'
             '<line x1="12" y1="15" x2="12" y2="3"></line></svg>%s</a>'
-            % (esc(d["file"]), AMBER, AMBER, esc(d["label"])))
+            % (esc(d["path"]), AMBER, AMBER, esc(d["label"])))
     if not out:
         return ""
     return detail_block("Documents",
@@ -148,7 +153,7 @@ def product_card(p):
         parts.append(detail_block("Kit contents", bullet_list(p["contents"])))
     for opt in p["options"]:
         parts.append(detail_block(opt["label"], option_pills(opt["values"])))
-    parts.append(doc_buttons(p["docs"]))
+    parts.append(doc_buttons(DOC_MAP.get(p["slug"], [])))
 
     quote_href = "connect.html?product=%s" % quote(p["name"])
     return (
@@ -466,12 +471,14 @@ def main():
     for p in ("virongy.html", "index.html", "products.html"):
         n = check(p)
         print("checked           %-16s ok  (%d logo image%s)" % (p, n, "" if n == 1 else "s"))
-    have, total = write_manifest(data)
+    have = sum(len(v) for v in DOC_MAP.values())
+    total = sum(len(p["docs"]) for p in data["products"])
     print("virongy.html      %d products in %d categories" % (
         len(data["products"]), len(data["categories"])))
     print("index.html        marquee, %d featured products" % len(data["featured"]))
     print("products.html     distributor banner")
-    print("documents         %d of %d PDFs present in assets/docs/" % (have, total))
+    print("documents         %d download buttons across %d products "
+          "(see assets/docs/MANIFEST.txt)" % (have, len(DOC_MAP)))
 
 
 if __name__ == "__main__":

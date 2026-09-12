@@ -10,3 +10,11 @@ desktop.ini
 
 # cached source pages pulled by _build/harvest.py (regenerate, never commit)
 _build/pages/
+
+# one copy of every downloaded PDF, before it is filed per product
+_build/doc-cache/
+
+# Kept on disk for reference but not published: nothing on the site links to
+# them, and the print brochure alone is 30 MB.
+assets/docs/_unassigned/
+assets/docs/_company/print-*.pdf

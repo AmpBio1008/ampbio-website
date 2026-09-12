@@ -1,0 +1,495 @@
+{
+  "pseudovirus-for-alphaviruses": [
+    {
+      "label": "Alpha Pseudovirus – MSDS",
+      "path": "assets/docs/pseudovirus-for-alphaviruses/alpha-pseudovirus-msds.pdf",
+      "bytes": 170826
+    },
+    {
+      "label": "Alpha Pseudovirus – Handbook",
+      "path": "assets/docs/pseudovirus-for-alphaviruses/alpha-pseudovirus-handbook.pdf",
+      "bytes": 474948
+    }
+  ],
+  "sars-cov-2-pseudoviruses": [
+    {
+      "label": "Pseudovirus Lentivirus – MSDS",
+      "path": "assets/docs/sars-cov-2-pseudoviruses/pseudovirus-lentivirus-msds.pdf",
+      "bytes": 170826
+    }
+  ],
+  "pseudoviruses-for-human-papillomaviridae": [
+    {
+      "label": "Human Papilloma Pseudovirus – MSDS",
+      "path": "assets/docs/pseudoviruses-for-human-papillomaviridae/human-papilloma-pseudovirus-msds.pdf",
+      "bytes": 170826
+    },
+    {
+      "label": "HPV Pseudovirus – Handbook",
+      "path": "assets/docs/pseudoviruses-for-human-papillomaviridae/hpv-pseudovirus-handbook.pdf",
+      "bytes": 238810
+    }
+  ],
+  "filoviruses-alpha-pseudovirus": [
+    {
+      "label": "Alpha Pseudovirus – MSDS",
+      "path": "assets/docs/filoviruses-alpha-pseudovirus/alpha-pseudovirus-msds.pdf",
+      "bytes": 170826
+    }
+  ],
+  "lassa-alpha-pseudovirus": [
+    {
+      "label": "Alpha Pseudovirus – MSDS",
+      "path": "assets/docs/lassa-alpha-pseudovirus/alpha-pseudovirus-msds.pdf",
+      "bytes": 170826
+    }
+  ],
+  "bunyaviridae-pseudoviruses": [
+    {
+      "label": "Alpha-pseudovirus MSDS",
+      "path": "assets/docs/bunyaviridae-pseudoviruses/alpha-pseudovirus-msds.pdf",
+      "bytes": 170826
+    }
+  ],
+  "coronavirus-alpha-pseudovirus": [
+    {
+      "label": "Alpha Pseudovirus – MSDS",
+      "path": "assets/docs/coronavirus-alpha-pseudovirus/alpha-pseudovirus-msds.pdf",
+      "bytes": 170826
+    },
+    {
+      "label": "Alpha Pseudovirus – Handbook",
+      "path": "assets/docs/coronavirus-alpha-pseudovirus/alpha-pseudovirus-handbook.pdf",
+      "bytes": 474948
+    }
+  ],
+  "nipah-pseudovirus": [
+    {
+      "label": "Alpha Pseudovirus – MSDS",
+      "path": "assets/docs/nipah-pseudovirus/alpha-pseudovirus-msds.pdf",
+      "bytes": 170826
+    },
+    {
+      "label": "Alpha Pseudovirus – Handbook",
+      "path": "assets/docs/nipah-pseudovirus/alpha-pseudovirus-handbook.pdf",
+      "bytes": 391538
+    }
+  ],
+  "influenza-a-alpha-pseudoviruses": [
+    {
+      "label": "Alpha Pseudovirus – MSDS",
+      "path": "assets/docs/influenza-a-alpha-pseudoviruses/alpha-pseudovirus-msds.pdf",
+      "bytes": 170826
+    }
+  ],
+  "rapid-alpha-pseudoviruses-for-orthohantavirus": [
+    {
+      "label": "Alpha-pseudovirus MSDS",
+      "path": "assets/docs/rapid-alpha-pseudoviruses-for-orthohantavirus/alpha-pseudovirus-msds.pdf",
+      "bytes": 170826
+    }
+  ],
+  "rapid-alpha-pseudoviruses-for-rabies": [
+    {
+      "label": "Alpha Pseudovirus – MSDS",
+      "path": "assets/docs/rapid-alpha-pseudoviruses-for-rabies/alpha-pseudovirus-msds.pdf",
+      "bytes": 170826
+    }
+  ],
+  "ebola-pseudoviral-neutralization-assay-kit": [
+    {
+      "label": "VBI HBK 001 REV005 Rapid Cell Based Neutralization Assay with the Hybrid Alpha Pseudovirus Ha PV",
+      "path": "assets/docs/ebola-pseudoviral-neutralization-assay-kit/rapid-cell-based-neutralization-assay.pdf",
+      "bytes": 243761
+    },
+    {
+      "label": "Ready To Use Target Cells – MSDS",
+      "path": "assets/docs/ebola-pseudoviral-neutralization-assay-kit/ready-to-use-target-cells-msds.pdf",
+      "bytes": 150625
+    }
+  ],
+  "hantavirus-pseudoviral-neutralization-assay-kit": [
+    {
+      "label": "VBI HBK 001 REV005 Rapid Cell Based Neutralization Assay with the Hybrid Alpha Pseudovirus Ha PV",
+      "path": "assets/docs/hantavirus-pseudoviral-neutralization-assay-kit/rapid-cell-based-neutralization-assay.pdf",
+      "bytes": 243761
+    },
+    {
+      "label": "Ready To Use Target Cells – MSDS",
+      "path": "assets/docs/hantavirus-pseudoviral-neutralization-assay-kit/ready-to-use-target-cells-msds.pdf",
+      "bytes": 150625
+    }
+  ],
+  "influenza-a-pseudoviral-neutralization-assay-kit": [
+    {
+      "label": "VBI HBK 001 REV005 Rapid Cell Based Neutralization Assay with the Hybrid Alpha Pseudovirus Ha PV",
+      "path": "assets/docs/influenza-a-pseudoviral-neutralization-assay-kit/rapid-cell-based-neutralization-assay.pdf",
+      "bytes": 243761
+    },
+    {
+      "label": "Ready To Use Target Cells – MSDS",
+      "path": "assets/docs/influenza-a-pseudoviral-neutralization-assay-kit/ready-to-use-target-cells-msds.pdf",
+      "bytes": 150625
+    }
+  ],
+  "lassa-pseudoviral-neutralization-assay-kit": [
+    {
+      "label": "VBI HBK 001 REV005 Rapid Cell Based Neutralization Assay with the Hybrid Alpha Pseudovirus Ha PV",
+      "path": "assets/docs/lassa-pseudoviral-neutralization-assay-kit/rapid-cell-based-neutralization-assay.pdf",
+      "bytes": 243761
+    },
+    {
+      "label": "Ready To Use Target Cells – MSDS",
+      "path": "assets/docs/lassa-pseudoviral-neutralization-assay-kit/ready-to-use-target-cells-msds.pdf",
+      "bytes": 150625
+    }
+  ],
+  "marburg-pseudoviral-neutralization-assay-kit": [
+    {
+      "label": "VBI HBK 001 REV005 Rapid Cell Based Neutralization Assay with the Hybrid Alpha Pseudovirus Ha PV",
+      "path": "assets/docs/marburg-pseudoviral-neutralization-assay-kit/rapid-cell-based-neutralization-assay.pdf",
+      "bytes": 243761
+    },
+    {
+      "label": "Ready To Use Target Cells – MSDS",
+      "path": "assets/docs/marburg-pseudoviral-neutralization-assay-kit/ready-to-use-target-cells-msds.pdf",
+      "bytes": 150625
+    }
+  ],
+  "mers-cov-pseudoviral-neutralization-assay-kit": [
+    {
+      "label": "VBI HBK 001 REV005 Rapid Cell Based Neutralization Assay with the Hybrid Alpha Pseudovirus Ha PV",
+      "path": "assets/docs/mers-cov-pseudoviral-neutralization-assay-kit/rapid-cell-based-neutralization-assay.pdf",
+      "bytes": 243761
+    },
+    {
+      "label": "Ready To Use Target Cells – MSDS",
+      "path": "assets/docs/mers-cov-pseudoviral-neutralization-assay-kit/ready-to-use-target-cells-msds.pdf",
+      "bytes": 150625
+    }
+  ],
+  "nipah-pseudoviral-neutralization-assay-kit": [
+    {
+      "label": "VBI HBK 001 REV005 Rapid Cell Based Neutralization Assay with the Hybrid Alpha Pseudovirus Ha PV",
+      "path": "assets/docs/nipah-pseudoviral-neutralization-assay-kit/rapid-cell-based-neutralization-assay.pdf",
+      "bytes": 243761
+    },
+    {
+      "label": "Ready To Use Target Cells – MSDS",
+      "path": "assets/docs/nipah-pseudoviral-neutralization-assay-kit/ready-to-use-target-cells-msds.pdf",
+      "bytes": 150625
+    }
+  ],
+  "rabies-neutralization-assay-kit": [
+    {
+      "label": "VBI HBK 001 REV005 Rapid Cell Based Neutralization Assay with the Hybrid Alpha Pseudovirus Ha PV",
+      "path": "assets/docs/rabies-neutralization-assay-kit/rapid-cell-based-neutralization-assay.pdf",
+      "bytes": 243761
+    },
+    {
+      "label": "Ready To Use Target Cells – MSDS",
+      "path": "assets/docs/rabies-neutralization-assay-kit/ready-to-use-target-cells-msds.pdf",
+      "bytes": 150625
+    }
+  ],
+  "sars-cov-2-rapid-neutralizing-antibody-kit": [
+    {
+      "label": "SARS-CoV-2 Neutralizing Antibody Assay Kit – Handbook",
+      "path": "assets/docs/sars-cov-2-rapid-neutralizing-antibody-kit/sars-cov-2-neutralizing-antibody-assay-kit.pdf",
+      "bytes": 243761
+    },
+    {
+      "label": "SARS-CoV-2 Neutralizing Antibody Assay Kit Reagents – MSDS",
+      "path": "assets/docs/sars-cov-2-rapid-neutralizing-antibody-kit/sars-cov-2-neutralizing-antibody-assay-kit-2.pdf",
+      "bytes": 151518
+    },
+    {
+      "label": "SARS-CoV-2 Neutralizing Antibody – MSDS",
+      "path": "assets/docs/sars-cov-2-rapid-neutralizing-antibody-kit/sars-cov-2-neutralizing-antibody-msds.pdf",
+      "bytes": 150759
+    },
+    {
+      "label": "Ready To Use Target Cells – MSDS",
+      "path": "assets/docs/sars-cov-2-rapid-neutralizing-antibody-kit/ready-to-use-target-cells-msds.pdf",
+      "bytes": 150625
+    }
+  ],
+  "sars-cov-neutralization-assay-kit": [
+    {
+      "label": "VBI HBK 001 REV005 Rapid Cell Based Neutralization Assay with the Hybrid Alpha Pseudovirus Ha PV",
+      "path": "assets/docs/sars-cov-neutralization-assay-kit/rapid-cell-based-neutralization-assay.pdf",
+      "bytes": 243761
+    },
+    {
+      "label": "Ready To Use Target Cells – MSDS",
+      "path": "assets/docs/sars-cov-neutralization-assay-kit/ready-to-use-target-cells-msds.pdf",
+      "bytes": 150625
+    }
+  ],
+  "sars-cov-2-pseudoviral-neutralization-assay-kit": [
+    {
+      "label": "VBI HBK 001 REV005 Rapid Cell Based Neutralization Assay with the Hybrid Alpha Pseudovirus Ha PV",
+      "path": "assets/docs/sars-cov-2-pseudoviral-neutralization-assay-kit/rapid-cell-based-neutralization-assay.pdf",
+      "bytes": 243761
+    },
+    {
+      "label": "Ready To Use Target Cells – MSDS",
+      "path": "assets/docs/sars-cov-2-pseudoviral-neutralization-assay-kit/ready-to-use-target-cells-msds.pdf",
+      "bytes": 150625
+    }
+  ],
+  "pseudoviral-neutralization-assay-kits-for-togaviridae": [
+    {
+      "label": "VBI HBK 001 REV005 Rapid Cell Based Neutralization Assay with the Hybrid Alpha Pseudovirus Ha PV",
+      "path": "assets/docs/pseudoviral-neutralization-assay-kits-for-togaviridae/rapid-cell-based-neutralization-assay.pdf",
+      "bytes": 243761
+    },
+    {
+      "label": "Ready To Use Target Cells – MSDS",
+      "path": "assets/docs/pseudoviral-neutralization-assay-kits-for-togaviridae/ready-to-use-target-cells-msds.pdf",
+      "bytes": 150625
+    }
+  ],
+  "arenaviral-protein-expression-vectors": [
+    {
+      "label": "Protein Expression Vectors – MSDS",
+      "path": "assets/docs/arenaviral-protein-expression-vectors/protein-expression-vectors-msds.pdf",
+      "bytes": 151013
+    },
+    {
+      "label": "pLASV Expression Vector",
+      "path": "assets/docs/arenaviral-protein-expression-vectors/plasv-expression-vector.pdf",
+      "bytes": 85979
+    }
+  ],
+  "bunyavirus-protein-expression-vectors": [
+    {
+      "label": "Protein Expression Vectors – MSDS",
+      "path": "assets/docs/bunyavirus-protein-expression-vectors/protein-expression-vectors-msds.pdf",
+      "bytes": 151013
+    },
+    {
+      "label": "pRFV Expression Vector",
+      "path": "assets/docs/bunyavirus-protein-expression-vectors/prfv-expression-vector.pdf",
+      "bytes": 82469
+    }
+  ],
+  "filoviral-protein-expression-vectors": [
+    {
+      "label": "Protein Expression Vectors – MSDS",
+      "path": "assets/docs/filoviral-protein-expression-vectors/protein-expression-vectors-msds.pdf",
+      "bytes": 151013
+    }
+  ],
+  "flavivirus-protein-expression-vectors": [
+    {
+      "label": "Protein Expression Vectors – MSDS",
+      "path": "assets/docs/flavivirus-protein-expression-vectors/protein-expression-vectors-msds.pdf",
+      "bytes": 151013
+    },
+    {
+      "label": "pZIKV Expression Vector",
+      "path": "assets/docs/flavivirus-protein-expression-vectors/pzikv-expression-vector.pdf",
+      "bytes": 86184
+    }
+  ],
+  "hepadnavirus-protein-expression-vectors": [
+    {
+      "label": "Protein Expression Vectors – MSDS",
+      "path": "assets/docs/hepadnavirus-protein-expression-vectors/protein-expression-vectors-msds.pdf",
+      "bytes": 151013
+    },
+    {
+      "label": "pHBV Expression Vector",
+      "path": "assets/docs/hepadnavirus-protein-expression-vectors/phbv-expression-vector.pdf",
+      "bytes": 85825
+    }
+  ],
+  "orthomyxovirus-protein-expression-vectors": [
+    {
+      "label": "Protein Expression Vectors – MSDS",
+      "path": "assets/docs/orthomyxovirus-protein-expression-vectors/protein-expression-vectors-msds.pdf",
+      "bytes": 151013
+    },
+    {
+      "label": "pIAV Expression Vector",
+      "path": "assets/docs/orthomyxovirus-protein-expression-vectors/piav-expression-vector.pdf",
+      "bytes": 86156
+    }
+  ],
+  "nipah-protein-expression-vectors": [
+    {
+      "label": "Protein Expression Vectors – MSDS",
+      "path": "assets/docs/nipah-protein-expression-vectors/protein-expression-vectors-msds.pdf",
+      "bytes": 151013
+    }
+  ],
+  "pneumoviral-protein-expression-vectors": [
+    {
+      "label": "Protein Expression Vectors – MSDS",
+      "path": "assets/docs/pneumoviral-protein-expression-vectors/protein-expression-vectors-msds.pdf",
+      "bytes": 151013
+    },
+    {
+      "label": "pRSV Expression Vector",
+      "path": "assets/docs/pneumoviral-protein-expression-vectors/prsv-expression-vector.pdf",
+      "bytes": 85921
+    }
+  ],
+  "sars-cov-2-protein-expression-vectors": [
+    {
+      "label": "Protein Expression Vectors – MSDS",
+      "path": "assets/docs/sars-cov-2-protein-expression-vectors/protein-expression-vectors-msds.pdf",
+      "bytes": 151013
+    }
+  ],
+  "togavirus-protein-expression-vectors": [
+    {
+      "label": "Protein Expression Vectors – MSDS",
+      "path": "assets/docs/togavirus-protein-expression-vectors/protein-expression-vectors-msds.pdf",
+      "bytes": 151013
+    },
+    {
+      "label": "pSFV Expression Vector",
+      "path": "assets/docs/togavirus-protein-expression-vectors/psfv-expression-vector.pdf",
+      "bytes": 86676
+    }
+  ],
+  "aav-extraction-and-maturation-kit": [
+    {
+      "label": "AAV Extraction and Maturation Kit MSDS",
+      "path": "assets/docs/aav-extraction-and-maturation-kit/aav-extraction-and-maturation-kit-msds.pdf",
+      "bytes": 116750
+    },
+    {
+      "label": "AAV Extraction and Maturation Kit Handbook",
+      "path": "assets/docs/aav-extraction-and-maturation-kit/aav-extraction-and-maturation-kit-handbook.pdf",
+      "bytes": 232787
+    },
+    {
+      "label": "VBI HBK 022 REV002 AAV SEC Purifcation Kit",
+      "path": "assets/docs/aav-extraction-and-maturation-kit/aav-sec-purifcation-kit.pdf",
+      "bytes": 391911
+    },
+    {
+      "label": "VBI HBK 006 REV004 Low Speed Viral Concentration Kit Handbook",
+      "path": "assets/docs/aav-extraction-and-maturation-kit/low-speed-viral-concentration-kit-handbook.pdf",
+      "bytes": 297307
+    }
+  ],
+  "intracellular-protein-staining-kit": [
+    {
+      "label": "Intracellular Protein Staining Kit – Handbook",
+      "path": "assets/docs/intracellular-protein-staining-kit/intracellular-protein-staining-kit-handbook.pdf",
+      "bytes": 272511
+    }
+  ],
+  "low-speed-viral-concentration-kit": [
+    {
+      "label": "Low-Speed Viral Concentration Kit – MSDS",
+      "path": "assets/docs/low-speed-viral-concentration-kit/low-speed-viral-concentration-kit-msds.pdf",
+      "bytes": 150461
+    },
+    {
+      "label": "VBI HBK 006 REV004 Low Speed Viral Concentration Kit Handbook",
+      "path": "assets/docs/low-speed-viral-concentration-kit/low-speed-viral-concentration-kit-handbook.pdf",
+      "bytes": 297307
+    }
+  ],
+  "vader-trap-plasmid-purification-kit": [
+    {
+      "label": "Vader-Trap Purification Kit – MSDS",
+      "path": "assets/docs/vader-trap-plasmid-purification-kit/vader-trap-purification-kit-msds.pdf",
+      "bytes": 150778
+    },
+    {
+      "label": "Vader-Trap Purification Kit – Handbook",
+      "path": "assets/docs/vader-trap-plasmid-purification-kit/vader-trap-purification-kit-handbook.pdf",
+      "bytes": 275974
+    }
+  ],
+  "viral-rna-and-dna-extraction-kits": [
+    {
+      "label": "VBI HBK 003 VBI Viral DNA extraction kit handbook 1",
+      "path": "assets/docs/viral-rna-and-dna-extraction-kits/vbi-viral-dna-extraction-kit-handbook-1.pdf",
+      "bytes": 305874
+    },
+    {
+      "label": "Viral RNA Extraction Kit Handbook",
+      "path": "assets/docs/viral-rna-and-dna-extraction-kits/viral-rna-extraction-kit-handbook.pdf",
+      "bytes": 304817
+    },
+    {
+      "label": "DNA RNA Extraction Kit MSDS",
+      "path": "assets/docs/viral-rna-and-dna-extraction-kits/dna-rna-extraction-kit-msds.pdf",
+      "bytes": 152443
+    }
+  ],
+  "ez-fectin-dna-transfection-kit": [
+    {
+      "label": "EZ-Fectin – MSDS",
+      "path": "assets/docs/ez-fectin-dna-transfection-kit/ez-fectin-msds.pdf",
+      "bytes": 151938
+    },
+    {
+      "label": "EZ-Fectin – Handbook",
+      "path": "assets/docs/ez-fectin-dna-transfection-kit/ez-fectin-handbook.pdf",
+      "bytes": 233083
+    }
+  ],
+  "infectin": [
+    {
+      "label": "Infectin – MSDS",
+      "path": "assets/docs/infectin/infectin-msds.pdf",
+      "bytes": 151938
+    },
+    {
+      "label": "Infectin – Protocol",
+      "path": "assets/docs/infectin/infectin-protocol.pdf",
+      "bytes": 234415
+    }
+  ],
+  "exomaxed": [
+    {
+      "label": "Download the PDF version here",
+      "path": "assets/docs/exomaxed/mta-agreement.pdf",
+      "bytes": 156045
+    },
+    {
+      "label": "Exosome Production Cell Line – MSDS",
+      "path": "assets/docs/exomaxed/exosome-production-cell-line-msds.pdf",
+      "bytes": 242364
+    }
+  ],
+  "hiv-rev-dependent-reporter-cells": [
+    {
+      "label": "Download the PDF version here",
+      "path": "assets/docs/hiv-rev-dependent-reporter-cells/mta-agreement.pdf",
+      "bytes": 156045
+    },
+    {
+      "label": "HIV Rev-Dependent Reporter Cell Line – MSDS",
+      "path": "assets/docs/hiv-rev-dependent-reporter-cells/hiv-rev-dependent-reporter-cell-line-msds.pdf",
+      "bytes": 185140
+    },
+    {
+      "label": "HIV Rev-Dependent Reporter Cell Line – Handbook",
+      "path": "assets/docs/hiv-rev-dependent-reporter-cells/hiv-rev-dependent-reporter-cell-line-handbook.pdf",
+      "bytes": 1115757
+    }
+  ],
+  "r8-71-hiv-rcl-positive-control-virus": [
+    {
+      "label": "R871 MSDS",
+      "path": "assets/docs/r8-71-hiv-rcl-positive-control-virus/r871-msds.pdf",
+      "bytes": 6303
+    }
+  ],
+  "sars-cov-2-neutralizing-antibody": [
+    {
+      "label": "SARS-CoV-2 Neutralizing Antibody – MSDS",
+      "path": "assets/docs/sars-cov-2-neutralizing-antibody/sars-cov-2-neutralizing-antibody-msds.pdf",
+      "bytes": 150759
+    }
+  ]
+}

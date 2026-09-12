@@ -1,0 +1,142 @@
+Virongy product documents, downloaded from virongy.com on 2026-09-12
+
+44 product folders, 81 filed documents
+22 unassigned, 3 company documents
+56.7 MB on disk
+
+==============================================================================
+FILED BY PRODUCT
+==============================================================================
+aav-extraction-and-maturation-kit              aav-extraction-and-maturation-kit-handbook.pdf     227 KB
+aav-extraction-and-maturation-kit              aav-extraction-and-maturation-kit-msds.pdf       114 KB
+aav-extraction-and-maturation-kit              aav-sec-purifcation-kit.pdf                      383 KB
+aav-extraction-and-maturation-kit              low-speed-viral-concentration-kit-handbook.pdf     290 KB
+arenaviral-protein-expression-vectors          plasv-expression-vector.pdf                       84 KB
+arenaviral-protein-expression-vectors          protein-expression-vectors-msds.pdf              147 KB
+bunyaviridae-pseudoviruses                     alpha-pseudovirus-msds.pdf                       167 KB
+bunyavirus-protein-expression-vectors          prfv-expression-vector.pdf                        81 KB
+bunyavirus-protein-expression-vectors          protein-expression-vectors-msds.pdf              147 KB
+coronavirus-alpha-pseudovirus                  alpha-pseudovirus-handbook.pdf                   464 KB
+coronavirus-alpha-pseudovirus                  alpha-pseudovirus-msds.pdf                       167 KB
+ebola-pseudoviral-neutralization-assay-kit     rapid-cell-based-neutralization-assay.pdf        238 KB
+ebola-pseudoviral-neutralization-assay-kit     ready-to-use-target-cells-msds.pdf               147 KB
+exomaxed                                       exosome-production-cell-line-msds.pdf            237 KB
+exomaxed                                       mta-agreement.pdf                                152 KB
+ez-fectin-dna-transfection-kit                 ez-fectin-handbook.pdf                           228 KB
+ez-fectin-dna-transfection-kit                 ez-fectin-msds.pdf                               148 KB
+filoviral-protein-expression-vectors           protein-expression-vectors-msds.pdf              147 KB
+filoviruses-alpha-pseudovirus                  alpha-pseudovirus-msds.pdf                       167 KB
+flavivirus-protein-expression-vectors          protein-expression-vectors-msds.pdf              147 KB
+flavivirus-protein-expression-vectors          pzikv-expression-vector.pdf                       84 KB
+hantavirus-pseudoviral-neutralization-assay-kit rapid-cell-based-neutralization-assay.pdf        238 KB
+hantavirus-pseudoviral-neutralization-assay-kit ready-to-use-target-cells-msds.pdf               147 KB
+hepadnavirus-protein-expression-vectors        phbv-expression-vector.pdf                        84 KB
+hepadnavirus-protein-expression-vectors        protein-expression-vectors-msds.pdf              147 KB
+hiv-rev-dependent-reporter-cells               hiv-rev-dependent-reporter-cell-line-handbook.pdf    1090 KB
+hiv-rev-dependent-reporter-cells               hiv-rev-dependent-reporter-cell-line-msds.pdf     181 KB
+hiv-rev-dependent-reporter-cells               mta-agreement.pdf                                152 KB
+infectin                                       infectin-msds.pdf                                148 KB
+infectin                                       infectin-protocol.pdf                            229 KB
+influenza-a-alpha-pseudoviruses                alpha-pseudovirus-msds.pdf                       167 KB
+influenza-a-pseudoviral-neutralization-assay-kit rapid-cell-based-neutralization-assay.pdf        238 KB
+influenza-a-pseudoviral-neutralization-assay-kit ready-to-use-target-cells-msds.pdf               147 KB
+intracellular-protein-staining-kit             intracellular-protein-staining-kit-handbook.pdf     266 KB
+lassa-alpha-pseudovirus                        alpha-pseudovirus-msds.pdf                       167 KB
+lassa-pseudoviral-neutralization-assay-kit     rapid-cell-based-neutralization-assay.pdf        238 KB
+lassa-pseudoviral-neutralization-assay-kit     ready-to-use-target-cells-msds.pdf               147 KB
+low-speed-viral-concentration-kit              low-speed-viral-concentration-kit-handbook.pdf     290 KB
+low-speed-viral-concentration-kit              low-speed-viral-concentration-kit-msds.pdf       147 KB
+marburg-pseudoviral-neutralization-assay-kit   rapid-cell-based-neutralization-assay.pdf        238 KB
+marburg-pseudoviral-neutralization-assay-kit   ready-to-use-target-cells-msds.pdf               147 KB
+mers-cov-pseudoviral-neutralization-assay-kit  rapid-cell-based-neutralization-assay.pdf        238 KB
+mers-cov-pseudoviral-neutralization-assay-kit  ready-to-use-target-cells-msds.pdf               147 KB
+nipah-protein-expression-vectors               protein-expression-vectors-msds.pdf              147 KB
+nipah-pseudoviral-neutralization-assay-kit     rapid-cell-based-neutralization-assay.pdf        238 KB
+nipah-pseudoviral-neutralization-assay-kit     ready-to-use-target-cells-msds.pdf               147 KB
+nipah-pseudovirus                              alpha-pseudovirus-handbook.pdf                   382 KB
+nipah-pseudovirus                              alpha-pseudovirus-msds.pdf                       167 KB
+orthomyxovirus-protein-expression-vectors      piav-expression-vector.pdf                        84 KB
+orthomyxovirus-protein-expression-vectors      protein-expression-vectors-msds.pdf              147 KB
+pneumoviral-protein-expression-vectors         protein-expression-vectors-msds.pdf              147 KB
+pneumoviral-protein-expression-vectors         prsv-expression-vector.pdf                        84 KB
+pseudoviral-neutralization-assay-kits-for-togaviridae rapid-cell-based-neutralization-assay.pdf        238 KB
+pseudoviral-neutralization-assay-kits-for-togaviridae ready-to-use-target-cells-msds.pdf               147 KB
+pseudovirus-for-alphaviruses                   alpha-pseudovirus-handbook.pdf                   464 KB
+pseudovirus-for-alphaviruses                   alpha-pseudovirus-msds.pdf                       167 KB
+pseudoviruses-for-human-papillomaviridae       hpv-pseudovirus-handbook.pdf                     233 KB
+pseudoviruses-for-human-papillomaviridae       human-papilloma-pseudovirus-msds.pdf             167 KB
+r8-71-hiv-rcl-positive-control-virus           r871-msds.pdf                                      6 KB
+rabies-neutralization-assay-kit                rapid-cell-based-neutralization-assay.pdf        238 KB
+rabies-neutralization-assay-kit                ready-to-use-target-cells-msds.pdf               147 KB
+rapid-alpha-pseudoviruses-for-orthohantavirus  alpha-pseudovirus-msds.pdf                       167 KB
+rapid-alpha-pseudoviruses-for-rabies           alpha-pseudovirus-msds.pdf                       167 KB
+sars-cov-2-neutralizing-antibody               sars-cov-2-neutralizing-antibody-msds.pdf        147 KB
+sars-cov-2-protein-expression-vectors          protein-expression-vectors-msds.pdf              147 KB
+sars-cov-2-pseudoviral-neutralization-assay-kit rapid-cell-based-neutralization-assay.pdf        238 KB
+sars-cov-2-pseudoviral-neutralization-assay-kit ready-to-use-target-cells-msds.pdf               147 KB
+sars-cov-2-pseudoviruses                       pseudovirus-lentivirus-msds.pdf                  167 KB
+sars-cov-2-rapid-neutralizing-antibody-kit     ready-to-use-target-cells-msds.pdf               147 KB
+sars-cov-2-rapid-neutralizing-antibody-kit     sars-cov-2-neutralizing-antibody-assay-kit-2.pdf     148 KB
+sars-cov-2-rapid-neutralizing-antibody-kit     sars-cov-2-neutralizing-antibody-assay-kit.pdf     238 KB
+sars-cov-2-rapid-neutralizing-antibody-kit     sars-cov-2-neutralizing-antibody-msds.pdf        147 KB
+sars-cov-neutralization-assay-kit              rapid-cell-based-neutralization-assay.pdf        238 KB
+sars-cov-neutralization-assay-kit              ready-to-use-target-cells-msds.pdf               147 KB
+togavirus-protein-expression-vectors           protein-expression-vectors-msds.pdf              147 KB
+togavirus-protein-expression-vectors           psfv-expression-vector.pdf                        85 KB
+vader-trap-plasmid-purification-kit            vader-trap-purification-kit-handbook.pdf         270 KB
+vader-trap-plasmid-purification-kit            vader-trap-purification-kit-msds.pdf             147 KB
+viral-rna-and-dna-extraction-kits              dna-rna-extraction-kit-msds.pdf                  149 KB
+viral-rna-and-dna-extraction-kits              vbi-viral-dna-extraction-kit-handbook-1.pdf      299 KB
+viral-rna-and-dna-extraction-kits              viral-rna-extraction-kit-handbook.pdf            298 KB
+
+==============================================================================
+COMPANY DOCUMENTS  (assets/docs/_company/)
+==============================================================================
+print-8-5x11-virongy-product-brochure-final.pdf                30515 KB
+virongy-biosciences-capability-statement-2.pdf                   654 KB
+virongy-biosciences-capability-statement.pdf                     666 KB
+
+==============================================================================
+UNASSIGNED  (assets/docs/_unassigned/)
+In Virongy's media library but not linked from any product page,
+so they are NOT filed against a product - the filename alone is not
+safe evidence of which product an MSDS or protocol belongs to.
+==============================================================================
+example-rcl-report.pdf                                           128 KB
+farson-et-al-2001-a-new-generation-stable.pdf                    571 KB
+ha-marv-virus-data-for-website-1-1.pdf                           808 KB
+ha-marv-virus-data-for-website.pdf                               808 KB
+infectin-protocol.pdf                                            203 KB
+lassa-virus-data-for-website.pdf                                 816 KB
+lassa-virus-data-for-website.pdf                                 816 KB
+lentivirus-tablexlsx.pdf                                          18 KB
+lowspeed-concentration-data-1.pdf                                377 KB
+lowspeed-concentration-data-2.pdf                                159 KB
+lowspeedviralconcentrationkitprotocol.pdf                        192 KB
+pseudovirus-msds.pdf                                             266 KB
+rapid-neutralizing-antibody-assay-with-ready-2.pdf              1403 KB
+rapid-neutralizing-antibody-assay-with-ready.pdf                 420 KB
+rapid-neutralizing-antibody-assay-with-ready.pdf                 420 KB
+rvfv-virus-data-for-website.pdf                                  768 KB
+vbi-hbk-005-infectin-protocol.pdf                                408 KB
+vbi-hbk-005-virongy-turbo-infectin.pdf                           707 KB
+vbi-hbk-006-low-speed-viral-concentration.pdf                    234 KB
+vbi-hbk-006-rev003-low-speed-viral.pdf                           233 KB
+vbi-hbk-014-virongy-pseudovirus-assembly.pdf                      99 KB
+virongyrapidsarscov2abkitmanual.pdf                              420 KB
+
+==============================================================================
+NO DOWNLOADABLE DOCUMENTS
+These product pages link no PDF. Several of them do list document
+names (e.g. Cellment shows 'MSDS' and 'Protocol'), but Virongy has
+not hyperlinked them and the files are not in their media library -
+so they have to be requested from Virongy directly.
+==============================================================================
+  AAV Vector Customization Tool
+  Cellment Cell Attachment Enhancer
+  Custom AAV Assembly & Purification
+  HIV Pseudoviral Neutralization Assay Kit
+  LentiPlus Pseudovirus Assembly and Infection Kit
+  Lentiviral Vector Customization Tool
+  Pre-Assembled VSV-G–Pseudotyped Lentiviral Vectors
+  Retroviral Vector Customization Tool
