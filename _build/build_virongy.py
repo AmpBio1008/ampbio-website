@@ -348,8 +348,7 @@ def build_marquee(data):
         '      <div style="display:flex;align-items:flex-end;justify-content:space-between;'
         'gap:28px;flex-wrap:wrap">\n'
         '        <div>\n'
-        '          <img src="assets/virongy-logo.webp" alt="Virongy Biosciences" '
-        '%(logo)s\n'
+        '          %(logo)s\n'
         '          <h2 style="font-family:%(fh)s;font-weight:700;font-size:clamp(1.6rem,2.8vw,2.4rem);'
         'line-height:1.08;letter-spacing:-0.01em;text-transform:uppercase;color:#fff;margin:0">'
         'Featured Products</h2>\n'
@@ -419,11 +418,35 @@ def write_manifest(data):
     return have, len(rows)
 
 
+def check(path):
+    """Catch malformed markup before it can ship - an unterminated <img left by a
+    bad edit once swallowed the logo chip and rendered the logo at full size."""
+    s = read(path)
+    problems = []
+    # a '<' inside a tag means the previous tag was never closed
+    for m in re.finditer(r"<(img|span|a|div)\b[^>]*<", s):
+        problems.append("unterminated <%s> near: %s" % (m.group(1), m.group(0)[:90]))
+    for tag in ("article", "section", "ul", "li", "h3"):
+        o = len(re.findall(r"<%s\b" % tag, s))
+        c = len(re.findall(r"</%s>" % tag, s))
+        if o != c:
+            problems.append("%s: %d open vs %d close" % (tag, o, c))
+    for bad in ("$", "Add to cart", "Select options"):
+        if bad in s and path == "virongy.html":
+            problems.append("price/shop wording leaked: %r" % bad)
+    if problems:
+        raise SystemExit("%s FAILED:\n  %s" % (path, "\n  ".join(problems)))
+    return len(re.findall(r'src="assets/virongy-logo\.webp"', s))
+
+
 def main():
     data = json.load(io.open(CATALOGUE, encoding="utf-8"))
     write("virongy.html", build_page(data))
     write("index.html", replace_block(read("index.html"), "VIRONGY-MARQUEE", build_marquee(data)))
     write("products.html", replace_block(read("products.html"), "VIRONGY-BANNER", build_banner(data)))
+    for p in ("virongy.html", "index.html", "products.html"):
+        n = check(p)
+        print("checked           %-16s ok  (%d logo image%s)" % (p, n, "" if n == 1 else "s"))
     have, total = write_manifest(data)
     print("virongy.html      %d products in %d categories" % (
         len(data["products"]), len(data["categories"])))
