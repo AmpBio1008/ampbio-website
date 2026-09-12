@@ -350,17 +350,21 @@ def build_marquee(data):
 
     return (
         '\n  <section style="background:%(navy)s;padding:74px 0 78px;overflow:hidden">\n'
-        '    <div style="max-width:1240px;margin:0 auto;padding:0 32px 58px;text-align:center">\n'
-        '      <div class="amp-vlead" style="font-family:%(fm)s;font-size:1.05rem;'
+        '    <div style="max-width:1240px;margin:0 auto;padding:0 32px 58px">\n'
+        '      <div style="text-align:center">\n'
+        '        <div class="amp-vlead" style="font-family:%(fm)s;font-size:1.05rem;'
         'letter-spacing:0.22em;color:%(amber)s;text-transform:uppercase;margin-bottom:26px">'
         '%(dline)s</div>\n'
-        '      %(logo)s\n'
-        '      <h2 style="font-family:%(fh)s;font-weight:700;font-size:clamp(1.6rem,2.8vw,2.4rem);'
-        'line-height:1.08;letter-spacing:-0.01em;text-transform:uppercase;color:#fff;margin:0 0 26px">'
+        '        %(logo)s\n'
+        '      </div>\n'
+        '      <div style="margin-top:74px">\n'
+        '        <h2 style="font-family:%(fh)s;font-weight:700;font-size:clamp(1.6rem,2.8vw,2.4rem);'
+        'line-height:1.08;letter-spacing:-0.01em;text-transform:uppercase;color:#fff;margin:0 0 22px">'
         'Featured Products</h2>\n'
-        '      <a class="amp-promo-cta" href="virongy.html" style="display:inline-block;'
+        '        <a class="amp-promo-cta" href="virongy.html" style="display:inline-block;'
         'background:%(amber)s;color:%(navy)s;font-family:%(fb)s;font-weight:700;font-size:0.92rem;'
         'padding:12px 24px;border-radius:6px;transition:background .2s">View the Virongy range</a>\n'
+        '      </div>\n'
         '    </div>\n'
         '    <div class="amp-marquee" style="position:relative;overflow:hidden">\n'
         '      <div class="amp-marquee-track" style="display:flex;gap:20px;width:max-content;'
@@ -369,7 +373,7 @@ def build_marquee(data):
         '    </div>\n'
         '  </section>\n' % {
             "navy": NAVY, "fm": F_MONO, "fh": F_HEAD, "fb": F_BODY, "amber": AMBER,
-            "dline": DISTRIBUTOR_LINE, "track": track, "logo": logo(64, "0 0 24px")})
+            "dline": DISTRIBUTOR_LINE, "track": track, "logo": logo(64, "0")})
 
 
 def build_banner(data):
