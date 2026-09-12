@@ -41,6 +41,11 @@ a:hover { color: #ffb63e; }
 @media (max-width: 1024px) {
   .amp-vdist > div:last-child { width: 100% !important; min-width: 0 !important; padding: 28px 24px !important; }
 }
+/* Virongy partner badge: scale it down on phones so it never crowds the column */
+@media (max-width: 620px) {
+  .amp-vlogo { padding: 16px 22px !important; border-radius: 13px !important; }
+  .amp-vlogo img { height: 46px !important; }
+}
 
 .amp-nav-main { margin-left: 32px; }
 .amp-offer:nth-child(3n+1) .amp-offer-div { display: none; }

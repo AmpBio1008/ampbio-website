@@ -38,12 +38,20 @@ F_BODY = "'D-DIN','IBM Plex Sans',sans-serif"
 
 
 def logo(height, margin):
-    """Virongy's logo is dark artwork on transparency, so on the navy sections it
-    sits on a white chip rather than being recoloured."""
-    return ('<span style="display:inline-block;background:#fff;border-radius:8px;'
-            'padding:10px 16px;margin:%s">'
+    """Partner badge. Virongy's logo is dark artwork on transparency, so on the
+    navy sections it sits on a light plate rather than being recoloured. The
+    amber ring and lift make it read as a deliberate badge, not a pasted image.
+    Padding scales with the logo so the proportions hold at every size; the
+    .amp-vlogo hook shrinks it on phones (styles.css)."""
+    pv, ph = int(round(height * 0.40)), int(round(height * 0.62))
+    return ('<span class="amp-vlogo" style="display:inline-block;'
+            'background:linear-gradient(158deg,#ffffff 0%%,#eaf0f7 100%%);'
+            'border-radius:16px;padding:%dpx %dpx;margin:%s;'
+            'box-shadow:0 0 0 1px rgba(253,157,5,0.5),0 18px 44px rgba(0,0,0,0.5),'
+            '0 0 34px rgba(253,157,5,0.16)">'
             '<img src="assets/virongy-logo.webp" alt="Virongy Biosciences" '
-            'style="height:%dpx;width:auto;display:block"></span>' % (margin, height))
+            'style="height:%dpx;width:auto;display:block"></span>'
+            % (pv, ph, margin, height))
 
 
 def esc(s):
@@ -319,7 +327,7 @@ def build_page(data):
 """ % {"title": esc(title), "desc": esc(desc), "style": PAGE_STYLE, "header": header,
        "footer": footer, "sections": sections, "catnav": category_nav(cats, counts),
        "fm": F_MONO, "fh": F_HEAD, "fb": F_BODY, "amber": AMBER, "navy": NAVY,
-       "dline": DISTRIBUTOR_LINE, "gen": data["generated"], "logo": logo(50, "0 0 24px")}
+       "dline": DISTRIBUTOR_LINE, "gen": data["generated"], "logo": logo(76, "0 0 28px")}
 
 
 def build_marquee(data):
@@ -365,7 +373,7 @@ def build_marquee(data):
         '    </div>\n'
         '  </section>\n' % {
             "navy": NAVY, "fm": F_MONO, "fh": F_HEAD, "fb": F_BODY, "amber": AMBER,
-            "dline": DISTRIBUTOR_LINE, "track": track, "logo": logo(34, "0 0 16px")})
+            "dline": DISTRIBUTOR_LINE, "track": track, "logo": logo(64, "0 0 20px")})
 
 
 def build_banner(data):
@@ -397,7 +405,7 @@ def build_banner(data):
         '    </div>\n'
         '  </section>\n' % {
             "navy": NAVY, "hair": HAIRLINE, "fm": F_MONO, "fb": F_BODY,
-            "amber": AMBER, "dline": DISTRIBUTOR_LINE, "n": n, "logo": logo(36, "0 0 16px")})
+            "amber": AMBER, "dline": DISTRIBUTOR_LINE, "n": n, "logo": logo(56, "0 0 18px")})
 
 
 def write_manifest(data):
