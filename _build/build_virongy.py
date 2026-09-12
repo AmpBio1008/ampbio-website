@@ -388,7 +388,9 @@ def build_marquee(data):
 def build_banner(data):
     n = len(data["products"])
     return (
-        '\n  <section style="background:%(navy)s;padding:74px 0 0">\n'
+        # First section on products.html, so the top padding also has to clear
+        # the 76px fixed header (76 + 74).
+        '\n  <section style="background:%(navy)s;padding:150px 0 0">\n'
         '    <div style="max-width:1240px;margin:0 auto;padding:0 32px">\n'
         '      <div class="amp-promo-card amp-vdist" style="position:relative;border-radius:15px;'
         'overflow:hidden;min-height:230px;background:#06101e;border:1px solid %(hair)s;display:flex">\n'

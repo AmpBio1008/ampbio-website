@@ -135,3 +135,8 @@ header.amp-scrolled { box-shadow: 0 1px 0 rgba(253,157,5,0.25); }
 /* mobile nav panel hidden by default; shown when toggled */
 .amp-mobile-panel { display: none; }
 .amp-mobile-panel.amp-open { display: flex; }
+
+/* The Products hero sits mid-page rather than at the top, so it is a band and
+   not a full screen. Declared last so it beats the .amp-hero 76vh override. */
+.amp-hero-inline { min-height: 560px; }
+@media (max-width: 1024px) { .amp-hero-inline { min-height: 440px !important; } }
