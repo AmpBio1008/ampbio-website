@@ -37,10 +37,6 @@ a:hover { color: #ffb63e; }
   .amp-marquee { overflow-x: auto !important; }
   .amp-marquee-track { animation: none; }
 }
-/* distributor banner on the Products page */
-@media (max-width: 1024px) {
-  .amp-vdist > div:last-child { width: 100% !important; min-width: 0 !important; padding: 28px 24px !important; }
-}
 /* Virongy section header: two columns like .amp-platforms, stacking on tablet */
 @media (max-width: 1024px) {
   .amp-vhead { grid-template-columns: 1fr !important; gap: 30px !important; }
@@ -135,11 +131,6 @@ header.amp-scrolled { box-shadow: 0 1px 0 rgba(253,157,5,0.25); }
 /* mobile nav panel hidden by default; shown when toggled */
 .amp-mobile-panel { display: none; }
 .amp-mobile-panel.amp-open { display: flex; }
-
-/* The Products hero sits mid-page rather than at the top, so it is a band and
-   not a full screen. Declared last so it beats the .amp-hero 76vh override. */
-.amp-hero-inline { min-height: 560px; }
-@media (max-width: 1024px) { .amp-hero-inline { min-height: 440px !important; } }
 
 /* Legal pages: sticky contents column beside the text, stacked on tablet down. */
 .amp-legal-toc a { transition: color 0.2s; }
