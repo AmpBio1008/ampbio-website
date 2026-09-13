@@ -36,8 +36,6 @@ PRIVACY = (
             "%s operates amps.bio. We supply specialised reagents, materials and "
             "scientific support to research organisations, and we are the "
             "exclusive distributor in India for Virongy Biosciences, USA." % COMPANY,
-            "Registered entity name, company identification number and GST "
-            "registration: <strong>to confirm</strong>.",
         ]),
         ("What we collect", [
             "Only what you choose to send us through the Connect form:",
