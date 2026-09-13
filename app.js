@@ -40,9 +40,18 @@
 
     var pending = null;
 
+    /* The ?v=<hash> this script was loaded with, reused for menu.html so the
+       fragment can never be served from cache against a newer stylesheet. */
+    var assetV = (function () {
+      var s = document.currentScript ||
+              document.querySelector('script[src*="app.js"]');
+      var m = s && /[?&]v=([0-9a-f]+)/.exec(s.getAttribute('src') || '');
+      return m ? '?v=' + m[1] : '';
+    })();
+
     function load() {
       if (pending) return pending;
-      pending = fetch('menu.html', { credentials: 'same-origin' })
+      pending = fetch('menu.html' + assetV, { credentials: 'same-origin' })
         .then(function (r) {
           if (!r.ok) throw new Error(r.status);
           return r.text();
