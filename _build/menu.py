@@ -198,8 +198,8 @@ def build(products, categories):
 
     head = ('<li class="amp-mm-head" style="padding:12px 16px 9px;font-family:%s;'
             'font-size:0.66rem;letter-spacing:0.16em;text-transform:uppercase;'
-            'color:%s;border-bottom:1px solid %s">Virongy Biosciences &middot; '
-            'Exclusive Distributor in India</li>' % (F_MONO, AMBER, HAIRLINE))
+            'color:%s;border-bottom:1px solid %s">Virongy Biosciences &ndash; '
+            'Virological Research Tools and Platforms</li>' % (F_MONO, AMBER, HAIRLINE))
 
     return ('<ul class="amp-mm-panel amp-mm-d1">%s%s%s%s</ul>'
             % (head, virus_tools, "".join(types), all_link))
