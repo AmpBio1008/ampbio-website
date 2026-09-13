@@ -22,7 +22,8 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 SITE = os.path.dirname(HERE)
 ASSETS = ["styles.css", "app.js", "menu.html"]
 ROOT_PAGES = ["index.html", "products.html", "scientific-platforms.html",
-              "support-training.html", "about.html", "connect.html", "virongy.html"]
+              "support-training.html", "about.html", "connect.html", "virongy.html",
+              "privacy-policy.html", "terms-of-use.html", "disclaimer.html"]
 
 
 def all_pages():
