@@ -2,10 +2,13 @@
 """
 The Virongy browse menu: taxonomy + HTML.
 
-Virongy's own site has a five-level hover menu, but its markup is stale - eight
-of its product links point at pages that no longer exist and nine current
-products are missing from it. So the same shape is rebuilt here from the live
-catalogue instead of being copied.
+Virongy's own site has a five-level hover menu. This rebuilds the same shape
+from our catalogue rather than copying their markup, so it stays in step with
+the catalogue automatically and covers all 52 products.
+
+(An earlier version of this note claimed their menu was broken. That was wrong
+and is corrected here: all 52 of their product links resolve, seven of them via
+301 redirects to renamed pages. Their menu omits 3 of their 53 products.)
 
 Every product is reachable two ways, as on Virongy's site:
   Virus-Specific Tools -> family -> virus -> product
@@ -125,7 +128,9 @@ def check(products):
 
 
 def _leaf(p, pad):
-    return ('<li><a href="virongy.html#%s" style="display:block;padding:%s;'
+    # Root-absolute: this fragment is shared by pages at the site root and by
+    # product pages one level down, so a relative href cannot serve both.
+    return ('<li><a href="/virongy/%s.html" style="display:block;padding:%s;'
             'color:#c4cede;font-size:0.86rem;line-height:1.35">%s</a></li>'
             % (esc(p["slug"]), pad, esc(p["name"])))
 
@@ -187,7 +192,7 @@ def build(products, categories):
         leaves = "".join(_leaf(p, "9px 16px") for p in items)
         types.append(_branch(cat, leaves, 2))
 
-    all_link = ('<li><a href="virongy.html" style="display:block;padding:11px 16px;'
+    all_link = ('<li><a href="/virongy.html" style="display:block;padding:11px 16px;'
                 'color:%s;font-weight:700;font-size:0.86rem;border-top:1px solid %s">'
                 'View the full Virongy range &rarr;</a></li>' % (AMBER, HAIRLINE))
 

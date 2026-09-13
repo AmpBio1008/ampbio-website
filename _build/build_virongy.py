@@ -18,6 +18,9 @@ emitted for PDFs that actually exist in assets/docs/.
 import io, json, os, re, sys
 from urllib.parse import quote
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import pages
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 SITE = os.path.dirname(HERE)
 CATALOGUE = os.path.join(HERE, "virongy-products.json")
@@ -59,6 +62,25 @@ def logo(height, margin):
 def esc(s):
     return (str(s).replace("&", "&amp;").replace("<", "&lt;")
             .replace(">", "&gt;").replace('"', "&quot;"))
+
+
+# Product pages live in virongy/, one level below the root pages, so every
+# relative link in shared markup has to be lifted by one directory.
+def reroot(html, rel):
+    """Prefix relative href/src values with `rel` (e.g. '../')."""
+    if not rel:
+        return html
+    def fix(m):
+        attr, url = m.group(1), m.group(2)
+        if re.match(r"^(https?:|//|/|#|mailto:|tel:|data:)", url):
+            return m.group(0)
+        return '%s="%s%s"' % (attr, rel, url)
+    return re.sub(r'\b(href|src)="([^"]+)"', fix, html)
+
+
+def product_url(slug, in_virongy_dir):
+    """Link to a product page from a root page or from a sibling product page."""
+    return ("%s.html" % slug) if in_virongy_dir else ("virongy/%s.html" % slug)
 
 
 def read(path):
@@ -236,102 +258,81 @@ PAGE_STYLE = """<style>
 </style>"""
 
 
-def build_page(data):
-    products = data["products"]
+def _chrome():
+    """Header and footer, lifted verbatim from products.html so the Virongy
+    pages can never drift from the rest of the site.
+
+    The browse-menu wiring is stripped out again: products.html already carries
+    it from the last build_menu run, and copying it here would bake one page's
+    wiring into another's markup. build_menu.py re-adds it afterwards, to every
+    page, from one place."""
     src = read("products.html")
     header = slice_between(src, "  <!-- ================= HEADER ================= -->",
                            "  </header>")
-    footer = slice_between(src, "  <!-- ================= FOOTER ================= -->",
-                           "  </footer>")
+    header = re.sub(r'<span class="amp-mm">(.*?)<span class="amp-mm-mount"[^>]*>'
+                    r'</span></span>', r"\1", header, flags=re.S)
+    header = header.replace('<a class="amp-mm-m" ', '<a ')
+    return (header,
+            slice_between(src, "  <!-- ================= FOOTER ================= -->",
+                          "  </footer>"))
 
-    counts = {c: sum(1 for p in products if p["category"] == c) for c in data["categories"]}
+
+def _exists(path):
+    return os.path.exists(os.path.join(SITE, path.replace("/", os.sep)))
+
+
+def build_index(data):
+    header, footer = _chrome()
+    products = data["products"]
+    counts = {c: sum(1 for p in products if p["category"] == c)
+              for c in data["categories"]}
     cats = [c for c in data["categories"] if counts.get(c)]
 
-    title = "%s — %s for India | Ampbio" % (PARTNER, "Exclusive Distributor")
+    title = "Virongy Biosciences — Exclusive Distributor for India | Ampbio"
     desc = ("Ampbio is the exclusive distributor in India for Virongy Biosciences, USA. "
             "Browse %d Virongy products - pseudoviruses, neutralization assay kits, viral "
             "protein expression vectors, transduction reagents, cell lines and custom "
             "vector design." % len(products))
 
-    sections = "".join(category_section(c, [p for p in products if p["category"] == c], i % 2 == 1)
-                       for i, c in enumerate(cats))
+    body = pages.index_body(data, logo(70, "0 0 26px"), cats, counts)
+    return pages.shell(title, desc, "https://amps.bio/virongy.html", body, "",
+                       header, footer)
 
-    return """<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>%(title)s</title>
-<meta name="description" content="%(desc)s">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
-<link href="https://fonts.cdnfonts.com/css/d-din" rel="stylesheet">
-<link rel="canonical" href="https://amps.bio/virongy.html">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Ampbio">
-<meta property="og:title" content="%(title)s">
-<meta property="og:description" content="%(desc)s">
-<meta property="og:url" content="https://amps.bio/virongy.html">
-<meta property="og:image" content="https://amps.bio/assets/ampbio-logo.png">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="%(title)s">
-<meta name="twitter:description" content="%(desc)s">
-<meta name="twitter:image" content="https://amps.bio/assets/ampbio-logo.png">
-<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-<link rel="alternate icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
-<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-<link rel="stylesheet" href="styles.css">
-%(style)s
-</head>
-<body>
 
-<div id="amp-root" style="background:#0a1524;color:#fff;overflow-x:clip">
+def build_product(p, data):
+    header, footer = _chrome()
+    rel = "../"
+    header, footer = reroot(header, rel), reroot(footer, rel)
 
-%(header)s
+    siblings = [q for q in data["products"] if q["category"] == p["category"]]
+    i = siblings.index(p)
+    prev = siblings[i - 1] if i else None
+    nxt = siblings[i + 1] if i + 1 < len(siblings) else None
+    others = [q for q in siblings if q is not p][:4]
 
-  <!-- ================= HERO ================= -->
-  <section class="amp-hero" style="position:relative;overflow:hidden;min-height:600px;padding-top:76px;display:flex;align-items:center">
-    <img src="assets/hero-products.webp" alt="Virongy Biosciences virology research reagents" style="position:absolute;inset:0;width:100%%;height:100%%;object-fit:cover;object-position:70%% center;display:block;z-index:0">
-    <div style="position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(8,17,29,0.97) 0%%,rgba(8,17,29,0.92) 34%%,rgba(8,17,29,0.5) 68%%,rgba(8,17,29,0.18) 100%%)"></div>
-    <div style="position:absolute;inset:0;z-index:1;background:linear-gradient(0deg,rgba(8,17,29,0.6) 0%%,rgba(8,17,29,0) 42%%)"></div>
-    <div style="position:relative;z-index:2;max-width:1240px;margin:0 auto;padding:56px 32px;width:100%%">
-      <div style="max-width:720px">
-        <div style="font-family:%(fm)s;font-size:0.78rem;letter-spacing:0.24em;color:%(amber)s;text-transform:uppercase;margin-bottom:22px">%(dline)s</div>
-        %(logo)s
-        <h1 class="amp-h1" style="font-family:%(fh)s;font-weight:800;font-size:clamp(2rem,3.9vw,3.3rem);line-height:1.05;letter-spacing:-0.01em;text-transform:uppercase;margin:0 0 22px">
-          <span style="color:#fff">Virongy Biosciences </span><span style="color:%(amber)s">in India.</span>
-        </h1>
-        <p style="color:#c4cede;font-size:1.12rem;line-height:1.62;margin:0 0 30px;max-width:620px">Ampbio is the exclusive distributor in India for Virongy Biosciences, USA &mdash; pseudoviruses and single-cycle viruses, neutralization assay kits, viral protein expression vectors, transduction and transfection reagents, reporter cell lines and custom vector design.</p>
-        %(catnav)s
-      </div>
-    </div>
-  </section>
-%(sections)s
-  <!-- ================= ENQUIRY BAND ================= -->
-  <section style="position:relative;background:#fdecdd;overflow:hidden;min-height:280px;display:flex;align-items:center">
-    <img src="assets/cta-bg2.webp" alt="Molecular spheres" class="amp-cta-visual" style="position:absolute;inset:0;width:100%%;height:100%%;object-fit:cover;display:block;transform:scaleX(-1)">
-    <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(253,236,221,0.97) 34%%,rgba(253,236,221,0.82) 52%%,rgba(253,236,221,0.35) 74%%,rgba(253,236,221,0.1) 100%%)"></div>
-    <div style="position:relative;z-index:2;width:100%%;max-width:1240px;margin:0 auto;padding:56px 32px">
-      <h2 style="font-family:%(fh)s;font-weight:700;font-size:clamp(1.7rem,3.2vw,2.7rem);line-height:1.06;letter-spacing:0.01em;text-transform:uppercase;margin:0;color:#1a1c1e">Request a Virongy quotation</h2>
-      <div style="width:56px;height:3px;background:%(amber)s;margin:20px 0 18px"></div>
-      <p style="color:#3a4048;font-size:1rem;line-height:1.65;margin:0 0 26px;max-width:540px">Tell us the product, variant and pack size you need. We will confirm availability, lead time and pricing for delivery in India.</p>
-      <a class="amp-cta-btn" href="connect.html" style="display:inline-flex;align-items:center;gap:10px;background:%(amber)s;color:%(navy)s;font-family:%(fb)s;font-weight:700;font-size:0.98rem;padding:14px 30px;border-radius:7px;transition:background .25s,box-shadow .3s,transform .3s cubic-bezier(0.22,0.61,0.36,1)">Connect <span class="amp-arrow">&rarr;</span></a>
-      <p style="color:#59636f;font-size:0.82rem;line-height:1.6;margin:26px 0 0;max-width:640px">Catalogue as of %(gen)s. Product names, specifications and availability are those of Virongy Biosciences and are subject to change &mdash; please confirm current details with us. All products are for research use only.</p>
-    </div>
-  </section>
+    detail = []
+    if p["applications"]:
+        detail.append(pages.detail_block("Applications", pages.bullet_list(p["applications"])))
+    if p["features"]:
+        detail.append(pages.detail_block("Key features", pages.bullet_list(p["features"])))
+    if p["contents"]:
+        detail.append(pages.detail_block("Kit contents", pages.bullet_list(p["contents"])))
+    for opt in p["options"]:
+        detail.append(pages.detail_block(opt["label"], pages.option_pills(opt["values"])))
+    detail.append(pages.doc_buttons(DOC_MAP.get(p["slug"], []), rel, _exists))
 
-%(footer)s
+    url = "https://amps.bio/virongy/%s.html" % p["slug"]
+    body = pages.product_body(
+        p, "".join(detail), pages.breadcrumb(p, rel),
+        pages.prev_next(prev, nxt), rel,
+        "%sconnect.html?product=%s" % (rel, quote(p["name"])))
+    body += pages.related(others, p["category"])
+    body += pages.enquiry_band(rel)
 
-</div>
-
-<script src="app.js"></script>
-</body>
-</html>
-""" % {"title": esc(title), "desc": esc(desc), "style": PAGE_STYLE, "header": header,
-       "footer": footer, "sections": sections, "catnav": category_nav(cats, counts),
-       "fm": F_MONO, "fh": F_HEAD, "fb": F_BODY, "amber": AMBER, "navy": NAVY,
-       "dline": DISTRIBUTOR_LINE, "gen": data["generated"], "logo": logo(76, "0 0 28px")}
+    return pages.shell(
+        "%s | Virongy Biosciences — Ampbio India" % p["name"],
+        pages.teaser(p["summary"], 155), url, body, rel, header, footer,
+        extra_head=pages.product_jsonld(p, url))
 
 
 def build_marquee(data):
@@ -340,7 +341,7 @@ def build_marquee(data):
     tiles = []
     for p in feats:
         tiles.append(
-            '\n          <a class="amp-mq-tile" href="virongy.html#%s" style="flex:0 0 auto;'
+            '\n          <a class="amp-mq-tile" href="virongy/%s.html" style="flex:0 0 auto;'
             'width:212px;display:flex;flex-direction:column;gap:11px;text-decoration:none">'
             '<div style="position:relative;height:142px;border-radius:14px;overflow:hidden;'
             'background:%s;border:1px solid %s"><img src="%s" alt="%s" '
@@ -464,20 +465,48 @@ def check(path):
     return len(re.findall(r'src="assets/virongy-logo\.webp"', s))
 
 
+ROOT_URLS = [("", "1.0"), ("products.html", "0.9"), ("virongy.html", "0.9"),
+             ("scientific-platforms.html", "0.9"), ("support-training.html", "0.9"),
+             ("about.html", "0.8"), ("connect.html", "0.8")]
+
+
+def write_sitemap(data):
+    urls = list(ROOT_URLS) + [("virongy/%s.html" % p["slug"], "0.7")
+                              for p in data["products"]]
+    body = "".join(
+        "  <url>\n    <loc>https://amps.bio/%s</loc>\n"
+        "    <changefreq>monthly</changefreq>\n    <priority>%s</priority>\n  </url>\n"
+        % (loc, pri) for loc, pri in urls)
+    write("sitemap.xml",
+          '<?xml version="1.0" encoding="UTF-8"?>\n'
+          '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n%s</urlset>\n' % body)
+    return len(urls)
+
+
 def main():
     data = json.load(io.open(CATALOGUE, encoding="utf-8"))
-    write("virongy.html", build_page(data))
+    products = data["products"]
+
+    os.makedirs(os.path.join(SITE, "virongy"), exist_ok=True)
+    write("virongy.html", build_index(data))
+    for p in products:
+        write("virongy/%s.html" % p["slug"], build_product(p, data))
+
     write("index.html", replace_block(read("index.html"), "VIRONGY-MARQUEE", build_marquee(data)))
     write("products.html", replace_block(read("products.html"), "VIRONGY-BANNER", build_banner(data)))
-    for p in ("virongy.html", "index.html", "products.html"):
-        n = check(p)
-        print("checked           %-16s ok  (%d logo image%s)" % (p, n, "" if n == 1 else "s"))
+
+    for page in ("virongy.html", "index.html", "products.html"):
+        check(page)
+    for p in products[:]:
+        check("virongy/%s.html" % p["slug"])
+
+    n_urls = write_sitemap(data)
     have = sum(len(v) for v in DOC_MAP.values())
-    total = sum(len(p["docs"]) for p in data["products"])
-    print("virongy.html      %d products in %d categories" % (
-        len(data["products"]), len(data["categories"])))
+    print("virongy.html      range index, %d categories" % len(data["categories"]))
+    print("virongy/*.html    %d product pages" % len(products))
     print("index.html        marquee, %d featured products" % len(data["featured"]))
     print("products.html     distributor banner")
+    print("sitemap.xml       %d URLs" % n_urls)
     print("documents         %d download buttons across %d products "
           "(see assets/docs/MANIFEST.txt)" % (have, len(DOC_MAP)))
 
