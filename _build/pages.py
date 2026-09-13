@@ -140,6 +140,21 @@ def teaser(summary, limit=118):
     return cut[:cut.rfind(" ")].rstrip(" ,;.") + "…"
 
 
+def meta_description(p, limit=158):
+    """Search-result description for a product page.
+
+    Leads with the product name and the distributor line rather than with the
+    summary alone. Several products share Virongy's copy verbatim - the seven
+    neutralization kits carry one description between them, and two pages carry
+    the same Bunyavirus paragraph - so a summary-only description would be a
+    duplicate across pages. The name makes each one unique and puts the term
+    somebody actually searches for in the snippet."""
+    head = "%s from Virongy Biosciences, supplied in India by Ampbio." % p["name"]
+    if len(head) >= limit - 24:
+        return teaser(head, limit)
+    return "%s %s" % (head, teaser(p["summary"], limit - len(head) - 1))
+
+
 def anchor(cat):
     return re.sub(r"[^a-z0-9]+", "-", cat.lower()).strip("-")
 
