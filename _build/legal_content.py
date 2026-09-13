@@ -19,10 +19,6 @@ PHONE = "+91 96606 45155"
 ADDRESSES = ["Dhanori, Pune - 411015, Maharashtra, India",
              "Yeshwantpur, Bangalore - 560022, Karnataka, India"]
 
-REVIEW_NOTE = (
-    "This is a draft prepared for review. It has not been checked by a legal "
-    "adviser. Please have it reviewed, and the details marked <strong>to "
-    "confirm</strong> completed, before relying on it.")
 
 # Each page: (slug, title, meta description, lead paragraph, [(heading, [blocks])])
 # A block is a string (paragraph) or a list of strings (bulleted list).
