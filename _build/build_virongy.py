@@ -468,7 +468,9 @@ def check(path):
 
 ROOT_URLS = [("", "1.0"), ("products.html", "0.9"), ("virongy.html", "0.9"),
              ("scientific-platforms.html", "0.9"), ("support-training.html", "0.9"),
-             ("about.html", "0.8"), ("connect.html", "0.8")]
+             ("about.html", "0.8"), ("connect.html", "0.8"),
+             ("privacy-policy.html", "0.3"), ("terms-of-use.html", "0.3"),
+             ("disclaimer.html", "0.3")]
 
 
 def write_sitemap(data):

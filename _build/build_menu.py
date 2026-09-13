@@ -19,7 +19,8 @@ sys.path.insert(0, HERE)
 import menu  # noqa: E402
 
 ROOT_PAGES = ["index.html", "products.html", "scientific-platforms.html",
-              "support-training.html", "about.html", "connect.html", "virongy.html"]
+              "support-training.html", "about.html", "connect.html", "virongy.html",
+              "privacy-policy.html", "terms-of-use.html", "disclaimer.html"]
 
 
 def all_pages():

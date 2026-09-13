@@ -141,6 +141,14 @@ header.amp-scrolled { box-shadow: 0 1px 0 rgba(253,157,5,0.25); }
 .amp-hero-inline { min-height: 560px; }
 @media (max-width: 1024px) { .amp-hero-inline { min-height: 440px !important; } }
 
+/* Legal pages: sticky contents column beside the text, stacked on tablet down. */
+.amp-legal-toc a { transition: color 0.2s; }
+.amp-legal-toc a:hover { color: #b06c00; }
+@media (max-width: 1024px) {
+  .amp-legal-wrap { grid-template-columns: 1fr !important; gap: 26px !important; }
+  .amp-legal-toc { position: static !important; }
+}
+
 /* ============================================================
    Virongy browse menu. Panel markup is fetched from menu.html by
    app.js and mounted inside .amp-mm-mount.
