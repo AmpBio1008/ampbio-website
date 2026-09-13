@@ -393,65 +393,38 @@ def build_marquee(data):
 
 
 def build_banner(data):
-    """The Virongy block on products.html, between Product Categories and
-    Requirement-Based Sourcing.
-
-    Same composition as the homepage block and as this page's own PLATFORMS
-    section - copy left, mark right, a full-width row underneath - rather than
-    the floating promo card this used to be. A card was wrong here: it opened
-    the page ahead of the hero, so products.html had no <h1> above the fold,
-    and a bordered box sitting alone on a navy band matches nothing else on
-    the site. The row underneath carries Virongy's seven categories, which is
-    the natural continuation of a page whose subject is categories.
-    """
     n = len(data["products"])
-    counts = {c: sum(1 for p in data["products"] if p["category"] == c)
-              for c in data["categories"]}
-    cats = [c for c in data["categories"] if counts.get(c)]
-    pills = "".join(
-        '<a class="amp-catpill" href="virongy.html#%s" style="display:inline-flex;'
-        'align-items:center;gap:8px;border:1px solid rgba(253,157,5,0.4);color:#dbe3ee;'
-        'font-size:0.88rem;padding:9px 16px;border-radius:999px;'
-        'transition:background .2s,color .2s">%s <span style="color:%s;font-weight:700">'
-        '%d</span></a>' % (pages.anchor(c), pages.esc(c), AMBER, counts[c]) for c in cats)
-
     return (
-        '\n  <section style="background:%(navy)s;padding:80px 0 84px">\n'
+        # First section on products.html, so the top padding also has to clear
+        # the 76px fixed header (76 + 74).
+        '\n  <section style="background:%(navy)s;padding:150px 0 0">\n'
         '    <div style="max-width:1240px;margin:0 auto;padding:0 32px">\n'
-        '      <div class="amp-vhead" style="display:grid;'
-        'grid-template-columns:minmax(0,1.2fr) minmax(0,0.8fr);gap:54px;align-items:center">\n'
-        '        <div>\n'
-        '          <div class="amp-vlead" style="font-family:%(fm)s;font-size:0.95rem;'
-        'letter-spacing:0.2em;color:%(amber)s;text-transform:uppercase;margin-bottom:20px">'
-        '%(dline)s</div>\n'
-        '          <h2 style="font-family:%(fh)s;font-weight:700;font-size:clamp(1.8rem,3vw,2.6rem);'
-        'line-height:1.08;letter-spacing:-0.01em;text-transform:uppercase;color:#fff;margin:0 0 20px">'
-        'Virongy Biosciences <span style="color:%(amber)s">&mdash; Virological Research Tools '
-        'and Platforms</span></h2>\n'
-        '          <p style="color:#9fabbd;font-size:1rem;line-height:1.65;margin:0 0 28px;'
-        'max-width:520px">Ampbio is the exclusive distributor in India for Virongy Biosciences, '
-        'USA. %(n)d products across pseudoviruses, neutralization assay kits, viral protein '
-        'expression vectors, transduction reagents, reporter cell lines and custom vector '
-        'design.</p>\n'
-        '          <a class="amp-cta-btn" href="virongy.html" style="display:inline-flex;'
-        'align-items:center;gap:10px;background:%(amber)s;color:%(navy)s;font-family:%(fb)s;'
-        'font-weight:700;font-size:0.95rem;padding:13px 28px;border-radius:7px;'
-        'line-height:1.35;max-width:100%%;'
-        'transition:background .25s,box-shadow .3s,transform .3s cubic-bezier(0.22,0.61,0.36,1)">'
-        'View all %(n)d products <span class="amp-arrow">&rarr;</span></a>\n'
+        '      <div class="amp-promo-card amp-vdist" style="position:relative;border-radius:15px;'
+        'overflow:hidden;min-height:230px;background:#06101e;border:1px solid %(hair)s;display:flex">\n'
+        '        <div style="position:absolute;inset:0"><img src="assets/promo-dna.webp" '
+        'alt="DNA helix" style="position:absolute;inset:0;width:100%%;height:100%%;'
+        'object-fit:cover;display:block"></div>\n'
+        '        <div style="position:absolute;inset:0;background:linear-gradient(90deg,'
+        'rgba(6,16,30,0.97) 0%%,rgba(6,16,30,0.93) 42%%,rgba(6,16,30,0.45) 66%%,rgba(6,16,30,0.08) 100%%)"></div>\n'
+        '        <div style="position:relative;z-index:2;padding:34px;display:flex;flex-direction:column;'
+        'align-items:flex-start;width:56%%;min-width:320px">\n'
+        '          <div style="font-family:%(fm)s;font-size:0.72rem;letter-spacing:0.18em;color:%(amber)s;'
+        'text-transform:uppercase;margin-bottom:14px">%(dline)s</div>\n'
+        '          %(logo)s\n'
+        '          <p style="color:#c4cede;font-size:0.98rem;line-height:1.6;margin:0 0 24px">Ampbio is the '
+        'exclusive distributor in India for Virongy Biosciences, USA. %(n)d products across pseudoviruses, '
+        'neutralization assay kits, viral protein expression vectors, transduction reagents, reporter cell '
+        'lines and custom vector design.</p>\n'
+        '          <a class="amp-promo-cta" href="virongy.html" style="margin-top:auto;background:%(amber)s;'
+        'color:%(navy)s;font-family:%(fb)s;font-weight:700;font-size:0.92rem;padding:12px 24px;'
+        'border-radius:6px;transition:background .2s;line-height:1.35;max-width:100%%">'
+        'Virongy Biosciences &ndash; Virological Research Tools and Platforms</a>\n'
         '        </div>\n'
-        '        <div class="amp-vhead-mark" style="justify-self:end">%(logo)s</div>\n'
-        '      </div>\n'
-        '      <div style="margin-top:44px;padding-top:32px;border-top:1px solid %(hair)s">\n'
-        '        <div style="font-family:%(fm)s;font-size:0.7rem;letter-spacing:0.16em;'
-        'text-transform:uppercase;color:#7d8a9c;margin-bottom:16px">Browse by category</div>\n'
-        '        <div style="display:flex;flex-wrap:wrap;gap:10px">%(pills)s</div>\n'
         '      </div>\n'
         '    </div>\n'
         '  </section>\n' % {
-            "navy": NAVY, "hair": HAIRLINE, "fm": F_MONO, "fh": F_HEAD, "fb": F_BODY,
-            "amber": AMBER, "dline": DISTRIBUTOR_LINE, "n": n,
-            "logo": logo(62, "0"), "pills": pills})
+            "navy": NAVY, "hair": HAIRLINE, "fm": F_MONO, "fb": F_BODY,
+            "amber": AMBER, "dline": DISTRIBUTOR_LINE, "n": n, "logo": logo(56, "0 0 18px")})
 
 
 def write_manifest(data):
