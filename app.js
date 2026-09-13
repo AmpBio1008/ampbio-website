@@ -209,3 +209,83 @@
     root.querySelectorAll('.amp-reveal:not(.amp-in)').forEach(reveal);
   }, 5000);
 })();
+
+/* ---- Virongy catalogue: sticky category bar + back-to-top ----------------
+   Both are no-ops on every other page: the bar and the button only exist in
+   virongy.html, and this block exits immediately when neither is present. */
+(function () {
+  var bar = document.querySelector('.amp-catbar');
+  var top = document.getElementById('amp-top');
+  if (!bar && !top) return;
+
+  var pills = bar ? [].slice.call(bar.querySelectorAll('.amp-catbar-pill')) : [];
+  var sections = pills.map(function (a) {
+    return document.getElementById(a.getAttribute('data-cat'));
+  });
+  var current = null;
+  var ticking = false;
+
+  function mark(i) {
+    if (i === current) return;
+    if (current !== null) pills[current].classList.remove('amp-catpill-on');
+    current = i;
+    if (i === null) return;
+    var pill = pills[i];
+    pill.classList.add('amp-catpill-on');
+    // keep the active pill in view when the bar is scrolling sideways
+    var inner = pill.parentNode;
+    if (inner.scrollWidth > inner.clientWidth) {
+      var left = pill.offsetLeft - (inner.clientWidth - pill.offsetWidth) / 2;
+      inner.scrollTo({ left: Math.max(0, left), behavior: 'smooth' });
+    }
+  }
+
+  function update() {
+    ticking = false;
+    if (pills.length) {
+      // the line just under the header and the bar: whichever section crosses
+      // it is the one being read
+      var line = 76 + bar.offsetHeight + 12;
+      var found = null;
+      for (var i = 0; i < sections.length; i++) {
+        var s = sections[i];
+        if (!s) continue;
+        var r = s.getBoundingClientRect();
+        if (r.top <= line && r.bottom > line) { found = i; break; }
+      }
+      mark(found);
+    }
+    if (top) {
+      var show = window.pageYOffset > window.innerHeight * 1.4;
+      if (show === top.hidden) top.hidden = !show;
+    }
+  }
+
+  window.addEventListener('scroll', function () {
+    if (!ticking) { ticking = true; requestAnimationFrame(update); }
+  }, { passive: true });
+  window.addEventListener('resize', update, { passive: true });
+  // an anchor jump can land before the scroll event settles, so re-read after it
+  window.addEventListener('hashchange', function () { setTimeout(update, 60); });
+  update();
+
+  if (top) {
+    top.addEventListener('click', function () {
+      var still = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      var from = window.pageYOffset;
+      try {
+        window.scrollTo({ top: 0, behavior: still ? 'auto' : 'smooth' });
+      } catch (e) {
+        window.scrollTo(0, 0);
+        return;
+      }
+      // some embedded viewers accept behavior:'smooth' and then do nothing;
+      // if nothing has moved shortly after, jump instead of stranding the page
+      if (!still) {
+        setTimeout(function () {
+          if (window.pageYOffset === from && from > 0) window.scrollTo(0, 0);
+        }, 320);
+      }
+    });
+  }
+})();
