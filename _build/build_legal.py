@@ -106,9 +106,6 @@ def build(page, header, footer, updated):
         '        <ul style="list-style:none;margin:0;padding:0">%(toc)s</ul>\n'
         '      </nav>\n'
         '      <div>\n'
-        '        <div style="border:1px solid rgba(176,108,0,0.35);'
-        'background:rgba(253,157,5,0.12);border-radius:8px;padding:14px 18px;'
-        'margin:0 0 30px;color:#5a4415;font-size:0.92rem;line-height:1.6">%(note)s</div>\n'
         '%(sections)s\n'
         '        <p style="color:#8b6a2f;font-size:0.86rem;margin:30px 0 0;'
         'padding-top:18px;border-top:1px solid rgba(10,20,40,0.12)">'
@@ -118,7 +115,7 @@ def build(page, header, footer, updated):
         '  </section>\n' % {
             "navy": NAVY, "cream": CREAM, "amber": AMBER, "fm": F_MONO, "fh": F_HEAD,
             "title": title, "lead": lead, "toc": toc, "sections": body_sections,
-            "note": legal_content.REVIEW_NOTE, "updated": updated})
+            "updated": updated})
 
     return pages.shell("%s | Ampbio" % title, desc,
                        "https://amps.bio/%s" % slug, body, "", header, footer)
