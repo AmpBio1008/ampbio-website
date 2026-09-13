@@ -161,8 +161,12 @@ def anchor(cat):
 
 def index_section(cat, products, dark):
     cards = "".join(compact_card(p, False) for p in products)
+    # scroll-margin-top clears the fixed header (76px) and the sticky category
+    # bar (54px) when an anchor link lands here, so the section heading is not
+    # hidden underneath them.
     return (
-        '\n  <section id="%(anchor)s" style="background:%(bg)s;padding:64px 0 70px">\n'
+        '\n  <section id="%(anchor)s" style="background:%(bg)s;padding:64px 0 70px;'
+        'scroll-margin-top:132px">\n'
         '    <div style="max-width:1240px;margin:0 auto;padding:0 32px">\n'
         '      <div style="display:flex;align-items:baseline;justify-content:space-between;'
         'gap:20px;flex-wrap:wrap;margin:0 0 30px">\n'
@@ -297,6 +301,60 @@ def category_nav(cats, counts):
     return '<div style="display:flex;flex-wrap:wrap;gap:10px">%s</div>' % pills
 
 
+# Bar labels only. The hero pills and the section headings keep the full names.
+SHORT = {
+    "Pseudoviruses & Single-Cycle Viruses": "Pseudoviruses",
+    "Neutralization Assay Kits": "Neutralization Kits",
+    "Viral Protein Expression Vectors": "Expression Vectors",
+    "Transduction & Transfection Reagents": "Transduction & Transfection",
+    "Cell Lines, Antibodies & Controls": "Cell Lines & Controls",
+    "Custom Vector Design & Assembly": "Custom Vector Design",
+}
+
+
+def catbar(cats, counts):
+    """The category row again, this time as a bar that sticks under the header.
+
+    virongy.html is seven sections and 52 cards long. The pills in the hero
+    answer "where can I go" only until you scroll past them; after that the
+    only way back to another category is the whole way up. Sticking a copy of
+    the row under the header keeps every category one click away at any depth.
+    It is a separate element rather than the hero row made sticky, because the
+    hero row sits inside a positioned, gradient-layered section that cannot
+    release it.
+
+    Labels are shortened here. At full length the seven pills measure 1674px
+    against a 1240px container, so two categories sit off the right edge on a
+    desktop screen - and nobody scrolls a row sideways with a mouse. The full
+    name stays in the title attribute and is the heading of the section each
+    pill lands on.
+
+    app.js marks the pill for whichever section you are in.
+    """
+    pills = "".join(
+        '<a class="amp-catpill amp-catbar-pill" href="#%s" data-cat="%s" title="%s">%s'
+        '<span style="color:%s;font-weight:700;margin-left:7px">%d</span></a>'
+        % (anchor(c), anchor(c), esc(c), esc(SHORT.get(c, c)), AMBER, counts[c])
+        for c in cats)
+    return (
+        '\n  <nav class="amp-catbar" aria-label="Product categories">\n'
+        '    <div class="amp-catbar-inner">%s</div>\n'
+        '  </nav>\n' % pills)
+
+
+def back_to_top():
+    """Second half of the same problem: getting back up. Hidden until you are
+    past the first screen and a half; app.js does the revealing."""
+    return (
+        '\n  <button type="button" class="amp-top" id="amp-top" hidden '
+        'aria-label="Back to top">\n'
+        '    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" '
+        'stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'
+        '<line x1="12" y1="19" x2="12" y2="5"></line>'
+        '<polyline points="5 12 12 5 19 12"></polyline></svg>\n'
+        '  </button>\n')
+
+
 def enquiry_band(rel):
     return (
         '\n  <!-- ================= ENQUIRY BAND ================= -->\n'
@@ -361,18 +419,13 @@ def index_body(data, logo_html, cats, counts):
         '      </div>\n'
         '    </div>\n'
         '  </section>\n')
+    body += catbar(cats, counts)
     products = data["products"]
     body += "".join(
         index_section(c, [p for p in products if p["category"] == c], i % 2 == 1)
         for i, c in enumerate(cats))
     body += enquiry_band("")
-    body += ('\n  <section style="background:%s;padding:0 0 46px">\n'
-             '    <div style="max-width:1240px;margin:0 auto;padding:0 32px">\n'
-             '      <p style="color:#8b98ab;font-size:0.82rem;line-height:1.6;margin:0;'
-             'max-width:780px">Catalogue as of %s. Product names, specifications and '
-             'availability are those of Virongy Biosciences and are subject to change &mdash; '
-             'please confirm current details with us. All products are for research use only.</p>\n'
-             '    </div>\n  </section>\n' % (NAVY, data["generated"]))
+    body += back_to_top()
     return body
 
 
