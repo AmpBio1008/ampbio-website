@@ -401,9 +401,14 @@ def build_banner(data):
         '    <div style="max-width:1240px;margin:0 auto;padding:0 32px">\n'
         '      <div class="amp-promo-card amp-vdist" style="position:relative;border-radius:15px;'
         'overflow:hidden;min-height:230px;background:#06101e;border:1px solid %(hair)s;display:flex">\n'
-        '        <div style="position:absolute;inset:0"><img src="assets/promo-dna.webp" '
-        'alt="DNA helix" style="position:absolute;inset:0;width:100%%;height:100%%;'
-        'object-fit:cover;display:block"></div>\n'
+        # Cell culture rather than the homepage promo card's DNA helix, which
+        # read as a repeat within one visit. This frame is 3:1 and almost all
+        # dark, so the card can hold its copy over it at any width - a denser
+        # photo (the 96-well plate, say) is unreadable once the text spans the
+        # whole card below 1024px.
+        '        <div style="position:absolute;inset:0"><img src="assets/connect-band-bg.webp" '
+        'alt="Cell culture under a dissecting scope" style="position:absolute;inset:0;'
+        'width:100%%;height:100%%;object-fit:cover;display:block"></div>\n'
         '        <div style="position:absolute;inset:0;background:linear-gradient(90deg,'
         'rgba(6,16,30,0.97) 0%%,rgba(6,16,30,0.93) 42%%,rgba(6,16,30,0.45) 66%%,rgba(6,16,30,0.08) 100%%)"></div>\n'
         '        <div style="position:relative;z-index:2;padding:34px;display:flex;flex-direction:column;'

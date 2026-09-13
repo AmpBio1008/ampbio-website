@@ -40,6 +40,9 @@ a:hover { color: #ffb63e; }
 /* distributor banner on the Products page */
 @media (max-width: 1024px) {
   .amp-vdist > div:last-child { width: 100% !important; min-width: 0 !important; padding: 28px 24px !important; }
+  /* the copy spans the whole card here, so hold the photo on its dark end
+     rather than letting the lit plate sit under the paragraph */
+  .amp-vdist img { object-position: 4% center !important; }
 }
 /* Virongy section header: two columns like .amp-platforms, stacking on tablet */
 @media (max-width: 1024px) {
