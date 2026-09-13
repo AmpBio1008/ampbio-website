@@ -21,8 +21,16 @@ import hashlib, io, os, re, sys
 HERE = os.path.dirname(os.path.abspath(__file__))
 SITE = os.path.dirname(HERE)
 ASSETS = ["styles.css", "app.js", "menu.html"]
-PAGES = ["index.html", "products.html", "scientific-platforms.html",
-         "support-training.html", "about.html", "connect.html", "virongy.html"]
+ROOT_PAGES = ["index.html", "products.html", "scientific-platforms.html",
+              "support-training.html", "about.html", "connect.html", "virongy.html"]
+
+
+def all_pages():
+    out = list(ROOT_PAGES)
+    d = os.path.join(SITE, "virongy")
+    if os.path.isdir(d):
+        out += ["virongy/" + f for f in sorted(os.listdir(d)) if f.endswith(".html")]
+    return out
 
 
 def main():
@@ -34,14 +42,15 @@ def main():
     ver = h.hexdigest()[:8]
 
     changed = 0
-    for page in PAGES:
+    for page in all_pages():
         p = os.path.join(SITE, page)
         s = io.open(p, encoding="utf-8").read()
         before = s
-        s = re.sub(r'href="styles\.css(?:\?v=[0-9a-f]+)?"',
-                   'href="styles.css?v=%s"' % ver, s)
-        s = re.sub(r'src="app\.js(?:\?v=[0-9a-f]+)?"',
-                   'src="app.js?v=%s"' % ver, s)
+        # keep whatever ../ prefix the page already uses
+        s = re.sub(r'href="((?:\.\./)?)styles\.css(?:\?v=[0-9a-f]+)?"',
+                   lambda m: 'href="%sstyles.css?v=%s"' % (m.group(1), ver), s)
+        s = re.sub(r'src="((?:\.\./)?)app\.js(?:\?v=[0-9a-f]+)?"',
+                   lambda m: 'src="%sapp.js?v=%s"' % (m.group(1), ver), s)
         if s != before:
             io.open(p, "w", encoding="utf-8", newline="").write(s)
             changed += 1

@@ -40,18 +40,25 @@
 
     var pending = null;
 
-    /* The ?v=<hash> this script was loaded with, reused for menu.html so the
-       fragment can never be served from cache against a newer stylesheet. */
-    var assetV = (function () {
+    /* menu.html sits next to app.js at the site root, but product pages live
+       in virongy/ - so resolve it against this script's own URL rather than
+       against the page. The ?v=<hash> is carried over so the fragment can
+       never be served from cache against a newer stylesheet. */
+    var menuURL = (function () {
       var s = document.currentScript ||
               document.querySelector('script[src*="app.js"]');
-      var m = s && /[?&]v=([0-9a-f]+)/.exec(s.getAttribute('src') || '');
-      return m ? '?v=' + m[1] : '';
+      var src = (s && s.src) || 'app.js';
+      var m = /[?&]v=([0-9a-f]+)/.exec(src);
+      try {
+        return new URL('menu.html' + (m ? '?v=' + m[1] : ''), src).href;
+      } catch (e) {
+        return 'menu.html';
+      }
     })();
 
     function load() {
       if (pending) return pending;
-      pending = fetch('menu.html' + assetV, { credentials: 'same-origin' })
+      pending = fetch(menuURL, { credentials: 'same-origin' })
         .then(function (r) {
           if (!r.ok) throw new Error(r.status);
           return r.text();
