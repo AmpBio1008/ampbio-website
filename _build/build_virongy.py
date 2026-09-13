@@ -289,10 +289,9 @@ def build_index(data):
     cats = [c for c in data["categories"] if counts.get(c)]
 
     title = "Virongy Biosciences — Exclusive Distributor for India | Ampbio"
-    desc = ("Ampbio is the exclusive distributor in India for Virongy Biosciences, USA. "
-            "Browse %d Virongy products - pseudoviruses, neutralization assay kits, viral "
-            "protein expression vectors, transduction reagents, cell lines and custom "
-            "vector design." % len(products))
+    desc = ("Exclusive distributor in India for Virongy Biosciences, USA: %d products "
+            "across pseudoviruses, neutralization kits and expression vectors."
+            % len(products))
 
     body = pages.index_body(data, logo(70, "0 0 26px"), cats, counts)
     return pages.shell(title, desc, "https://amps.bio/virongy.html", body, "",
@@ -331,7 +330,7 @@ def build_product(p, data):
 
     return pages.shell(
         "%s | Virongy Biosciences — Ampbio India" % p["name"],
-        pages.teaser(p["summary"], 155), url, body, rel, header, footer,
+        pages.meta_description(p), url, body, rel, header, footer,
         extra_head=pages.product_jsonld(p, url))
 
 
