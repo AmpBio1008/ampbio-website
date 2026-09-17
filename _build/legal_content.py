@@ -16,8 +16,9 @@ officer) are marked TO CONFIRM rather than invented.
 COMPANY = "Amplified Biopharma Solutions"
 EMAIL = "bd@amps.bio"
 PHONE = "+91 96606 45155"
-ADDRESSES = ["Dhanori, Pune - 411015, Maharashtra, India",
-             "Yeshwantpur, Bangalore - 560022, Karnataka, India"]
+# Pune (Dhanori) was removed on 17 Sep 2026 at the customer's request and may
+# come back; add the string here and re-run build_legal.py to restore it.
+ADDRESSES = ["Yeshwantpur, Bangalore - 560022, Karnataka, India"]
 
 
 # Each page: (slug, title, meta description, lead paragraph, [(heading, [blocks])])
