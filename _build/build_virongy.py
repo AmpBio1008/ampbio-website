@@ -334,29 +334,58 @@ def build_product(p, data):
         extra_head=pages.product_jsonld(p, url))
 
 
-def build_marquee(data):
+def tiles_track(data, width=212, height=142, font="0.92rem"):
+    """One pass of the featured-product tiles. Callers render it twice: the
+    track is then exactly twice its visible width, so translating by 50% lands
+    on an identical frame and the loop has no seam."""
     by = {p["slug"]: p for p in data["products"]}
     feats = [by[s] for s in data["featured"] if s in by]
     tiles = []
     for p in feats:
         tiles.append(
             '\n          <a class="amp-mq-tile" href="virongy/%s.html" style="flex:0 0 auto;'
-            'width:212px;display:flex;flex-direction:column;gap:11px;text-decoration:none">'
-            '<div style="position:relative;height:142px;border-radius:14px;overflow:hidden;'
+            'width:%dpx;display:flex;flex-direction:column;gap:9px;text-decoration:none">'
+            '<div style="position:relative;height:%dpx;border-radius:12px;overflow:hidden;'
             'background:%s;border:1px solid %s"><img src="%s" alt="%s" '
             'style="position:absolute;inset:0;width:100%%;height:100%%;object-fit:cover;display:block">'
-            '</div><div style="font-family:%s;font-weight:700;font-size:0.92rem;line-height:1.2;'
+            '</div><div style="font-family:%s;font-weight:700;font-size:%s;line-height:1.2;'
             'color:#dbe3ee">%s</div></a>'
-            % (esc(p["slug"]), CARD, HAIRLINE, esc(p["image"]), esc(p["name"]),
-               F_HEAD, esc(p["name"])))
-    # the list is rendered twice so the -50% translation loops seamlessly
-    track = "".join(tiles)
+            % (esc(p["slug"]), width, height, CARD, HAIRLINE, esc(p["image"]),
+               esc(p["name"]), F_HEAD, font, esc(p["name"])))
+    return "".join(tiles)
 
+
+def build_hero_strip(data):
+    """The scrolling tiles, riding along the bottom of the homepage hero.
+
+    They used to sit in their own section most of the way down the page, where
+    a visitor only met them after five other sections. In the hero they are on
+    the first screen with the headline, which is what the distributorship
+    deserves. The band carries its own scrim so the tiles stay legible over the
+    video without darkening the whole hero.
+    """
+    track = tiles_track(data, 168, 112, "0.82rem")
+    return (
+        '\n    <div class="amp-hero-strip">\n'
+        '      <div class="amp-hero-strip-lead">%(dline)s &middot; '
+        '<a href="virongy.html">%(partner)s &rarr;</a></div>\n'
+        '      <div class="amp-marquee" style="position:relative;overflow:hidden">\n'
+        '        <div class="amp-marquee-track" style="display:flex;gap:18px;'
+        'width:max-content;padding:0 10px">%(track)s%(track)s\n'
+        '        </div>\n'
+        '      </div>\n'
+        '    </div>\n'
+        % {"dline": DISTRIBUTOR_LINE, "partner": PARTNER, "track": track})
+
+
+def build_marquee(data):
+    """The distributor band further down the homepage. The tiles moved to the
+    hero, so this is now copy, mark and call to action only."""
     return (
         # Same composition as the PLATFORMS section on this page: copy block on
         # the left, visual on the right, then the full-bleed row underneath.
         '\n  <section style="background:%(navy)s;padding:80px 0 76px;overflow:hidden">\n'
-        '    <div style="max-width:1240px;margin:0 auto;padding:0 32px 54px">\n'
+        '    <div style="max-width:1240px;margin:0 auto;padding:0 32px">\n'
         '      <div class="amp-vhead" style="display:grid;'
         'grid-template-columns:minmax(0,1.2fr) minmax(0,0.8fr);gap:54px;align-items:center">\n'
         '        <div>\n'
@@ -365,7 +394,8 @@ def build_marquee(data):
         '%(dline)s</div>\n'
         '          <h2 style="font-family:%(fh)s;font-weight:700;font-size:clamp(1.8rem,3vw,2.6rem);'
         'line-height:1.08;letter-spacing:-0.01em;text-transform:uppercase;color:#fff;margin:0 0 20px">'
-        'Featured Products from <span style="color:%(amber)s">Virongy Biosciences</span></h2>\n'
+        '<span style="color:#fff">Virongy Biosciences </span>'
+        '<span style="color:%(amber)s">in India.</span></h2>\n'
         '          <p style="color:#9fabbd;font-size:1rem;line-height:1.65;margin:0 0 28px;'
         'max-width:460px">Ampbio is the exclusive distributor in India for Virongy Biosciences, '
         'USA &mdash; %(n)d products spanning pseudoviruses, neutralization assay kits, viral protein '
@@ -381,14 +411,9 @@ def build_marquee(data):
         '        <div class="amp-vhead-mark" style="justify-self:end">%(logo)s</div>\n'
         '      </div>\n'
         '    </div>\n'
-        '    <div class="amp-marquee" style="position:relative;overflow:hidden">\n'
-        '      <div class="amp-marquee-track" style="display:flex;gap:20px;width:max-content;'
-        'padding:0 10px">%(track)s%(track)s\n'
-        '      </div>\n'
-        '    </div>\n'
         '  </section>\n' % {
             "navy": NAVY, "fm": F_MONO, "fh": F_HEAD, "fb": F_BODY, "amber": AMBER,
-            "dline": DISTRIBUTOR_LINE, "track": track, "logo": logo(62, "0"),
+            "dline": DISTRIBUTOR_LINE, "logo": logo(62, "0"),
             "n": len(data["products"])})
 
 
@@ -500,7 +525,10 @@ def main():
     for p in products:
         write("virongy/%s.html" % p["slug"], build_product(p, data))
 
-    write("index.html", replace_block(read("index.html"), "VIRONGY-MARQUEE", build_marquee(data)))
+    home = read("index.html")
+    home = replace_block(home, "VIRONGY-HERO-STRIP", build_hero_strip(data))
+    home = replace_block(home, "VIRONGY-MARQUEE", build_marquee(data))
+    write("index.html", home)
     write("products.html", replace_block(read("products.html"), "VIRONGY-BANNER", build_banner(data)))
 
     for page in ("virongy.html", "index.html", "products.html"):
