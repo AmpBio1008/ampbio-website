@@ -364,7 +364,7 @@ def build_hero_strip(data):
     its own scrim, faded at both edges, so the tiles stay legible over the
     video without darkening the whole hero.
     """
-    track = tiles_track(data, 200, 134, "0.88rem")
+    track = tiles_track(data, 330, 222, "1rem")
     return (
         '\n    <div class="amp-hero-strip">\n'
         '      <div class="amp-marquee" style="position:relative;overflow:hidden">\n'
