@@ -21,9 +21,9 @@ a:hover { color: #ffb63e; }
 
 /* ---- Virongy featured-products marquee (homepage hero) ----
    The tile list is rendered twice, so translating the track by exactly 50%
-   lands on an identical frame and the loop has no visible seam. Starting at
-   -50% and ending at 0 carries the tiles left to right. */
-@keyframes ampMarquee { from { transform: translate3d(-50%, 0, 0); } to { transform: translate3d(0,0,0); } }
+   lands on an identical frame and the loop has no visible seam. Running 0 to
+   -50% carries the tiles right to left. */
+@keyframes ampMarquee { from { transform: translate3d(0,0,0); } to { transform: translate3d(-50%, 0, 0); } }
 .amp-marquee { -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 52px, #000 calc(100% - 52px), transparent 100%);
                mask-image: linear-gradient(90deg, transparent 0, #000 52px, #000 calc(100% - 52px), transparent 100%); }
 .amp-marquee-track { animation: ampMarquee 72s linear infinite; }
@@ -38,19 +38,27 @@ a:hover { color: #ffb63e; }
   .amp-marquee { overflow-x: auto !important; }
   .amp-marquee-track { animation: none; }
 }
-/* The strip rides along the bottom of the hero so the products are on screen
-   the moment the page loads. Its own scrim keeps the tiles legible over the
-   video without darkening the rest of the hero. */
-.amp-hero-strip { position: relative; z-index: 3; width: 100%; padding: 18px 0 22px;
-  background: linear-gradient(0deg, rgba(10,21,36,0.94) 0%, rgba(10,21,36,0.78) 58%, rgba(10,21,36,0) 100%); }
-.amp-hero-strip-lead { max-width: 1240px; margin: 0 auto 13px; padding: 0 32px;
-  font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem; letter-spacing: 0.18em;
-  text-transform: uppercase; color: #FD9D05; }
-.amp-hero-strip-lead a { color: #dbe3ee; transition: color 0.2s; }
-.amp-hero-strip-lead a:hover { color: #FD9D05; }
+/* The strip sits under the headline, so the products are on screen the moment
+   the page loads. Its own scrim - faded at the top and bottom edges, since the
+   band now floats over the middle of the video rather than resting on the
+   bottom of the hero - keeps the tiles legible without darkening the hero. */
+.amp-hero-strip { position: relative; z-index: 3; width: 100%; margin-top: 44px;
+  padding: 22px 0 24px;
+  background: linear-gradient(180deg, rgba(10,21,36,0) 0%, rgba(10,21,36,0.74) 16%,
+    rgba(10,21,36,0.74) 84%, rgba(10,21,36,0) 100%); }
+/* The homepage headline is smaller than the other pages' h1: it shares the
+   hero with the strip, and .amp-h1's 3rem override below 1024px is too big
+   once both are on one screen. Written as h1.amp-hero-h1 so it outranks that
+   rule on specificity - both carry !important, and .amp-h1 comes later in the
+   file, so a bare class here would lose. */
+h1.amp-hero-h1 { font-size: clamp(1.9rem, 3.4vw, 3rem) !important; }
+@media (max-width: 1024px) {
+  h1.amp-hero-h1 { font-size: 2.4rem !important; }
+  .amp-hero-strip { margin-top: 34px; }
+}
 @media (max-width: 620px) {
-  .amp-hero-strip { padding: 14px 0 16px; }
-  .amp-hero-strip-lead { padding: 0 20px; font-size: 0.64rem; letter-spacing: 0.14em; margin-bottom: 10px; }
+  h1.amp-hero-h1 { font-size: 2rem !important; }
+  .amp-hero-strip { margin-top: 26px; padding: 16px 0 18px; }
 }
 /* distributor banner on the Products page */
 @media (max-width: 1024px) {
