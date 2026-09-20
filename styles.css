@@ -59,6 +59,10 @@ h1.amp-hero-h1 { font-size: clamp(1.9rem, 3.4vw, 3rem) !important; }
 @media (max-width: 620px) {
   h1.amp-hero-h1 { font-size: 2rem !important; }
   .amp-hero-strip { margin-top: 26px; padding: 16px 0 18px; }
+  /* a 330px tile is almost the whole width of a phone, so the strip would show
+     one product at a time and read as a slideshow rather than a run of them */
+  .amp-hero-strip .amp-mq-tile { width: 232px !important; }
+  .amp-hero-strip .amp-mq-tile > div:first-child { height: 156px !important; }
 }
 /* distributor banner on the Products page */
 @media (max-width: 1024px) {
