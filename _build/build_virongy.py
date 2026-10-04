@@ -356,23 +356,20 @@ def tiles_track(data, width=212, height=142, font="0.92rem"):
 
 
 def build_hero_strip(data):
-    """The scrolling tiles, sitting under the headline in the homepage hero.
+    """The Virongy row of scrolling tiles in the homepage hero.
 
-    They used to be in their own section most of the way down the page, where
-    a visitor only met them after five other sections. Here they are on the
-    first screen, which is what the distributorship deserves. The band carries
-    its own scrim, faded at both edges, so the tiles stay legible over the
-    video without darkening the whole hero.
+    It sits in the hero's .amp-hero-strip band (static markup in index.html),
+    above the Jena Bioscience row that _build/build_jena.py writes. The band
+    carries the scrim and sizes both rows to the screen height (styles.css),
+    so the 330x222 here are only the fallback size.
     """
     track = tiles_track(data, 330, 222, "1rem")
     return (
-        '\n    <div class="amp-hero-strip">\n'
-        '      <div class="amp-marquee" style="position:relative;overflow:hidden">\n'
+        '\n      <div class="amp-marquee" style="position:relative;overflow:hidden">\n'
         '        <div class="amp-marquee-track" style="display:flex;gap:18px;'
         'width:max-content;padding:0 10px">%(track)s%(track)s\n'
         '        </div>\n'
-        '      </div>\n'
-        '    </div>\n'
+        '      </div>\n      '
         % {"track": track})
 
 

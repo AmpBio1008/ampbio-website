@@ -42,27 +42,35 @@ a:hover { color: #ffb63e; }
    the page loads. Its own scrim - faded at the top and bottom edges, since the
    band now floats over the middle of the video rather than resting on the
    bottom of the hero - keeps the tiles legible without darkening the hero. */
-.amp-hero-strip { position: relative; z-index: 3; width: 100%; margin-top: 44px;
-  padding: 22px 0 24px;
-  background: linear-gradient(180deg, rgba(10,21,36,0) 0%, rgba(10,21,36,0.74) 16%,
-    rgba(10,21,36,0.74) 84%, rgba(10,21,36,0) 100%); }
+/* Two rows - Virongy, then Jena Bioscience - and both have to be on the first
+   screen. So the tile size follows the screen height: --th is the image height,
+   whatever is left once the header, headline, gaps and two caption lines per
+   row are paid for, split between the rows and capped at the original 222px.
+   --tw keeps the original 330:222 shape. */
+.amp-hero-strip { position: relative; z-index: 3; width: 100%; margin-top: 30px;
+  padding: 18px 0 20px; display: flex; flex-direction: column; gap: 16px;
+  --th: clamp(120px, calc((100vh - 390px) / 2), 222px); --tw: calc(var(--th) * 1.486);
+  background: linear-gradient(180deg, rgba(10,21,36,0) 0%, rgba(10,21,36,0.74) 9%,
+    rgba(10,21,36,0.74) 91%, rgba(10,21,36,0) 100%); }
+.amp-hero-strip .amp-mq-tile { width: var(--tw) !important; }
+.amp-hero-strip .amp-mq-tile > div:first-child { height: var(--th) !important; }
 /* The homepage headline is smaller than the other pages' h1: it shares the
    hero with the strip, and .amp-h1's 3rem override below 1024px is too big
    once both are on one screen. Written as h1.amp-hero-h1 so it outranks that
    rule on specificity - both carry !important, and .amp-h1 comes later in the
    file, so a bare class here would lose. */
-h1.amp-hero-h1 { font-size: clamp(1.9rem, 3.4vw, 3rem) !important; }
+h1.amp-hero-h1 { font-size: clamp(1.6rem, 2.6vw, 2.3rem) !important; }
 @media (max-width: 1024px) {
-  h1.amp-hero-h1 { font-size: 2.4rem !important; }
-  .amp-hero-strip { margin-top: 34px; }
+  h1.amp-hero-h1 { font-size: 2rem !important; }
+  .amp-hero-strip { margin-top: 26px; }
 }
 @media (max-width: 620px) {
-  h1.amp-hero-h1 { font-size: 2rem !important; }
-  .amp-hero-strip { margin-top: 26px; padding: 16px 0 18px; }
-  /* a 330px tile is almost the whole width of a phone, so the strip would show
-     one product at a time and read as a slideshow rather than a run of them */
-  .amp-hero-strip .amp-mq-tile { width: 232px !important; }
-  .amp-hero-strip .amp-mq-tile > div:first-child { height: 156px !important; }
+  h1.amp-hero-h1 { font-size: 1.7rem !important; }
+  /* A phone headline wraps to four or five lines, so less height is left; the
+     232x156 cap keeps a tile well short of the full width, so each row reads as
+     a run of products rather than a slideshow. */
+  .amp-hero-strip { margin-top: 22px; padding: 14px 0 16px; gap: 14px;
+    --th: clamp(104px, calc((100vh - 460px) / 2), 156px); }
 }
 /* distributor banner on the Products page */
 @media (max-width: 1024px) {
