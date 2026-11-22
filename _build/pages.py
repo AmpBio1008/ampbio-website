@@ -20,6 +20,20 @@ F_BODY = "'D-DIN','IBM Plex Sans',sans-serif"
 
 SITE = "https://amps.bio"
 
+# Everything that differs between partner ranges. Functions below default to
+# Virongy, so the Virongy pages are generated exactly as before; the Sepflow
+# build passes its own (build_sepflow.py).
+VIRONGY = {
+    "name": "Virongy Biosciences",      # display name
+    "short": "Virongy",                 # "Other Virongy products", "Request a Virongy quotation"
+    "dir": "virongy",                   # product pages live in <dir>/<slug>.html
+    "index": "virongy.html",
+    "media_note": "Supplied in India by Ampbio &middot; Research use only",
+    "manufacturer_url": "https://virongy.com",
+    "quote_lead": "Tell us the product, variant and pack size you need. We will confirm "
+                  "availability, lead time and pricing for delivery in India.",
+}
+
 
 def esc(s):
     return (str(s).replace("&", "&amp;").replace("<", "&lt;")
@@ -100,8 +114,8 @@ def shell(title, desc, canonical, body, rel, header, footer, extra_head=""):
 
 # ------------------------------------------------------------------ index
 
-def compact_card(p, in_dir):
-    href = ("%s.html" % p["slug"]) if in_dir else ("virongy/%s.html" % p["slug"])
+def compact_card(p, in_dir, partner=VIRONGY):
+    href = ("%s.html" % p["slug"]) if in_dir else ("%s/%s.html" % (partner["dir"], p["slug"]))
     bits = []
     n = sum(len(o["values"]) for o in p["options"])
     if n:
@@ -140,7 +154,7 @@ def teaser(summary, limit=118):
     return cut[:cut.rfind(" ")].rstrip(" ,;.") + "…"
 
 
-def meta_description(p, limit=158):
+def meta_description(p, limit=158, partner=VIRONGY):
     """Search-result description for a product page.
 
     Leads with the product name and the distributor line rather than with the
@@ -149,7 +163,7 @@ def meta_description(p, limit=158):
     the same Bunyavirus paragraph - so a summary-only description would be a
     duplicate across pages. The name makes each one unique and puts the term
     somebody actually searches for in the snippet."""
-    head = "%s from Virongy Biosciences, supplied in India by Ampbio." % p["name"]
+    head = "%s from %s, supplied in India by Ampbio." % (p["name"], partner["name"])
     if len(head) >= limit - 24:
         return teaser(head, limit)
     return "%s %s" % (head, teaser(p["summary"], limit - len(head) - 1))
@@ -159,8 +173,8 @@ def anchor(cat):
     return re.sub(r"[^a-z0-9]+", "-", cat.lower()).strip("-")
 
 
-def index_section(cat, products, dark):
-    cards = "".join(compact_card(p, False) for p in products)
+def index_section(cat, products, dark, partner=VIRONGY):
+    cards = "".join(compact_card(p, False, partner) for p in products)
     # scroll-margin-top clears the fixed header (76px) and the sticky category
     # bar (54px) when an anchor link lands here, so the section heading is not
     # hidden underneath them.
@@ -190,17 +204,18 @@ def index_section(cat, products, dark):
 SEP = '<span style="margin:0 9px;color:#5f6d7f">/</span>'
 
 
-def breadcrumb(p, rel):
+def breadcrumb(p, rel, partner=VIRONGY):
     """Home / Virongy Biosciences / <category> / <product>, so a visitor landing
     straight on a product page knows where they are and can step back up."""
     return (
         '<nav class="amp-crumb" aria-label="Breadcrumb" style="font-size:0.84rem;'
         'color:#8b98ab;margin:0 0 20px;line-height:1.7">'
         '<a href="%(rel)sindex.html" style="color:#8b98ab">Home</a>%(sep)s'
-        '<a href="%(rel)svirongy.html" style="color:#8b98ab">Virongy Biosciences</a>%(sep)s'
-        '<a href="%(rel)svirongy.html#%(anch)s" style="color:#8b98ab">%(cat)s</a>%(sep)s'
+        '<a href="%(rel)s%(index)s" style="color:#8b98ab">%(partner)s</a>%(sep)s'
+        '<a href="%(rel)s%(index)s#%(anch)s" style="color:#8b98ab">%(cat)s</a>%(sep)s'
         '<span style="color:#dbe3ee">%(name)s</span></nav>'
         % {"rel": rel, "sep": SEP, "anch": anchor(p["category"]),
+           "index": partner["index"], "partner": esc(partner["name"]),
            "cat": esc(p["category"]), "name": esc(p["name"])})
 
 
@@ -221,23 +236,24 @@ def prev_next(prev, nxt):
             % (cell(prev, "&larr; Previous", "left"), cell(nxt, "Next &rarr;", "right")))
 
 
-def related(items, cat):
+def related(items, cat, partner=VIRONGY):
     if not items:
         return ""
-    cards = "".join(compact_card(p, True) for p in items)
+    cards = "".join(compact_card(p, True, partner) for p in items)
     return (
         '\n  <section style="background:%(bg)s;padding:60px 0 70px">\n'
         '    <div style="max-width:1240px;margin:0 auto;padding:0 32px">\n'
         '      <h2 style="font-family:%(fh)s;font-weight:700;font-size:clamp(1.3rem,2.2vw,1.8rem);'
         'line-height:1.1;text-transform:uppercase;color:#fff;margin:0 0 8px">More in %(cat)s</h2>\n'
-        '      <p style="color:#8b98ab;font-size:0.92rem;margin:0 0 26px">Other Virongy products '
+        '      <p style="color:#8b98ab;font-size:0.92rem;margin:0 0 26px">Other %(short)s products '
         'in the same category.</p>\n'
         '      <div class="amp-vp-grid" style="display:grid;'
         'grid-template-columns:repeat(auto-fill,minmax(264px,1fr));gap:20px">%(cards)s\n'
         '      </div>\n'
         '    </div>\n'
         '  </section>\n'
-        % {"bg": NAVY_DEEP, "fh": F_HEAD, "cat": esc(cat), "cards": cards})
+        % {"bg": NAVY_DEEP, "fh": F_HEAD, "cat": esc(cat), "cards": cards,
+           "short": esc(partner["short"])})
 
 
 def bullet_list(items):
@@ -312,7 +328,7 @@ SHORT = {
 }
 
 
-def catbar(cats, counts):
+def catbar(cats, counts, short=SHORT):
     """The category row again, this time as a bar that sticks under the header.
 
     virongy.html is seven sections and 52 cards long. The pills in the hero
@@ -334,7 +350,7 @@ def catbar(cats, counts):
     pills = "".join(
         '<a class="amp-catpill amp-catbar-pill" href="#%s" data-cat="%s" title="%s">%s'
         '<span style="color:%s;font-weight:700;margin-left:7px">%d</span></a>'
-        % (anchor(c), anchor(c), esc(c), esc(SHORT.get(c, c)), AMBER, counts[c])
+        % (anchor(c), anchor(c), esc(c), esc(short.get(c, c)), AMBER, counts[c])
         for c in cats)
     return (
         '\n  <nav class="amp-catbar" aria-label="Product categories">\n'
@@ -355,7 +371,7 @@ def back_to_top():
         '  </button>\n')
 
 
-def enquiry_band(rel):
+def enquiry_band(rel, partner=VIRONGY):
     return (
         '\n  <!-- ================= ENQUIRY BAND ================= -->\n'
         '  <section style="position:relative;background:#fdecdd;overflow:hidden;'
@@ -370,11 +386,10 @@ def enquiry_band(rel):
         'padding:52px 32px">\n'
         '      <h2 style="font-family:%(fh)s;font-weight:700;font-size:clamp(1.6rem,3vw,2.5rem);'
         'line-height:1.06;text-transform:uppercase;margin:0;color:#1a1c1e">'
-        'Request a Virongy quotation</h2>\n'
+        'Request a %(short)s quotation</h2>\n'
         '      <div style="width:56px;height:3px;background:%(amber)s;margin:18px 0 16px"></div>\n'
         '      <p style="color:#3a4048;font-size:1rem;line-height:1.65;margin:0 0 24px;'
-        'max-width:540px">Tell us the product, variant and pack size you need. We will confirm '
-        'availability, lead time and pricing for delivery in India.</p>\n'
+        'max-width:540px">%(lead)s</p>\n'
         '      <a class="amp-cta-btn" href="%(rel)sconnect.html" style="display:inline-flex;'
         'align-items:center;gap:10px;background:%(amber)s;color:%(navy)s;font-family:%(fb)s;'
         'font-weight:700;font-size:0.98rem;padding:14px 30px;border-radius:7px;'
@@ -382,7 +397,8 @@ def enquiry_band(rel):
         'Connect <span class="amp-arrow">&rarr;</span></a>\n'
         '    </div>\n'
         '  </section>\n'
-        % {"rel": rel, "fh": F_HEAD, "fb": F_BODY, "amber": AMBER, "navy": NAVY})
+        % {"rel": rel, "fh": F_HEAD, "fb": F_BODY, "amber": AMBER, "navy": NAVY,
+           "short": esc(partner["short"]), "lead": partner["quote_lead"]})
 
 
 def index_body(data, logo_html, cats, counts):
@@ -429,7 +445,7 @@ def index_body(data, logo_html, cats, counts):
     return body
 
 
-def product_body(p, detail_html, crumb, pn, rel, quote_href):
+def product_body(p, detail_html, crumb, pn, rel, quote_href, partner=VIRONGY):
     return (
         '\n  <section style="background:%(navy)s;padding:116px 0 64px">\n'
         '    <div style="max-width:1240px;margin:0 auto;padding:0 32px">\n'
@@ -443,7 +459,7 @@ def product_body(p, detail_html, crumb, pn, rel, quote_href):
         'height:100%%;object-fit:cover;display:block"></div>\n'
         '          <div style="font-family:%(fm)s;font-size:0.64rem;letter-spacing:0.14em;'
         'text-transform:uppercase;color:#8b98ab;margin-top:14px;line-height:1.6">'
-        'Supplied in India by Ampbio &middot; Research use only</div>\n'
+        '%(note)s</div>\n'
         '        </div>\n'
         '        <div>\n'
         '          <div style="font-family:%(fm)s;font-size:0.7rem;letter-spacing:0.18em;'
@@ -468,10 +484,10 @@ def product_body(p, detail_html, crumb, pn, rel, quote_href):
             "img": esc(rel + p["image"]), "alt": esc(p["name"]),
             "cat": esc(p["category"]), "name": esc(p["name"]),
             "summary": esc(p["summary"]), "detail": detail_html,
-            "quote": esc(quote_href), "pn": pn})
+            "quote": esc(quote_href), "pn": pn, "note": partner["media_note"]})
 
 
-def product_jsonld(p, url):
+def product_jsonld(p, url, partner=VIRONGY):
     import json
     data = {
         "@context": "https://schema.org",
@@ -481,9 +497,10 @@ def product_jsonld(p, url):
         "category": p["category"],
         "image": "%s/%s" % (SITE, p["image"]),
         "url": url,
-        "brand": {"@type": "Brand", "name": "Virongy Biosciences"},
-        "manufacturer": {"@type": "Organization", "name": "Virongy Biosciences",
-                         "url": "https://virongy.com"},
+        "brand": {"@type": "Brand", "name": partner["name"]},
+        "manufacturer": {"@type": "Organization", "name": partner["name"]},
     }
+    if partner.get("manufacturer_url"):
+        data["manufacturer"]["url"] = partner["manufacturer_url"]
     return ('\n<script type="application/ld+json">%s</script>'
             % json.dumps(data, ensure_ascii=False))

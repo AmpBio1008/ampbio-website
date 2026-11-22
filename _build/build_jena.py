@@ -27,14 +27,15 @@ def tile(p):
     # plate with the image contained rather than cropped to fill.
     return (
         '\n          <a class="amp-mq-tile amp-mq-plate" href="connect.html?product=%s" '
-        'style="flex:0 0 auto;width:330px;display:flex;flex-direction:column;gap:9px;'
+        'title="%s" style="flex:0 0 auto;width:330px;display:flex;flex-direction:column;gap:9px;'
         'text-decoration:none"><div style="position:relative;height:222px;border-radius:12px;'
         'overflow:hidden;background:#fff;border:1px solid %s"><img src="assets/jena-%s.webp" '
         'alt="%s" style="position:absolute;inset:0;width:100%%;height:100%%;object-fit:contain;'
         'padding:7%% 9%%;box-sizing:border-box;display:block"></div>'
         '<div style="font-family:%s;font-weight:700;font-size:1rem;line-height:1.2;'
         'color:#dbe3ee">%s</div></a>'
-        % (quote(label), HAIRLINE, esc(p["slug"]), esc(p["name"]), F_HEAD, esc(p["name"])))
+        % (quote(label), esc(p["name"]), HAIRLINE, esc(p["slug"]), esc(p["name"]), F_HEAD,
+           esc(p["name"])))
 
 
 def build_hero_strip(data):

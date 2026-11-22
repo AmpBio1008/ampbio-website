@@ -343,14 +343,14 @@ def tiles_track(data, width=212, height=142, font="0.92rem"):
     tiles = []
     for p in feats:
         tiles.append(
-            '\n          <a class="amp-mq-tile" href="virongy/%s.html" style="flex:0 0 auto;'
+            '\n          <a class="amp-mq-tile" href="virongy/%s.html" title="%s" style="flex:0 0 auto;'
             'width:%dpx;display:flex;flex-direction:column;gap:9px;text-decoration:none">'
             '<div style="position:relative;height:%dpx;border-radius:12px;overflow:hidden;'
             'background:%s;border:1px solid %s"><img src="%s" alt="%s" '
             'style="position:absolute;inset:0;width:100%%;height:100%%;object-fit:cover;display:block">'
             '</div><div style="font-family:%s;font-weight:700;font-size:%s;line-height:1.2;'
             'color:#dbe3ee">%s</div></a>'
-            % (esc(p["slug"]), width, height, CARD, HAIRLINE, esc(p["image"]),
+            % (esc(p["slug"]), esc(p["name"]), width, height, CARD, HAIRLINE, esc(p["image"]),
                esc(p["name"]), F_HEAD, font, esc(p["name"])))
     return "".join(tiles)
 
@@ -501,6 +501,12 @@ ROOT_URLS = [("", "1.0"), ("products.html", "0.9"), ("virongy.html", "0.9"),
 def write_sitemap(data):
     urls = list(ROOT_URLS) + [("virongy/%s.html" % p["slug"], "0.7")
                               for p in data["products"]]
+    # Sepflow's range (build_sepflow.py), whichever script runs last
+    sep = os.path.join(SITE, "sepflow")
+    if os.path.isdir(sep):
+        urls.insert(urls.index(("virongy.html", "0.9")) + 1, ("sepflow.html", "0.9"))
+        urls += [("sepflow/" + f, "0.7") for f in sorted(os.listdir(sep))
+                 if f.endswith(".html")]
     body = "".join(
         "  <url>\n    <loc>https://amps.bio/%s</loc>\n"
         "    <changefreq>monthly</changefreq>\n    <priority>%s</priority>\n  </url>\n"

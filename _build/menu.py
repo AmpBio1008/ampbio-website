@@ -127,12 +127,12 @@ def check(products):
     return bad, sorted(known - used)
 
 
-def _leaf(p, pad):
+def _leaf(p, pad, folder="virongy"):
     # Root-absolute: this fragment is shared by pages at the site root and by
     # product pages one level down, so a relative href cannot serve both.
-    return ('<li><a href="/virongy/%s.html" style="display:block;padding:%s;'
+    return ('<li><a href="/%s/%s.html" style="display:block;padding:%s;'
             'color:#c4cede;font-size:0.86rem;line-height:1.35">%s</a></li>'
-            % (esc(p["slug"]), pad, esc(p["name"])))
+            % (folder, esc(p["slug"]), pad, esc(p["name"])))
 
 
 def _branch(label, inner, depth):
@@ -155,8 +155,9 @@ def _branch(label, inner, depth):
             % (esc(label), AMBER, depth, leaf, inner))
 
 
-def build(products, categories):
-    """The whole menu as one <ul>. `products` is the catalogue list."""
+def build(products, categories, extra=""):
+    """The whole menu as one <ul>. `products` is the catalogue list; `extra` is
+    further partner sections (partner_section) appended under Virongy's."""
     by = {p["slug"]: p for p in products}
 
     # --- Virus-Specific Tools -----------------------------------------
@@ -201,8 +202,28 @@ def build(products, categories):
             'color:%s;border-bottom:1px solid %s">Virongy Biosciences &ndash; '
             'Virological Research Tools and Platforms</li>' % (F_MONO, AMBER, HAIRLINE))
 
-    return ('<ul class="amp-mm-panel amp-mm-d1">%s%s%s%s</ul>'
-            % (head, virus_tools, "".join(types), all_link))
+    return ('<ul class="amp-mm-panel amp-mm-d1">%s%s%s%s%s</ul>'
+            % (head, virus_tools, "".join(types), all_link, extra))
+
+
+def partner_section(title, products, categories, folder, index, range_label):
+    """A second partner's block in the same panel: its own heading line, one
+    flyout per category, and a link to its range page - the Virongy block's
+    shape without the virus taxonomy, which only Virongy needs."""
+    head = ('<li class="amp-mm-head" style="padding:12px 16px 9px;font-family:%s;'
+            'font-size:0.66rem;letter-spacing:0.16em;text-transform:uppercase;'
+            'color:%s;border-top:1px solid %s;border-bottom:1px solid %s">%s</li>'
+            % (F_MONO, AMBER, HAIRLINE, HAIRLINE, title))
+    branches = []
+    for cat in categories:
+        items = [p for p in products if p["category"] == cat]
+        if items:
+            branches.append(_branch(cat, "".join(_leaf(p, "9px 16px", folder)
+                                                 for p in items), 2))
+    link = ('<li><a href="/%s" style="display:block;padding:11px 16px;'
+            'color:%s;font-weight:700;font-size:0.86rem;border-top:1px solid %s">'
+            '%s &rarr;</a></li>' % (index, AMBER, HAIRLINE, range_label))
+    return head + "".join(branches) + link
 
 
 NAV_ITEM = """<span class="amp-mm">%(link)s<span class="amp-mm-mount" hidden></span></span>"""

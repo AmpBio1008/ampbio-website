@@ -18,3 +18,8 @@ _build/doc-cache/
 # them, and the print brochure alone is 30 MB.
 assets/docs/_unassigned/
 assets/docs/_company/print-*.pdf
+
+# Python bytecode from the build scripts. It embeds the absolute path of the
+# machine that ran the build, which must never be published.
+__pycache__/
+*.pyc

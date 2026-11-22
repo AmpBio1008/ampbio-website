@@ -1,0 +1,1674 @@
+{
+ "source": "sepflow.com.cn product images, read Nov 2026",
+ "categories": [
+  "Purification Systems",
+  "Software & Accessories",
+  "Pumps",
+  "Valves"
+ ],
+ "short": {},
+ "featured": [
+  "aipure-hc",
+  "aipure-mc",
+  "aipilot-300",
+  "aipilot-600",
+  "lab-tff",
+  "fraction-collector",
+  "chromx",
+  "piston-pump-600-ml"
+ ],
+ "lead": "Ampbio is the exclusive distributor in India for Sepflow, China: automated chromatography and protein purification systems from laboratory to pilot scale, tangential flow filtration, ChromX workstation software, and the piston pumps and valve modules the systems are built from.",
+ "blurb": "Ampbio is the exclusive distributor in India for Sepflow, China: 17 products spanning automated chromatography systems, tangential flow filtration, ChromX workstation software, piston pumps and valve modules.",
+ "cta": "Sepflow – Chromatography and Protein Purification Systems",
+ "hero": {
+  "image": "assets/sepflow-hero.webp",
+  "alt": "Sepflow AIpure-HC chromatography system",
+  "position": "center 42%"
+ },
+ "banner": {
+  "image": "assets/sepflow-banner.webp",
+  "alt": "Sepflow AIpure-HC chromatography system",
+  "position": "center 45%"
+ },
+ "products": [
+  {
+   "slug": "aipure-hc",
+   "name": "AIpure-HC",
+   "subtitle": "High-pressure automated chromatography system with diode array detection",
+   "category": "Purification Systems",
+   "summary": "AIpure-HC is a fully configured chromatography system built around PEEK plunger pumps, high-pressure valves rated to 20 MPa, four titanium pressure sensors and a 200–800 nm diode array detector. Inline conductivity, temperature-compensated pH and an automated sample pump with an 8-channel sample inlet valve support unattended loading of multiple large-volume samples. The system is run by ChromX Chromatography Workstation software, which complies with FDA 21 CFR Part 11.",
+   "features": [
+    "8-channel inlet valves in all-PEEK construction with an integrated ultrasonic bubble sensor",
+    "Four titanium-alloy pressure sensors imported from the USA (pump S, system, pre-column and post-column), 0–20 MPa range, with high sensitivity and stability",
+    "High-pressure 5-position column valve with working pressure up to 20 MPa, supporting bypass, forward and reverse flow modes",
+    "High-pressure injection valve rated to 20 MPa, with sample pump loading, feed, waste and sample loading modes",
+    "pH valve supporting online, bypass and calibration modes",
+    "High-precision pH electrode with a 1–14 range",
+    "Conductivity monitoring from 0–999 mS/cm with automatic temperature compensation; titanium alloy and PEEK flow cell",
+    "Sample pump and sample inlet valve for automatic loading of multiple large-volume samples",
+    "Diode array detector imported from Europe: 200–800 nm range, low noise and flat baseline, with four wavelength bands adjustable simultaneously",
+    "PEEK plunger pumps with double cam, double plunger and double pump head design; phase compensation suppresses pump pulsation",
+    "Pump self-washing function prevents salt precipitation; working pressure over 20 MPa; ruby and sapphire biocompatible materials",
+    "ChromX Chromatography Workstation software: easy to learn and use, and compliant with FDA 21 CFR Part 11",
+    "Column information library tracks column history and performance parameters in real time",
+    "System control, manual and automatic methods, scouting, method queue, data analysis, report generation, audit trail and user management",
+    "Automatic and manual database backup with data recovery",
+    "Free lifelong remote software upgrades, including the upcoming DOE function",
+    "Real-time control and monitoring of system operation and data, real-time logging, real-time chromatogram recording and historical view",
+    "Buffer management with real-time monitoring of buffer usage"
+   ],
+   "applications": [],
+   "contents": [],
+   "options": [],
+   "specs": [
+    {
+     "group": "Key specifications",
+     "rows": [
+      [
+       "Inlet valves",
+       "8-channel, all PEEK, integrated ultrasonic bubble sensor"
+      ],
+      [
+       "Pressure sensors",
+       "4, titanium alloy, range 0–20 MPa"
+      ],
+      [
+       "Pressure sensor positions",
+       "Pump S pressure, system pressure, pre-column pressure, post-column pressure"
+      ],
+      [
+       "Column valve",
+       "5-position, working pressure up to 20 MPa"
+      ],
+      [
+       "Injection valve working pressure",
+       "Up to 20 MPa"
+      ],
+      [
+       "System pump type",
+       "PEEK plunger pump, double cam, double plunger, double pump head"
+      ],
+      [
+       "System pump working pressure",
+       "Over 20 MPa"
+      ],
+      [
+       "Conductivity range",
+       "0–999 mS/cm"
+      ],
+      [
+       "Conductivity cell material",
+       "Titanium alloy + PEEK"
+      ],
+      [
+       "pH electrode range",
+       "1–14"
+      ],
+      [
+       "Diode array detector wavelength range",
+       "200–800 nm"
+      ],
+      [
+       "Simultaneous wavelength bands",
+       "4"
+      ],
+      [
+       "Software compliance",
+       "FDA 21 CFR Part 11"
+      ]
+     ]
+    }
+   ],
+   "docs": [],
+   "image": "assets/sepflow-aipure-hc.webp",
+   "hero_image": "assets/sepflow-aipure-hc-main.webp",
+   "image_alt": "Sepflow AIpure-HC automated chromatography system",
+   "gallery": [
+    {
+     "src": "assets/sepflow-aipure-hc-g1.webp",
+     "alt": "Sepflow AIpure-HC chromatography system, three-quarter view"
+    },
+    {
+     "src": "assets/sepflow-aipure-hc-g2.webp",
+     "alt": "AIpure-HC sample pump and 8-channel sample inlet valve modules"
+    },
+    {
+     "src": "assets/sepflow-aipure-hc-g3.webp",
+     "alt": "ChromX Chromatography Workstation software controlling the AIpure-HC"
+    }
+   ]
+  },
+  {
+   "slug": "aipure-mc",
+   "name": "AIpure-MC",
+   "subtitle": "Modular dual-pump chromatography system with dual-wavelength UV detection",
+   "category": "Purification Systems",
+   "summary": "AIpure-MC is a flexible, intuitive, fast and reliable dual-pump chromatography system with a flow rate range of 0.001–25 mL/min, with 100 mL and 150 mL versions available as options. It comes standard with dual-wavelength UV (190–400 nm), conductivity, temperature and pH monitoring, ultrasonic bubble sensors, three titanium pressure sensors and an open fraction collector. Inlet, column and outlet valves, a sample pump and a sample inlet valve can be added to match each workflow.",
+   "features": [
+    "Dual piston-pump system with a flow rate range of 0.001–25 mL/min (100 mL and 150 mL versions optional)",
+    "Linear, isocratic and step gradients",
+    "A/B pumps come standard with 2 inlets each (4 in total), upgradeable to an 8-channel inlet valve on each pump; pure PEEK construction",
+    "Standard single-position column valve supporting bypass, down-flow and up-flow modes; optional 5-position valve; PEEK, pressure resistant to 20 MPa",
+    "Standard 2 outlets, optional 12-outlet large-volume collection valve; pure PEEK",
+    "Injection valve resistant to 20 MPa, supporting sample loading, loading and feeding modes",
+    "Dual-wavelength UV detector, 190–400 nm, with both wavelengths adjustable simultaneously and a default 2 mm optical path",
+    "Conductivity detection from 0–999.999 mS/cm and pH detection from 0–14, both with automatic temperature compensation; temperature reading 0–100 °C",
+    "Ultrasonic bubble sensor after each A and B pump to monitor sample and system bubble formation",
+    "Three standard titanium pressure sensors: system, pre-column and post-column pressure",
+    "Open fraction collector for 180 × 1.5 mL, 120 × 15 mL or 42 × 50 mL centrifuge tubes",
+    "Optional pH valve with bypass, online and calibration modes",
+    "Optional sample pump (25, 100 or 150 mL/min), sample pump pressure sensor and 2- or 8-channel sample inlet valve"
+   ],
+   "applications": [],
+   "contents": [],
+   "options": [
+    {
+     "label": "System version",
+     "values": [
+      "25 mL (standard)",
+      "100 mL (optional)",
+      "150 mL (optional)"
+     ]
+    },
+    {
+     "label": "Optional modules",
+     "values": [
+      "8-channel inlet valves",
+      "5-position column valve",
+      "12-outlet valve",
+      "pH valve",
+      "Sample pump",
+      "Sample pump pressure sensor",
+      "2- or 8-channel sample inlet valve"
+     ]
+    },
+    {
+     "label": "Sample pump flow rate",
+     "values": [
+      "25 mL/min",
+      "100 mL/min",
+      "150 mL/min"
+     ]
+    }
+   ],
+   "specs": [
+    {
+     "group": "System",
+     "rows": [
+      [
+       "Pumps",
+       "Dual piston-pump system"
+      ],
+      [
+       "Flow rate range",
+       "0.001–25 mL/min (100 mL and 150 mL versions optional)"
+      ],
+      [
+       "Gradient types",
+       "Linear, isocratic, step"
+      ]
+     ]
+    },
+    {
+     "group": "Valves",
+     "rows": [
+      [
+       "Inlet valves",
+       "2 inlets per pump (A/B) as standard, 4 in total; 8-channel inlet valve optional on each pump; pure PEEK"
+      ],
+      [
+       "Column valve",
+       "Single-position as standard, with bypass, down-flow and up-flow modes; 5-position valve optional; PEEK; pressure rating 20 MPa"
+      ],
+      [
+       "Outlet valve",
+       "2 outlets as standard; 12-outlet large-volume collection valve optional; pure PEEK"
+      ],
+      [
+       "Injection valve",
+       "Sample loading, loading and feeding modes; pressure rating 20 MPa"
+      ]
+     ]
+    },
+    {
+     "group": "Detection and monitoring",
+     "rows": [
+      [
+       "UV detector",
+       "190–400 nm, two wavelengths adjustable simultaneously; 2 mm optical path as standard"
+      ],
+      [
+       "Conductivity",
+       "0–999.999 mS/cm, automatic temperature compensation"
+      ],
+      [
+       "pH",
+       "0–14, automatic temperature compensation; pH valve optional"
+      ],
+      [
+       "Temperature",
+       "0–100 °C reading range"
+      ],
+      [
+       "Pressure sensors",
+       "Three titanium sensors as standard: system, pre-column, post-column"
+      ],
+      [
+       "Bubble sensors",
+       "Ultrasonic, one after each of pumps A and B"
+      ]
+     ]
+    },
+    {
+     "group": "Fraction collection",
+     "rows": [
+      [
+       "Fraction collector",
+       "Open collector; 180 × 1.5 mL, 120 × 15 mL or 42 × 50 mL centrifuge tubes"
+      ]
+     ]
+    }
+   ],
+   "docs": [],
+   "image": "assets/sepflow-aipure-mc.webp",
+   "hero_image": "assets/sepflow-aipure-mc-main.webp",
+   "image_alt": "Sepflow AIpure-MC chromatography system",
+   "gallery": []
+  },
+  {
+   "slug": "aipilot-300",
+   "name": "AIpilot-300",
+   "subtitle": "Dual-pump chromatography system with a 0.01–300 mL/min flow range",
+   "category": "Purification Systems",
+   "summary": "The AIpilot-300 is a modular chromatography system built around a dual piston-pump system with a flow rate range of 0.01–300 mL/min. As standard it carries a dual-wavelength UV detector, conductivity, pH and temperature monitoring, three titanium pressure sensors and pure-PEEK inlet, column and outlet valves. A sample pump, sample inlet valve and sample pump pressure monitoring are available as options.",
+   "features": [
+    "Dual piston-pump system with a flow rate range of 0.01–300 mL/min",
+    "Linear, step and isocratic gradient types",
+    "12 inlets as standard (6 on each of pumps A and B), pure PEEK inlet valves",
+    "Double column-position valve supporting bypass, down-flow and up-flow modes, pure PEEK, 5 MPa pressure resistance",
+    "12-outlet pure PEEK outlet valve as standard",
+    "Dual-wavelength UV detector, 190–400 nm, with both wavelengths adjustable at the same time",
+    "Conductivity detection from 0–999.999 mS/cm and pH detection from 0–14, both with automatic temperature compensation",
+    "Ultrasonic bubble sensors after pumps A and B to monitor the sample and bubble formation in the system",
+    "Three titanium pressure sensors as standard: system, pre-column and post-column pressure",
+    "Injection valve with injection, load and waste modes, 5 MPa pressure resistance"
+   ],
+   "applications": [],
+   "contents": [],
+   "options": [
+    {
+     "label": "Optional modules",
+     "values": [
+      "Sample pump, 300 mL/min",
+      "6-channel sample inlet valve",
+      "Sample pump pressure sensor"
+     ]
+    }
+   ],
+   "specs": [
+    {
+     "group": "System",
+     "rows": [
+      [
+       "Pumps",
+       "Dual piston-pump system"
+      ],
+      [
+       "Flow rate range",
+       "0.01–300 mL/min"
+      ],
+      [
+       "Gradient types",
+       "Linear, isocratic, step"
+      ]
+     ]
+    },
+    {
+     "group": "Valves",
+     "rows": [
+      [
+       "Inlet valves",
+       "6 inlets per pump (A/B) as standard, 12 in total; pure PEEK"
+      ],
+      [
+       "Column valve",
+       "Dual column-position valve with bypass, down-flow and up-flow modes; pure PEEK; pressure rating 5 MPa"
+      ],
+      [
+       "Outlet valve",
+       "12 outlets as standard; pure PEEK"
+      ],
+      [
+       "Injection valve",
+       "Injection, load and waste modes; pressure rating 5 MPa"
+      ]
+     ]
+    },
+    {
+     "group": "Detection and monitoring",
+     "rows": [
+      [
+       "UV detector",
+       "190–400 nm, two wavelengths adjustable simultaneously; 2 mm optical path as standard"
+      ],
+      [
+       "Conductivity",
+       "0–999.999 mS/cm, automatic temperature compensation"
+      ],
+      [
+       "pH",
+       "0–14, automatic temperature compensation; pH valve optional"
+      ],
+      [
+       "Temperature",
+       "0–100 °C reading range; automatic temperature compensation for conductivity and pH"
+      ],
+      [
+       "Pressure sensors",
+       "Three titanium sensors as standard: system, pre-column, post-column"
+      ],
+      [
+       "Bubble sensors",
+       "Ultrasonic, one after each of pumps A and B"
+      ]
+     ]
+    }
+   ],
+   "docs": [],
+   "image": "assets/sepflow-aipilot-300.webp",
+   "hero_image": "assets/sepflow-aipilot-300-main.webp",
+   "image_alt": "Sepflow AIpilot-300 chromatography system, front three-quarter view showing the modular valve panel and dual piston pumps",
+   "gallery": []
+  },
+  {
+   "slug": "aipilot-600",
+   "name": "AIpilot-600",
+   "subtitle": "Dual-pump chromatography system with a 4–600 mL/min flow range and four-wavelength DAD",
+   "category": "Purification Systems",
+   "summary": "The AIpilot-600 is a modular chromatography system whose A/B piston pumps deliver 4–600 mL/min, or 1–1200 mL/min in dual-pump stacked mode, at pressures up to 2 MPa. It carries a 200–800 nm variable four-wavelength DAD with a fibre-optic, external flow cell that keeps light-source heat away from protein samples, together with conductivity, pH, temperature, pressure, bubble and liquid-level sensing. Inlets expand from 12 to 22 and outlets from 6 to 11.",
+   "features": [
+    "A/B piston pumps with a flow rate range of 4–600 mL/min, or 1–1200 mL/min in dual-pump stacked-column mode",
+    "Pressure range 0–2 MPa (20 bar, 290 psi) and viscosity range 0.7–10 cP",
+    "Imported DAD detector, 200–800 nm, with four variable wavelengths and dual-beam design for high stability",
+    "Fibre-optic conduction with an external flow cell, so heat from the light source does not affect the activity of protein samples",
+    "Conductivity sensing from 0.1 mS/cm to 999.9 mS/cm, plus temperature and pH sensors",
+    "12 inlets as standard (6 per pump), expandable to 22; 6 outlets as standard, expandable to 11",
+    "Single column-position valve with bypass, forward and reverse modes, full PEEK, 2 MPa pressure resistance",
+    "PEEK bubble trap with in-line, bypass and evacuation modes",
+    "Magnetic-induction mixer, 5 mL as standard with a 12 mL option",
+    "Three imported titanium-alloy pressure sensors, two ultrasonic bubble sensors and two ultrasonic liquid-level sensors as standard"
+   ],
+   "applications": [],
+   "contents": [],
+   "options": [],
+   "specs": [
+    {
+     "group": "System pumps",
+     "rows": [
+      [
+       "Pumps",
+       "A/B piston pumps"
+      ],
+      [
+       "Flow rate range",
+       "4–600 mL/min; 1–1200 mL/min in dual-pump stacked-column mode"
+      ],
+      [
+       "Pressure range",
+       "0–2 MPa (20 bar, 290 psi)"
+      ],
+      [
+       "Viscosity range",
+       "0.7–10 cP"
+      ]
+     ]
+    },
+    {
+     "group": "UV / DAD detector",
+     "rows": [
+      [
+       "Detector",
+       "Imported DAD, 200–800 nm, four variable wavelengths"
+      ],
+      [
+       "Wavelength accuracy",
+       "±1 nm"
+      ],
+      [
+       "Wavelength repeatability",
+       "±1 nm"
+      ],
+      [
+       "Noise",
+       "±8 × 10⁻⁵ AU (at 254 nm, 1 s)"
+      ],
+      [
+       "Optical design",
+       "Fibre-optic light path with external flow cell, keeping light-source heat away from protein samples; dual-beam design"
+      ],
+      [
+       "Standard flow cell",
+       "3 mm diameter, 70 µL volume, maximum pressure 2 MPa"
+      ]
+     ]
+    },
+    {
+     "group": "Sensors, valves and modules",
+     "rows": [
+      [
+       "Conductivity",
+       "0.1–999.9 mS/cm"
+      ],
+      [
+       "Temperature",
+       "0–99 °C; accuracy ±2 °C at 2–50 °C"
+      ],
+      [
+       "pH",
+       "1–14 (2–12; accuracy ±0.1)"
+      ],
+      [
+       "Inlet valves",
+       "6 inlets per pump, 12 in total; expandable to 22"
+      ],
+      [
+       "Outlet valves",
+       "6 outlets as standard; expandable to 11"
+      ],
+      [
+       "Column valve",
+       "Single column position with bypass, forward and reverse modes; full PEEK; pressure rating 2 MPa"
+      ],
+      [
+       "Bubble trap",
+       "In-line, bypass and evacuation modes; all PEEK; pressure rating 2 MPa"
+      ],
+      [
+       "Mixer",
+       "Magnetic induction; 5 mL as standard, 12 mL optional; PEEK"
+      ],
+      [
+       "Pressure sensors",
+       "Three imported titanium-alloy sensors as standard, 0–2 MPa"
+      ],
+      [
+       "Bubble sensors",
+       "Two ultrasonic sensors as standard"
+      ],
+      [
+       "Liquid-level sensors",
+       "Two ultrasonic sensors as standard (high and low level)"
+      ]
+     ]
+    }
+   ],
+   "docs": [],
+   "image": "assets/sepflow-aipilot-600.webp",
+   "hero_image": "assets/sepflow-aipilot-600-main.webp",
+   "image_alt": "Sepflow AIpilot-600 chromatography system, front three-quarter view showing the modular valve panel, air trap and dual piston pumps",
+   "gallery": []
+  },
+  {
+   "slug": "lab-tff",
+   "name": "Lab-TFF",
+   "subtitle": "Laboratory tangential flow filtration system",
+   "category": "Purification Systems",
+   "summary": "Lab-TFF is a benchtop tangential flow filtration system for filtration areas from 50 cm² to 0.1 m², with a minimum circulation volume of 20 mL and a circulation pump flow rate of 0–350 mL/min. The basic system includes a 1000 mL circulation tank, feed and transfer pumps, weighing module, stirrer, pressure, conductivity and pH monitoring, membrane fixtures and control software. Preset methods cover water flux testing, concentration, dialysis, CIP, evacuation, harvesting and refill.",
+   "features": [
+    "Suitable for filtration areas from 50 cm² to 0.1 m², depending on the consumable flow path and process flow rate",
+    "Minimum circulation volume of 20 mL",
+    "Circulation pump flow rate 0–350 mL/min with a 1000 mL circulation tank",
+    "Feed, retentate and permeate pressure sensors with a reflux PCV valve",
+    "Retentate conductivity and pH monitoring",
+    "Weighing module, stirrer and permeate balance",
+    "Membrane package fixture and multi-function fixture",
+    "Preset methods: water flux test, concentration, dialysis, CIP, evacuation, harvesting, refill and more",
+    "Software in Chinese and English",
+    "Options: conductivity detector, pH detector, UV detector, filtration pump and transfer pump inlet valve"
+   ],
+   "applications": [],
+   "contents": [
+    "Circulation tank (1000 mL)",
+    "Feed pump and transfer pump",
+    "Weighing module and stirrer",
+    "Feed, retentate and permeate pressure sensors",
+    "Reflux PCV valve",
+    "Retentate conductivity and pH monitoring",
+    "Membrane package fixture and multi-function fixture",
+    "Permeate balance",
+    "Control software"
+   ],
+   "options": [
+    {
+     "label": "Optional modules",
+     "values": [
+      "Conductivity detector",
+      "pH detector",
+      "UV detector",
+      "Filtration pump",
+      "Transfer pump inlet valve"
+     ]
+    }
+   ],
+   "specs": [
+    {
+     "group": "Technical specifications",
+     "rows": [
+      [
+       "Filtration area",
+       "50 cm²–0.1 m² (depends on the consumable flow path and process flow rate)"
+      ],
+      [
+       "Minimum circulation volume",
+       "20 mL"
+      ],
+      [
+       "Circulation pump flow rate",
+       "0–350 mL/min"
+      ],
+      [
+       "Circulation tank",
+       "1000 mL"
+      ],
+      [
+       "Preset methods",
+       "Water flux test, concentration, dialysis, CIP, evacuation, harvesting, refill and more"
+      ],
+      [
+       "Software languages",
+       "Chinese, English"
+      ]
+     ]
+    }
+   ],
+   "docs": [],
+   "image": "assets/sepflow-lab-tff.webp",
+   "hero_image": "assets/sepflow-lab-tff-main.webp",
+   "image_alt": "Sepflow Lab-TFF laboratory tangential flow filtration system",
+   "gallery": []
+  },
+  {
+   "slug": "chromx",
+   "name": "ChromX",
+   "subtitle": "Chromatography workstation software",
+   "category": "Software & Accessories",
+   "summary": "ChromX is a chromatography workstation software for controlling, programming and analysing chromatography runs. It combines real-time system control with a live flow-path diagram, a phase-based method editor with method scouting and design of experiments (DOE), fraction collector control and peak analysis. User, role and department management with function permissions controls who can do what.",
+   "features": [
+    "Real-time system control with live curves for flow, ConcB and system pressure, and an interactive flow-path diagram of inlets, pumps, air sensors, mixer, injection valve, column valve, DAD, conductivity, temperature, pH, outlet and collector",
+    "Pre-column, post-column, system and sample-pump pressure readouts with configurable high-alarm limits",
+    "Running logs, alarm information, method information and manual information panels",
+    "Phase-based method editor with a library of Equilibrium, Injection, Column Wash, Elution, Regeneration/CIP and Pause phases, plus predefined, global and personal phases",
+    "Graphical gradient profile preview of the whole method, with configuration conflicts flagged during editing",
+    "Sample loop (sample circle), pump and sample-pump injection modes, with constant injection or injection based on an air sensor",
+    "Method scouting to set up multiple runs that vary column volume, flow rate, ConcB, pressure limits, valve positions and detector wavelengths",
+    "Design of experiments (DOE) with Full Factorial, Fractional Factorial, L9, L18, L27, L36 and Plackett Burman designs",
+    "Data analysis reporting peak height, peak area, area %, retention time, half peak width, number of plates, plates per metre, HETP, symmetry factor and smearing factor, with manual analysis and curve comparison",
+    "Fraction collector control with two trays, tray and tube commands and an option to pause when tubes overflow",
+    "Manual run control for flow rate, gradient, equal flow, column packing flow, system and sample pump injection and wash, with executable, importable and exportable command lists",
+    "User, role and department management with user levels, file access levels, file passwords and function permissions",
+    "Additional modules for log data, sensor status, parameters, calibration, buffer management, column handling, database and system lock"
+   ],
+   "applications": [],
+   "contents": [],
+   "options": [],
+   "specs": [],
+   "docs": [],
+   "image": "assets/sepflow-chromx.webp",
+   "hero_image": "assets/sepflow-chromx-main.webp",
+   "image_alt": "ChromX method editor showing the phase library, method phase flow and gradient profile",
+   "gallery": [
+    {
+     "src": "assets/sepflow-chromx-g1.webp",
+     "alt": "ChromX manual run dialog with pump commands and sample injection settings"
+    },
+    {
+     "src": "assets/sepflow-chromx-g2.webp",
+     "alt": "ChromX method scouting table comparing parameters across six runs"
+    }
+   ]
+  },
+  {
+   "slug": "fraction-collector",
+   "name": "Fraction Collector",
+   "subtitle": "Automated fraction collector",
+   "category": "Software & Accessories",
+   "summary": "Sepflow's automated fraction collector (listed in their range as the Component Collector) dispenses column eluate into a tube rack under program control. Ask us for the full specification and the systems it pairs with.",
+   "features": [],
+   "applications": [],
+   "contents": [],
+   "options": [],
+   "specs": [
+    {
+     "group": "Technical specifications",
+     "rows": [
+      [
+       "Tube formats (as supplied with the AIpure-MC)",
+       "180 × 1.5 mL, 120 × 15 mL or 42 × 50 mL centrifuge tubes"
+      ]
+     ]
+    }
+   ],
+   "docs": [],
+   "image": "assets/sepflow-fraction-collector.webp",
+   "hero_image": "assets/sepflow-fraction-collector-main.webp",
+   "image_alt": "Fraction Collector",
+   "gallery": []
+  },
+  {
+   "slug": "piston-pump-25-ml",
+   "name": "25 mL Piston Pump",
+   "subtitle": "Double-piston pump with PEEK heads, 0.001–25 mL/min up to 34 MPa",
+   "category": "Pumps",
+   "summary": "The 25 mL Piston Pump is a double-cam, double-piston pump with an all-PEEK pump head, a sapphire plunger and Swiss ruby ball valves on sapphire seats, delivering 0.001–25 mL/min at working pressures of 0–34 MPa. Intelligent-algorithm phase compensation suppresses pulsation for accurate, linear flow (R² = 0.99999064 in Sepflow's flow test), while post-pump self-flushing prevents salt precipitation and protects the seals.",
+   "features": [
+    "Intelligent-algorithm phase compensation suppresses pulsation and improves flow accuracy",
+    "Double-cam, double-piston drive for smooth movement, high transmission efficiency and high reliability",
+    "Sapphire plunger: corrosion- and wear-resistant with good biocompatibility",
+    "Swiss ruby ball valves with sapphire seats: corrosion- and abrasion-resistant for long service life",
+    "High- and low-pressure seals made of biocompatible materials, corrosion resistant with good sealing performance",
+    "Bearings imported from Italy and Japan for excellent material quality and performance",
+    "All-PEEK pump head: corrosion resistant with good biocompatibility",
+    "Post-pump self-flushing technology prevents salt precipitation and protects the seals from damage",
+    "Stepper motor drive (servo motor optional) with good tracking characteristics and simple operation and setup"
+   ],
+   "applications": [],
+   "contents": [],
+   "options": [],
+   "specs": [
+    {
+     "group": "Technical specifications",
+     "rows": [
+      [
+       "Flow rate range",
+       "0.001–25 mL/min"
+      ],
+      [
+       "Working pressure range",
+       "0–34 MPa"
+      ],
+      [
+       "Pressure rating",
+       "34 MPa"
+      ],
+      [
+       "Operating viscosity range",
+       "0.35–10 cP"
+      ],
+      [
+       "Motor",
+       "Stepper motor (servo motor optional)"
+      ]
+     ]
+    },
+    {
+     "group": "Materials and construction",
+     "rows": [
+      [
+       "Pump head",
+       "PEEK"
+      ],
+      [
+       "Plunger",
+       "Sapphire"
+      ],
+      [
+       "Check valves",
+       "Swiss ruby ball valves, sapphire seats"
+      ],
+      [
+       "Seals",
+       "High- and low-pressure seals, biocompatible materials"
+      ],
+      [
+       "Bearings",
+       "Imported from Italy and Japan"
+      ],
+      [
+       "Drive",
+       "Double cam, double piston"
+      ],
+      [
+       "Body",
+       "Aluminum alloy"
+      ]
+     ]
+    },
+    {
+     "group": "Dimensions and weight",
+     "rows": [
+      [
+       "Dimensions (L × W × H)",
+       "270 mm × 124 mm × 80 mm"
+      ],
+      [
+       "Net weight",
+       "3.9 kg"
+      ]
+     ]
+    },
+    {
+     "group": "Flow linearity test",
+     "rows": [
+      [
+       "Setpoints",
+       "0.1, 0.25, 0.5, 1, 2, 5, 10, 15, 20, 25"
+      ],
+      [
+       "Measured",
+       "0.11, 0.26, 0.5, 1, 2.01, 5.08, 9.98, 14.97, 19.97, 24.99"
+      ],
+      [
+       "Linearity (R²)",
+       "0.99999064"
+      ]
+     ]
+    }
+   ],
+   "docs": [],
+   "image": "assets/sepflow-piston-pump-25-ml.webp",
+   "hero_image": "assets/sepflow-piston-pump-25-ml-main.webp",
+   "image_alt": "Sepflow 25 mL dual-piston pump with two PEEK pump heads and belt-driven stepper motor",
+   "gallery": [
+    {
+     "src": "assets/sepflow-piston-pump-25-ml-g1.webp",
+     "alt": "Close-up of the two PEEK pump heads of the 25 mL piston pump"
+    },
+    {
+     "src": "assets/sepflow-piston-pump-25-ml-g2.webp",
+     "alt": "Front view of the 25 mL piston pump showing both PEEK pump heads and fittings"
+    }
+   ]
+  },
+  {
+   "slug": "piston-pump-100-ml",
+   "name": "100 mL Piston Pump",
+   "subtitle": "Double-piston pump with PEEK heads, 0.001–100 mL/min up to 27 MPa",
+   "category": "Pumps",
+   "summary": "The 100 mL Piston Pump is a double-cam, double-piston pump with an all-PEEK pump head, a zirconia plunger and Swiss ruby ball valves on sapphire seats, delivering 0.001–100 mL/min at working pressures of 0–27 MPa. Intelligent-algorithm phase compensation suppresses pulsation for accurate, linear flow (R² = 0.99999831 in Sepflow's flow test), while post-pump self-flushing prevents salt precipitation and protects the seals.",
+   "features": [
+    "Intelligent-algorithm phase compensation suppresses pulsation and improves flow accuracy",
+    "Double-cam, double-piston drive for smooth movement, high transmission efficiency and high reliability",
+    "Zirconia plunger: high strength and toughness, corrosion- and wear-resistant, with good biocompatibility",
+    "Swiss ruby ball valves with sapphire seats: corrosion- and abrasion-resistant for long service life",
+    "High- and low-pressure seals made of biocompatible materials, corrosion resistant with good sealing performance",
+    "Bearings imported from Italy and Japan for excellent material quality and performance",
+    "All-PEEK pump head: corrosion resistant with good biocompatibility",
+    "Post-pump self-flushing technology prevents salt precipitation and protects the seals from damage",
+    "Stepper motor drive (servo motor optional) with good tracking characteristics and simple operation and setup"
+   ],
+   "applications": [],
+   "contents": [],
+   "options": [],
+   "specs": [
+    {
+     "group": "Technical specifications",
+     "rows": [
+      [
+       "Flow rate range",
+       "0.001–100 mL/min"
+      ],
+      [
+       "Working pressure range",
+       "0–27 MPa"
+      ],
+      [
+       "Pressure rating",
+       "27 MPa"
+      ],
+      [
+       "Operating viscosity range",
+       "0.35–10 cP"
+      ],
+      [
+       "Motor",
+       "Stepper motor (servo motor optional)"
+      ]
+     ]
+    },
+    {
+     "group": "Materials and construction",
+     "rows": [
+      [
+       "Pump head",
+       "PEEK"
+      ],
+      [
+       "Plunger",
+       "Zirconia"
+      ],
+      [
+       "Check valves",
+       "Swiss ruby ball valves, sapphire seats"
+      ],
+      [
+       "Seals",
+       "High- and low-pressure seals, biocompatible materials"
+      ],
+      [
+       "Bearings",
+       "Imported from Italy and Japan"
+      ],
+      [
+       "Drive",
+       "Double cam, double piston"
+      ],
+      [
+       "Body",
+       "Aluminum alloy"
+      ]
+     ]
+    },
+    {
+     "group": "Dimensions and weight",
+     "rows": [
+      [
+       "Dimensions (L × W × H)",
+       "270 mm × 124 mm × 80 mm"
+      ],
+      [
+       "Net weight",
+       "3.9 kg"
+      ]
+     ]
+    },
+    {
+     "group": "Flow linearity test",
+     "rows": [
+      [
+       "Setpoints",
+       "0.1, 0.5, 1, 5, 10, 20, 40, 60, 80, 100"
+      ],
+      [
+       "Measured",
+       "0.09, 0.49, 0.97, 4.95, 9.99, 20.01, 40.02, 59.94, 79.85, 100.01"
+      ],
+      [
+       "Linearity (R²)",
+       "0.99999831"
+      ]
+     ]
+    }
+   ],
+   "docs": [],
+   "image": "assets/sepflow-piston-pump-100-ml.webp",
+   "hero_image": "assets/sepflow-piston-pump-100-ml-main.webp",
+   "image_alt": "Sepflow 100 mL dual-piston pump with two PEEK pump heads and belt-driven stepper motor",
+   "gallery": [
+    {
+     "src": "assets/sepflow-piston-pump-100-ml-g1.webp",
+     "alt": "Close-up of the two PEEK pump heads of the 100 mL piston pump"
+    },
+    {
+     "src": "assets/sepflow-piston-pump-100-ml-g2.webp",
+     "alt": "Front view of the 100 mL piston pump showing both PEEK pump heads and fittings"
+    }
+   ]
+  },
+  {
+   "slug": "piston-pump-150-ml",
+   "name": "150 mL Piston Pump",
+   "subtitle": "Double-piston pump with PEEK heads, 0.001–150 mL/min up to 27 MPa",
+   "category": "Pumps",
+   "summary": "The 150 mL Piston Pump is a double-cam, double-piston pump with an all-PEEK pump head, a zirconia plunger and Swiss ruby ball valves on sapphire seats, delivering 0.001–150 mL/min at working pressures of 0–27 MPa. Intelligent-algorithm phase compensation suppresses pulsation for accurate, linear flow (R² = 0.99999868 in Sepflow's flow test), while post-pump self-flushing prevents salt precipitation and protects the seals.",
+   "features": [
+    "Intelligent-algorithm phase compensation suppresses pulsation and improves flow accuracy",
+    "Double-cam, double-piston drive for smooth movement, high transmission efficiency and high reliability",
+    "Zirconia plunger: high strength and toughness, corrosion- and wear-resistant, with good biocompatibility",
+    "Swiss ruby ball valves with sapphire seats: corrosion- and abrasion-resistant for long service life",
+    "High- and low-pressure seals made of biocompatible materials, corrosion resistant with good sealing performance",
+    "Bearings imported from Italy and Japan for excellent material quality and performance",
+    "All-PEEK pump head: corrosion resistant with good biocompatibility",
+    "Post-pump self-flushing technology prevents salt precipitation and protects the seals from damage",
+    "Stepper motor drive (servo motor optional) with good tracking characteristics and simple operation and setup"
+   ],
+   "applications": [],
+   "contents": [],
+   "options": [],
+   "specs": [
+    {
+     "group": "Technical specifications",
+     "rows": [
+      [
+       "Flow rate range",
+       "0.001–150 mL/min"
+      ],
+      [
+       "Working pressure range",
+       "0–27 MPa"
+      ],
+      [
+       "Pressure rating",
+       "27 MPa"
+      ],
+      [
+       "Operating viscosity range",
+       "0.35–10 cP"
+      ],
+      [
+       "Motor",
+       "Stepper motor (servo motor optional)"
+      ]
+     ]
+    },
+    {
+     "group": "Materials and construction",
+     "rows": [
+      [
+       "Pump head",
+       "PEEK"
+      ],
+      [
+       "Plunger",
+       "Zirconia"
+      ],
+      [
+       "Check valves",
+       "Swiss ruby ball valves, sapphire seats"
+      ],
+      [
+       "Seals",
+       "High- and low-pressure seals, biocompatible materials"
+      ],
+      [
+       "Bearings",
+       "Imported from Italy and Japan"
+      ],
+      [
+       "Drive",
+       "Double cam, double piston"
+      ],
+      [
+       "Body",
+       "Aluminum alloy"
+      ]
+     ]
+    },
+    {
+     "group": "Dimensions and weight",
+     "rows": [
+      [
+       "Dimensions (L × W × H)",
+       "270 mm × 124 mm × 80 mm"
+      ],
+      [
+       "Net weight",
+       "3.9 kg"
+      ]
+     ]
+    },
+    {
+     "group": "Flow linearity test",
+     "rows": [
+      [
+       "Setpoints",
+       "1, 5, 10, 20, 40, 60, 80, 100, 125, 150"
+      ],
+      [
+       "Measured",
+       "0.95, 4.96, 9.94, 20.01, 40.1, 59.92, 79.87, 99.89, 124.9, 149.95"
+      ],
+      [
+       "Linearity (R²)",
+       "0.99999868"
+      ]
+     ]
+    }
+   ],
+   "docs": [],
+   "image": "assets/sepflow-piston-pump-150-ml.webp",
+   "hero_image": "assets/sepflow-piston-pump-150-ml-main.webp",
+   "image_alt": "Sepflow 150 mL dual-piston pump with two PEEK pump heads and belt-driven stepper motor",
+   "gallery": [
+    {
+     "src": "assets/sepflow-piston-pump-150-ml-g1.webp",
+     "alt": "Close-up of the two PEEK pump heads of the 150 mL piston pump"
+    },
+    {
+     "src": "assets/sepflow-piston-pump-150-ml-g2.webp",
+     "alt": "Front view of the 150 mL piston pump showing both PEEK pump heads and fittings"
+    }
+   ]
+  },
+  {
+   "slug": "piston-pump-300-ml",
+   "name": "300 mL Piston Pump",
+   "subtitle": "Dual-piston PEEK-head pump for flow rates up to 300 mL/min",
+   "category": "Pumps",
+   "summary": "The 300 mL Piston Pump is a double-cam, double-piston pump with an all-PEEK pump head, delivering 0.001–300 mL/min at working pressures up to 10 MPa. Intelligent-algorithm phase compensation suppresses pulsation, and post-pump self-flushing prevents salt precipitation. In Sepflow's flow test the pump showed a flow linearity of R² = 0.99999665.",
+   "features": [
+    "Double-cam, double-piston drive for smooth movement, high transmission efficiency and high reliability",
+    "Intelligent-algorithm phase compensation suppresses pulsation and improves flow accuracy",
+    "Zirconia plunger: high strength and toughness, corrosion- and wear-resistant, with good biocompatibility",
+    "Swiss ruby ball check valves with sapphire ball seats: corrosion- and abrasion-resistant for long service life",
+    "High- and low-pressure seals made of biocompatible materials, corrosion-resistant with good sealing performance",
+    "Imported Italian and Japanese bearings for consistent performance",
+    "All-PEEK pump head for corrosion resistance and good biocompatibility",
+    "Post-pump self-flushing technology prevents salt precipitation and protects the seals from damage",
+    "Stepper motor drive (servo motor optional) with simple operation and setup"
+   ],
+   "applications": [],
+   "contents": [],
+   "options": [],
+   "specs": [
+    {
+     "group": "Technical specifications",
+     "rows": [
+      [
+       "Flow rate range",
+       "0.001–300 mL/min"
+      ],
+      [
+       "Working pressure range",
+       "0–10 MPa"
+      ],
+      [
+       "Pressure rating",
+       "10 MPa"
+      ],
+      [
+       "Operating viscosity range",
+       "0.35–10 cP"
+      ],
+      [
+       "Motor",
+       "Stepper motor (servo motor optional)"
+      ]
+     ]
+    },
+    {
+     "group": "Materials and construction",
+     "rows": [
+      [
+       "Pump head",
+       "PEEK"
+      ],
+      [
+       "Plunger",
+       "Zirconia"
+      ],
+      [
+       "Check valves",
+       "Swiss ruby ball valves, sapphire seats"
+      ],
+      [
+       "Seals",
+       "High- and low-pressure seals, biocompatible materials"
+      ],
+      [
+       "Bearings",
+       "Imported from Italy and Japan"
+      ],
+      [
+       "Drive",
+       "Double cam, double piston"
+      ],
+      [
+       "Body",
+       "Aluminum alloy"
+      ]
+     ]
+    },
+    {
+     "group": "Dimensions and weight",
+     "rows": [
+      [
+       "Dimensions (L × W × H)",
+       "270 mm × 124 mm × 80 mm"
+      ],
+      [
+       "Net weight",
+       "3.9 kg"
+      ]
+     ]
+    },
+    {
+     "group": "Flow linearity test",
+     "rows": [
+      [
+       "Setpoints",
+       "5, 20, 60, 100, 125, 150, 200, 240, 280, 300"
+      ],
+      [
+       "Measured",
+       "4.98, 20.04, 59.98, 99.8, 124.8, 149.95, 199.83, 239.56, 279.5, 298.9"
+      ],
+      [
+       "Linearity (R²)",
+       "0.99999665"
+      ]
+     ]
+    }
+   ],
+   "docs": [],
+   "image": "assets/sepflow-piston-pump-300-ml.webp",
+   "hero_image": "assets/sepflow-piston-pump-300-ml-main.webp",
+   "image_alt": "300 mL piston pump with twin PEEK pump heads, aluminium body and belt-driven stepper motor",
+   "gallery": [
+    {
+     "src": "assets/sepflow-piston-pump-300-ml-g1.webp",
+     "alt": "Close-up of the twin PEEK pump heads of the 300 mL piston pump"
+    },
+    {
+     "src": "assets/sepflow-piston-pump-300-ml-g2.webp",
+     "alt": "Front view of the 300 mL piston pump showing both PEEK pump heads"
+    }
+   ]
+  },
+  {
+   "slug": "piston-pump-600-ml",
+   "name": "600 mL Piston Pump",
+   "subtitle": "Servo-driven dual-piston PEEK-head pump for flow rates up to 600 mL/min",
+   "category": "Pumps",
+   "summary": "The 600 mL Piston Pump is the highest-flow model in Sepflow's piston pump range: a servo-driven, double-cam, double-piston pump with an all-PEEK pump head, delivering 0.001–600 mL/min at working pressures up to 2 MPa. Intelligent-algorithm phase compensation suppresses pulsation, and post-pump self-flushing prevents salt precipitation. In Sepflow's flow test the pump showed a flow linearity of R² = 0.99999756.",
+   "features": [
+    "Double-cam, double-piston drive for smooth movement, high transmission efficiency and high reliability",
+    "Intelligent-algorithm phase compensation suppresses pulsation and improves flow accuracy",
+    "Zirconia plunger: high strength and toughness, corrosion- and wear-resistant, with good biocompatibility",
+    "Swiss ruby ball check valves with sapphire ball seats: corrosion- and abrasion-resistant for long service life",
+    "High- and low-pressure seals made of biocompatible materials, corrosion-resistant with good sealing performance",
+    "Imported Italian and Japanese bearings for consistent performance",
+    "All-PEEK pump head for corrosion resistance and good biocompatibility",
+    "Post-pump self-flushing technology prevents salt precipitation and protects the seals from damage",
+    "Servo motor drive"
+   ],
+   "applications": [],
+   "contents": [],
+   "options": [],
+   "specs": [
+    {
+     "group": "Technical specifications",
+     "rows": [
+      [
+       "Flow rate range",
+       "0.001–600 mL/min"
+      ],
+      [
+       "Working pressure range",
+       "0–2 MPa"
+      ],
+      [
+       "Pressure rating",
+       "2 MPa"
+      ],
+      [
+       "Operating viscosity range",
+       "0.35–10 cP"
+      ],
+      [
+       "Motor",
+       "Servo motor"
+      ]
+     ]
+    },
+    {
+     "group": "Materials and construction",
+     "rows": [
+      [
+       "Pump head",
+       "PEEK"
+      ],
+      [
+       "Plunger",
+       "Zirconia"
+      ],
+      [
+       "Check valves",
+       "Swiss ruby ball valves, sapphire seats"
+      ],
+      [
+       "Seals",
+       "High- and low-pressure seals, biocompatible materials"
+      ],
+      [
+       "Bearings",
+       "Imported from Italy and Japan"
+      ],
+      [
+       "Drive",
+       "Double cam, double piston"
+      ],
+      [
+       "Body",
+       "Aluminum alloy"
+      ]
+     ]
+    },
+    {
+     "group": "Dimensions and weight",
+     "rows": [
+      [
+       "Dimensions (L × W × H)",
+       "360 mm × 145 mm × 97 mm"
+      ],
+      [
+       "Net weight",
+       "8.8 kg"
+      ]
+     ]
+    },
+    {
+     "group": "Flow linearity test",
+     "rows": [
+      [
+       "Setpoints",
+       "5, 10, 20, 50, 100, 200, 300, 400, 500, 600"
+      ],
+      [
+       "Measured",
+       "4.8, 9.9, 19.9, 49.9, 100, 200, 300, 400, 500, 602"
+      ],
+      [
+       "Linearity (R²)",
+       "0.99999756"
+      ]
+     ]
+    }
+   ],
+   "docs": [],
+   "image": "assets/sepflow-piston-pump-600-ml.webp",
+   "hero_image": "assets/sepflow-piston-pump-600-ml-main.webp",
+   "image_alt": "600 mL piston pump with twin PEEK pump heads, aluminium body and servo motor",
+   "gallery": [
+    {
+     "src": "assets/sepflow-piston-pump-600-ml-g1.webp",
+     "alt": "Front view of the 600 mL piston pump showing both PEEK pump heads"
+    }
+   ]
+  },
+  {
+   "slug": "column-valve",
+   "name": "5 Column Position Valve",
+   "subtitle": "Five-position column selector valve module",
+   "category": "Valves",
+   "summary": "The 5 Column Position Valve connects up to five columns and switches between bypass, up-flow and down-flow modes, enabling automated method or process development. Its all-PEEK biocompatible head is rated for a working pressure of up to 20 MPa, and the module is controlled over the RS485 protocol.",
+   "features": [
+    "All-PEEK biocompatible flow path: the valve head, rotor and stator are made of biocompatible materials with good corrosion resistance and sealing performance",
+    "Three switchable modes: bypass, up-flow and down-flow",
+    "Supports connection of up to five columns for automated method or process development",
+    "Working pressure up to 20 MPa",
+    "RS485 protocol control for high-speed, long-distance, multipoint communication",
+    "Service life of more than 100,000 cycles, backed by precision design, quality materials and rigorous workmanship"
+   ],
+   "applications": [
+    "Automated method development",
+    "Process development"
+   ],
+   "contents": [],
+   "options": [],
+   "specs": [
+    {
+     "group": "Technical specifications",
+     "rows": [
+      [
+       "Net weight",
+       "1.2 kg"
+      ],
+      [
+       "Valve head material",
+       "PEEK"
+      ],
+      [
+       "Body material",
+       "Aluminum alloy"
+      ],
+      [
+       "Pressure rating",
+       "20 MPa"
+      ],
+      [
+       "Dimensions (L × W × H)",
+       "206.5 mm × 70 mm × 110 mm"
+      ]
+     ]
+    },
+    {
+     "group": "Function and control",
+     "rows": [
+      [
+       "Column positions",
+       "5"
+      ],
+      [
+       "Switching modes",
+       "Bypass, up-flow, down-flow"
+      ],
+      [
+       "Front-panel ports",
+       "In, Out, Top 1–5, Bottom 1–5"
+      ],
+      [
+       "Control",
+       "RS485 protocol"
+      ],
+      [
+       "Service life",
+       "> 100,000 cycles"
+      ]
+     ]
+    }
+   ],
+   "docs": [],
+   "image": "assets/sepflow-column-valve.webp",
+   "hero_image": "assets/sepflow-column-valve-main.webp",
+   "image_alt": "Sepflow 5 Column Position Valve module for the AIpure-HC system, front three-quarter view showing the PEEK valve head and column port labels",
+   "gallery": [
+    {
+     "src": "assets/sepflow-column-valve-g1.webp",
+     "alt": "5 Column Position Valve, side view"
+    }
+   ]
+  },
+  {
+   "slug": "inlet-valve",
+   "name": "Inlet Valve",
+   "subtitle": "8-in, 1-out inlet selector valve module with integrated bubble sensor",
+   "category": "Valves",
+   "summary": "The Inlet Valve is an eight-inlet, single-outlet selector valve module with an integrated bubble sensor housed in a compartment that does not come into contact with the liquid. Its all-PEEK biocompatible head is rated for a working pressure of up to 500 psi, and the module is controlled over the RS485 protocol.",
+   "features": [
+    "All-PEEK biocompatible flow path: the valve head, rotor and stator are made of biocompatible materials with good corrosion resistance and sealing performance",
+    "Multi-channel entrance: 8 inlets to 1 outlet",
+    "Integrated bubble sensor inside the valve; the sensor compartment is designed not to come into contact with liquids",
+    "Working pressure up to 500 psi",
+    "RS485 protocol control for high-speed, long-distance, multipoint communication",
+    "Service life of more than 100,000 cycles, backed by precision design, quality materials and rigorous workmanship"
+   ],
+   "applications": [],
+   "contents": [],
+   "options": [],
+   "specs": [
+    {
+     "group": "Technical specifications",
+     "rows": [
+      [
+       "Net weight",
+       "1.2 kg"
+      ],
+      [
+       "Valve head material",
+       "PEEK"
+      ],
+      [
+       "Body material",
+       "Aluminum alloy"
+      ],
+      [
+       "Pressure rating",
+       "500 psi"
+      ],
+      [
+       "Dimensions (L × W × H)",
+       "206.5 mm × 70 mm × 110 mm"
+      ]
+     ]
+    },
+    {
+     "group": "Function and control",
+     "rows": [
+      [
+       "Channel configuration",
+       "8 in 1 out"
+      ],
+      [
+       "Front-panel ports",
+       "1–8, Out"
+      ],
+      [
+       "Bubble sensor",
+       "Integrated (sensor compartment does not contact liquids)"
+      ],
+      [
+       "Control",
+       "RS485 protocol"
+      ],
+      [
+       "Service life",
+       "> 100,000 cycles"
+      ]
+     ]
+    }
+   ],
+   "docs": [],
+   "image": "assets/sepflow-inlet-valve.webp",
+   "hero_image": "assets/sepflow-inlet-valve-main.webp",
+   "image_alt": "Sepflow Inlet Valve module for the AIpure-HC system, front three-quarter view showing the PEEK valve head with inlet ports 1-8 and Out",
+   "gallery": [
+    {
+     "src": "assets/sepflow-inlet-valve-g1.webp",
+     "alt": "Inlet Valve, side view"
+    }
+   ]
+  },
+  {
+   "slug": "inject-valve",
+   "name": "Inject Valve",
+   "subtitle": "Sample injection valve module with sample pump, loop and waste ports",
+   "category": "Valves",
+   "summary": "The Inject Valve switches between sample pump load, inject, waste and load modes, so samples can be loaded directly onto the column or into the sample loop using the sample pump. Its all-PEEK biocompatible head is rated for a working pressure of up to 20 MPa, and the module is controlled over the RS485 protocol.",
+   "features": [
+    "All-PEEK biocompatible flow path: the valve head, rotor and stator are made of biocompatible materials with good corrosion resistance and sealing performance",
+    "Multiple switchable modes: sample pump load, inject, waste and load",
+    "Simple operation: samples can be loaded directly onto the column or into the sample loop using the sample pump",
+    "Working pressure up to 20 MPa",
+    "RS485 protocol control for high-speed, long-distance, multipoint communication",
+    "Service life of more than 100,000 cycles, backed by precision design, quality materials and rigorous workmanship"
+   ],
+   "applications": [
+    "Loading samples directly onto the column with the sample pump",
+    "Filling the sample loop with the sample pump"
+   ],
+   "contents": [],
+   "options": [],
+   "specs": [
+    {
+     "group": "Technical specifications",
+     "rows": [
+      [
+       "Net weight",
+       "1.2 kg"
+      ],
+      [
+       "Valve head material",
+       "PEEK"
+      ],
+      [
+       "Body material",
+       "Aluminum alloy"
+      ],
+      [
+       "Pressure rating",
+       "20 MPa"
+      ],
+      [
+       "Dimensions (L × W × H)",
+       "206.5 mm × 70 mm × 110 mm"
+      ]
+     ]
+    },
+    {
+     "group": "Function and control",
+     "rows": [
+      [
+       "Switching modes",
+       "Sample pump load, Inject, Waste, Load"
+      ],
+      [
+       "Front-panel ports",
+       "Inject, Column, Pump, Loop E, Waste 1, Sample Pump, Loop F, Waste 2"
+      ],
+      [
+       "Control",
+       "RS485 protocol"
+      ],
+      [
+       "Service life",
+       "> 100,000 cycles"
+      ]
+     ]
+    }
+   ],
+   "docs": [],
+   "image": "assets/sepflow-inject-valve.webp",
+   "hero_image": "assets/sepflow-inject-valve-main.webp",
+   "image_alt": "Sepflow Inject Valve module for the AIpure-HC system, front three-quarter view showing the PEEK valve head with Inject, Column, Pump, loop and waste ports",
+   "gallery": [
+    {
+     "src": "assets/sepflow-inject-valve-g1.webp",
+     "alt": "Inject Valve, side view"
+    }
+   ]
+  },
+  {
+   "slug": "outlet-valve",
+   "name": "Outlet Valve",
+   "subtitle": "1-in, 12-out outlet selector valve module",
+   "category": "Valves",
+   "summary": "The Outlet Valve is a single-inlet, twelve-outlet selector valve module. Its all-PEEK biocompatible head is rated for a working pressure of up to 500 psi, and the module is controlled over the RS485 protocol.",
+   "features": [
+    "All-PEEK biocompatible flow path: the valve head, rotor and stator are made of biocompatible materials with good corrosion resistance and sealing performance",
+    "Multi-channel outlet: 1 inlet to 12 outlets",
+    "Working pressure up to 500 psi",
+    "RS485 protocol control for high-speed, long-distance, multipoint communication",
+    "Service life of more than 100,000 cycles, backed by precision design, quality materials and rigorous workmanship"
+   ],
+   "applications": [],
+   "contents": [],
+   "options": [],
+   "specs": [
+    {
+     "group": "Technical specifications",
+     "rows": [
+      [
+       "Net weight",
+       "1.2 kg"
+      ],
+      [
+       "Valve head material",
+       "PEEK"
+      ],
+      [
+       "Body material",
+       "Aluminum alloy"
+      ],
+      [
+       "Pressure rating",
+       "500 psi"
+      ],
+      [
+       "Dimensions (L × W × H)",
+       "206.5 mm × 70 mm × 110 mm"
+      ]
+     ]
+    },
+    {
+     "group": "Function and control",
+     "rows": [
+      [
+       "Channel configuration",
+       "1 in 12 out"
+      ],
+      [
+       "Front-panel ports",
+       "In, 1–12"
+      ],
+      [
+       "Control",
+       "RS485 protocol"
+      ],
+      [
+       "Service life",
+       "> 100,000 cycles"
+      ]
+     ]
+    }
+   ],
+   "docs": [],
+   "image": "assets/sepflow-outlet-valve.webp",
+   "hero_image": "assets/sepflow-outlet-valve-main.webp",
+   "image_alt": "Sepflow Outlet Valve module for the AIpure-HC system, front three-quarter view showing the PEEK valve head with numbered outlet ports",
+   "gallery": [
+    {
+     "src": "assets/sepflow-outlet-valve-g1.webp",
+     "alt": "Outlet Valve, side view"
+    }
+   ]
+  },
+  {
+   "slug": "ph-valve",
+   "name": "pH Valve",
+   "subtitle": "pH monitoring valve module with bypass and calibration paths",
+   "category": "Valves",
+   "summary": "The pH Valve switches between online pH monitoring, bypass and calibration modes, with dedicated In/Out and Cal In/Cal Out ports. Its all-PEEK biocompatible head is rated for a working pressure of up to 500 psi, and the module is controlled over the RS485 protocol.",
+   "features": [
+    "All-PEEK biocompatible flow path: the valve head, rotor and stator are made of biocompatible materials with good corrosion resistance and sealing performance",
+    "Three switchable modes: online pH monitoring, bypass and calibration",
+    "Working pressure up to 500 psi",
+    "RS485 protocol control for high-speed, long-distance, multipoint communication",
+    "Service life of more than 100,000 cycles, backed by precision design, quality materials and rigorous workmanship"
+   ],
+   "applications": [
+    "Online pH monitoring",
+    "pH calibration"
+   ],
+   "contents": [],
+   "options": [],
+   "specs": [
+    {
+     "group": "Technical specifications",
+     "rows": [
+      [
+       "Net weight",
+       "1.2 kg"
+      ],
+      [
+       "Valve head material",
+       "PEEK"
+      ],
+      [
+       "Body material",
+       "Aluminum alloy"
+      ],
+      [
+       "Pressure rating",
+       "500 psi"
+      ],
+      [
+       "Dimensions (L × W × H)",
+       "216 mm × 70 mm × 120 mm"
+      ]
+     ]
+    },
+    {
+     "group": "Function and control",
+     "rows": [
+      [
+       "Switching modes",
+       "Online pH monitoring, Bypass, Calibration"
+      ],
+      [
+       "Front-panel ports",
+       "In, Out, Cal In, Cal Out"
+      ],
+      [
+       "Control",
+       "RS485 protocol"
+      ],
+      [
+       "Service life",
+       "> 100,000 cycles"
+      ]
+     ]
+    }
+   ],
+   "docs": [],
+   "image": "assets/sepflow-ph-valve.webp",
+   "hero_image": "assets/sepflow-ph-valve-main.webp",
+   "image_alt": "Sepflow pH Valve module for the AIpure-HC system, front three-quarter view showing the PEEK valve head with its angled top fitting",
+   "gallery": [
+    {
+     "src": "assets/sepflow-ph-valve-g1.webp",
+     "alt": "pH Valve, side view"
+    }
+   ]
+  }
+ ]
+}

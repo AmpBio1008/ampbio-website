@@ -20,15 +20,17 @@ import menu  # noqa: E402
 
 ROOT_PAGES = ["index.html", "products.html", "scientific-platforms.html",
               "support-training.html", "about.html", "connect.html", "virongy.html",
+              "sepflow.html",
               "privacy-policy.html", "terms-of-use.html", "disclaimer.html"]
 
 
 def all_pages():
-    """Root pages plus every generated product page under virongy/."""
-    out = list(ROOT_PAGES)
-    d = os.path.join(SITE, "virongy")
-    if os.path.isdir(d):
-        out += ["virongy/" + f for f in sorted(os.listdir(d)) if f.endswith(".html")]
+    """Root pages plus every generated product page under virongy/ and sepflow/."""
+    out = [p for p in ROOT_PAGES if os.path.exists(os.path.join(SITE, p))]
+    for folder in ("virongy", "sepflow"):
+        d = os.path.join(SITE, folder)
+        if os.path.isdir(d):
+            out += [folder + "/" + f for f in sorted(os.listdir(d)) if f.endswith(".html")]
     return out
 
 # The desktop nav's Products link, on the active page and on the others.
@@ -57,7 +59,15 @@ def main():
     if bad:
         raise SystemExit("taxonomy errors:\n  " + "\n  ".join(bad))
 
-    panel = menu.build(data["products"], data["categories"])
+    extra = ""
+    sep_path = os.path.join(HERE, "sepflow-products.json")
+    if os.path.exists(sep_path):
+        sep = json.load(io.open(sep_path, encoding="utf-8"))
+        extra = menu.partner_section(
+            "Sepflow &ndash; Chromatography and Protein Purification Systems",
+            sep["products"], sep["categories"], "sepflow", "sepflow.html",
+            "View the full Sepflow range")
+    panel = menu.build(data["products"], data["categories"], extra)
     write("menu.html", panel + "\n")
     print("menu.html          %.1f KB, %d product links, %d branches"
           % (len(panel) / 1024.0, panel.count("virongy.html#"),

@@ -23,14 +23,16 @@ SITE = os.path.dirname(HERE)
 ASSETS = ["styles.css", "app.js", "menu.html"]
 ROOT_PAGES = ["index.html", "products.html", "scientific-platforms.html",
               "support-training.html", "about.html", "connect.html", "virongy.html",
+              "sepflow.html",
               "privacy-policy.html", "terms-of-use.html", "disclaimer.html"]
 
 
 def all_pages():
-    out = list(ROOT_PAGES)
-    d = os.path.join(SITE, "virongy")
-    if os.path.isdir(d):
-        out += ["virongy/" + f for f in sorted(os.listdir(d)) if f.endswith(".html")]
+    out = [p for p in ROOT_PAGES if os.path.exists(os.path.join(SITE, p))]
+    for folder in ("virongy", "sepflow"):
+        d = os.path.join(SITE, folder)
+        if os.path.isdir(d):
+            out += [folder + "/" + f for f in sorted(os.listdir(d)) if f.endswith(".html")]
     return out
 
 
