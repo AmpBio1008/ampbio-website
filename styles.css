@@ -58,6 +58,25 @@ a:hover { color: #ffb63e; }
 .amp-hero-strip .amp-mq-tile > div:first-child { height: var(--th) !important; }
 .amp-hero-strip .amp-mq-tile > div:last-child { font-size: 0.92rem !important;
   white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Status badge over the left end of each row: whose products these are and on
+   what terms (exclusive / authorised). Spans the picture height; the tiles
+   slide underneath and fade out behind it. */
+.amp-hero-row { position: relative; }
+.amp-row-tag { position: absolute; left: 0; top: 0; z-index: 2; height: var(--th);
+  width: clamp(176px, 15.5vw, 222px); padding: 0 14px 0 clamp(14px, 2.2vw, 32px);
+  box-sizing: border-box; display: flex; flex-direction: column; justify-content: center;
+  align-items: flex-start; gap: 9px; pointer-events: none;
+  background: linear-gradient(90deg, rgba(10,21,36,0.97) 0%, rgba(10,21,36,0.94) 100%); }
+/* the fade sits outside the badge, so its text never lies over a tile */
+.amp-row-tag::after { content: ""; position: absolute; top: 0; bottom: 0; left: 100%;
+  width: 34px; background: linear-gradient(90deg, rgba(10,21,36,0.94), rgba(10,21,36,0)); }
+.amp-row-logo { display: inline-flex; align-items: center; padding: 8px 12px;
+  border-radius: 8px; background: linear-gradient(158deg, #f7fafd 0%, #dfe7f1 100%);
+  box-shadow: 0 0 0 1px rgba(253,157,5,0.42); max-width: 100%; box-sizing: border-box; }
+.amp-row-logo img { display: block; height: 30px; width: auto; max-width: 100%; }
+.amp-row-status { font-family: 'IBM Plex Mono', monospace; font-size: 0.62rem;
+  line-height: 1.45; letter-spacing: 0.1em; text-transform: uppercase; color: #FD9D05;
+  white-space: nowrap; }
 /* The homepage headline is smaller than the other pages' h1: it shares the
    hero with the strip, and .amp-h1's 3rem override below 1024px is too big
    once both are on one screen. Written as h1.amp-hero-h1 so it outranks that
@@ -75,7 +94,16 @@ h1.amp-hero-h1 { font-size: clamp(1.6rem, 2.6vw, 2.3rem) !important; }
      a run of products rather than a slideshow. */
   .amp-hero-strip { margin-top: 22px; padding: 14px 0 16px; gap: 10px;
     --th: clamp(80px, calc((100vh - 400px) / 3), 156px); }
+  .amp-row-tag { width: 132px; padding: 0 8px 0 10px; gap: 6px; }
+  .amp-row-tag::after { width: 20px; }
+  .amp-row-logo { padding: 4px 7px; border-radius: 6px; }
+  .amp-row-logo img { height: 18px; }
+  .amp-row-status { font-size: 0.5rem; letter-spacing: 0.06em; }
 }
+/* "Our partners" band under the homepage hero */
+@media (max-width: 1024px) { .amp-partner { padding: 20px 20px 18px !important; } }
+@media (max-width: 760px) { .amp-partners { grid-template-columns: 1fr !important; }
+  .amp-partner-status { letter-spacing: 0.1em !important; } }
 /* distributor banner on the Products page */
 @media (max-width: 1024px) {
   .amp-vdist > div:last-child { width: 100% !important; min-width: 0 !important; padding: 28px 24px !important; }

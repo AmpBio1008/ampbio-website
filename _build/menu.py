@@ -135,7 +135,7 @@ def _leaf(p, pad, folder="virongy"):
             % (folder, esc(p["slug"]), pad, esc(p["name"])))
 
 
-def _branch(label, inner, depth):
+def _branch(label, inner, depth, status=""):
     """A row that opens a nested panel on hover (desktop) or tap (mobile).
 
     A panel holding only products is marked `amp-mm-leaf`: those may scroll
@@ -147,12 +147,21 @@ def _branch(label, inner, depth):
             '<a href="#" class="amp-mm-toggle" aria-haspopup="true" aria-expanded="false" '
             'style="display:flex;align-items:center;justify-content:space-between;gap:12px;'
             'padding:9px 16px;color:#dbe3ee;font-size:0.88rem;line-height:1.3">'
-            '<span>%s</span>'
+            '<span>%s%s</span>'
             '<svg class="amp-mm-chev" width="13" height="13" viewBox="0 0 24 24" fill="none" '
             'stroke="%s" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">'
             '<polyline points="9 6 15 12 9 18"></polyline></svg></a>'
             '<ul class="amp-mm-panel amp-mm-d%d%s">%s</ul></li>'
-            % (esc(label), AMBER, depth, leaf, inner))
+            % (esc(label), _status(status), AMBER, depth, leaf, inner))
+
+
+def _status(kind):
+    """Small line under a partner's name: Ampbio's status with that partner."""
+    if not kind:
+        return ""
+    return ('<span style="display:block;margin-top:3px;font-family:%s;font-size:0.6rem;'
+            'letter-spacing:0.12em;text-transform:uppercase;color:%s">'
+            '%s Distributor in India</span>' % (F_MONO, AMBER, kind))
 
 
 def build(products, categories, extra=""):
@@ -200,7 +209,9 @@ def build(products, categories, extra=""):
     head = ('<li class="amp-mm-head" style="padding:12px 16px 9px;font-family:%s;'
             'font-size:0.66rem;letter-spacing:0.16em;text-transform:uppercase;'
             'color:%s;border-bottom:1px solid %s">Virongy Biosciences &ndash; '
-            'Virological Research Tools and Platforms</li>' % (F_MONO, AMBER, HAIRLINE))
+            'Virological Research Tools and Platforms'
+            '<span style="display:block;margin-top:5px;color:#c4cede">'
+            'Exclusive Distributor in India</span></li>' % (F_MONO, AMBER, HAIRLINE))
 
     return ('<ul class="amp-mm-panel amp-mm-d1">%s%s%s%s%s</ul>'
             % (head, virus_tools, "".join(types), all_link, extra))
@@ -214,7 +225,8 @@ def partners_head(title):
             % (F_MONO, AMBER, HAIRLINE, HAIRLINE, title))
 
 
-def partner_branch(label, title, products, categories, folder, index, range_label):
+def partner_branch(label, title, products, categories, folder, index, range_label,
+                   status=""):
     """One row per further partner, opening its own panel: a title line, one
     flyout per category, and a link to the range page.
 
@@ -234,7 +246,7 @@ def partner_branch(label, title, products, categories, folder, index, range_labe
     link = ('<li><a href="/%s" style="display:block;padding:11px 16px;'
             'color:%s;font-weight:700;font-size:0.86rem;border-top:1px solid %s">'
             '%s &rarr;</a></li>' % (index, AMBER, HAIRLINE, range_label))
-    return _branch(label, head + "".join(branches) + link, 2)
+    return _branch(label, head + "".join(branches) + link, 2, status)
 
 
 NAV_ITEM = """<span class="amp-mm">%(link)s<span class="amp-mm-mount" hidden></span></span>"""

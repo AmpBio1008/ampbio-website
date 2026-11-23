@@ -528,7 +528,9 @@ def main():
         write("virongy/%s.html" % p["slug"], build_product(p, data))
 
     home = read("index.html")
-    home = replace_block(home, "VIRONGY-HERO-STRIP", build_hero_strip(data))
+    home = replace_block(home, "VIRONGY-HERO-STRIP", pages.hero_row(
+        pages.row_tag("assets/virongy-logo.webp", "Virongy Biosciences", "Exclusive"),
+        build_hero_strip(data)))
     home = replace_block(home, "VIRONGY-MARQUEE", build_marquee(data))
     write("index.html", home)
     write("products.html", replace_block(read("products.html"), "VIRONGY-BANNER", build_banner(data)))

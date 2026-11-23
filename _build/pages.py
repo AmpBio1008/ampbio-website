@@ -20,6 +20,28 @@ F_BODY = "'D-DIN','IBM Plex Sans',sans-serif"
 
 SITE = "https://amps.bio"
 
+def status_note(kind, partner):
+    """The line under every product picture: who Ampbio is to this partner.
+    `kind` is "Exclusive" or "Authorised" - the agreements differ."""
+    return ('Ampbio &ndash; <span style="color:%s">%s Distributor in India</span> for %s'
+            % (AMBER, kind, partner))
+
+
+def row_tag(logo_src, alt, kind):
+    """Badge pinned to the left end of a homepage hero row: the partner's logo
+    on a light plate and Ampbio's status, so a visitor can tell whose products
+    the row carries and on what terms. The tiles scroll underneath it."""
+    return ('<div class="amp-row-tag"><span class="amp-row-logo"><img src="%s" alt="%s">'
+            '</span><span class="amp-row-status">%s Distributor<br>in India</span></div>'
+            % (logo_src, esc(alt), kind))
+
+
+def hero_row(tag_html, marquee_html):
+    """One homepage hero row: the status badge over the left end of the strip."""
+    return ('\n      <div class="amp-hero-row">%s%s      </div>\n      '
+            % (tag_html, marquee_html.rstrip(" ")))
+
+
 # Everything that differs between partner ranges. Functions below default to
 # Virongy, so the Virongy pages are generated exactly as before; the Sepflow
 # build passes its own (build_sepflow.py).
@@ -28,7 +50,7 @@ VIRONGY = {
     "short": "Virongy",                 # "Other Virongy products", "Request a Virongy quotation"
     "dir": "virongy",                   # product pages live in <dir>/<slug>.html
     "index": "virongy.html",
-    "media_note": "Supplied in India by Ampbio &middot; Research use only",
+    "media_note": status_note("Exclusive", "Virongy Biosciences") + " &middot; Research use only",
     "manufacturer_url": "https://virongy.com",
     "quote_lead": "Tell us the product, variant and pack size you need. We will confirm "
                   "availability, lead time and pricing for delivery in India.",

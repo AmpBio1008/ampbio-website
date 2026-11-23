@@ -9,6 +9,7 @@ Writes:
   jena.html                                     range page
   jena/<slug>.html                              one page per product
   index.html   between JENA-HERO-STRIP markers  second row of the hero strip
+  products.html  between JENA-BANNER markers    distributor card
 
 Ampbio is an AUTHORISED (not exclusive) distributor in India for Jena
 Bioscience; every line that says so comes from DISTRIBUTOR_LINE. The range
@@ -25,7 +26,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import pages
 from build_virongy import (HERE, SITE, AMBER, NAVY, CARD, HAIRLINE, F_HEAD, F_MONO, esc,
                            reroot, read, write, replace_block, _chrome, check)
-from build_sepflow import spec_table
+from build_sepflow import spec_table, promo_banner
 
 CATALOGUE = os.path.join(HERE, "jena-products.json")
 DISTRIBUTOR_LINE = "Authorised Distributor in India"
@@ -35,7 +36,7 @@ PARTNER = {
     "short": "Jena Bioscience",
     "dir": "jena",
     "index": "jena.html",
-    "media_note": "Supplied in India by Ampbio",
+    "media_note": pages.status_note("Authorised", "Jena Bioscience"),
     "manufacturer_url": None,
     "quote_lead": "Tell us the product, catalogue number and pack size you need. We will "
                   "confirm availability, lead time and pricing for delivery in India.",
@@ -187,6 +188,17 @@ def build_hero_strip(data):
         % (round(SECONDS_PER_TILE * len(feats)), track, track))
 
 
+def build_banner(data):
+    """Distributor card on products.html, between Virongy's and Sepflow's."""
+    hero = data["hero"]
+    text = ("Ampbio is an authorised distributor in India for Jena Bioscience, Germany. "
+            "%d products across nucleotides, click-chemistry nucleosides, dNTPs and "
+            "Quantifoil\u00ae cryo-EM grids." % len(data["products"]))
+    return promo_banner("jena.html", DISTRIBUTOR_LINE, badge(40, "0 0 18px"), hero["image"],
+                        hero["alt"], hero["position"], text,
+                        "Jena Bioscience \u2013 Nucleotides, Nucleosides and Cryo-EM Grids")
+
+
 def check_jena(path):
     s = read(path)
     for bad in ("jenabioscience.com", "€", "Exclusive Distributor", "exclusive distributor",
@@ -203,12 +215,16 @@ def main():
     write("jena.html", build_index(data))
     for p in products:
         write("jena/%s.html" % p["slug"], build_product(p, data))
-    write("index.html", replace_block(read("index.html"), "JENA-HERO-STRIP",
-                                      build_hero_strip(data)))
+    write("index.html", replace_block(read("index.html"), "JENA-HERO-STRIP", pages.hero_row(
+        pages.row_tag("assets/jena-logo.svg", "Jena Bioscience", "Authorised"),
+        build_hero_strip(data))))
+    write("products.html", replace_block(read("products.html"), "JENA-BANNER",
+                                         build_banner(data)))
     for page in ["jena.html", "index.html"] + ["jena/%s.html" % p["slug"] for p in products]:
         check_jena(page)
     print("jena.html         range page, %d products" % len(products))
     print("jena/*.html       %d product pages" % len(products))
+    print("products.html     distributor card")
     print("index.html        Jena hero row, %d tiles -> product pages" % len(data["featured"]))
 
 

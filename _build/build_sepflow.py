@@ -37,7 +37,7 @@ PARTNER = {
     "short": "Sepflow",
     "dir": "sepflow",
     "index": "sepflow.html",
-    "media_note": "Supplied in India by Ampbio",
+    "media_note": pages.status_note("Exclusive", "Sepflow"),
     "manufacturer_url": None,
     "quote_lead": "Tell us the system, configuration and application you have in mind. "
                   "We will confirm the specification, lead time and pricing for "
@@ -257,10 +257,9 @@ def build_band(data):
             "blurb": esc(data["blurb"]), "cta": esc(data["cta"])})
 
 
-def build_banner(data):
-    """Distributor card on products.html, under Virongy's: the same
-    .amp-promo-card component, so the two read as a pair."""
-    b = data["banner"]
+def promo_banner(href, dline, logo, image, alt, position, text, cta):
+    """Distributor card on products.html: the same .amp-promo-card component as
+    Virongy's, so the partner cards read as a set. Shared with build_jena.py."""
     return (
         '\n  <section style="background:%(navy)s;padding:22px 0 0">\n'
         '    <div style="max-width:1240px;margin:0 auto;padding:0 32px">\n'
@@ -277,7 +276,7 @@ def build_banner(data):
         'text-transform:uppercase;margin-bottom:14px">%(dline)s</div>\n'
         '          %(logo)s\n'
         '          <p style="color:#c4cede;font-size:0.98rem;line-height:1.6;margin:0 0 24px">%(text)s</p>\n'
-        '          <a class="amp-promo-cta" href="sepflow.html" style="margin-top:auto;background:%(amber)s;'
+        '          <a class="amp-promo-cta" href="%(href)s" style="margin-top:auto;background:%(amber)s;'
         'color:%(navy)s;font-family:%(fb)s;font-weight:700;font-size:0.92rem;padding:12px 24px;'
         'border-radius:6px;transition:background .2s;line-height:1.35;max-width:100%%">%(cta)s</a>\n'
         '        </div>\n'
@@ -285,9 +284,15 @@ def build_banner(data):
         '    </div>\n'
         '  </section>\n' % {
             "navy": NAVY, "hair": HAIRLINE, "fm": F_MONO, "fb": F_BODY, "amber": AMBER,
-            "dline": DISTRIBUTOR_LINE, "logo": badge(40, "0 0 18px"),
-            "img": esc(b["image"]), "alt": esc(b["alt"]), "pos": b.get("position", "center"),
-            "text": esc(data["blurb"]), "cta": esc(data["cta"])})
+            "dline": dline, "logo": logo, "href": href,
+            "img": esc(image), "alt": esc(alt), "pos": position,
+            "text": esc(text), "cta": esc(cta)})
+
+
+def build_banner(data):
+    b = data["banner"]
+    return promo_banner("sepflow.html", DISTRIBUTOR_LINE, badge(40, "0 0 18px"), b["image"],
+                        b["alt"], b.get("position", "center"), data["blurb"], data["cta"])
 
 
 def check_sepflow(path):
@@ -308,7 +313,9 @@ def main():
         write("sepflow/%s.html" % p["slug"], build_product(p, data))
 
     home = read("index.html")
-    home = replace_block(home, "SEPFLOW-HERO-STRIP", build_hero_strip(data))
+    home = replace_block(home, "SEPFLOW-HERO-STRIP", pages.hero_row(
+        pages.row_tag("assets/sepflow-logo.webp", "Sepflow", "Exclusive"),
+        build_hero_strip(data)))
     home = replace_block(home, "SEPFLOW-BAND", build_band(data))
     write("index.html", home)
     write("products.html",

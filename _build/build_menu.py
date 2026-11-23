@@ -62,19 +62,19 @@ def main():
     # Further partners, in the order of the homepage hero rows.
     partners = [
         ("jena-products.json", "Jena Bioscience",
-         "Jena Bioscience &ndash; Authorised Distributor in India", "jena", "jena.html",
-         "View the full Jena Bioscience range"),
+         "Jena Bioscience &ndash; Nucleotides, Nucleosides and Cryo-EM Grids", "jena",
+         "jena.html", "View the full Jena Bioscience range", "Authorised"),
         ("sepflow-products.json", "Sepflow",
          "Sepflow &ndash; Chromatography and Protein Purification Systems", "sepflow",
-         "sepflow.html", "View the full Sepflow range"),
+         "sepflow.html", "View the full Sepflow range", "Exclusive"),
     ]
     rows = []
-    for fname, label, title, folder, index, range_label in partners:
+    for fname, label, title, folder, index, range_label, status in partners:
         path = os.path.join(HERE, fname)
         if os.path.exists(path):
             cat = json.load(io.open(path, encoding="utf-8"))
             rows.append(menu.partner_branch(label, title, cat["products"], cat["categories"],
-                                            folder, index, range_label))
+                                            folder, index, range_label, status))
     extra = (menu.partners_head("Other Partner Ranges") + "".join(rows)) if rows else ""
     panel = menu.build(data["products"], data["categories"], extra)
     write("menu.html", panel + "\n")
