@@ -289,3 +289,29 @@
     });
   }
 })();
+
+/* Browse menu: keep each flyout on screen.
+   A flyout opens level with the row that holds it, so one opened from a row
+   low in the panel can run off the bottom of a laptop screen - and the header
+   is fixed, so the page cannot be scrolled to reach it. When that would
+   happen, lift the flyout just enough to fit, never above the header. */
+(function () {
+  function fit(li) {
+    var p = li && li.querySelector(':scope > .amp-mm-panel');
+    if (!p || getComputedStyle(p).position !== 'absolute') return;  // mobile drawer
+    p.style.top = '';
+    var r = p.getBoundingClientRect();
+    if (!r.height) return;
+    var over = r.bottom - (window.innerHeight - 10);
+    if (over > 0) {
+      var lift = Math.min(over, r.top - 70);
+      if (lift > 0) p.style.top = (-6 - lift) + 'px';
+    }
+  }
+  function onEnter(e) {
+    var li = e.target.closest && e.target.closest('.amp-mm-has');
+    if (li) requestAnimationFrame(function () { fit(li); });
+  }
+  document.addEventListener('mouseover', onEnter, true);
+  document.addEventListener('focusin', onEnter, true);
+})();

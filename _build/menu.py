@@ -206,24 +206,35 @@ def build(products, categories, extra=""):
             % (head, virus_tools, "".join(types), all_link, extra))
 
 
-def partner_section(title, products, categories, folder, index, range_label):
-    """A second partner's block in the same panel: its own heading line, one
-    flyout per category, and a link to its range page - the Virongy block's
-    shape without the virus taxonomy, which only Virongy needs."""
-    head = ('<li class="amp-mm-head" style="padding:12px 16px 9px;font-family:%s;'
+def partners_head(title):
+    """Heading line that opens the other partners' rows, under Virongy's block."""
+    return ('<li class="amp-mm-head" style="padding:12px 16px 9px;font-family:%s;'
             'font-size:0.66rem;letter-spacing:0.16em;text-transform:uppercase;'
             'color:%s;border-top:1px solid %s;border-bottom:1px solid %s">%s</li>'
             % (F_MONO, AMBER, HAIRLINE, HAIRLINE, title))
+
+
+def partner_branch(label, title, products, categories, folder, index, range_label):
+    """One row per further partner, opening its own panel: a title line, one
+    flyout per category, and a link to the range page.
+
+    A row rather than a block like Virongy's because the top panel has to fit
+    a laptop screen: the header is fixed, so whatever runs below the window
+    cannot be scrolled to. Virongy's block plus a full block per partner came
+    to ~760px; this keeps the panel near 520px."""
+    head = ('<li class="amp-mm-grp" style="padding:11px 16px 7px;font-family:%s;'
+            'font-size:0.64rem;letter-spacing:0.14em;text-transform:uppercase;'
+            'color:%s;border-bottom:1px solid %s">%s</li>' % (F_MONO, AMBER, HAIRLINE, title))
     branches = []
     for cat in categories:
         items = [p for p in products if p["category"] == cat]
         if items:
             branches.append(_branch(cat, "".join(_leaf(p, "9px 16px", folder)
-                                                 for p in items), 2))
+                                                 for p in items), 3))
     link = ('<li><a href="/%s" style="display:block;padding:11px 16px;'
             'color:%s;font-weight:700;font-size:0.86rem;border-top:1px solid %s">'
             '%s &rarr;</a></li>' % (index, AMBER, HAIRLINE, range_label))
-    return head + "".join(branches) + link
+    return _branch(label, head + "".join(branches) + link, 2)
 
 
 NAV_ITEM = """<span class="amp-mm">%(link)s<span class="amp-mm-mount" hidden></span></span>"""

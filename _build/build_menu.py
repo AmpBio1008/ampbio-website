@@ -20,14 +20,14 @@ import menu  # noqa: E402
 
 ROOT_PAGES = ["index.html", "products.html", "scientific-platforms.html",
               "support-training.html", "about.html", "connect.html", "virongy.html",
-              "sepflow.html",
+              "sepflow.html", "jena.html",
               "privacy-policy.html", "terms-of-use.html", "disclaimer.html"]
 
 
 def all_pages():
     """Root pages plus every generated product page under virongy/ and sepflow/."""
     out = [p for p in ROOT_PAGES if os.path.exists(os.path.join(SITE, p))]
-    for folder in ("virongy", "sepflow"):
+    for folder in ("virongy", "sepflow", "jena"):
         d = os.path.join(SITE, folder)
         if os.path.isdir(d):
             out += [folder + "/" + f for f in sorted(os.listdir(d)) if f.endswith(".html")]
@@ -59,14 +59,23 @@ def main():
     if bad:
         raise SystemExit("taxonomy errors:\n  " + "\n  ".join(bad))
 
-    extra = ""
-    sep_path = os.path.join(HERE, "sepflow-products.json")
-    if os.path.exists(sep_path):
-        sep = json.load(io.open(sep_path, encoding="utf-8"))
-        extra = menu.partner_section(
-            "Sepflow &ndash; Chromatography and Protein Purification Systems",
-            sep["products"], sep["categories"], "sepflow", "sepflow.html",
-            "View the full Sepflow range")
+    # Further partners, in the order of the homepage hero rows.
+    partners = [
+        ("jena-products.json", "Jena Bioscience",
+         "Jena Bioscience &ndash; Authorised Distributor in India", "jena", "jena.html",
+         "View the full Jena Bioscience range"),
+        ("sepflow-products.json", "Sepflow",
+         "Sepflow &ndash; Chromatography and Protein Purification Systems", "sepflow",
+         "sepflow.html", "View the full Sepflow range"),
+    ]
+    rows = []
+    for fname, label, title, folder, index, range_label in partners:
+        path = os.path.join(HERE, fname)
+        if os.path.exists(path):
+            cat = json.load(io.open(path, encoding="utf-8"))
+            rows.append(menu.partner_branch(label, title, cat["products"], cat["categories"],
+                                            folder, index, range_label))
+    extra = (menu.partners_head("Other Partner Ranges") + "".join(rows)) if rows else ""
     panel = menu.build(data["products"], data["categories"], extra)
     write("menu.html", panel + "\n")
     print("menu.html          %.1f KB, %d product links, %d branches"

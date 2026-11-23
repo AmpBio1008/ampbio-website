@@ -1,0 +1,878 @@
+{
+ "source": "jenabioscience.com product pages and data sheets, read Nov 2026",
+ "categories": [
+  "Nucleotides & Nucleosides",
+  "Crystallography & Cryo-EM"
+ ],
+ "featured": [
+  "atpgammas",
+  "gpcpp",
+  "5-eu",
+  "5-edutp",
+  "dntp-bundle",
+  "quantifoil-r12-13-cu300",
+  "5-edu",
+  "gppnhp"
+ ],
+ "lead": "Ampbio is an authorised distributor in India for Jena Bioscience, Germany. This range opens with the products Jena features: non-hydrolysable and click-chemistry nucleotides, a dNTP bundle and Quantifoil® cryo-EM grids.",
+ "hero": {
+  "image": "assets/plat-chemicals.webp",
+  "alt": "Molecular structure",
+  "position": "70% center"
+ },
+ "products": [
+  {
+   "slug": "atpgammas",
+   "name": "ATPγS",
+   "sku": "NU-406",
+   "category": "Nucleotides & Nucleosides",
+   "synonyms": [
+    "Adenosine-5'-(γ-thio)-triphosphate, Tetralithium salt",
+    "Adenosine-5'-(3-thio)-triphosphate, Adenosine-5'-(3-thiotriphosphate)",
+    "Ado-5'-PPP[S]"
+   ],
+   "options": [
+    {
+     "label": "Pack sizes",
+     "values": [
+      "5 mg (NU-406-5)",
+      "25 mg (NU-406-25)",
+      "50 mg (NU-406-50)"
+     ]
+    }
+   ],
+   "specs": [
+    {
+     "group": "Product data",
+     "rows": [
+      [
+       "Synonyms",
+       "Adenosine-5'-(γ-thio)-triphosphate, Tetralithium salt; Adenosine-5'-(3-thio)-triphosphate, Adenosine-5'-(3-thiotriphosphate); Ado-5'-PPP[S]"
+      ],
+      [
+       "CAS number",
+       "93839-89-5"
+      ],
+      [
+       "Molecular formula",
+       "C10H16N5O12P3S (free acid)"
+      ],
+      [
+       "Molecular weight",
+       "523.24 g/mol (free acid)"
+      ],
+      [
+       "Exact mass",
+       "522.97 g/mol (free acid)"
+      ],
+      [
+       "Purity",
+       "≥ 90 % (HPLC), contains < 10 % ADP"
+      ],
+      [
+       "Colour",
+       "White to off-white"
+      ],
+      [
+       "Spectroscopic properties",
+       "Λ max 259 nm, ε 15.4 L mmol⁻¹ cm⁻¹ (Tris-HCl pH 7.5)"
+      ]
+     ]
+    },
+    {
+     "group": "Shipping and storage",
+     "rows": [
+      [
+       "Shipping",
+       "Shipped on dry ice"
+      ],
+      [
+       "Storage conditions",
+       "Store at -20 °C"
+      ],
+      [
+       "Shelf life",
+       "6 months after date of delivery"
+      ],
+      [
+       "Handling",
+       "For reasons of stability, please make sure that the pH value of a solution of this product never drops below 7.0. This can be achieved by dissolving the nucleotide in a buffer of your choice (50 - 100 mM, pH 7 - 10). Dissolve and adjust concentration photometrically."
+      ],
+      [
+       "Intended use",
+       "For research use only"
+      ]
+     ]
+    }
+   ],
+   "summary": "ATPγS (adenosine-5'-(γ-thio)-triphosphate, tetralithium salt) is a nucleoside phosphate stabilised against hydrolytic degradation, so it can bind nucleoside receptors directly. Applications include the modulation of intracellular signalling, purinergic receptor signalling, regulation of cation channels, kinase substrate studies and 5'-end labelling of DNA and RNA with T4 polynucleotide kinase.",
+   "applications": [
+    "Modulation of intracellular signalling",
+    "Signalling of purinergic receptors",
+    "Regulation of cation channels",
+    "Modulation of cytokine secretion",
+    "Substrate for kinases",
+    "5'-end labelling with T4 Polynucleotide Kinase (T4 PNK) of DNA and RNA",
+    "Agonistic ligand, mainly for nucleoside receptor A1"
+   ],
+   "features": [],
+   "ligands": [
+    "Purinoreceptors",
+    "Proteasomes",
+    "Agonist for P2Y2 and P2Y12 receptors and for the P2X(2) purinoreceptor"
+   ],
+   "contents": [],
+   "docs": [
+    {
+     "label": "Data sheet",
+     "path": "assets/docs/jena/NU-406.0003.pdf"
+    },
+    {
+     "label": "Safety data sheet",
+     "path": "assets/docs/jena/NU-406_MSDS.0004.pdf"
+    }
+   ],
+   "image": "assets/jena-atpgammas-card.webp",
+   "hero_image": "assets/jena-atpgammas-main.webp",
+   "tile_image": "assets/jena-atpgammas.webp",
+   "doc_count": 2
+  },
+  {
+   "slug": "gpcpp",
+   "name": "GpCpp (GMPCPP)",
+   "sku": "NU-405",
+   "category": "Nucleotides & Nucleosides",
+   "synonyms": [
+    "(GMPCPP)",
+    "Guanosine-5'-[(α,β)-methyleno]triphosphate, Sodium salt"
+   ],
+   "options": [
+    {
+     "label": "Pack sizes",
+     "values": [
+      "100 µL (10 mM) (NU-405S)",
+      "5 x 100 µL (10 mM) (NU-405L)"
+     ]
+    }
+   ],
+   "specs": [
+    {
+     "group": "Product data",
+     "rows": [
+      [
+       "Synonyms",
+       "GMPCPP; Guanosine-5'-[(α,β)-methyleno]triphosphate, Sodium salt"
+      ],
+      [
+       "CAS number",
+       "14997-54-7"
+      ],
+      [
+       "Molecular formula",
+       "C11H18N5O13P3 (free acid)"
+      ],
+      [
+       "Molecular weight",
+       "521.21 g/mol (free acid)"
+      ],
+      [
+       "Exact mass",
+       "521.01 g/mol (free acid)"
+      ],
+      [
+       "Purity",
+       "≥ 95 % (HPLC)"
+      ],
+      [
+       "Form",
+       "Solution in water"
+      ],
+      [
+       "Colour",
+       "Colorless to slightly yellow"
+      ],
+      [
+       "Concentration",
+       "10 mM–11 mM"
+      ],
+      [
+       "pH",
+       "7.5 ±0.5"
+      ],
+      [
+       "Spectroscopic properties",
+       "Λ max 252 nm, ε 13.7 L mmol⁻¹ cm⁻¹ (Tris-HCl pH 7.5)"
+      ]
+     ]
+    },
+    {
+     "group": "Shipping and storage",
+     "rows": [
+      [
+       "Shipping",
+       "Shipped on gel packs"
+      ],
+      [
+       "Storage conditions",
+       "Store at -20 °C; Short term exposure (up to 1 week cumulative) to ambient temperature possible."
+      ],
+      [
+       "Shelf life",
+       "12 months after date of delivery"
+      ],
+      [
+       "Intended use",
+       "For research use only"
+      ]
+     ]
+    }
+   ],
+   "summary": "GpCpp (GMPCPP; guanosine-5'-[(α,β)-methyleno]triphosphate, sodium salt) is a non-hydrolysable GTP analogue, supplied as a 10 mM solution in water. Applications include microtubule assembly and the dynamics of microtubule bundles, cryomicroscopy and atomic force microscopy.",
+   "applications": [
+    "Atomic force microscopy",
+    "Cryomicroscopy",
+    "Assembly of microtubules",
+    "Dynamics of microtubule bundles"
+   ],
+   "features": [],
+   "ligands": [
+    "Tubulin",
+    "GTP cyclohydrolase"
+   ],
+   "contents": [],
+   "docs": [
+    {
+     "label": "Data sheet",
+     "path": "assets/docs/jena/NU-405.0003.pdf"
+    },
+    {
+     "label": "Safety data sheet",
+     "path": "assets/docs/jena/NU-405_MSDS.0004.pdf"
+    }
+   ],
+   "image": "assets/jena-gpcpp-card.webp",
+   "hero_image": "assets/jena-gpcpp-main.webp",
+   "tile_image": "assets/jena-gpcpp.webp",
+   "doc_count": 2
+  },
+  {
+   "slug": "5-eu",
+   "name": "5-Ethynyl-uridine (5-EU)",
+   "sku": "CLK-N002",
+   "category": "Nucleotides & Nucleosides",
+   "synonyms": [
+    "5-Ethynyl-uridine"
+   ],
+   "options": [
+    {
+     "label": "Pack sizes",
+     "values": [
+      "10 mg (CLK-N002-10)"
+     ]
+    }
+   ],
+   "specs": [
+    {
+     "group": "Product data",
+     "rows": [
+      [
+       "Synonyms",
+       "5-Ethynyl-uridine"
+      ],
+      [
+       "CAS number",
+       "69075-42-9"
+      ],
+      [
+       "Molecular formula",
+       "C11H12N2O6"
+      ],
+      [
+       "Molecular weight",
+       "268.22 g/mol"
+      ],
+      [
+       "Exact mass",
+       "268.07 g/mol"
+      ],
+      [
+       "Purity",
+       "≥ 99 % (HPLC)"
+      ],
+      [
+       "Form",
+       "Solid"
+      ],
+      [
+       "Colour",
+       "White to off-white"
+      ],
+      [
+       "Solubility",
+       "Up to 200 mM in 1 x PBS or water by heating the obtained suspension for 1 minute by 70 °C, less soluble in DMSO"
+      ],
+      [
+       "Spectroscopic properties",
+       "Λ max 286 nm, ε 12.0 L mmol⁻¹ cm⁻¹ (Tris-HCl pH 7.5)"
+      ]
+     ]
+    },
+    {
+     "group": "Shipping and storage",
+     "rows": [
+      [
+       "Shipping",
+       "Shipped at ambient temperature"
+      ],
+      [
+       "Storage conditions",
+       "Store at -20 °C; store dry and under inert gas; Short term exposure (up to 1 week cumulative) to ambient temperature possible."
+      ],
+      [
+       "Shelf life",
+       "12 months after date of delivery"
+      ],
+      [
+       "Intended use",
+       "For research use only"
+      ]
+     ]
+    }
+   ],
+   "summary": "Ethynyl-labeled uridine (5-EU) can be used as a replacement for BrU (5-Bromo-uridine) to measure de novo RNA synthesis in proliferating cells. 5-EU is cell permeable and incorporates into nascent RNA instead of its natural analog uridine. The resulting ethynyl-functionalized RNA can subsequently be detected via Cu(I)-catalyzed click chemistry that offers the choice to introduce a Biotin group (via Azides of Biotin) for subsequent purification tasks or a fluorescent group (via Azides of fluorescent dyes) for subsequent microscopic imaging.",
+   "applications": [
+    "RNA synthesis monitoring"
+   ],
+   "features": [],
+   "ligands": [],
+   "contents": [],
+   "docs": [
+    {
+     "label": "Data sheet",
+     "path": "assets/docs/jena/CLK-N002.0004.pdf"
+    },
+    {
+     "label": "Safety data sheet",
+     "path": "assets/docs/jena/CLK-N002_MSDS.0004.pdf"
+    }
+   ],
+   "image": "assets/jena-5-eu-card.webp",
+   "hero_image": "assets/jena-5-eu-main.webp",
+   "tile_image": "assets/jena-5-eu.webp",
+   "doc_count": 2
+  },
+  {
+   "slug": "5-edutp",
+   "name": "5-Ethynyl-dUTP (5-EdUTP)",
+   "sku": "CLK-T07",
+   "category": "Nucleotides & Nucleosides",
+   "synonyms": [
+    "5-Ethynyl-2'-deoxyuridine 5'-triphosphate, Sodium salt"
+   ],
+   "options": [
+    {
+     "label": "Pack sizes",
+     "values": [
+      "10 µL (100 mM) (CLK-T07-S)",
+      "5 x 10 µL (100 mM) (CLK-T07-L)",
+      "100 µL (100 mM) (CLK-T07-XL)"
+     ]
+    }
+   ],
+   "specs": [
+    {
+     "group": "Product data",
+     "rows": [
+      [
+       "Synonyms",
+       "5-Ethynyl-2'-deoxyuridine 5'-triphosphate, Sodium salt"
+      ],
+      [
+       "Molecular formula",
+       "C11H15N2O14P3 (free acid)"
+      ],
+      [
+       "Molecular weight",
+       "492.16 g/mol (free acid)"
+      ],
+      [
+       "Exact mass",
+       "491.97 g/mol (free acid)"
+      ],
+      [
+       "Purity",
+       "≥ 95 % (HPLC)"
+      ],
+      [
+       "Form",
+       "Solution in water"
+      ],
+      [
+       "Colour",
+       "Colorless to slightly yellow"
+      ],
+      [
+       "Concentration",
+       "100 mM–110 mM"
+      ],
+      [
+       "pH",
+       "7.5 ±0.5"
+      ],
+      [
+       "Spectroscopic properties",
+       "Λ max 288 nm, ε 12.0 L mmol⁻¹ cm⁻¹ (Tris-HCl pH 7.5)"
+      ]
+     ]
+    },
+    {
+     "group": "Shipping and storage",
+     "rows": [
+      [
+       "Shipping",
+       "Shipped on gel packs"
+      ],
+      [
+       "Storage conditions",
+       "Store at -20 °C; Short term exposure (up to 1 week cumulative) to ambient temperature possible."
+      ],
+      [
+       "Shelf life",
+       "12 months after date of delivery"
+      ],
+      [
+       "Intended use",
+       "For research use only"
+      ]
+     ]
+    }
+   ],
+   "summary": "5-EdUTP (5-ethynyl-2'-deoxyuridine 5'-triphosphate, sodium salt) is incorporated into DNA by PCR with family B polymerases and by primer extension with family A Taq or family B polymerases. The resulting ethynyl-functionalised DNA can then be processed by Cu(I)-catalysed click chemistry: to introduce a biotin group for purification, a fluorescent group for microscopic imaging, or to crosslink the DNA to azide-functionalised biomolecules such as proteins.",
+   "applications": [
+    "Incorporation into DNA by PCR with family B polymerases (Pwo, Deep Vent exo– or KOD XL)",
+    "Incorporation into DNA by primer extension with family A polymerase Taq and family B polymerases (Pwo, Deep Vent exo– or KOD XL)",
+    "Click-chemistry labelling of the DNA with biotin (via biotin azides) or fluorescent dyes (via dye azides), or crosslinking to azide-functionalised biomolecules"
+   ],
+   "features": [],
+   "ligands": [],
+   "contents": [],
+   "docs": [
+    {
+     "label": "Data sheet",
+     "path": "assets/docs/jena/CLK-T07.0009.pdf"
+    },
+    {
+     "label": "Safety data sheet",
+     "path": "assets/docs/jena/CLK-T07_MSDS.0006.pdf"
+    }
+   ],
+   "image": "assets/jena-5-edutp-card.webp",
+   "hero_image": "assets/jena-5-edutp-main.webp",
+   "tile_image": "assets/jena-5-edutp.webp",
+   "doc_count": 2
+  },
+  {
+   "slug": "dntp-bundle",
+   "name": "dNTP Bundle",
+   "sku": "NU-1005",
+   "category": "Nucleotides & Nucleosides",
+   "synonyms": [
+    "dATP, dCTP, dGTP and dTTP 100 mM solutions",
+    "2'-Deoxyadenosine-5'-triphosphate, Sodium salt; 2'-Deoxycytidine-5'-triphosphate, Sodium salt; 2'-Deoxyguanosine-5'-triphosphate, Sodium salt; 2'-Deoxythymidine-5'-triphosphate, Sodium salt"
+   ],
+   "options": [
+    {
+     "label": "Pack sizes",
+     "values": [
+      "4 x 200 µL (4 x 20 µmol) (NU-1005S)",
+      "4 x 1 mL (4 x 100 µmol) (NU-1005L)"
+     ]
+    }
+   ],
+   "specs": [
+    {
+     "group": "Product data",
+     "rows": [
+      [
+       "Synonyms",
+       "DATP, dCTP, dGTP and dTTP 100 mM solutions; 2'-Deoxyadenosine-5'-triphosphate, Sodium salt; 2'-Deoxycytidine-5'-triphosphate, Sodium salt; 2'-Deoxyguanosine-5'-triphosphate, Sodium salt; 2'-Deoxythymidine-5'-triphosphate, Sodium salt"
+      ],
+      [
+       "Molecular formula",
+       "DATP: C10H16N5O12P3 (free acid); dCTP: C9H16N3O13P3 (free acid); dGTP: C10H16N5O13P3 (free acid); dTTP: C10H17N2O14P3 (free acid)"
+      ],
+      [
+       "Molecular weight",
+       "DATP: 491.18 g/mol (free acid); dCTP: 467.15 g/mol (free acid); dGTP: 507.18 g/mol (free acid); dTTP: 482.17 g/mol (free acid)"
+      ],
+      [
+       "Purity",
+       "≥ 99 % (HPLC)"
+      ],
+      [
+       "Form",
+       "Clear aqueous solution"
+      ],
+      [
+       "Concentration",
+       "100 mM–110 mM"
+      ],
+      [
+       "pH",
+       "8.5 ±0.2 (22 °C)"
+      ],
+      [
+       "Spectroscopic properties",
+       "DATP: λ max 259 nm, ε 15.1 L mmol⁻¹ cm⁻¹ (Tris-HCl pH 7.0); dCTP: λ max 271 nm, ε 8.9 L mmol⁻¹ cm⁻¹ (Tris-HCl pH 7.0); dGTP: λ max 252 nm, ε 14.2 L mmol⁻¹ cm⁻¹ (Tris-HCl pH 7.0); dTTP: λ max 267 nm, ε 9.5 L mmol⁻¹ cm⁻¹ (Tris-HCl pH 7.0)"
+      ]
+     ]
+    },
+    {
+     "group": "Shipping and storage",
+     "rows": [
+      [
+       "Shipping",
+       "Shipped on gel packs"
+      ],
+      [
+       "Storage conditions",
+       "Store at -20 °C"
+      ],
+      [
+       "Shelf life",
+       "12 months after date of delivery"
+      ],
+      [
+       "Intended use",
+       "For research use only"
+      ]
+     ]
+    }
+   ],
+   "summary": "dNTP Bundle contains four separate solutions of ultrapure dATP, dCTP, dGTP and dTTP supplied as clear aqueous solutions (pH 8.5).",
+   "applications": [],
+   "features": [],
+   "ligands": [],
+   "contents": [
+    "dATP (NU-1001), red cap",
+    "dCTP (NU-1002), blue cap",
+    "dGTP (NU-1003), yellow cap",
+    "dTTP (NU-1004), green cap"
+   ],
+   "docs": [
+    {
+     "label": "Data sheet",
+     "path": "assets/docs/jena/NU-1005.0005.pdf"
+    },
+    {
+     "label": "Safety data sheet",
+     "path": "assets/docs/jena/NU-1005_MSDS.0005.pdf"
+    }
+   ],
+   "image": "assets/jena-dntp-bundle-card.webp",
+   "hero_image": "assets/jena-dntp-bundle-main.webp",
+   "tile_image": "assets/jena-dntp-bundle.webp",
+   "doc_count": 2
+  },
+  {
+   "slug": "quantifoil-r12-13-cu300",
+   "name": "Quantifoil® R 1.2/1.3 on 300 Copper Mesh",
+   "sku": "X-101-Cu300",
+   "category": "Crystallography & Cryo-EM",
+   "synonyms": [],
+   "options": [
+    {
+     "label": "Pack size",
+     "values": [
+      "100 pcs. (X-101-Cu300)"
+     ]
+    }
+   ],
+   "specs": [
+    {
+     "group": "Product data",
+     "rows": [
+      [
+       "Film",
+       "Holey carbon (Quantifoil® R 1.2/1.3)"
+      ],
+      [
+       "Hole diameter",
+       "1.2 µm (circular)"
+      ],
+      [
+       "Hole spacing",
+       "1.3 µm in both dimensions"
+      ],
+      [
+       "Grid",
+       "300 copper mesh"
+      ],
+      [
+       "Magnification",
+       "Around 50,000× and higher"
+      ]
+     ]
+    },
+    {
+     "group": "Shipping and storage",
+     "rows": [
+      [
+       "Shipping",
+       "Shipped at ambient temperature"
+      ],
+      [
+       "Storage conditions",
+       "Store at ambient temperature"
+      ],
+      [
+       "Intended use",
+       "For general laboratory use"
+      ]
+     ]
+    }
+   ],
+   "summary": "Quantifoil® R 1.2/1.3 carbon film with circular holes of 1.2 µm diameter and an interspace of 1.3 µm in both dimensions, applied on 300 copper mesh. Suitable for magnifications around 50,000× and higher; a support film for biological samples in cryo-EM.",
+   "applications": [
+    "Support film for biological samples in cryo-EM techniques"
+   ],
+   "features": [],
+   "ligands": [],
+   "contents": [],
+   "docs": [
+    {
+     "label": "Data sheet",
+     "path": "assets/docs/jena/X-101-Cu300.0001.pdf"
+    }
+   ],
+   "image": "assets/jena-quantifoil-r12-13-cu300-card.webp",
+   "hero_image": "assets/jena-quantifoil-r12-13-cu300-main.webp",
+   "tile_image": "assets/jena-quantifoil-r12-13-cu300.webp",
+   "doc_count": 1
+  },
+  {
+   "slug": "5-edu",
+   "name": "5-Ethynyl-2'-deoxyuridine (5-EdU)",
+   "sku": "CLK-N001",
+   "category": "Nucleotides & Nucleosides",
+   "synonyms": [
+    "5-Ethynyl-2'-deoxyuridine"
+   ],
+   "options": [
+    {
+     "label": "Pack sizes",
+     "values": [
+      "25 mg (CLK-N001-25)",
+      "100 mg (CLK-N001-100)",
+      "500 mg (CLK-N001-500)",
+      "5 g (CLK-N001-5000)"
+     ]
+    }
+   ],
+   "specs": [
+    {
+     "group": "Product data",
+     "rows": [
+      [
+       "Synonyms",
+       "5-Ethynyl-2'-deoxyuridine"
+      ],
+      [
+       "CAS number",
+       "61135-33-9"
+      ],
+      [
+       "Molecular formula",
+       "C11H12N2O5"
+      ],
+      [
+       "Molecular weight",
+       "252.23 g/mol"
+      ],
+      [
+       "Exact mass",
+       "252.07 g/mol"
+      ],
+      [
+       "Purity",
+       "≥ 98 % (HPLC)"
+      ],
+      [
+       "Form",
+       "Solid"
+      ],
+      [
+       "Colour",
+       "White to off-white"
+      ],
+      [
+       "Solubility",
+       "DMSO, up to 200 mM (at room temperature) in 1 x PBS or water by heating the obtained suspension for 1 minute by 70 °C"
+      ],
+      [
+       "Spectroscopic properties",
+       "Λ max 288 nm, ε 12.0 L mmol⁻¹ cm⁻¹ (Tris-HCl pH 7.5)"
+      ]
+     ]
+    },
+    {
+     "group": "Shipping and storage",
+     "rows": [
+      [
+       "Shipping",
+       "Shipped at ambient temperature"
+      ],
+      [
+       "Storage conditions",
+       "Store at -20 °C; store dry and under inert gas; Short term exposure (up to 1 week cumulative) to ambient temperature possible."
+      ],
+      [
+       "Shelf life",
+       "12 months after date of delivery"
+      ],
+      [
+       "Intended use",
+       "For research use only"
+      ]
+     ]
+    }
+   ],
+   "summary": "5-EdU (5-Ethynyl-2'-deoxyuridine) can be used as a replacement for BrdU (5-Bromo-2'-deoxyuridine) to measure de novo DNA synthesis during the S-phase of the cell cycle. 5-EdU is cell permeable and incorporates into replicating DNA instead of its natural analog thymidine. The resulting ethynyl-functionalized DNA can subsequently be detected via Cu(I)-catalyzed click chemistry that offers the choice to introduce a Biotin group (via Azides of Biotin) for subsequent purification tasks or a fluorescent group (via Azides of fluorescent dyes) for subsequent microscopic imaging.",
+   "applications": [
+    "DNA synthesis monitoring"
+   ],
+   "features": [],
+   "ligands": [],
+   "contents": [],
+   "docs": [
+    {
+     "label": "Data sheet",
+     "path": "assets/docs/jena/CLK-N001.0004.pdf"
+    },
+    {
+     "label": "Safety data sheet",
+     "path": "assets/docs/jena/CLK-N001_MSDS.0004.pdf"
+    }
+   ],
+   "image": "assets/jena-5-edu-card.webp",
+   "hero_image": "assets/jena-5-edu-main.webp",
+   "tile_image": "assets/jena-5-edu.webp",
+   "doc_count": 2
+  },
+  {
+   "slug": "gppnhp",
+   "name": "GppNHp (GMPPNP) – Tetralithium Salt",
+   "sku": "NU-401",
+   "category": "Nucleotides & Nucleosides",
+   "synonyms": [
+    "(GMPPNP)",
+    "Guanosine-5'-[( β,γ )-imido]triphosphate, Tetralithium salt",
+    "GMPPNHP"
+   ],
+   "options": [
+    {
+     "label": "Pack sizes",
+     "values": [
+      "10 mg (NU-401-10)",
+      "50 mg (NU-401-50)"
+     ]
+    }
+   ],
+   "specs": [
+    {
+     "group": "Product data",
+     "rows": [
+      [
+       "Synonyms",
+       "GMPPNP; Guanosine-5'-[(β,γ)-imido]triphosphate, Tetralithium salt; GMPPNHP"
+      ],
+      [
+       "CAS number",
+       "64564-03-0"
+      ],
+      [
+       "Molecular formula",
+       "C10H17N6O13P3 (free acid)"
+      ],
+      [
+       "Molecular weight",
+       "522.19 g/mol (free acid)"
+      ],
+      [
+       "Exact mass",
+       "522.01 g/mol (free acid)"
+      ],
+      [
+       "Purity",
+       "≥ 95 % (HPLC)"
+      ],
+      [
+       "Form",
+       "Solid"
+      ],
+      [
+       "Colour",
+       "White to off-white"
+      ],
+      [
+       "Spectroscopic properties",
+       "Λ max 252 nm, ε 13.7 L mmol⁻¹ cm⁻¹ (Tris-HCl pH 7.5)"
+      ]
+     ]
+    },
+    {
+     "group": "Shipping and storage",
+     "rows": [
+      [
+       "Shipping",
+       "Shipped on dry ice"
+      ],
+      [
+       "Storage conditions",
+       "Store at -20 °C"
+      ],
+      [
+       "Shelf life",
+       "6 months after date of delivery"
+      ],
+      [
+       "Handling",
+       "For reasons of stability, please make sure that the pH value of a solution of this product never drops below 7.0. This can be achieved by dissolving the nucleotide in a buffer of your choice (50 - 100 mM, pH 7 - 10). Dissolve and adjust concentration photometrically."
+      ],
+      [
+       "Intended use",
+       "For research use only"
+      ]
+     ]
+    }
+   ],
+   "summary": "GppNHp (GMPPNP; guanosine-5'-[(β,γ)-imido]triphosphate, tetralithium salt) is a non-hydrolysable GTP analogue. Applications include X-ray structures of elongation factor EF-G and of Rab27, the conformational switch of IF(α,β,γ) and the dynamics of ribosomes.",
+   "applications": [
+    "X-ray structure of elongation factor EF-G",
+    "X-ray structure with Rab27",
+    "Conformational switch of IF(α,β,γ)",
+    "Dynamics of ribosomes"
+   ],
+   "features": [],
+   "ligands": [
+    "Rab27",
+    "Initiation factors IF2 and IF(α,β,γ), and elongation factor EF-G"
+   ],
+   "contents": [],
+   "docs": [
+    {
+     "label": "Data sheet",
+     "path": "assets/docs/jena/NU-401.0004.pdf"
+    },
+    {
+     "label": "Safety data sheet",
+     "path": "assets/docs/jena/NU-401_MSDS.0004.pdf"
+    }
+   ],
+   "image": "assets/jena-gppnhp-card.webp",
+   "hero_image": "assets/jena-gppnhp-main.webp",
+   "tile_image": "assets/jena-gppnhp.webp",
+   "doc_count": 2
+  }
+ ]
+}

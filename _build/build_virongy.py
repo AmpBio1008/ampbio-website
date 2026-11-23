@@ -501,12 +501,13 @@ ROOT_URLS = [("", "1.0"), ("products.html", "0.9"), ("virongy.html", "0.9"),
 def write_sitemap(data):
     urls = list(ROOT_URLS) + [("virongy/%s.html" % p["slug"], "0.7")
                               for p in data["products"]]
-    # Sepflow's range (build_sepflow.py), whichever script runs last
-    sep = os.path.join(SITE, "sepflow")
-    if os.path.isdir(sep):
-        urls.insert(urls.index(("virongy.html", "0.9")) + 1, ("sepflow.html", "0.9"))
-        urls += [("sepflow/" + f, "0.7") for f in sorted(os.listdir(sep))
-                 if f.endswith(".html")]
+    # The other partner ranges (build_jena.py, build_sepflow.py), whichever runs last
+    for folder in ("jena", "sepflow"):
+        d = os.path.join(SITE, folder)
+        if os.path.isdir(d):
+            urls.insert(urls.index(("virongy.html", "0.9")) + 1, (folder + ".html", "0.9"))
+            urls += [(folder + "/" + f, "0.7") for f in sorted(os.listdir(d))
+                     if f.endswith(".html")]
     body = "".join(
         "  <url>\n    <loc>https://amps.bio/%s</loc>\n"
         "    <changefreq>monthly</changefreq>\n    <priority>%s</priority>\n  </url>\n"
