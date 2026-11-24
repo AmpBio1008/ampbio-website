@@ -32,7 +32,8 @@ def row_tag(logo_src, alt, kind):
     on a light plate and Ampbio's status, so a visitor can tell whose products
     the row carries and on what terms. The tiles scroll underneath it."""
     return ('<div class="amp-row-tag"><span class="amp-row-logo"><img src="%s" alt="%s">'
-            '</span><span class="amp-row-status">%s Distributor<br>in India</span></div>'
+            '</span><span class="amp-row-status"><span class="amp-rs-kind">%s</span> Distributor<br>'
+            'in India</span></div>'
             % (logo_src, esc(alt), kind))
 
 
