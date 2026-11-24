@@ -9,7 +9,6 @@ Writes:
   sepflow.html                                    range page
   sepflow/<slug>.html                             one page per product
   index.html     between SEPFLOW-HERO-STRIP markers   third row of the hero strip
-  index.html     between SEPFLOW-BAND markers         "Sepflow in India" band
   products.html  between SEPFLOW-BANNER markers       distributor card
   sitemap.xml                                     rewritten with the Sepflow pages
 
@@ -222,41 +221,6 @@ def build_hero_strip(data):
         % (round(SECONDS_PER_TILE * len(feats)), track, track))
 
 
-def build_band(data):
-    """'Sepflow in India' band, under Virongy's on the homepage. Same
-    composition as build_virongy.build_marquee, on the deeper navy so the two
-    bands read as two sections rather than one long one."""
-    return (
-        '\n  <section style="background:%(bg)s;padding:80px 0 76px;overflow:hidden">\n'
-        '    <div style="max-width:1240px;margin:0 auto;padding:0 32px">\n'
-        '      <div class="amp-vhead" style="display:grid;'
-        'grid-template-columns:minmax(0,1.2fr) minmax(0,0.8fr);gap:54px;align-items:center">\n'
-        '        <div>\n'
-        '          <div class="amp-vlead" style="font-family:%(fm)s;font-size:0.95rem;'
-        'letter-spacing:0.2em;color:%(amber)s;text-transform:uppercase;margin-bottom:20px">'
-        '%(dline)s</div>\n'
-        '          <h2 style="font-family:%(fh)s;font-weight:700;font-size:clamp(1.8rem,3vw,2.6rem);'
-        'line-height:1.08;letter-spacing:-0.01em;text-transform:uppercase;color:#fff;margin:0 0 20px">'
-        '<span style="color:#fff">Sepflow </span>'
-        '<span style="color:%(amber)s">in India.</span></h2>\n'
-        '          <p style="color:#9fabbd;font-size:1rem;line-height:1.65;margin:0 0 28px;'
-        'max-width:460px">%(blurb)s</p>\n'
-        '          <a class="amp-cta-btn" href="sepflow.html" style="display:inline-flex;'
-        'align-items:center;gap:10px;background:%(amber)s;color:%(navy)s;font-family:%(fb)s;'
-        'font-weight:700;font-size:0.95rem;padding:13px 28px;border-radius:7px;'
-        'line-height:1.35;max-width:100%%;'
-        'transition:background .25s,box-shadow .3s,transform .3s cubic-bezier(0.22,0.61,0.36,1)">'
-        '%(cta)s <span class="amp-arrow">&rarr;</span></a>\n'
-        '        </div>\n'
-        '        <div class="amp-vhead-mark" style="justify-self:end">%(logo)s</div>\n'
-        '      </div>\n'
-        '    </div>\n'
-        '  </section>\n' % {
-            "bg": NAVY_DEEP, "navy": NAVY, "fm": F_MONO, "fh": F_HEAD, "fb": F_BODY,
-            "amber": AMBER, "dline": DISTRIBUTOR_LINE, "logo": badge(46, "0"),
-            "blurb": esc(data["blurb"]), "cta": esc(data["cta"])})
-
-
 def promo_banner(href, dline, logo, image, alt, position, text, cta):
     """Distributor card on products.html: the same .amp-promo-card component as
     Virongy's, so the partner cards read as a set. Shared with build_jena.py."""
@@ -316,7 +280,6 @@ def main():
     home = replace_block(home, "SEPFLOW-HERO-STRIP", pages.hero_row(
         pages.row_tag("assets/sepflow-logo.webp", "Sepflow", "Exclusive"),
         build_hero_strip(data)))
-    home = replace_block(home, "SEPFLOW-BAND", build_band(data))
     write("index.html", home)
     write("products.html",
           replace_block(read("products.html"), "SEPFLOW-BANNER", build_banner(data)))

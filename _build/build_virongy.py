@@ -7,7 +7,7 @@ pages, from _build/virongy-products.json.
 
 Writes:
   virongy.html                              - full catalogue page
-  index.html      between VIRONGY-MARQUEE markers   - homepage scrolling strip
+  index.html      between VIRONGY-HERO-STRIP markers - first row of the hero strip
   products.html   between VIRONGY-BANNER markers    - distributor feature banner
   assets/docs/MANIFEST.txt is written by _build/fetch_docs.py
 
@@ -373,45 +373,6 @@ def build_hero_strip(data):
         % {"track": track})
 
 
-def build_marquee(data):
-    """The distributor band further down the homepage. The tiles moved to the
-    hero, so this is now copy, mark and call to action only."""
-    return (
-        # Same composition as the PLATFORMS section on this page: copy block on
-        # the left, visual on the right, then the full-bleed row underneath.
-        '\n  <section style="background:%(navy)s;padding:80px 0 76px;overflow:hidden">\n'
-        '    <div style="max-width:1240px;margin:0 auto;padding:0 32px">\n'
-        '      <div class="amp-vhead" style="display:grid;'
-        'grid-template-columns:minmax(0,1.2fr) minmax(0,0.8fr);gap:54px;align-items:center">\n'
-        '        <div>\n'
-        '          <div class="amp-vlead" style="font-family:%(fm)s;font-size:0.95rem;'
-        'letter-spacing:0.2em;color:%(amber)s;text-transform:uppercase;margin-bottom:20px">'
-        '%(dline)s</div>\n'
-        '          <h2 style="font-family:%(fh)s;font-weight:700;font-size:clamp(1.8rem,3vw,2.6rem);'
-        'line-height:1.08;letter-spacing:-0.01em;text-transform:uppercase;color:#fff;margin:0 0 20px">'
-        '<span style="color:#fff">Virongy Biosciences </span>'
-        '<span style="color:%(amber)s">in India.</span></h2>\n'
-        '          <p style="color:#9fabbd;font-size:1rem;line-height:1.65;margin:0 0 28px;'
-        'max-width:460px">Ampbio is the exclusive distributor in India for Virongy Biosciences, '
-        'USA &mdash; %(n)d products spanning pseudoviruses, neutralization assay kits, viral protein '
-        'expression vectors, transduction reagents and reporter cell lines.</p>\n'
-        '          <a class="amp-cta-btn" href="virongy.html" style="display:inline-flex;'
-        'align-items:center;gap:10px;background:%(amber)s;color:%(navy)s;font-family:%(fb)s;'
-        'font-weight:700;font-size:0.95rem;padding:13px 28px;border-radius:7px;'
-        'line-height:1.35;max-width:100%%;'
-        'transition:background .25s,box-shadow .3s,transform .3s cubic-bezier(0.22,0.61,0.36,1)">'
-        'Virongy Biosciences &ndash; Virological Research Tools and Platforms '
-        '<span class="amp-arrow">&rarr;</span></a>\n'
-        '        </div>\n'
-        '        <div class="amp-vhead-mark" style="justify-self:end">%(logo)s</div>\n'
-        '      </div>\n'
-        '    </div>\n'
-        '  </section>\n' % {
-            "navy": NAVY, "fm": F_MONO, "fh": F_HEAD, "fb": F_BODY, "amber": AMBER,
-            "dline": DISTRIBUTOR_LINE, "logo": logo(62, "0"),
-            "n": len(data["products"])})
-
-
 def build_banner(data):
     n = len(data["products"])
     return (
@@ -531,7 +492,6 @@ def main():
     home = replace_block(home, "VIRONGY-HERO-STRIP", pages.hero_row(
         pages.row_tag("assets/virongy-logo.webp", "Virongy Biosciences", "Exclusive"),
         build_hero_strip(data)))
-    home = replace_block(home, "VIRONGY-MARQUEE", build_marquee(data))
     write("index.html", home)
     write("products.html", replace_block(read("products.html"), "VIRONGY-BANNER", build_banner(data)))
 
