@@ -62,14 +62,14 @@ a:hover { color: #ffb63e; }
    what terms (exclusive / authorised). Spans the picture height; the tiles
    slide underneath and fade out behind it. */
 .amp-hero-row { position: relative; }
-.amp-row-tag { position: absolute; left: 0; top: 0; z-index: 2; height: var(--th);
+.amp-row-tag { position: absolute; left: 0; top: 0; bottom: 0; z-index: 2;
   width: clamp(176px, 15.5vw, 222px); padding: 0 14px 0 clamp(14px, 2.2vw, 32px);
   box-sizing: border-box; display: flex; flex-direction: column; justify-content: center;
   align-items: flex-start; gap: 9px; pointer-events: none;
-  background: linear-gradient(90deg, rgba(10,21,36,0.97) 0%, rgba(10,21,36,0.94) 100%); }
+  background: #0a1524; }
 /* the fade sits outside the badge, so its text never lies over a tile */
 .amp-row-tag::after { content: ""; position: absolute; top: 0; bottom: 0; left: 100%;
-  width: 34px; background: linear-gradient(90deg, rgba(10,21,36,0.94), rgba(10,21,36,0)); }
+  width: 34px; background: linear-gradient(90deg, #0a1524, rgba(10,21,36,0)); }
 .amp-row-logo { display: inline-flex; align-items: center; padding: 8px 12px;
   border-radius: 8px; background: linear-gradient(158deg, #f7fafd 0%, #dfe7f1 100%);
   box-shadow: 0 0 0 1px rgba(253,157,5,0.42); max-width: 100%; box-sizing: border-box; }
